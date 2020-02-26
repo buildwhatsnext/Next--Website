@@ -1,14 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import './App.css';
+// import './App.css';
 import Home from './components/home/home.page';
 
 export default function App() {
   return (
-    <Router>
-      <Routes />
-    </Router>
+    <div className="app">
+      <Router>
+        <Routes />
+      </Router>
+    </div>
   );
 }
 

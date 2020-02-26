@@ -1,5 +1,7 @@
+@import '../../styles/styles.fonts.desktop.scss';
+
 @media(min-width: 769px) {
   html, body {
-    color: red;
+    // @extend .test_fonts;
   }
 }

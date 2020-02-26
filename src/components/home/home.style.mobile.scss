@@ -1,5 +1,10 @@
-@media(max-width: 768px) {
-  html, body {
-    color: blue;
+@import '../../styles/styles.fonts.desktop.scss';
+
+@media(max-width: 769px) {
+  .start {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 20px;
   }
 }
