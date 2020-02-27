@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 // import AboutPage from './about/about.page';
 // import TeamPage from './team/team.page';
@@ -14,6 +15,7 @@ export default function AppRouter() {
 
 const Routes = () => (
   <Fragment>
+    <Navbar />
     <Switch>
       <Route path='/about'>
         {/* <AboutPage /> */}
