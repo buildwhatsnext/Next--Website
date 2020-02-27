@@ -7,7 +7,17 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 20px;
-    padding: 20px;
+    // padding: 20px;
   }
+
+  .app__navigation {
+    grid-column: 1 / -1;
+  }
+
+  .app__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   
 }
