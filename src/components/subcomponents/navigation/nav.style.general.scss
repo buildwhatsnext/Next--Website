@@ -1,0 +1,23 @@
+@import '../../../styles/styles.colors.scss';
+@import '../../../styles/styles.fonts.components.scss';
+
+#next__navbar {
+  background-color: $next__white !important;
+
+  #next__navbar__nav__outer {
+    justify-content: right;
+
+    #next__navbar__nav__inner {
+      margin-right: 0px !important ;
+    }
+
+    .nav-link {
+      @extend %hard__blue;
+      font-weight: 700;
+      padding-bottom: 0;
+      align-self: end;
+      padding-right: 30px;
+    }
+  }
+}
+
