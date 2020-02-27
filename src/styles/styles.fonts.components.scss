@@ -20,3 +20,15 @@
   @extend %hard;
   color: $next__coral;
 }
+
+.soft__blue__title {
+  @extend %soft__blue;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.soft__blue__subtitle {
+  @extend %soft__blue;
+  font-size: 36px;
+  font-weight: 600;
+}

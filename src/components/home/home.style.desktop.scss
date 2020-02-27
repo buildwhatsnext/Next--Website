@@ -1,3 +1,18 @@
+@import '../../styles/styles.fonts.components.scss';
+
 @media(min-width: 769px) {
+
+  .home {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    // .home__hlw {
+    //   grid-column-start: 3;
+    //   grid-column-end: 8;
+    // }
+  }
+
   
+
 }
