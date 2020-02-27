@@ -10,13 +10,11 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <h2>
-        <div className="start">
-          Home Start!
+      <div className="start">
+        Home Start!
 
-          Keep it going
-        </div>
-      </h2>
+        Keep it going
+      </div>
     )
   }
 }

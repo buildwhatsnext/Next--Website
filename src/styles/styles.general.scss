@@ -2,13 +2,14 @@ html, body, #root {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  // overflow: hidden;
+  margin: 0px;
 }
 
 .app {
-  // width: 100%;
-  // height: 100%;
+  width: 100%;
+  height: 100%;
   // padding: 10px;
   border: 1px solid red;
-  // box-sizing: border-box;
+  box-sizing: border-box;
 }
