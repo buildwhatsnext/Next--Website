@@ -1,0 +1,13 @@
+@import '../styles/styles.fonts.mobile.scss';
+
+@media(max-width: 769px) {
+
+  .app {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+}
