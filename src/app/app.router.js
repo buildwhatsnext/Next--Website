@@ -15,17 +15,21 @@ export default function AppRouter() {
 
 const Routes = () => (
   <Fragment>
-    <Navbar />
-    <Switch>
-      <Route path='/about'>
-        {/* <AboutPage /> */}
-      </Route>
-      <Route path='/team'>
-        {/* <TeamPage /> */}
-      </Route>
-      <Route path='/'>
-        <HomePage />
-      </Route>
-    </Switch>
+    <div className="app__navigation">
+      <Navbar />
+    </div>
+    <div className="app__content">
+      <Switch>
+        <Route path='/about'>
+          {/* <AboutPage /> */}
+        </Route>
+        <Route path='/team'>
+          {/* <TeamPage /> */}
+        </Route>
+        <Route path='/'>
+          <HomePage />
+        </Route>
+      </Switch>
+    </div>
   </Fragment>
 )
