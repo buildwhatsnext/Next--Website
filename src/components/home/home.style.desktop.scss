@@ -1,18 +1,29 @@
 @import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+.full_width_height {
+  @extend %full_width_height;
+}
 
 @media(min-width: 769px) {
 
   .home {
+    @extend .full_width_height;
     display: grid;
     width: 100%;
     height: 100%;
+
+    .home__hlw {
+      padding-top: 100px;
+    }
+
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(5, 1fr);
 
     // .home__hlw {
     //   grid-column-start: 3;
     //   grid-column-end: 8;
     // }
   }
-
-  
 
 }
