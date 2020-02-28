@@ -12,9 +12,19 @@
     display: grid;
     width: 100%;
     height: 100%;
+    padding-left: 250px;
+    padding-right: 250px;
+    border: 1px solid purple;
 
     .home__hlw {
-      padding-top: 100px;
+      border: 1px solid red;
+      padding-top: 200px;
+      // padding-left: 200px;
+      // padding-right: 200px;
+    }
+
+    .home__cta {
+      justify-self: right;
     }
 
     // grid-template-columns: repeat(5, 1fr);
