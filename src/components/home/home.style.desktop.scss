@@ -14,26 +14,18 @@
     height: 100%;
     padding-left: 250px;
     padding-right: 250px;
-    border: 1px solid purple;
 
     .home__hlw {
-      border: 1px solid red;
       padding-top: 200px;
-      // padding-left: 200px;
-      // padding-right: 200px;
     }
 
     .home__cta {
       justify-self: right;
+
+      p {
+        
+      }
     }
-
-    // grid-template-columns: repeat(5, 1fr);
-    // grid-template-rows: repeat(5, 1fr);
-
-    // .home__hlw {
-    //   grid-column-start: 3;
-    //   grid-column-end: 8;
-    // }
   }
 
 }
