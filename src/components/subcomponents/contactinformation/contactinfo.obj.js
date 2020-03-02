@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
+import Bot from '../../../assets/04 _ INNObot.svg';
 
 export class ContactInfo extends React.Component {
   constructor(props) {
@@ -21,7 +22,10 @@ export class ContactInfo extends React.Component {
 
 export function CellPhone(props) {
   return (
-    <p>212-353-4600</p>
+    <Fragment>
+      <img src={Bot} alt="Bot"/>
+      <p>212-353-4600</p>
+    </Fragment>
   )
 }
 

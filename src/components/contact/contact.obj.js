@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { ContactForm } from '../subcomponents/forms/form.obj';
 import { ContactInfo } from '../subcomponents/contactinformation/contactinfo.obj';
+import './contact.style.desktop.scss';
 
 export default class Contact extends React.Component {
     constructor(props) {
@@ -16,11 +17,17 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <Fragment>
-        <h2>See What's Next</h2>
-        <ContactForm />
-        <ContactInfo />
-      </Fragment>
+      <div className="contact">
+        <div className="contact__title">
+          <h2>See What's Next</h2>
+        </div>
+        <div className="contact__form">
+          {/* <ContactForm /> */}
+        </div>
+        <div className="contact__info">
+          {/* <ContactInfo /> */}
+        </div>
+      </div>
     )
   }
 }
