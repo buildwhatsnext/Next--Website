@@ -5,7 +5,7 @@
   @extend %full_width_height;
 }
 
-@media(min-width: 769px) {
+@media(min-width: $sizeDesktop) {
 
   .home {
     @extend .full_width_height;

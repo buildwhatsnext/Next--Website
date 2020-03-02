@@ -5,13 +5,10 @@
   @extend %full_width_height;
 }
 
-@media(min-width: 769px) {
+@media(min-width: $sizeDesktop) {
 
   .app {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-gap: 20px;
+    
     // padding: 20px;
   }  
 
@@ -21,11 +18,10 @@
 
   .app__content {
     @extend .full_width_height;
-    padding-left: 20px;
-    padding-right: 20px;
-    grid-column: 2 / 10;
-    grid-row: 2 / 10;
-    // border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 20px;
   }
 
 }

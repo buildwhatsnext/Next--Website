@@ -1,1 +1,10 @@
 @import './nav.style.general.scss';
+@import '../../../styles/styles.general.scss';
+
+@media(max-width: $sizeMobile) {
+  #next__navbar {
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
