@@ -21,9 +21,18 @@
   color: $next__coral;
 }
 
-%hard__black {
+%hard__black_right {
   @extend %hard;
   color: $next__black;
+  font-size: 24px;
+  text-align: right;
+}
+
+%hard__black_left {
+  @extend %hard;
+  color: $next__black;
+  font-size: 24px;
+  text-align: left;
 }
 
 .soft__blue__title {

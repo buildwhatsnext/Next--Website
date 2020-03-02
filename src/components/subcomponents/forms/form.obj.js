@@ -33,18 +33,30 @@ export function EntryForm(props) {
 
 export function NameEntryForm(props) {
   return (
-    <EntryForm name={props.name} value={props.value} />
+    <Fragment>
+      <p>Name</p>
+      <div className="answerbox"></div>
+      <EntryForm name={props.name} value={props.value} />
+    </Fragment>
   )
 }
 
 export function EmailEntryForm(props) {
   return (
-    <EntryForm name={props.name} value={props.value} />
+    <fragment>
+      <p>Email</p>
+      <div className="answerbox"></div>
+      <EntryForm name={props.name} value={props.value} />
+    </fragment>
   )
 }
 
 export function MessageEntryForm(props) {
   return (
-    <EntryForm name={props.name} value={props.value} />
+    <fragment>
+      <p>Message</p>
+      <div className="answerboxfat"></div>
+      <EntryForm name={props.name} value={props.value} />
+    </fragment>
   )
 }

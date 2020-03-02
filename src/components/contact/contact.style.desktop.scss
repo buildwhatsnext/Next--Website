@@ -18,18 +18,63 @@
 }
 
 .contact__form {
-  border: 1px solid green;
+  @extend %hard__black_left;
+  border: px solid green;
   grid-column-start: 5;
   grid-column-end: 9;
-  grid-row-start: 2;
+  grid-row-start: 5;
   grid-row-end: 9;
+
+  .answerbox {
+    border: 3px #E03E52 solid;
+    width: 700px;
+    height: 40px;
+  }
+
+  .answerboxfat {
+    border: 3px #E03E52 solid;
+    width: 700px;
+    height: 130px;
+  }
 }
 
 .contact__info {
-  @extend %hard__black;
-  border: 1px solid red;
+  @extend %hard__black_right;
+  border: 0px solid red;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 9;
 }
+
+.cellphoneicon, .emailicon, .cameraicon, .locationicon {
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+.information {
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: 6;
+  grid-gap: 20px;
+  padding: 5px;
+
+
+  .text {
+    border: 0px solid green;
+    grid-column: 1 / 5;
+    text-align: center;
+    text-align: right;
+    padding: 10px;
+    
+  }
+
+  .icon {
+    border: 0px solid blue;
+    grid-column: 5 / 6;
+    padding: 10px
+
+  }
+}
+

@@ -25,38 +25,79 @@ export class ContactInfo extends React.Component {
 
 export function CellPhone(props) {
   return (
-    <Fragment>
-      <img src={cellphone} alt="cellphone"/>
-      <p>212-353-4600</p>
-    </Fragment>
+    <div className="information">
+      <span className="text">
+        212-353-4600
+      </span>
+      <span className="icon">
+        <img src={cellphone} alt="cellphone"/> 
+      </span>
+    </div>
   )
 }
 
 export function Email(props) {
   return (
-    <Fragment>
-      <img src={mail} alt="mail"/>
-      <p>next@hlw.com</p>
-    </Fragment>
+    <div className="information">
+      <span className="text">
+        next@hlw.com
+      </span>
+      <span className="icon">
+        <img src={mail} alt="mail"/> 
+      </span>
+    </div>
   )
 }
 
 export function Instagram(props) {
   return (
-    <Fragment>
-      <img src={camera} alt="camera"/>
-      <p>@buildwhatsnext</p>
-    </Fragment>
+    <div className="information">
+      <span className="text">
+        <p>@buildwhatsnext</p>
+      </span>
+      <span className="icon">
+        <img src={camera} alt="camera"/> 
+      </span>
+    </div>
   )
 }
 
+
 export function Location(props) {
   return (
-    <Fragment>
-      <img src={location} alt="location"/>
-      <p>5 Penn Plaza</p>
-      <p>New York, NY</p>
-      <p>10001</p>
-    </Fragment>
+    <div className="information">
+      <span className="text">
+        <p>5 Penn Plaza</p>
+        <p>New York NY</p>
+        <p>10001</p>
+      </span>
+      <span className="icon">
+        <img src={location} alt="location"/> 
+      </span>
+    </div>
   )
 }
+
+// export function Instagram(props) {
+//   return (
+//     <Fragment>
+//       <div className="entirecamera">
+//         <img src={camera} alt="camera" className="cameraicon"/>
+//         <p>@buildwhatsnext</p>
+//       </div>
+//     </Fragment>
+//   )
+// }
+
+// export function Location(props) {
+//   return (
+//     <Fragment>
+//       <div className="information">
+//         <img src={location} alt="location" className="locationicon"/>
+//         <p>5 Penn Plaza</p>
+//         <p>New York, NY</p>
+//         <p>10001</p>
+//       </div>
+//     </Fragment>
+//   )
+// }
