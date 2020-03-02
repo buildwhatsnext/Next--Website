@@ -24,7 +24,7 @@ export default class NavbarPage extends React.Component {
 
     return(
       <Navbar bg="light" expand="lg" id="next__navbar">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img 
             src={logo} 
             alt="NEXT/"
@@ -33,11 +33,11 @@ export default class NavbarPage extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="next__navbar__nav__outer">
           <Nav className="mr-auto" id="next__navbar__nav__inner">
-            <Nav.Link href="#about">about</Nav.Link>
-            <Nav.Link href="#services">services</Nav.Link>
-            <Nav.Link href="#team">team</Nav.Link>
-            <Nav.Link href="#projects">projects</Nav.Link>
-            <Nav.Link href="#contact">contact us</Nav.Link>
+            <Nav.Link href="/about">about</Nav.Link>
+            <Nav.Link href="/services">services</Nav.Link>
+            <Nav.Link href="/team">team</Nav.Link>
+            <Nav.Link href="/projects">projects</Nav.Link>
+            <Nav.Link href="/contact">contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -21,10 +21,10 @@ const Routes = () => (
     <div className="app__content">
       <Switch>
         <Route path='/about'>
-          {/* <AboutPage /> */}
+          About
         </Route>
         <Route path='/team'>
-          {/* <TeamPage /> */}
+          Team
         </Route>
         <Route path='/'>
           <HomePage />
