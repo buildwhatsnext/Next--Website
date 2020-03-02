@@ -26,6 +26,9 @@ const Routes = () => (
         <Route path='/team'>
           Team
         </Route>
+        <Route path='/contact'>
+          contact
+        </Route>
         <Route path='/'>
           <HomePage />
         </Route>
