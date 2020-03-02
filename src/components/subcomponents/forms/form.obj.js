@@ -44,5 +44,7 @@ export function EmailEntryForm(props) {
 }
 
 export function MessageEntryForm(props) {
-  return null;
+  return (
+    <EntryForm name={props.name} value={props.value} />
+  )
 }
