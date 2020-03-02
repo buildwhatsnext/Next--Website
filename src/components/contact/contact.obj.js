@@ -19,13 +19,13 @@ export default class Contact extends React.Component {
     return (
       <div className="contact">
         <div className="contact__title">
-          <h2>See What's Next</h2>
+          <p>See What's Next</p>
         </div>
         <div className="contact__form">
-          {/* <ContactForm /> */}
+          <ContactForm />
         </div>
         <div className="contact__info">
-          {/* <ContactInfo /> */}
+          <ContactInfo />
         </div>
       </div>
     )

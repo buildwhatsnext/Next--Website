@@ -21,6 +21,11 @@
   color: $next__coral;
 }
 
+%hard__black {
+  @extend %hard;
+  color: $next__black;
+}
+
 .soft__blue__title {
   @extend %soft__blue;
   font-size: 64px;
@@ -29,6 +34,19 @@
 
 .soft__blue__subtitle {
   @extend %soft__blue;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.soft__coral__title {
+  @extend %soft__coral;
+  font-size: 72px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.soft__coral__subtitle {
+  @extend %soft__coral;
   font-size: 36px;
   font-weight: 600;
 }
