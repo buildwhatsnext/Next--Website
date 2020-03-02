@@ -27,14 +27,22 @@
 
   .answerbox {
     border: 3px #E03E52 solid;
-    width: 700px;
+    grid-column-start: 5;
+    grid-column-end: 9;
     height: 40px;
   }
 
   .answerboxfat {
     border: 3px #E03E52 solid;
-    width: 700px;
+    grid-column-start: 5;
+    grid-column-end: 9;
     height: 130px;
+  }
+  
+  .button {
+    width: 50px;
+    height: 50px;
+    float: right;
   }
 }
 

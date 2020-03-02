@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
+import button from '../../../assets/svg/icons/50contactbutton.svg'
 
 export class ContactForm extends React.Component {
   constructor(props) {
@@ -56,6 +57,9 @@ export function MessageEntryForm(props) {
     <fragment>
       <p>Message</p>
       <div className="answerboxfat"></div>
+      <div className="button">
+        <img src={button} alt="button"/> 
+      </div>
       <EntryForm name={props.name} value={props.value} />
     </fragment>
   )
