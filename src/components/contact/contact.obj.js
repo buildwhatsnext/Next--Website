@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { ContactForm } from '../subcomponents/forms/form.obj';
 import { ContactInfo } from '../subcomponents/contactinformation/contactinfo.obj';
 import './contact.style.desktop.scss';
+import './contact.style.mobile.scss';
 
 export default class Contact extends React.Component {
     constructor(props) {
