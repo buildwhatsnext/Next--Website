@@ -24,7 +24,7 @@ export class AboutTitle extends React.Component {
                             Consequat sit odio sagittis facilisis quis erat aliquam.
         `
         const quote = 'Technology is an enabler to help people do what they are trained to do better'
-        const quoter = 'John Gerrick'
+        const quoter = '-John Gerrick'
 
         return (
             <Fragment>
@@ -32,15 +32,15 @@ export class AboutTitle extends React.Component {
                     <p> { title } </p>
                 </div>
 
-                <div className="description">
+                <div className="about__description">
                     <p> { description }  </p>
                 </div>
 
-                <div className="quote">
+                <div className="about__quote">
                     <p> { quote } </p>
                 </div>
 
-                <div className="name">
+                <div className="about__name">
                     <p> { quoter } </p>
                 </div>
             </Fragment>

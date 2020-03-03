@@ -11,6 +11,11 @@
   color: $next__coral;
 }
 
+%soft__black {
+  @extend %soft;
+  color: $next__black;
+}
+
 %hard__blue {
   @extend %hard;
   color: $next__blue;
@@ -58,4 +63,17 @@
   @extend %soft__coral;
   font-size: 36px;
   font-weight: 600;
+}
+
+.soft__black__subtitle {
+  @extend %soft__black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+%hard__black_bodytext {
+  @extend %hard;
+  color: $next__black;
+  font-size: 18px;
+  text-align: right;
 }
