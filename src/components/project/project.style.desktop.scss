@@ -24,12 +24,18 @@
   grid-row: 5 / 12;
 }
 
+.project__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .project__item {
   display: grid;
   grid-template-rows: 1fr 1fr;
   border-left: 1px solid $next__coral;
   padding-left: 20px;
   margin-bottom: 100px;
+  grid-column: span 2;
 }
 
 .project__item__title {
