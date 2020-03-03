@@ -10,7 +10,7 @@
 
 .contact__title {
   @extend .soft__coral__title;
-  border: 0px solid blue;
+  border: px solid blue;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -33,6 +33,9 @@
   }
 
   .answerboxfat {
+    display: grid;
+    grid-template-columns: repeat(22, 40px);
+    grid-template-rows: repeat(3, 1fr);
     border: 3px #E03E52 solid;
     grid-column-start: 5;
     grid-column-end: 9;
@@ -40,9 +43,24 @@
   }
   
   .button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     float: right;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 22;
+    grid-column-end: 23;
+  }
+
+  .fragment {
+    width: 40px;
+    height: 40px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 22;
+    grid-column-end: 23;
+    border-top: #E03E52 2px solid;
+    border-left: #E03E52 2px solid;
   }
 }
 
@@ -64,14 +82,14 @@
 .information {
   border: 0px solid red;
   display: grid;
-  grid-template-columns: 6;
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
   padding: 5px;
 
 
   .text {
     border: 0px solid green;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     text-align: center;
     text-align: right;
     padding: 10px;
@@ -80,8 +98,8 @@
 
   .icon {
     border: 0px solid blue;
-    grid-column: 5 / 6;
-    padding: 10px
+    grid-column: 6/ 7;
+    padding: 10px;
 
   }
 }

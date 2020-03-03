@@ -56,10 +56,13 @@ export function MessageEntryForm(props) {
   return (
     <fragment>
       <p>Message</p>
-      <div className="answerboxfat"></div>
-      <div className="button">
-        <img src={button} alt="button"/> 
+      <div className="answerboxfat">
+        <div className="button">
+          <img src={button} alt="button"/> 
+        </div>
+        <div className="twosideborder"></div>
       </div>
+      
       <EntryForm name={props.name} value={props.value} />
     </fragment>
   )
