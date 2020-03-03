@@ -1,0 +1,26 @@
+@import '../../styles/styles.fonts.components.scss';
+
+.about {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(9, 200px);
+    grid-template-rows: repeat(9, 100px);
+    border: 1px red solid;
+}
+
+.about__titlepage {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    border: 3px black solid;
+    width: 700px;
+    height: 800px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.about__title {
+    border: 1px red solid;
+    font-size: 100px;
+}
