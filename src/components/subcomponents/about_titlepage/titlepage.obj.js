@@ -23,7 +23,7 @@ export class AboutTitle extends React.Component {
                             Vitae mattis libero at malesuada vitae. 
                             Consequat sit odio sagittis facilisis quis erat aliquam.
         `
-        const quote = 'Technology is an enabler to help people do what they are trained to do better'
+        const quote = 'Technology should enable people do what they are trained to do, better'
         const quoter = '-John Gerrick'
 
         return (

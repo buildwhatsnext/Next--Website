@@ -6,23 +6,22 @@
     display: grid;
     grid-template-columns: repeat(9, 200px);
     grid-template-rows: repeat(9, 100px);
-    border: 1px red solid;
 }
 
 .about__titlepage {
     display: grid;
     grid-template-columns: repeat(9, 77px);
-    grid-template-rows: repeat(9, 88px);
+    grid-template-rows: repeat(18, 44px);
     border: 3px black solid;
     width: 700px;
     height: 800px;
     grid-column-start: 2;
     grid-row-start: 2;
+    background-color: #E03E52;
 }
 
 .about__title {
     @extend .soft__blue__title;
-    font-size: 50px;
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 2;
@@ -34,8 +33,8 @@
     @extend .soft__black__subtitle;
     grid-column-start: 2;
     grid-column-end: 9;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 12;
     text-align: right;
 }
 
@@ -43,8 +42,8 @@
     @extend .soft__blue__subtitle;
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-row-start: 14;
+    grid-row-end: 16;
     text-align: right;
     font-size: 18px;
 }
@@ -53,8 +52,85 @@
     @extend .soft__blue__subtitle;
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 9;
-    grid-row-end: 10;
+    grid-row-start: 17;
+    grid-row-end: 18;
     text-align: right;
     font-size: 18px;
+}
+
+.about__category {
+    grid-template-columns: repeat(20, 44.5px);
+    grid-template-rows: repeat(9, 88.5px);
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 10;
+}
+
+.about__experiencehead {
+    @extend .soft__black__title;
+    font-size: 50px;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: left;
+}
+
+.about__experiencebody {
+    @extend .soft__blue__title;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+
+.about__innovationhead {
+    @extend .soft__black__title;
+    font-size: 50px;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: left;
+}
+
+.about__innovationbody {
+    @extend .soft__blue__title;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: left;
+}
+
+.about__bimhead {
+    @extend .soft__black__title;
+    font-size: 50px;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    text-align: left;
+}
+
+.about__bimbody {
+    @extend .soft__blue__title;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    text-align: left;
+}
+
+.monitor {
+    grid-column-start: 15;
+    grid-column-end: 17;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }

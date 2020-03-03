@@ -46,6 +46,12 @@
   font-weight: 600;
 }
 
+.soft__black__title {
+  @extend %soft__black;
+  font-size: 64px;
+  font-weight: 600;
+}
+
 .soft__blue__subtitle {
   @extend %soft__blue;
   font-size: 36px;

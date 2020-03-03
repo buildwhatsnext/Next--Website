@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './about.style.desktop.scss';
 import { AboutTitle } from '../subcomponents/about_titlepage/titlepage.obj';
+import { AboutCategory } from '../subcomponents/about_category/category.obj';
 
 export default class About extends React.Component {
     constructor(props) {
@@ -21,7 +22,7 @@ export default class About extends React.Component {
                     <AboutTitle />
                 </div>
                 <div className="about__category">
-                    <aboutcategory />
+                    <AboutCategory />
                 </div>
             </div>
         )
