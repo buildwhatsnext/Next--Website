@@ -10,7 +10,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  border: 1px solid red;
 }
 
 .page__project__title {
@@ -18,26 +17,31 @@
   grid-column: 1 / 3;
   grid-row: 1 / 4;
   padding-left: 160px;
-  border: 1px solid green;
 }
 
 .page__project__items {
   grid-column: 1 / -1;
   grid-row: 5 / 12;
-  border: 1px solid blue;
 }
 
 .project__item {
-  border: 1px solid purple;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-left: 1px solid $next__coral;
+  padding-left: 20px;
+  margin-bottom: 100px;
 }
 
 .project__item__title {
   @extend %soft__info;
+  // border: 1px solid blue;
+  
   color: $next__blue;
 }
 
 .project__item__type {
   @extend %hard__subinfo;
   color: $next__grey;
+  // border: 1px solid green;
 }
 

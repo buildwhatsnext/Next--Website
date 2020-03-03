@@ -19,7 +19,19 @@ export default class Project extends React.Component {
         {
           title: 'Piper',
           type: 'Mobile Application'
-        }
+        },
+        {
+          title: 'Fordham',
+          type: 'Extended Reality'
+        },
+        {
+          title: 'Google',
+          type: 'BIM Implementation'
+        },
+        {
+          title: 'Piper',
+          type: 'Mobile Application'
+        },
       ]
     }
   }
