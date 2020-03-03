@@ -1,3 +1,5 @@
+@import '../../styles/styles.fonts.components.scss';
+
 .page__project {
   width: 100%;
   height: 100%;
@@ -8,14 +10,14 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  // margin-left: 60px;
-  // margin-right: 60px;
   border: 1px solid red;
 }
 
 .page__project__title {
+  @extend .soft__coral__title;
+  grid-column: 1 / 3;
   grid-row: 1 / 4;
-  grid-column: 1 / 2;
+  padding-left: 160px;
   border: 1px solid green;
 }
 

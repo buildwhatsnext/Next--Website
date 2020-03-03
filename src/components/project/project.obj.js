@@ -13,7 +13,9 @@ export default class Project extends React.Component {
   render() {
     return (
       <div className="page page__project">
-        <div className="page__project__title"></div>
+        <div className="page__project__title">
+          We Create Great Work
+        </div>
         <div className="page__project__items"></div>
       </div>
     )
