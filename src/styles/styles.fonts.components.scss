@@ -21,6 +21,22 @@
   color: $next__coral;
 }
 
+%soft__info {
+  @extend %soft;
+  @extend %info;
+}
+
+%hard__info {
+  @extend %hard;
+  @extend %info;
+}
+
+%hard__subinfo {
+  @extend %hard;
+  @extend %subinfo;
+}
+
+
 %hard__black_right {
   @extend %hard;
   color: $next__black;
@@ -59,3 +75,4 @@
   font-size: 36px;
   font-weight: 600;
 }
+

@@ -9,16 +9,16 @@ export default class Project extends React.Component {
       title: 'We Create Great Work', 
       projects: [
         {
-          title: 'Test',
-          type: 'Even Testier'
+          title: 'Fordham',
+          type: 'Extended Reality'
         },
         {
-          title: 'Test2',
-          type: 'Return of the Test'
+          title: 'Google',
+          type: 'BIM Implementation'
         },
         {
-          title: 'Test3',
-          type: 'The Test Strikes Back'
+          title: 'Piper',
+          type: 'Mobile Application'
         }
       ]
     }

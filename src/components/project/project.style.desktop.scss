@@ -26,3 +26,18 @@
   grid-row: 5 / 12;
   border: 1px solid blue;
 }
+
+.project__item {
+  border: 1px solid purple;
+}
+
+.project__item__title {
+  @extend %soft__info;
+  color: $next__blue;
+}
+
+.project__item__type {
+  @extend %hard__subinfo;
+  color: $next__grey;
+}
+
