@@ -45,7 +45,17 @@ export default class Project extends React.Component {
   formatProjects = (items) => {
     let i = 0;
     const listItems = items.map(item => {
-      return <ProjectItem key={i++} {...item} />
+      let align = i % 2 
+        ? "left" 
+        : "right";
+
+      return (
+        <div className="project__item__line">
+          <ProjectItem key={i++} {...item} align={align} />
+          <div className={`spacer__${align}`}></div>
+        </div>
+        
+      )
     });
   
     return (
@@ -78,7 +88,7 @@ export function ProjectList(props) {
 
 export function ProjectItem(props) {
   return (
-    <div className="project__item">
+    <div className={`project__item project__item__${props.align}`}>
       <div className="project__item__title">{ props.title } </div>
       <div className="project__item__type"> { props.type } </div>
     </div>
