@@ -49,9 +49,20 @@
     .contact__info {
         border: 1px solid blue;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(13, 30px);
         grid-column: 1 / -1;
         grid-row: 8 / 13;
+    }
+
+    .contact__info__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact__info__phone {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
 
 }

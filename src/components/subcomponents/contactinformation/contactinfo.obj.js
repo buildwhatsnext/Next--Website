@@ -8,10 +8,10 @@ import location from '../../../assets/svg/icons/34location.svg';
 export function ContactInfoList(props) {
   return (
     <div className="contact__info">
-      {/* <Phone />
-      <Email />
-      <Insta />
-      <Location /> */}
+      <Phone />
+      {/* <Email /> */}
+      {/* <Insta /> */}
+      {/* <Location /> */}
     </div>
   )
 }
