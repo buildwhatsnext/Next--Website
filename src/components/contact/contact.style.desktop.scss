@@ -64,6 +64,7 @@
 
 .contact__info {
   @extend %hard__black_right;
+  display: grid;
   border: 0px solid red;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -71,58 +72,108 @@
   grid-row-end: 9;
 }
 
-.cellphoneicon, .emailicon, .cameraicon, .locationicon {
-  width: 30px;
+.contact__info__item {
+  display: grid;
+  grid-template-columns: 1fr 30px;        
+}
+
+.info__icon {
   height: 30px;
-  float: right;
+  width: 30px;
+  background-repeat: no-repeat;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  
 }
 
-.information {
-  // border: 1px solid red;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 20px;
-  padding: 5px;
+.info__text {
+  background-repeat: no-repeat;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  font-size: 20px;
+  text-align: right;
+  white-space: pre;
+  padding-right: 50px;
+}
+
+.contact__info__phone {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+}
+
+.contact__info__email {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding-right: 3px;
+}
+
+.contact__info__insta {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  padding-right: 3px;
+
+}
+
+.contact__info__location {
+  grid-template-rows: 20px 20px;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  
+}
+
+// .cellphoneicon, .emailicon, .cameraicon, .locationicon {
+//   width: 30px;
+//   height: 30px;
+//   float: right;
+// }
+
+// .information {
+//   // border: 1px solid red;
+//   display: grid;
+//   grid-template-columns: repeat(6, 1fr);
+//   grid-gap: 20px;
+//   padding: 5px;
 
 
-  .text {
-    border: 0px solid green;
-    grid-column: 1 / 6;
-    text-align: center;
-    text-align: right;
-    padding: 10px;
+//   .text {
+//     border: 0px solid green;
+//     grid-column: 1 / 6;
+//     text-align: center;
+//     text-align: right;
+//     padding: 10px;
     
-  }
+//   }
 
-  .icon {
-    border: 0px solid blue;
-    grid-column: 6/ 7;
-    padding: 10px;
+//   .icon {
+//     border: 0px solid blue;
+//     grid-column: 6/ 7;
+//     padding: 10px;
 
-  }
-}
+//   }
+// }
 
-.information_location {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-row: 7/8;
-  grid-column: 2/4;
-  grid-gap: 20px;
-  padding: 5px;
+// .information_location {
+//   display: grid;
+//   grid-template-columns: repeat(6, 1fr);
+//   grid-row: 7/8;
+//   grid-column: 2/4;
+//   grid-gap: 20px;
+//   padding: 5px;
 
-  .location_text {
-    border: 0px solid green;
-    grid-column: 1 / 6;
-    text-align: center;
-    text-align: right;
-    padding: 10px;
-  }
+//   .location_text {
+//     border: 0px solid green;
+//     grid-column: 1 / 6;
+//     text-align: center;
+//     text-align: right;
+//     padding: 10px;
+//   }
 
-  .location_icon {
-    border: 0px solid blue;
-    grid-column: 6/ 7;
-    padding: 10px;
-  }
+//   .location_icon {
+//     border: 0px solid blue;
+//     grid-column: 6/ 7;
+//     padding: 10px;
+//   }
 
-}
+// }
 
