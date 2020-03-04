@@ -5,99 +5,62 @@ import mail from '../../../assets/svg/icons/06envelope.svg';
 import camera from '../../../assets/svg/icons/13camera.svg';
 import location from '../../../assets/svg/icons/34location.svg';
 
-export class ContactInfo extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-
-  render() {
-    return (
-      <div className="Contact__Info">
-        <CellPhone />
-        <Email />
-        <Instagram />
-        <Location />
-      </div>
-    )
-  }
-}
-
-export function CellPhone(props) {
+export function ContactInfoList(props) {
   return (
-    <div className="information">
-      <span className="text">
-        212-353-4600
-      </span>
-      <span className="icon">
-        <img src={cellphone} alt="cellphone"/> 
-      </span>
+    <div className="contact__info">
+      <Phone />
+      <Email />
+      <Insta />
+      <Location />
     </div>
   )
 }
 
-export function Email(props) {
+export const ContactInfoItem = (props) => (
+  <div className={`contact__info__item contact__info__${props.infoType}`}>
+    <span className="info__text">{ props.value }</span>
+    <span className="info__icon">
+      <img src={props.iconUrl} alt={props.infoType}/>
+    </span>
+  </div>
+)
+
+export const Phone = () => (
+  <ContactInfoItem 
+    infoType="phone"
+    value="212-353-4600"
+    iconUrl={cellphone}
+  />
+);
+
+export const Email = () => (
+  <ContactInfoItem 
+    infoType="email"
+    value="next@hlw.com"
+    iconUrl={mail}
+  />
+)
+
+export const Insta = () => (
+  <ContactInfoItem 
+    infoType="insta"
+    value="@buildwhatsnext"
+    iconUrl={camera}
+  />
+)
+
+export const Location = () => {
+  const locationData = `
+    5 Penn Plaza \n
+    New York, NY \n
+    10001
+  `;
+
   return (
-    <div className="information">
-      <span className="text">
-        next@hlw.com
-      </span>
-      <span className="icon">
-        <img src={mail} alt="mail"/> 
-      </span>
-    </div>
+    <ContactInfoItem 
+      infoType="location"
+      value={locationData}
+      iconUrl={location}
+    />
   )
 }
-
-export function Instagram(props) {
-  return (
-    <div className="information">
-      <span className="text">
-        <p>@buildwhatsnext</p>
-      </span>
-      <span className="icon">
-        <img src={camera} alt="camera"/> 
-      </span>
-    </div>
-  )
-}
-
-
-export function Location(props) {
-  return (
-    <div className="information_location">
-      <span className="location_text">
-        <p>5 Penn Plaza</p>
-        <p>New York NY</p>
-        <p>10001</p>
-      </span>
-      <span className="location_icon">
-        <img src={location} alt="location"/> 
-      </span>
-    </div>
-  )
-}
-
-// export function Instagram(props) {
-//   return (
-//     <Fragment>
-//       <div className="entirecamera">
-//         <img src={camera} alt="camera" className="cameraicon"/>
-//         <p>@buildwhatsnext</p>
-//       </div>
-//     </Fragment>
-//   )
-// }
-
-// export function Location(props) {
-//   return (
-//     <Fragment>
-//       <div className="information">
-//         <img src={location} alt="location" className="locationicon"/>
-//         <p>5 Penn Plaza</p>
-//         <p>New York, NY</p>
-//         <p>10001</p>
-//       </div>
-//     </Fragment>
-//   )
-// }
