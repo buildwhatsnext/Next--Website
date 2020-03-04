@@ -1,27 +1,20 @@
-import React. { Fragment } from "react"
-import {TeamText} from '../subcomponents/team/teamtext.obj.js'
-import {TeamImage} from '../subcomponents/team/teamimage.obj.js'
+import React, { Fragment } from 'react';
+import {TeamText} from '../subcomponents/team/teamtext.obj';
+import {TeamImage} from '../subcomponents/team/teamimage.obj';
 
-export default class Ayy extends React.Component {
+export default class Team extends React.Component {
     constructor(props) {
-        super (props);
-        this.state = {
-            name:''
-        }
-    }
-
-    setName = (name) => {
-        this.setState({name});
+      super(props);
     }
 
     render() {
         return (
-            <div className="team">
+            <div className ="entireteam">
                 <div className="team__text">
                     <TeamText />
                 </div>
-                <div className="team__Image">
-                    <TeamImage />
+                <div className="team__image">
+                    <TeamImage/>
                 </div>
             </div>
         )
