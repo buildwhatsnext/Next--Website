@@ -24,10 +24,8 @@ export default class Contact extends React.Component {
         </div>
         <div className="contact__form">
           <ContactForm />
-        </div>
-        <div className="contact__info">
-          <ContactInfoList />
-        </div>
+        </div>        
+        <ContactInfoList />        
       </div>
     )
   }
