@@ -65,13 +65,13 @@ export function Instagram(props) {
 
 export function Location(props) {
   return (
-    <div className="information">
-      <span className="text">
+    <div className="information_location">
+      <span className="location_text">
         <p>5 Penn Plaza</p>
         <p>New York NY</p>
         <p>10001</p>
       </span>
-      <span className="icon">
+      <span className="location_icon">
         <img src={location} alt="location"/> 
       </span>
     </div>

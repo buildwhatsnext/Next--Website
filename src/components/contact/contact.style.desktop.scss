@@ -78,7 +78,7 @@
 }
 
 .information {
-  border: 0px solid red;
+  // border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
@@ -100,5 +100,29 @@
     padding: 10px;
 
   }
+}
+
+.information_location {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row: 2/4;
+  grid-column: 7/10;
+  grid-gap: 20px;
+  padding: 5px;
+
+  .location_text {
+    border: 0px solid green;
+    grid-column: 1 / 6;
+    text-align: center;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .location_icon {
+    border: 0px solid blue;
+    grid-column: 6/ 7;
+    padding: 10px;
+  }
+
 }
 
