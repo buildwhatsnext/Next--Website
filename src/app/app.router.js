@@ -4,6 +4,7 @@ import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
+import ayy from '../components/team/team.obj';
 // import AboutPage from './about/about.page';
 // import TeamPage from './team/team.page';
 
@@ -26,7 +27,7 @@ const Routes = () => (
           <About />
         </Route>
         <Route path='/team'>
-          Team
+          <Ayy />
         </Route>
         <Route path='/contact'>
           <Contact />
