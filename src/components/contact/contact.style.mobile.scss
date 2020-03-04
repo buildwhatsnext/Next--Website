@@ -53,11 +53,22 @@
         grid-template-rows: repeat(13, 30px);
         grid-column: 1 / -1;
         grid-row: 8 / 13;
+        grid-gap: 20px;
+        height: 100%;
+        width: 100%;
     }
 
     .contact__info__item {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;        
+    }
+
+    .info__icon {
+        // grid-row: 1 / 2;
+        // height: 100%;
+        // width: 100%;
+        // background-image: url('../../assets/svg/icons/01phone.svg');
+        background-repeat: no-repeat;
     }
 
     .contact__info__phone {

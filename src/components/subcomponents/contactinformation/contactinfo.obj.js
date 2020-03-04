@@ -9,19 +9,21 @@ export function ContactInfoList(props) {
   return (
     <div className="contact__info">
       <Phone />
-      {/* <Email /> */}
-      {/* <Insta /> */}
-      {/* <Location /> */}
+      <Email />
+      <Insta />
+      <Location />
     </div>
   )
 }
 
 export const ContactInfoItem = (props) => (
   <div className={`contact__info__item contact__info__${props.infoType}`}>
-    <span className="info__text">{ props.value }</span>
-    <span className="info__icon">
-      <img src={props.iconUrl} alt={props.infoType}/>
-    </span>
+    <div className="info__text">{ props.value }</div>
+    <div className="info__icon" style={
+      {
+        backgroundImage: `url(${props.iconUrl})`
+      }
+    }/>    
   </div>
 )
 
