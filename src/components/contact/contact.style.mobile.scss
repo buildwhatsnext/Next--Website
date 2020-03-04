@@ -22,7 +22,7 @@
 
     .contact__form {
         grid-column-start: 1;
-        grid-column-end: 9;
+        grid-column-end: 7;
         grid-row-start: 2;
         grid-row-end: 9;
         font-size: 20px;
@@ -49,7 +49,7 @@
     .contact__info {
         // border: 1px solid blue;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 140px);
         grid-template-rows: repeat(13, 30px);
         grid-column: 1 / -1;
         grid-row: 8 / 13;
@@ -79,7 +79,7 @@
         font-size: 15px;
         text-align: left;
         white-space: pre;
-        padding-left: 70px;
+        padding-left: 40px;
     }
 
     .contact__info__phone {
