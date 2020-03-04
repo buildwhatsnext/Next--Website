@@ -1,22 +1,23 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import {TeamText} from '../subcomponents/team/teamtext.obj';
 import {TeamImage} from '../subcomponents/team/teamimage.obj';
 
 export default class Team extends React.Component {
     constructor(props) {
-      super(props);
+        super (props);
     }
 
     render() {
         return (
-            <div className ="entireteam">
-                <div className="team__text">
+            <div className="team">
+                <div className="teamtext">
                     <TeamText />
                 </div>
-                <div className="team__image">
-                    <TeamImage/>
+                <div className ="teamimage">
+                    <TeamImage />
                 </div>
             </div>
         )
+
     }
 }
