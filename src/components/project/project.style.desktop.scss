@@ -35,11 +35,18 @@
   grid-column: span 2;
 }
 
+.project__item {
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .project__item__right {
   margin-bottom: 100px;
   float: right;
   text-align: right;
-  border-right: 1px solid $next__coral;
+  border-right: 3px solid $next__coral;
   padding-right: 20px;
   grid-column: 1;  
 }
@@ -63,7 +70,7 @@
   margin-bottom: 100px;
   text-align: left;
   float: left;
-  border-left: 1px solid $next__coral;
+  border-left: 3px solid $next__coral;
   padding-left: 20px;
   grid-column: 2;
 }
