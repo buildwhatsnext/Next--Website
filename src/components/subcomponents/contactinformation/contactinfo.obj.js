@@ -52,10 +52,8 @@ export const Insta = () => (
 )
 
 export const Location = () => {
-  const locationData = `
-    5 Penn Plaza \n
-    New York, NY \n
-    10001
+  const locationData = `5 Penn Plaza
+  New York, NY 10001
   `;
 
   return (
