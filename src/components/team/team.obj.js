@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { TeamText } from '../subcomponents/team/teamtext.obj';
 import { TeamImage } from '../subcomponents/team/teamimage.obj';
-import { TeamMemberDetail } from './team.detail.obj';
+import TeamMemberDetailPage from './team.detail.obj';
 
 import teamData from '../../data/data.team.json';
 
@@ -14,7 +14,7 @@ export function TeamPage(props) {
 
   return (
     <Switch>
-      <Route path={`${match.url}/:memberId`} render={(props) => <TeamMemberDetail {...props} />} />
+      <Route path={`${match.url}/:memberId`} render={(props) => <TeamMemberDetailPage {...props} />} />
       <Route exact path={match.url} render={(props) => (<TeamOverview {...props} />)} />
     </Switch>
   )
