@@ -8,8 +8,6 @@ export default class Home extends React.Component {
     console.log('In the Home component');
   }
 
-
-
   render() {
     const options__design = [
       "design",
