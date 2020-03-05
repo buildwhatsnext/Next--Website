@@ -1,7 +1,8 @@
 import React, {Fragment} from 'react';
 import {TeamText} from '../subcomponents/team/teamtext.obj';
 import {TeamImage} from '../subcomponents/team/teamimage.obj';
-import './team.style.desktop.scss'
+import './team.style.desktop.scss';
+import './team.style.mobile.scss';
 import teamData from '../../data/data.team.json';
 
 export default class Team extends React.Component {
