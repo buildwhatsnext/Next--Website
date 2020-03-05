@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, useRouteMatch } from 'react-router-dom';
+
+import { ProjectDetailPage } from './project.detail';
+
 import './project.style.desktop.scss';
 import './project.style.mobile.scss';
 
@@ -87,7 +90,7 @@ export function ProjectPage(props) {
 
   return (
     <Switch>
-      <Route path={`${match.url}/:projectId`} render={(props) => <ProjectDetail {...props} />} />
+      <Route path={`${match.url}/:projectId`} render={(props) => <ProjectDetailPage {...props} />} />
       <Route exact path={match.url} render={(props) => (<ProjectOverview {...props} />)} />
     </Switch>
   )
@@ -105,16 +108,4 @@ export function ProjectItem(props) {
       <div className="project__item__type"> { props.type } </div>
     </div>
   );
-}
-
-export function ProjectDetail(props) {
-  var match = useRouteMatch();
-
-  console.log(match);
-
-  return (
-    <div className="project__detail">
-      Project Id: { match.params.projectId }
-    </div>
-  )
 }
