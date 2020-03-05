@@ -77,6 +77,12 @@
   font-weight: 600;
 }
 
+.soft__black__subtitle__small {
+  @extend %soft__black;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 %hard__black_bodytext {
   @extend %hard;
   color: $next__black;
