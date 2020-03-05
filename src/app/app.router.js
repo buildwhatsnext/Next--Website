@@ -5,8 +5,6 @@ import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
 import Team from '../components/team/team.obj';
-// import AboutPage from './about/about.page';
-// import TeamPage from './team/team.page';
 
 export default function AppRouter() {
   return (
@@ -32,6 +30,9 @@ const Routes = () => (
         <Route path='/contact'>
           <Contact />
         </Route>
+        {/* <Route path='/projects'> */}
+          {/* <ProjectPage />/ */}
+        {/* </Route> */}
         <Route path='/'>
           <HomePage />
         </Route>

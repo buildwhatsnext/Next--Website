@@ -26,6 +26,22 @@
   color: $next__coral;
 }
 
+%soft__info {
+  @extend %soft;
+  @extend %info;
+}
+
+%hard__info {
+  @extend %hard;
+  @extend %info;
+}
+
+%hard__subinfo {
+  @extend %hard;
+  @extend %subinfo;
+}
+
+
 %hard__black_right {
   @extend %hard;
   color: $next__black;
@@ -42,7 +58,7 @@
 
 .soft__blue__title {
   @extend %soft__blue;
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 600;
 }
 
