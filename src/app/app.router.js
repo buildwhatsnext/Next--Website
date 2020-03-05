@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
+import ProjectPage from '../components/project/project.obj';
 // import AboutPage from './about/about.page';
 // import TeamPage from './team/team.page';
 
@@ -29,6 +30,9 @@ const Routes = () => (
         </Route>
         <Route path='/contact'>
           <Contact />
+        </Route>
+        <Route path='/projects'>
+          <ProjectPage />
         </Route>
         <Route path='/'>
           <HomePage />
