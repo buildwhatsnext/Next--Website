@@ -1,28 +1,42 @@
-import React, {Fragment} from 'react';
-import {TeamText} from '../subcomponents/team/teamtext.obj';
-import {TeamImage} from '../subcomponents/team/teamimage.obj';
-import './team.style.desktop.scss';
-import './team.style.mobile.scss';
+import React, { Fragment } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { TeamText } from '../subcomponents/team/teamtext.obj';
+import { TeamImage } from '../subcomponents/team/teamimage.obj';
+import { TeamMemberDetail } from './team.detail.obj';
+
 import teamData from '../../data/data.team.json';
 
-export default class Team extends React.Component {
-    constructor(props) {
-        super (props);
-    }
+import './team.style.desktop.scss';
+import './team.style.mobile.scss';
 
-    render() {
-        return (
-            <div className="team">
-                <div className="teamtext">
-                    <TeamText />
-                </div>
-                <div className ="teamimage">
-                    <TeamImage />
-                </div>
-            </div>
-        )
+export function TeamPage(props) {
+  const { match } = props;
 
-    }
+  return (
+    <Switch>
+      <Route path={`${match.url}/:memberId`} render={(props) => <TeamMemberDetail {...props} />} />
+      <Route exact path={match.url} render={(props) => (<TeamOverview {...props} />)} />
+    </Switch>
+  )
+}
+
+export default class TeamOverview extends React.Component {
+  constructor(props) {
+    super (props);
+  }
+
+  render() {
+    return (
+      <div className="team">
+        <div className="teamtext">
+          <TeamText />
+        </div>
+        <div className ="teamimage">
+          <TeamImage />
+        </div>
+      </div>
+    );
+  }
 }
 
 const TeamMemberListObject = props => {

@@ -4,7 +4,7 @@ import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
-import Team from '../components/team/team.obj';
+import { TeamPage } from '../components/team/team.obj';
 import { ProjectPage } from '../components/project/project.obj';
 
 
@@ -26,12 +26,10 @@ const Routes = () => (
         <Route path='/about'>
           <About />
         </Route>
-        <Route path='/team'>
-          <Team />
-        </Route>
         <Route path='/contact'>
           <Contact />
         </Route>
+        <Route path="/team" render={(props) => (<TeamPage {...props} />)} />
         <Route path="/projects" render={(props) => (<ProjectPage {...props} />)} />
         <Route exact path='/' render={(props) => (<HomePage {...props}/>)}/>
       </Switch>
