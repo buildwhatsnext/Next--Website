@@ -16,9 +16,9 @@ export default class Team extends React.Component {
                 <div className="teamtext">
                     <TeamText />
                 </div>
-                <div className ="teamimage">
+                {/* <div className ="teamimage">
                     <TeamImage />
-                </div>
+                </div> */}
             </div>
         )
 

@@ -2,44 +2,10 @@
 @import '../../styles/styles.general.scss';
 
 @media(max-width: $sizeMobile) {
-
   .team {
+    @extend .full_width_height;
+    // border: 1px solid red;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(9, 40px);
-    grid-template-rows: repeat(9, 60px);
-  }
-
-  .teamtext {
-    // border: 3px orange solid;
-    grid-row: 1 / 10;
-    grid-column: 1 / 10;
-    display: grid;
-    grid-template-columns: repeat(9, 40px);
-    grid-template-rows: repeat(9, 60px);
-
-    .head {
-      grid-column: 1 / 7;
-      grid-row: 1 / 2;
-      text-align: left;
-      font-size: 35px;
-    }
-  }
-  .teamimage {
-    // border: 3px blue solid;
-    grid-row: 1 / 10;
-    grid-column: 1 / 10;
-    display: grid;
-    grid-template-columns: repeat(9, 40px);
-    grid-template-rows: repeat(9, 60px);
-  }
-
-  .image {
-    border: 3px green solid;
-    display: grid;
-    grid-template-columns: repeat(2, 20px);
-    grid-row: 4 / 5;
-    grid-column: 4 / 5;
   }
 }

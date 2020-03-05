@@ -1,324 +1,330 @@
 @import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
 
-.team {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(9, 100px);
-}
+@media(min-width: $sizeDesktop) {
 
-.teamtext {
-    // border: 1px red solid;
-    grid-row: 1 / 10;
-    grid-column: 1 / 6;
-    display: grid;
-    grid-template-columns: repeat(10, 75px);
-    grid-template-rows: repeat(20, 50px);
-}
+  .team {
+    border: 1px solid red;
+  }
+//   .team {
+//     grid-column: 1 / -1;
+//     grid-row: 1 / -1;
+//     display: grid;
+//     grid-template-columns: repeat(10, 1fr);
+//     grid-template-rows: repeat(9, 100px);
+// }
 
-.head {
-    @extend .soft__coral__title;
-    grid-column: 2 / 8;
-    grid-row: 2 / 3;
-    text-align: left;
-}
+// .teamtext {
+//     // border: 1px red solid;
+//     grid-row: 1 / 10;
+//     grid-column: 1 / 6;
+//     display: grid;
+//     grid-template-columns: repeat(10, 75px);
+//     grid-template-rows: repeat(20, 50px);
+// }
 
-.names {
-    @extend .soft__blue__subtitle__small;
-    // border: 1px red solid;
-    grid-column: 2 / 7;
-    grid-row: 5 / 18;
-    text-align: left;
-    display: grid;
-    grid-template-columns: repeat(10, 75px);
-    grid-template-rows: repeat(40, 25px);
+// .head {
+//   @extend .soft__coral__title;
+//   grid-column: 2 / 8;
+//   grid-row: 2 / 3;
+//   text-align: left;
+// }
 
-    .adam {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
+// .names {
+//   @extend .soft__blue__subtitle__small;
+//   // border: 1px red solid;
+//   grid-column: 2 / 7;
+//   grid-row: 5 / 18;
+//   text-align: left;
+//   display: grid;
+//   grid-template-columns: repeat(10, 75px);
+//   grid-template-rows: repeat(40, 25px);
 
-    .ruyi {
-        grid-column: 1 / 3;
-        grid-row: 4 / 5;
-    }
+//   .adam {
+//       grid-column: 1 / 3;
+//       grid-row: 1 / 2;
+//   }
 
-    .preston {
-        grid-column: 1 / 3;
-        grid-row: 7 / 8;
-    }
+//   .ruyi {
+//       grid-column: 1 / 3;
+//       grid-row: 4 / 5;
+//   }
 
-    .chris {
-        grid-column: 1 / 3;
-        grid-row: 10 / 11;
-    }
+//   .preston {
+//       grid-column: 1 / 3;
+//       grid-row: 7 / 8;
+//   }
 
-    .stephen {
-        grid-column: 1 / 3;
-        grid-row: 13 / 14;
-    }
+//   .chris {
+//       grid-column: 1 / 3;
+//       grid-row: 10 / 11;
+//   }
 
-    .andrew {
-        grid-column: 1 / 3;
-        grid-row: 16 / 17;
-    }
+//   .stephen {
+//       grid-column: 1 / 3;
+//       grid-row: 13 / 14;
+//   }
 
-    .kp {
-        grid-column: 1 / 4;
-        grid-row: 19 / 20;
-    }
+//   .andrew {
+//       grid-column: 1 / 3;
+//       grid-row: 16 / 17;
+//   }
 
-    .bharti {
-        grid-column: 1 / 3;
-        grid-row: 22 / 23;
-    }
+//   .kp {
+//       grid-column: 1 / 4;
+//       grid-row: 19 / 20;
+//   }
 
-    .jeff {
-        grid-column: 1 / 3;
-        grid-row: 25 / 26;
-    }
+//   .bharti {
+//       grid-column: 1 / 3;
+//       grid-row: 22 / 23;
+//   }
 
-    .mina {
-        grid-column: 1 / 3;
-        grid-row: 28 / 29;
-    }
+//   .jeff {
+//       grid-column: 1 / 3;
+//       grid-row: 25 / 26;
+//   }
 
-    .adamposition {
-        grid-column: 1 / 3;
-        grid-row: 31 / 32;
-    }
+//   .mina {
+//       grid-column: 1 / 3;
+//       grid-row: 28 / 29;
+//   }
+
+//   .adamposition {
+//       grid-column: 1 / 3;
+//       grid-row: 31 / 32;
+//   }
 
 
-    .box_adam {
-        grid-column: 1 / 7; 
-        grid-row: 1 / 3;
-        border-bottom: 3px black solid;
-    }
+//     .box_adam {
+//         grid-column: 1 / 7; 
+//         grid-row: 1 / 3;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_ruyi {
-        grid-column: 1 / 7; 
-        grid-row: 4 / 6;
-        border-bottom: 3px black solid;
+//     .box_ruyi {
+//         grid-column: 1 / 7; 
+//         grid-row: 4 / 6;
+//         border-bottom: 3px black solid;
         
-    }
+//     }
 
-    .box_preston {
-        grid-column: 1 / 7; 
-        grid-row: 7 / 9;
-        border-bottom: 3px black solid;
-    }
+//     .box_preston {
+//         grid-column: 1 / 7; 
+//         grid-row: 7 / 9;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_chris {
-        grid-column: 1 / 7; 
-        grid-row: 10 / 12;
-        border-bottom: 3px black solid;
-    }
+//     .box_chris {
+//         grid-column: 1 / 7; 
+//         grid-row: 10 / 12;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_stephen {
-        grid-column: 1 / 7; 
-        grid-row: 13 / 15;
-        border-bottom: 3px black solid;
-    }
+//     .box_stephen {
+//         grid-column: 1 / 7; 
+//         grid-row: 13 / 15;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_andrew {
-        grid-column: 1 / 7; 
-        grid-row: 16 / 18;
-        border-bottom: 3px black solid;
-    }
+//     .box_andrew {
+//         grid-column: 1 / 7; 
+//         grid-row: 16 / 18;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_kp {
-        grid-column: 1 / 7; 
-        grid-row: 19 / 21;
-        border-bottom: 3px black solid;
-    }
+//     .box_kp {
+//         grid-column: 1 / 7; 
+//         grid-row: 19 / 21;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_bharti {
-        grid-column: 1 / 7; 
-        grid-row: 22 / 24;
-        border-bottom: 3px black solid;
-    }
+//     .box_bharti {
+//         grid-column: 1 / 7; 
+//         grid-row: 22 / 24;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_jeff {
-        grid-column: 1 / 7; 
-        grid-row: 25 / 27;
-        border-bottom: 3px black solid;
-    }
+//     .box_jeff {
+//         grid-column: 1 / 7; 
+//         grid-row: 25 / 27;
+//         border-bottom: 3px black solid;
+//     }
 
-    .box_mina {
-        grid-column: 1 / 7; 
-        grid-row: 28 / 30;
-        border-bottom: 3px black solid;
-    }
+//     .box_mina {
+//         grid-column: 1 / 7; 
+//         grid-row: 28 / 30;
+//         border-bottom: 3px black solid;
+//     }
 
-    .adamlocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 2 / 3;
-        text-align: right;
-    }
+//     .adamlocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 2 / 3;
+//         text-align: right;
+//     }
 
-    .ruyilocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 5 / 6;
-        text-align: right;
-    }
+//     .ruyilocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 5 / 6;
+//         text-align: right;
+//     }
 
-    .prestonlocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 8 / 9;
-        text-align: right;
-    }
+//     .prestonlocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 8 / 9;
+//         text-align: right;
+//     }
 
-    .chrislocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 5 / 7;
-        grid-row: 11 / 12;
-        text-align: right;
-    }
+//     .chrislocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 5 / 7;
+//         grid-row: 11 / 12;
+//         text-align: right;
+//     }
 
-    .stephenlocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 14 / 15;
-        text-align: right;
-    }
+//     .stephenlocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 14 / 15;
+//         text-align: right;
+//     }
 
-    .andrewlocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 17 / 18;
-        text-align: right;
-    }
+//     .andrewlocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 17 / 18;
+//         text-align: right;
+//     }
 
-    .kplocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 20 / 21;
-        text-align: right;
-    }
+//     .kplocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 20 / 21;
+//         text-align: right;
+//     }
 
-    .bhartilocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 23 / 24;
-        text-align: right;
-    }
+//     .bhartilocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 23 / 24;
+//         text-align: right;
+//     }
 
-    .jefflocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 26 / 27;
-        text-align: right;
-    }
+//     .jefflocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 26 / 27;
+//         text-align: right;
+//     }
 
-    .minalocation {
-        @extend .soft__black__subtitle__small;
-        grid-column: 6 / 7;
-        grid-row: 29 / 30;
-        text-align: right;
-    }
+//     .minalocation {
+//         @extend .soft__black__subtitle__small;
+//         grid-column: 6 / 7;
+//         grid-row: 29 / 30;
+//         text-align: right;
+//     }
 
-}
+// }
 
-.positions {
-    @extend .soft__black__subtitle__small;
-    // border: 1px red solid;
-    grid-column: 2 / 7;
-    grid-row: 5 / 18;
-    text-align: left;
-    display: grid;
-    grid-template-columns: repeat(10, 100px);
-    grid-template-rows: repeat(40, 25px);
+// .positions {
+//     @extend .soft__black__subtitle__small;
+//     // border: 1px red solid;
+//     grid-column: 2 / 7;
+//     grid-row: 5 / 18;
+//     text-align: left;
+//     display: grid;
+//     grid-template-columns: repeat(10, 100px);
+//     grid-template-rows: repeat(40, 25px);
 
-    .adamposition {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-    }
+//     .adamposition {
+//         grid-column: 1 / 3;
+//         grid-row: 2 / 3;
+//     }
 
-    .ruyiposition {
-        grid-column: 1 / 5;
-        grid-row: 5 / 6;
-    }
+//     .ruyiposition {
+//         grid-column: 1 / 5;
+//         grid-row: 5 / 6;
+//     }
 
-    .prestonposition {
-        grid-column: 1 / 5;
-        grid-row: 8 / 9;
-    }
+//     .prestonposition {
+//         grid-column: 1 / 5;
+//         grid-row: 8 / 9;
+//     }
 
-    .chrisposition {
-        grid-column: 1 / 6;
-        grid-row: 11 / 12;
-    }
+//     .chrisposition {
+//         grid-column: 1 / 6;
+//         grid-row: 11 / 12;
+//     }
 
-    .stephenposition {
-        grid-column: 1 / 6;
-        grid-row: 14 / 15;
-    }
+//     .stephenposition {
+//         grid-column: 1 / 6;
+//         grid-row: 14 / 15;
+//     }
 
-    .andrewposition {
-        grid-column: 1 / 5;
-        grid-row: 17 / 18;
-    }
+//     .andrewposition {
+//         grid-column: 1 / 5;
+//         grid-row: 17 / 18;
+//     }
 
-    .kpposition {
-        grid-column: 1 / 5;
-        grid-row: 20 / 21;
-    }
+//     .kpposition {
+//         grid-column: 1 / 5;
+//         grid-row: 20 / 21;
+//     }
 
-    .bhartiposition {
-        grid-column: 1 / 6;
-        grid-row: 23 / 24;
-    }
+//     .bhartiposition {
+//         grid-column: 1 / 6;
+//         grid-row: 23 / 24;
+//     }
 
-    .jeffposition {
-        grid-column: 1 / 3;
-        grid-row: 26 / 27;
-    }
+//     .jeffposition {
+//         grid-column: 1 / 3;
+//         grid-row: 26 / 27;
+//     }
 
-    .minaposition {
-        grid-column: 1 / 3;
-        grid-row: 29 / 30;
-    }
+//     .minaposition {
+//         grid-column: 1 / 3;
+//         grid-row: 29 / 30;
+//     }
 
-}
+// }
 
-.teamimage {
-    // border: 5px red solid;
-    grid-row: 1 / 10;
-    grid-column: 6 / 11;
-    display: grid;
-    grid-template-columns: repeat(10, 90px);
-    grid-template-rows: repeat(20, 50px);
-}
+// .teamimage {
+//     // border: 5px red solid;
+//     grid-row: 1 / 10;
+//     grid-column: 6 / 11;
+//     display: grid;
+//     grid-template-columns: repeat(10, 90px);
+//     grid-template-rows: repeat(20, 50px);
+// }
 
-.image {
-    display: grid;
-    grid-template-columns: repeat(20, 45px);
-    grid-template-rows: repeat(40, 25px);
-}
+// .image {
+//     display: grid;
+//     grid-template-columns: repeat(20, 45px);
+//     grid-template-rows: repeat(40, 25px);
+// }
 
-.picture {
-    background-image: url(../../assets/photo/team/group/grouppicture.png);
-    background-repeat: no-repeat;
-    grid-column: 1 / 18;
-    grid-row: 10 / 25;
-}
+// .picture {
+//     background-image: url(../../assets/photo/team/group/grouppicture.png);
+//     background-repeat: no-repeat;
+//     grid-column: 1 / 18;
+//     grid-row: 10 / 25;
+// }
 
-.whitebox {
-    border: 3px black solid;
-    background-color: white;
-    grid-row: 20 / 32;
-    grid-column: 13 / 20;
-}
+// .whitebox {
+//     border: 3px black solid;
+//     background-color: white;
+//     grid-row: 20 / 32;
+//     grid-column: 13 / 20;
+// }
 
-.bluebox {
-    border: 3px black solid;
-    background-color: #06038D;
-    grid-row: 28 / 39;
-    grid-column: 5 / 15;
+// .bluebox {
+//     border: 3px black solid;
+//     background-color: #06038D;
+//     grid-row: 28 / 39;
+//     grid-column: 5 / 15;
 }
 
 /* 
@@ -328,3 +334,5 @@ Yourself
 
 Any place where you are repeating yourself, make a module
 */
+
+

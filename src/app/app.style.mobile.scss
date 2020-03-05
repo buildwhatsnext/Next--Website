@@ -3,12 +3,10 @@
 
 @media(max-width: $sizeMobile) {
 
-  .app {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-gap: 20px;
+  .app {    
     // padding: 20px;
+    // display: grid;
+    // grid-template-rows: 1fr 1fr;
   }
 
   .app__navigation {
@@ -16,9 +14,17 @@
   }
 
   .app__content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    @extend .full_width_height;
+    border: 1px solid orange;
+        
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 20px;
 
-  
+    grid-column: 1 / -1;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }  
 }
