@@ -11,7 +11,7 @@
       "description": "",
       "pictureURL":[""]
     },
-    "Turing" : {
+    "turing" : {
       "title": "Turing",
       "client": "",
       "location": "New York, New York",
@@ -31,7 +31,7 @@
       "description": "",
       "pictureURL":[""]
     },
-    "Stamford" : {
+    "stamford" : {
       "title": "First Stamford Place",
       "client": "",
       "location": "Stamford, Connecticut",
@@ -41,7 +41,7 @@
       "description": "",
       "pictureURL":[""]
     },
-    "Fordham" : {
+    "fordham" : {
       "title": "Fordham NRHCC",
       "client": "Fordham University",
       "location": "Bronx, New York",
@@ -51,7 +51,7 @@
       "description": "",
       "pictureURL":[""]
     },
-    "Google" : {
+    "google" : {
       "title": "Google Chelsea Market",
       "client": "Google",
       "location": "New York, New York",
@@ -60,4 +60,6 @@
       "teams": ["All"],
       "description": "",
       "pictureURL":[""]
-    },
+    }
+  }
+}

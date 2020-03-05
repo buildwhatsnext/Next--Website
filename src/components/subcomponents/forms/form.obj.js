@@ -60,7 +60,8 @@ export function MessageEntryForm(props) {
         <div className="button">
           <img src={button} alt="button"/> 
         </div>
-        <div className="twosideborder"></div>
+        <div className="whitebox"></div>
+        {/* <div className="twosideborder"></div> */}
       </div>
       
       <EntryForm name={props.name} value={props.value} />

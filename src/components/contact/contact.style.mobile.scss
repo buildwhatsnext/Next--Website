@@ -30,20 +30,36 @@
         .answerboxfat {
             display: grid;
             grid-template-columns: repeat(13, 39px);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 39px);
             border: 3px #E03E52 solid;
-            height: 130px;
+            height: 120px;
+            z-index: -2;
+            
           }
 
         .button {
-            width: 39px;
-            height: 39px;
+            width: 35px;
+            height: 35px;
+            grid-row-end: 4;
+            grid-column-start: 9;
+            grid-column-end: 10;
+            z-index: 3;
+            align-self: stretch;
+          }
+
+        .whitebox {
+            width: 40px;
+            height: 40px;
             float: left;
             grid-row-start: 3;
             grid-row-end: 4;
-            grid-column-start: 12;
-            grid-column-end: 13;
-          }
+            grid-column-start: 9;
+            grid-column-end: 10;
+            background-color: white;
+            border-left: 3px #E03E52 solid;
+            border-top: 3px #E03E52 solid;
+            z-index: 2;
+        }
     }
 
     .contact__info {

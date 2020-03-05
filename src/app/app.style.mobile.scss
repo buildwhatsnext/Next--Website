@@ -3,28 +3,24 @@
 
 @media(max-width: $sizeMobile) {
 
-  .app {    
-    // padding: 20px;
-    // display: grid;
-    // grid-template-rows: 1fr 1fr;
+  .app {
+    border: 10px solid blue;
   }
 
   .app__navigation {
+    border: 5px solid brown;
     grid-column: 1 / -1;
   }
 
   .app__content {
-    @extend .full_width_height;
-    border: 1px solid orange;
-        
+    border: 5px solid green;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 20px;
 
-    grid-column: 1 / -1;
-
-    margin-left: 20px;
-    margin-right: 20px;
-  }  
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
 }
