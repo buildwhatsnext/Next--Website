@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
-import ProjectPage from '../components/project/project.obj';
+import { ProjectPage } from '../components/project/project.obj';
 // import AboutPage from './about/about.page';
 // import TeamPage from './team/team.page';
 
@@ -31,10 +31,8 @@ const Routes = () => (
         <Route path='/contact'>
           <Contact />
         </Route>
-        <Route path='/projects'>
-          <ProjectPage />
-        </Route>
-        <Route path='/'>
+        <Route path="/projects" render={(props) => (<ProjectPage {...props} />)} />
+        <Route exact path='/'>
           <HomePage />
         </Route>
       </Switch>

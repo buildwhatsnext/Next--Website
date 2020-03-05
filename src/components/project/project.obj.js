@@ -1,8 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, useRouteMatch } from 'react-router-dom';
 import './project.style.desktop.scss';
 import './project.style.mobile.scss';
 
-export default class Project extends React.Component {
+export default class ProjectOverview extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -81,6 +82,17 @@ export default class Project extends React.Component {
   }
 }
 
+export function ProjectPage(props) {
+  const { match } = props;
+
+  return (
+    <Switch>
+      <Route path={`${match.url}/:projectId`} render={(props) => <ProjectDetail {...props} />} />
+      <Route exact path={match.url} render={(props) => (<ProjectOverview {...props} />)} />
+    </Switch>
+  )
+}
+
 export function ProjectList(props) {
   const { items } = props;
 
@@ -93,4 +105,16 @@ export function ProjectItem(props) {
       <div className="project__item__type"> { props.type } </div>
     </div>
   );
+}
+
+export function ProjectDetail(props) {
+  var match = useRouteMatch();
+
+  console.log(match);
+
+  return (
+    <div className="project__detail">
+      Project Id: { match.params.projectId }
+    </div>
+  )
 }
