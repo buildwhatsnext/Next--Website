@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 import icon from '../../../../src/assets/svg/icons/12monitor.svg'
+import cross from '../../../../src/assets/svg/icons/51cross.svg'
 
 export class AboutCategory extends React.Component {
   constructor(props) {
@@ -11,15 +12,15 @@ export class AboutCategory extends React.Component {
 
         const experiencehead = `Experience`
         const experiencebody = `Extended Reality
-                                Fabrication`
+Fabrication`
         const innovationhead = `Innovation`
         const innovationbody = `UX/UI Design
-                                Tech Strategy & Consultation
-                                Application Prototyping
-                                Software Development`
+Tech Strategy & Consultation
+Application Prototyping
+Software Development`
         const bimhead = `BIM`
         const bimbody = `BIM Implementation
-                        Design Automation`
+Design Automation`
 
         return (
             <Fragment>
@@ -41,9 +42,10 @@ export class AboutCategory extends React.Component {
                 <div className='about__bimbody'>
                     <p>{ bimbody }</p>
                 </div>
-                <div className='monitor'>
+                {/* <div className='monitor'>
                     <img src={icon} alt="monitor"/>
-                </div>
+                </div> */}
+                {/* <div className="cross"></div> */}
             </Fragment>
         )
     }

@@ -56,50 +56,50 @@
   text-align: left;
 }
 
-.soft__blue__title {
+%soft__blue__title {
   @extend %soft__blue;
   font-size: 72px;
   font-weight: 600;
 }
 
-.soft__black__title {
+%soft__black__title {
   @extend %soft__black;
   font-size: 64px;
   font-weight: 600;
 }
 
-.soft__blue__subtitle {
+%soft__blue__subtitle {
   @extend %soft__blue;
   font-size: 36px;
   font-weight: 600;
 }
 
-.soft__coral__title {
+%soft__coral__title {
   @extend %soft__coral;
   font-size: 72px;
   font-weight: 600;
   text-align: right;
 }
 
-.soft__coral__subtitle {
+%soft__coral__subtitle {
   @extend %soft__coral;
   font-size: 36px;
   font-weight: 600;
 }
 
-.soft__black__subtitle {
+%soft__black__subtitle {
   @extend %soft__black;
   font-size: 18px;
   font-weight: 600;
 }
 
-.soft__blue__subtitle__small {
+%soft__blue__subtitle__small {
   @extend %soft__blue;
   font-size: 18px;
   font-weight: 600;
 }
 
-.soft__black__subtitle__small {
+%soft__black__subtitle__small {
   @extend %soft__black;
   font-size: 12px;
   font-weight: 600;
