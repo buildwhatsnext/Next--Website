@@ -11,20 +11,15 @@ export class AboutTitle extends React.Component {
   render() {
 
         const title = ' Our Vision & Services'
-        const description = `
-                            Pellentesque neque nunc, aliquam sem blandit. 
-                            Parturient ultrices at aliquet vitae eget quis. 
-                            Euismod ac purus id laoreet diam ornare sit aenean. 
-                            Molestie eget id dictum quis viverra. 
-                            Egestas purus interdum vitae felis, vel, nibh volutpat, 
-                            lacus. Molestie consequat cursus justo, odio adipiscing 
-                            rutrum adipiscing egestas. Lectus id maecenas aliquet 
-                            turpis laoreet in orci, accumsan, mattis. 
-                            Vitae mattis libero at malesuada vitae. 
-                            Consequat sit odio sagittis facilisis quis erat aliquam.
+        const description = `Next is a design-focused technology startup within hlw. We are advancing the way technology is used in the design of Workplaces. Cities. Classrooms. Campuses. Homes. Studio.
+
+Our mission is to craft, build, and launch immersive and data-driven approaches to design. 
+        
+We think of our clients as partners and encourage them to collaborate with us to invent new ways of  approaching their projects. We are a powerful  conduit to help clients envision building, not more, but  smarter.
         `
-        const quote = 'Technology should enable people do what they are trained to do, better'
-        const quoter = '-John Gerrick'
+        const quote = `Technology should enable people 
+ do what they are trained to do, better`
+        const quoter = '-John Gering'
 
         return (
             <Fragment>

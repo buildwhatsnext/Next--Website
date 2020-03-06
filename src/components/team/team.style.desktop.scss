@@ -1,30 +1,46 @@
 @import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
 
-.team {
+.soft__coral__title {
+  @extend %soft__coral__title;
+}
+
+.soft__blue__subtitle__small {
+  @extend %soft__blue__subtitle__small;
+}
+
+.soft__black__subtitle__small {
+  @extend %soft__black__subtitle__small;
+}
+
+
+@media(min-width: $sizeDesktop) {
+    
+  .team {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(9, 100px);
-}
+  }
 
-.teamtext {
+  .teamtext {
     // border: 1px red solid;
     grid-row: 1 / 10;
     grid-column: 1 / 6;
     display: grid;
     grid-template-columns: repeat(10, 75px);
     grid-template-rows: repeat(20, 50px);
-}
+  }
 
-.head {
+  .head {
     @extend .soft__coral__title;
     grid-column: 2 / 8;
     grid-row: 2 / 3;
     text-align: left;
-}
+  }
 
-.names {
+  .names {
     @extend .soft__blue__subtitle__small;
     // border: 1px red solid;
     grid-column: 2 / 7;
@@ -221,9 +237,9 @@
         text-align: right;
     }
 
-}
+  }
 
-.positions {
+  .positions {
     @extend .soft__black__subtitle__small;
     // border: 1px red solid;
     grid-column: 2 / 7;
@@ -283,48 +299,41 @@
         grid-row: 29 / 30;
     }
 
-}
+  }
 
-.teamimage {
+  .teamimage {
     // border: 5px red solid;
     grid-row: 1 / 10;
     grid-column: 6 / 11;
     display: grid;
     grid-template-columns: repeat(10, 90px);
     grid-template-rows: repeat(20, 50px);
-}
+  }
 
-.image {
+  .image {
     display: grid;
     grid-template-columns: repeat(20, 45px);
     grid-template-rows: repeat(40, 25px);
-}
+  }
 
-.picture {
+  .picture {
     background-image: url(../../assets/photo/team/group/grouppicture.png);
     background-repeat: no-repeat;
     grid-column: 1 / 18;
     grid-row: 10 / 25;
-}
+  }
 
-.whitebox {
+  .whitebox {
     border: 3px black solid;
     background-color: white;
     grid-row: 20 / 32;
     grid-column: 13 / 20;
-}
+  }
 
-.bluebox {
+  .bluebox {
     border: 3px black solid;
     background-color: #06038D;
     grid-row: 28 / 39;
     grid-column: 5 / 15;
+  }
 }
-
-/* 
-Don't 
-Repeat
-Yourself
-
-Any place where you are repeating yourself, make a module
-*/
