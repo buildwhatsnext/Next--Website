@@ -1,0 +1,16 @@
+@import '../../styles/styles.fonts.components.scss';
+.about {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(15,40px);
+}
+
+.about__titlepage {
+  display: grid;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  border: 4px black solid;
+  background-color: white;
+}

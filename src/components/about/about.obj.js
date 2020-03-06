@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import './about.style.desktop.scss';
+import './about.style.mobile.scss';
 import { AboutTitle } from '../subcomponents/about_titlepage/titlepage.obj';
 import { AboutCategory } from '../subcomponents/about_category/category.obj';
 
