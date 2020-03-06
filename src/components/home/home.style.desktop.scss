@@ -17,6 +17,10 @@
 
     .home__hlw {
       padding-top: 200px;
+      display: grid;
+      grid-template-columns: auto auto 1fr;
+      grid-template-rows: auto 1fr;
+      white-space: pre;
     }
 
     .home__cta {

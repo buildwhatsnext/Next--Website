@@ -1,0 +1,28 @@
+@import '../../../styles/styles.fonts.components.scss';
+@import '../../../styles/styles.general.scss';
+@import '../../../styles/styles.colors.scss';
+
+@media(min-width: $sizeMobile) {
+  .link__highlighted {
+    display: grid;
+    grid-template-rows: auto;
+    width: auto;
+  }
+
+  .link__highlighted__text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: inline-block;
+    width: auto;
+  }
+
+  .link__highlighted__background {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 15px;
+    width: auto;
+    margin-top: 65%;
+    z-index: -1;
+    background: $next__coral;
+  }
+}

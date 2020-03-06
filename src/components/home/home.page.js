@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { LinkHighlighted } from '../subcomponents/special_link/links.object';
+
 import './home.style.desktop.scss';
 import './home.style.mobile.scss';
 
@@ -19,7 +22,7 @@ export default class Home extends React.Component {
 
     const company = "hlw";
     const designNoun = options__design[0];
-    const tagCompany = `Next is a startup inside of ${company}`;
+    const tagCompany = `Next is a startup inside of `;
     const tagChange = `We're advancing the way technology is used in ${designNoun}`;
     const cta = 'See What We Do';
 
@@ -29,6 +32,7 @@ export default class Home extends React.Component {
           <p>
           { tagCompany }
           </p>
+          <LinkHighlighted value={ company } />
         </div>
         <div className="soft__blue__title home__tagline">
           <p>
