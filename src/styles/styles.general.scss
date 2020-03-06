@@ -17,6 +17,10 @@ html, body, #root {
   width: 100%;
 }
 
+.full_width_height {
+  @extend %full_width_height;
+}
+
 // variables & magic numbers
 $sizeDesktop: 1280px;
 $sizeMobile: 1279px;

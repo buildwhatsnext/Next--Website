@@ -2,6 +2,29 @@
 @import '../../styles/styles.general.scss';
 
 @media(max-width: $sizeMobile) {
-  
+
+  .home {
+    @extend .full_width_height;
+    grid-column: 1 / -1;
+
+    .home__hlw {
+      padding-top: 20%;
+      font-size: 24px;
+    }
+
+    .home__tagline {
+      padding-top: 10%;
+      font-size: 24px;
+    }
+
+    .home__cta {
+      padding-top: 30%;
+      padding-right: 10%;
+      float: right;
+      font-size: 16px;
+    }
+  }
+
+
 
 }
