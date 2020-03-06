@@ -16,6 +16,11 @@
   color: $next__black;
 }
 
+%soft__white {
+  @extend %soft;
+  color: $next__white;
+}
+
 %hard__blue {
   @extend %hard;
   color: $next__blue;
@@ -89,6 +94,12 @@
 
 %soft__black__subtitle {
   @extend %soft__black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+%soft__white__subtitle {
+  @extend %soft__white;
   font-size: 18px;
   font-weight: 600;
 }
