@@ -5,6 +5,15 @@
 #next__navbar {
   background-color: $next__white !important;
 
+  button {
+    border-color: transparent;
+    color: transparent;
+
+    span {
+      background-image: none;
+    }
+  }
+
   #next__navbar__nav__outer {
     justify-content: right;
 
