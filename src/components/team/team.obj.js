@@ -26,6 +26,9 @@ export default class TeamOverview extends React.Component {
   render() {
     return (
       <div className="team">
+        <div className="teamtitle">
+          <p> A Global Team </p>
+        </div>
         <div className="teamtext">
           <TeamText />
         </div>

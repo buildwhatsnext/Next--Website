@@ -3,9 +3,67 @@
 
 @media(min-width: $sizeDesktop) {
 
-  .team {
-    border: 1px solid red;
+  .app__content {
+    // border: 3px solid pink;
   }
+
+  .teamtitle {
+    @extend .soft__coral__title;
+    grid-row: 2 / 7;
+    grid-column: 2 / 5;
+    // font-size: 36px;
+    text-align: left;
+  }
+
+  .team {
+    // border: 3px solid red;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(12, 120px);
+  }
+
+  .teamtext {
+    grid-column: 2 / 5;
+    grid-row: 3 / 12;
+    display: grid;
+    grid-template-columns: repeat(8, 55px);
+    grid-template-rows: repeat(12, 120px);
+    // border: yellow 3px solid;
+  }
+
+  .team__member {
+    border-bottom: 3px solid black;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 30px;
+  }
+
+  .name {
+    @extend .soft__coral__title;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .position {
+    @extend .soft__coral__title;
+    font-size: 16px;
+    text-align: left;
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+
+  .location {
+    @extend .soft__coral__title;
+    font-size: 16px;
+    text-align: right;
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
 //   .team {
 //     grid-column: 1 / -1;
 //     grid-row: 1 / -1;

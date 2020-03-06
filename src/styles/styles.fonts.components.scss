@@ -74,8 +74,22 @@
   font-weight: 600;
 }
 
-.soft__coral__title {
+%soft__coral__title {
   @extend %soft__coral;
+  font-size: 72px;
+  font-weight: 600;
+  text-align: right;
+}
+
+%soft__black__title {
+  @extend %soft__black;
+  font-size: 72px;
+  font-weight: 600;
+  text-align: right;
+}
+
+%soft__blue__title {
+  @extend %soft__blue;
   font-size: 72px;
   font-weight: 600;
   text-align: right;
@@ -110,4 +124,16 @@
   color: $next__black;
   font-size: 18px;
   text-align: right;
+}
+
+.soft__coral__title {
+  @extend %soft__coral__title;
+}
+
+.soft__blue__title {
+  @extend %soft__blue__title;
+}
+
+.soft__black__title {
+  @extend %soft__black__title;
 }
