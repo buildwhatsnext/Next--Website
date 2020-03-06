@@ -36,7 +36,7 @@ export default class Home extends React.Component {
         </div>
         <div className="soft__blue__title includes__highlight home__tagline">
           <p>{ tagChange } </p>
-          <LinkHighlighted value={ designNoun } />
+          {/* <p>{ designNoun } </p> */}
         </div>
         <div className="soft__blue__subtitle home__cta">
           <p>
