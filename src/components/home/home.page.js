@@ -23,21 +23,20 @@ export default class Home extends React.Component {
     const company = "hlw";
     const designNoun = options__design[0];
     const tagCompany = `Next is a startup inside of `;
-    const tagChange = `We're advancing the way technology is used in ${designNoun}`;
+    const tagChange = `We're advancing the way technology is used in `;
     const cta = 'See What We Do';
 
     return (
       <div className="home">
-        <div className="soft__blue__title home__hlw">
+        <div className="soft__blue__title includes__highlight home__hlw">
           <p>
           { tagCompany }
           </p>
           <LinkHighlighted value={ company } />
         </div>
-        <div className="soft__blue__title home__tagline">
-          <p>
-            { tagChange }
-          </p>
+        <div className="soft__blue__title includes__highlight home__tagline">
+          <p>{ tagChange } </p>
+          <LinkHighlighted value={ designNoun } />
         </div>
         <div className="soft__blue__subtitle home__cta">
           <p>
