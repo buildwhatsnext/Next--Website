@@ -11,9 +11,9 @@ export class TeamImage extends React.Component {
         return (
           <Fragment>
            <div className="image">
-              <div className="picture"></div>
-              <div className="whitebox"></div>
-              <div className="bluebox"></div>
+              <div className="nycpicture"></div>
+              <div className="ldnpicture"></div>
+              <div className="lapicture"></div>
             </div>
           </Fragment>
         )

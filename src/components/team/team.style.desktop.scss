@@ -64,6 +64,55 @@
     grid-column: 2/3;
   }
 
+  .teamimage {
+    // border: 3px red solid;
+    grid-column: 6/10;
+    grid-row: 3/10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .image {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+    // border: 3px yellow solid;
+  }
+
+  .nycpicture {
+    background-image: url(../../assets/photo/team/group/grouppicture.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/5;
+    grid-row: 1/14;
+    z-index: 1;
+    // border: 3px black solid;
+  }
+
+  .ldnpicture {
+    background-image: url(../../assets/photo/team/group/_MG_3118.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+    grid-column: 2/5;
+    grid-row: 11/25;
+    z-index: 2;
+    // border: 3px black solid;
+  }
+
+  .lapicture {
+    background-image: url(../../assets/photo/team/group/LA.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px auto;
+    grid-column: 1/5;
+    grid-row: 14/29;
+    z-index: 3;
+    // border: 3px black solid;
+  }
+
 //   .team {
 //     grid-column: 1 / -1;
 //     grid-row: 1 / -1;
