@@ -1,0 +1,124 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+@media(max-width: $sizeMobile) {
+    .contact {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(8, 59px);
+        grid-template-rows: repeat(18, 70px);
+    }
+
+    .contact__title {
+        font-size: 40px;
+        font-style: blue;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        text-align: left;
+    }
+
+    .contact__form {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 9;
+        font-size: 20px;
+
+        .answerboxfat {
+            display: grid;
+            grid-template-columns: repeat(13, 39px);
+            grid-template-rows: repeat(3, 39px);
+            border: 3px #E03E52 solid;
+            height: 120px;
+            z-index: -2;
+            
+          }
+
+        .button {
+            width: 35px;
+            height: 35px;
+            grid-row-end: 4;
+            grid-column-start: 9;
+            grid-column-end: 10;
+            z-index: 3;
+            align-self: stretch;
+          }
+
+        .whitebox {
+            width: 40px;
+            height: 40px;
+            float: left;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 9;
+            grid-column-end: 10;
+            background-color: white;
+            border-left: 3px #E03E52 solid;
+            border-top: 3px #E03E52 solid;
+            z-index: 2;
+        }
+    }
+
+    .contact__info {
+        // border: 1px solid blue;
+        display: grid;
+        grid-template-columns: repeat(2, 140px);
+        grid-template-rows: repeat(13, 30px);
+        grid-column: 1 / -1;
+        grid-row: 8 / 13;
+        grid-gap: 5px;
+        grid-column-gap: 40px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact__info__item {
+        display: grid;
+        grid-template-columns: 100px 1fr;        
+    }
+
+    .info__icon {
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .info__text {
+        background-repeat: no-repeat;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        font-size: 15px;
+        text-align: left;
+        white-space: pre;
+        padding-left: 40px;
+    }
+
+    .contact__info__phone {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .contact__info__email {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .contact__info__insta {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .contact__info__location {
+        grid-template-rows: 20px 20px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        
+        
+    }
+
+}

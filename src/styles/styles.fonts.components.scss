@@ -26,6 +26,22 @@
   color: $next__coral;
 }
 
+%soft__info {
+  @extend %soft;
+  @extend %info;
+}
+
+%hard__info {
+  @extend %hard;
+  @extend %info;
+}
+
+%hard__subinfo {
+  @extend %hard;
+  @extend %subinfo;
+}
+
+
 %hard__black_right {
   @extend %hard;
   color: $next__black;
@@ -42,7 +58,7 @@
 
 .soft__blue__title {
   @extend %soft__blue;
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 600;
 }
 
@@ -74,6 +90,18 @@
 .soft__black__subtitle {
   @extend %soft__black;
   font-size: 18px;
+  font-weight: 600;
+}
+
+.soft__blue__subtitle__small {
+  @extend %soft__blue;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.soft__black__subtitle__small {
+  @extend %soft__black;
+  font-size: 12px;
   font-weight: 600;
 }
 

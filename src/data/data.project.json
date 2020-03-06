@@ -1,0 +1,65 @@
+{
+  "type" : "project information",
+  "projects" : {    
+    "piper" : {
+      "title": "Piper",
+      "client": "HLW Sustainability",
+      "location": "New York, New York",
+      "status": "Ongoing",
+      "type": "Application",
+      "teams": ["All"],
+      "description": "",
+      "pictureURL":[""]
+    },
+    "turing" : {
+      "title": "Turing",
+      "client": "",
+      "location": "New York, New York",
+      "status": "Ongoing",
+      "type": "Application",
+      "teams": ["All"],
+      "description": "",
+      "pictureURL":[""]
+    },
+    "1950Grand" : {
+      "title": "1950 Grand",
+      "client": "",
+      "location": "New York, New York",
+      "status": "Completed",
+      "type": "",
+      "teams": ["All"],
+      "description": "",
+      "pictureURL":[""]
+    },
+    "stamford" : {
+      "title": "First Stamford Place",
+      "client": "",
+      "location": "Stamford, Connecticut",
+      "status": "Completed",
+      "type": "",
+      "teams": ["All"],
+      "description": "",
+      "pictureURL":[""]
+    },
+    "fordham" : {
+      "title": "Fordham NRHCC",
+      "client": "Fordham University",
+      "location": "Bronx, New York",
+      "status": "Completed",
+      "type": "",
+      "teams": ["All"],
+      "description": "",
+      "pictureURL":[""]
+    },
+    "google" : {
+      "title": "Google Chelsea Market",
+      "client": "Google",
+      "location": "New York, New York",
+      "status": "Completed",
+      "type": "",
+      "teams": ["All"],
+      "description": "",
+      "pictureURL":[""]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type" : "team information",
+  "members" : {    
+    "adam" : {
+      "name": "Adam Strudwick",
+      "email": "astrudwick@hlw.com",
+      "position": "Principal",
+      "location": "London",
+      "description": "",
+      "team": "All",
+      "pictureURL": null
+    },
+    "ruyi" : {
+      "name": "Ruyi Igiehon",
+      "email": "rigiehon@hlw.com",
+      "position": "Director",
+      "location": "New York",
+      "description": "",
+      "team": "All",
+      "pictureURL": null
+    },
+    "preston" : {
+      "name": "Preston Smith",
+      "email": "psmith@hlw.com",
+      "position": "Innovation Lead",
+      "location": "New York",
+      "description": "",
+      "team": "Innovation",
+      "pictureURL": null
+    },
+    "chris" : {
+      "name": "Chris Sower",
+      "email": "csower@hlw.com",
+      "position": "Architecture Designer",
+      "location": "Los Angeles",
+      "description": "",
+      "team": "BIM/Computation",
+      "pictureURL": null
+    },
+    "stephen" : {
+      "name": "Stephen Magee",
+      "email": "smagee@hlw.com",
+      "position": "Assocaite, Design Technology & Technical Lead",
+      "location": "London",
+      "description": "",
+      "team": "BIM/Computation",
+      "pictureURL": null
+    },
+    "andrew" : {
+      "name": "Andrew Delgado",
+      "email": "adelgado@hlw.com",
+      "position": "Experience Lead",
+      "location": "New York",
+      "description": "",
+      "team": "Experience",
+      "pictureURL": null
+    },
+    "kp" : {
+      "name": "KyungPyo (KP) Kim",
+      "email": "kpkim@hlw.com",
+      "position": "Design Technology Specialist/ Designer",
+      "location": "New York",
+      "description": "",
+      "team": "Innovation",
+      "pictureURL": null
+    },
+    "bharti" : {
+      "name": "Bharti Kodnani",
+      "email": "bkodnani@hlw.com",
+      "position": "Design Technology Specialist / Designer",
+      "location": "New York",
+      "description": "",
+      "team": "Experience",
+      "pictureURL": null
+    },
+    "jeff" : {
+      "name": "Jeff Bailey",
+      "email": "jbailey@hlw.com",
+      "position": "BIM Specialist",
+      "location": "New York",
+      "description": "",
+      "team": "BIM / Computation",
+      "pictureURL": null
+    },
+    "mina" : {
+      "name": "Mina Nassif",
+      "email": "mnassif@hlw.com",
+      "position": "BIM Specialist",
+      "location": "New York",
+      "description": "",
+      "team": "BIM / Computation",
+      "pictureURL": null
+    }
+  }
+}
