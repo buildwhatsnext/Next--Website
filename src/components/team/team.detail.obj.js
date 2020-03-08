@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../../data/data.team.json';
+import './teamdetail.style.desktop.scss';
 
 export default class TeamMemberDetailPage extends React.Component {
   render() {
@@ -24,9 +25,11 @@ export function TeamMemberDetail(data) {
       <div className="team__detail__position">position: { data.position }</div>
       <div className="team__detail__location">location: { data.location }</div>
       <div className="team__detail__description">description: { data.description }</div>
-      <div className="team__detail__team">team: { <data className="team"></data> }</div>
-      <div className="team__detail__picture">picture: { data.pictureURL }</div>
-      
+      <div className="team__detail__description">team: { data.team }</div>
+      <div className="team__detail__description">picture: { data.picture }</div>      
+    </div>
+    <div className="trapezoid">
+      <img src=
     </div>
   )
 }
