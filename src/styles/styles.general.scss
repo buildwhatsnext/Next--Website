@@ -15,6 +15,11 @@ html, body, #root {
 %full_width_height {
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.full_width_height {
+  @extend %full_width_height;
 }
 
 // variables & magic numbers
