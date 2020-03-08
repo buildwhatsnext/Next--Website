@@ -18,7 +18,15 @@ export default class TeamMemberDetailPage extends React.Component {
 export function TeamMemberDetail(data) {
   return (
     <div className="team__detail">
-      Name: { data.name }
+      
+      <div className="team__detail__name">Name: { data.name }</div>
+      <div className="team__detail__email">email: { data.email }</div>
+      <div className="team__detail__position">position: { data.position }</div>
+      <div className="team__detail__location">location: { data.location }</div>
+      <div className="team__detail__description">description: { data.description }</div>
+      <div className="team__detail__team">team: { <data className="team"></data> }</div>
+      <div className="team__detail__picture">picture: { data.pictureURL }</div>
+      
     </div>
   )
 }

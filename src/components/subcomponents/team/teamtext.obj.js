@@ -7,8 +7,10 @@ export class TeamMemberListing extends React.Component {
 
   viewDetail = (e) => {
     e.preventDefault();
-    // change the page;
+    
     console.log('Change the page accordingly!');
+
+    // change the page;
   }
 
   formatTeamMembers() {   
