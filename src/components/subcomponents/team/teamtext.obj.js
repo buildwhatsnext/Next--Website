@@ -1,79 +1,60 @@
 import React from 'react';
-import { Fragment } from 'react';
 
-
-export class TeamText extends React.Component {
-    constructor(props) {
-      super(props);
-      }
-
-      render() {
-        return (
-          <TeamMemberList/>
-        )
-      }
+export class TeamMemberListing extends React.Component {
+  constructor(props) {
+    super(props);
   }
 
-  const TeamMemberList = props => (
-    <div className="team__member__list">
-      <TeamMember 
-        name="Adam Strudwick" 
-        position="Principal" 
-        location="London" 
-      />
-      <TeamMember 
-        name="Ruyi Igiehon" 
-        position="Director" 
-        location="New York" 
-      />
-      <TeamMember 
-        name="Preston Smith" 
-        position="Innovation Lead" 
-        location="New York" 
-      />
-      <TeamMember 
-        name="Andrew Delgado" 
-        position="Experience Lead" 
-        location="New York" 
-      />
-      <TeamMember 
-        name="Jeff Bailey" 
-        position="BIM Lead" 
-        location="New York" 
-      />
-      <TeamMember 
-        name="Mina Nassif" 
-        position="BIM Specialist" 
-        location="New York" 
-      />
-      <TeamMember 
-        name="Bharti Kodnani" 
-        position="Design Technology Specialist / Designer" 
-        location="New York" 
-      />
-      <TeamMember 
-        name="KyungPyo (KP) Kim" 
-        position="Design Technology Specialist / Designer" 
-        location="New York" 
-      />
-      <TeamMember 
-        name="Chris Sower" 
-        position="Architecture Designer" 
-        location="Los Angeles" 
-      />
-      <TeamMember 
-        name="Stephen Magee" 
-        position="Design Technology / Technical Lead" 
-        location="London" 
-      />
-    </div>
-  );
+  viewDetail = (e) => {
+    e.preventDefault();
+    // change the page;
+    console.log('Change the page accordingly!');
+  }
 
-  const TeamMember = (props) => (
-    // <div className="team__member team__member__name">
-    <div className={ `team__member team__member__${props.name}` }>
-      <p className="name">{props.name}</p>
-      <p className="position">{props.position}</p>
-      <p className="location">{props.location}</p>
-    </div>
+  formatTeamMembers() {   
+    console.log(this.props.data.members.values);
+
+    // take in team data
+    const teamData = Object.values(this.props.data.members);
+
+    // restructure each team member's data individually
+    let newData = teamData.map(data => {
+      // format that data into a TeamMember component
+      let member = 
+        <TeamMember 
+          name={data.name}
+          position={data.position}
+          location={data.location}
+          handleClick={this.viewDetail}
+        />      
+
+      // and then push the data into an array
+      return member;
+    })
+
+    // finally, return the array
+    return newData;
+  }
+  
+  render() {
+    let data = this.formatTeamMembers();
+
+    return (
+      <TeamMemberList teamData={data}/>
+    )
+  }
+}  
+
+const TeamMemberList = props => (
+  <div className="team__member__list">
+    { props.teamData }
+  </div>
+);
+
+const TeamMember = (props) => (  
+  <div className={ `team__member team__member__${props.name}`} onClick={props.handleClick}>
+    <p className="name">{props.name}</p>
+    <p className="position">{props.position}</p>
+    <p className="location">{props.location}</p>
+  </div>
 )
