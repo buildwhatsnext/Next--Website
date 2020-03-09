@@ -17,6 +17,10 @@
   @extend %soft__black__subtitle;
 }
 
+.soft__white__subtitle {
+  @extend %soft__white__subtitle;
+}
+
 @media(min-width: $sizeDesktop) {
   .about {
     grid-column: 1 / -1;
@@ -40,20 +44,23 @@
 
   .about__title {
     @extend .soft__blue__title;
-    grid-column-start: 5;
+    grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 4;
-    text-align:right
+    text-align: right;
+    line-height: 120%;
   }
 
   .about__description {
-    @extend .soft__black__subtitle;
+    @extend .soft__white__subtitle;
     grid-column-start: 2;
     grid-column-end: 9;
     grid-row-start: 7;
     grid-row-end: 12;
+    white-space: pre-wrap;
     text-align: right;
+    line-height: 130%;
   }
 
   .about__quote {
@@ -151,5 +158,38 @@
     grid-column-end: 17;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+
+  .crossgrid {
+    // border: 3px pink solid;
+    grid-column: 8/9;
+    grid-row: 3/9;
+    display: grid;
+    grid-template-columns: repeat(1, 50px);
+    grid-template-rows: repeat(160, 5px);
+  }
+
+  .cross1 {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 19/20;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/svg/icons/51cross.svg);
+  }
+
+  .cross2 {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 55/56;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/svg/icons/51cross.svg);
+  }
+
+  .cross3 {
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 108/110;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/svg/icons/51cross.svg);
   }
 }
