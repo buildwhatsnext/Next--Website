@@ -28,6 +28,7 @@ export function TeamMemberDetail(data) {
       <div className="team__detail__description">{ data.description }</div>
       <div className={`team__detail__pictureURL__${data.name}`} />
       <div className="trapazoid"></div>
+      <div className="slash"></div>
       <div className="borderbottom"></div>
       <div className="cta">Get in Touch!</div>
     </div>
