@@ -67,6 +67,13 @@
     white-space: pre-line;
   }
 
+  .team__detail__pictureURL {
+    border: 10px black solid;
+    height: 1000px;
+    width: 1000px;
+    z-index: 4;
+  }
+
   .cta {
     @extend .soft__black__title;
     grid-row: 16/17;

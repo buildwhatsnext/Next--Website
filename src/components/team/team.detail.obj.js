@@ -17,6 +17,10 @@ export default class TeamMemberDetailPage extends React.Component {
 
 
 export function TeamMemberDetail(data) {
+  const url = data.pictureURL;
+
+  console.log(url);
+
   return (
     <div className="team__detail">
       
@@ -26,7 +30,15 @@ export function TeamMemberDetail(data) {
       {/* <div className="team__detail__location">{ data.location }</div> */}
       <div className="team__detail__description">{ data.description }</div>
       {/* <div className="team__detail__team">{ data.team }</div> */}
-      <div className="team__detail__picture">{ data.picture }</div>      
+      <div 
+        className="team__detail__pictureURL" 
+        style={
+          {
+            backgroundImage: `url('assets/team/professional/kp.PNG')`
+          }
+        }
+      />
+      
       <div className="trapazoid"></div>
       <div className="borderbottom"></div>
       <div className="cta">Get in Touch!</div>
