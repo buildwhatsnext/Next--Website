@@ -2,11 +2,24 @@
 @import '../../../styles/styles.general.scss';
 @import '../../../styles/styles.colors.scss';
 
-@media(min-width: $sizeMobile) {
+@media(min-width: $sizeDesktop) {
   .link__highlighted {
     display: grid;
     grid-template-rows: auto;
     width: auto;
+    transition: all .1s ease-out;
+
+    &:hover {
+      .link__highlighted__background {
+        height: 100%;
+        margin-top: 0;
+        background-color: $next__blue;
+      }
+
+      .link__highlighted__text {
+        color: $next__white;
+      }
+    }
   }
 
   .link__highlighted__text {
@@ -14,6 +27,7 @@
     grid-row: 1 / 2;
     display: inline-block;
     width: auto;
+    transition: color .5s ease-out;
   }
 
   .link__highlighted__background {
@@ -24,5 +38,6 @@
     margin-top: 65%;
     z-index: -1;
     background: $next__coral;
+    transition: all .5s ease-in-out;
   }
 }
