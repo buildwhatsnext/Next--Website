@@ -2,7 +2,12 @@
 @import '../../../styles/styles.general.scss';
 @import '../../../styles/styles.colors.scss';
 
-@media(min-width: $sizeMobile) {
+p {
+  // margin-bottom: 0;
+}
+
+@media(min-width: $sizeDesktop) {
+  
   .link__highlighted {
     display: grid;
     grid-template-rows: auto;
@@ -21,7 +26,8 @@
     grid-row: 1 / 2;
     height: 15px;
     width: auto;
-    margin-top: 65%;
+    // margin-top: 65%;
+    align-self: end;
     z-index: -1;
     background: $next__coral;
   }
