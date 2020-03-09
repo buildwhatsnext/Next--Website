@@ -73,6 +73,12 @@
     z-index: 4;
   }
 
+  .team__detail__pictureURL__KyungPyo {
+    background-image: url('../../assets/photo/team/professional/kp.PNG');
+    background-repeat: no-repeat;
+    z-index: 4;
+  }
+
   .cta {
     @extend .soft__black__title;
     grid-row: 16/17;
