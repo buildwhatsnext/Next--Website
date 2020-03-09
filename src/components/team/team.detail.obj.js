@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
+import './teamdetail.style.mobile.scss';
 
 export default class TeamMemberDetailPage extends React.Component {
   render() {
