@@ -34,7 +34,7 @@ export default class Home extends React.Component {
           <ExternalLinkHighlighted value={ company } destination={ hlwLink }/>
         </div>
         <div className="soft__blue__title includes__highlight home__tagline">
-          <p>{ tagChange } </p>
+          <p>{ tagChange }</p>
           {/* <p>{ designNoun } </p> */}
         </div>
         <div className="soft__blue__subtitle home__cta">

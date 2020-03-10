@@ -35,7 +35,16 @@
       justify-self: right;
 
       p {
-        
+        margin-bottom: 0;
+
+        .link__highlighted__background {
+          position: relative;
+          top: -10px;
+          height: 10px;
+          width: 105%;
+          justify-self: center;
+          margin-top: -15px;
+        }
       }
     }
   }
