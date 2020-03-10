@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 import button from '../../../assets/svg/icons/50contactbutton.svg'
-``
+
 export class ContactForm extends React.Component {
   constructor(props) {
     super(props);
