@@ -10,6 +10,15 @@
         grid-template-rows: repeat(36, 35px);
     }
 
+    .contact__quote {
+      @extend .soft__blue__title;
+      grid-column: 1/6;
+      grid-row: 2/4;
+      font-size: 12px;
+      text-align: left;
+      
+    }
+
     .contact__title {
         font-size: 40px;
         // font-style: blue;
@@ -24,10 +33,10 @@
     .contact__form {
         grid-column-start: 1;
         grid-column-end: 7;
-        grid-row-start: 3;
-        grid-row-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 11;
         font-size: 16px;
-        line-height: 10px;
+        line-height: 0px;
 
         .answerbox {
           border: 3px #E03E52 solid;
@@ -81,11 +90,13 @@
         grid-template-columns: repeat(2, 130px);
         grid-template-rows: repeat(13, 30px);
         grid-column: 1 / -1;
-        grid-row: 13 / 30;
+        grid-row: 14 / 30;
         grid-gap: 5px;
         grid-column-gap: 30px;
         height: 100%;
         width: 100%;
+        padding-left: 5px;
+        padding-right: 10px;
     }
 
     .contact__info__item {
