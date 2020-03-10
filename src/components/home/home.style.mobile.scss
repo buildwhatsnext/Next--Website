@@ -10,11 +10,17 @@
   .home {
     // @ %hard__black_right;
     border: 10px red solid;
+    grid-column: 1/8;
+    grid-row: 1/8;
+    grid-template-columns: repeat(3, 20px);
+    grid-template-rows: repeat(3, 20px);
+    // width: 200px;
+    // height: 200px;
   }
 
-  .home__hlw {
-    @extend .hard__black_right;
-    
+  .soft__blue__title {
+    line-height: 100%;
+    font-size: 20px;
   }
 
 
