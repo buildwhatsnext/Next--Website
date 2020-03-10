@@ -12,7 +12,7 @@
 
     .contact__title {
         font-size: 40px;
-        font-style: blue;
+        // font-style: blue;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
@@ -27,12 +27,21 @@
         grid-row-end: 9;
         font-size: 20px;
 
+        .answerbox {
+          border: 3px #E03E52 solid;
+          grid-row: 1/6;
+          grid-column: 3/4;
+          height: 50px;
+          width: 300px;
+        }
+
         .answerboxfat {
             display: grid;
-            grid-template-columns: repeat(13, 39px);
-            grid-template-rows: repeat(3, 39px);
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             border: 3px #E03E52 solid;
             height: 120px;
+            width: 300px;
             z-index: -2;
             
           }
@@ -41,25 +50,27 @@
             width: 35px;
             height: 35px;
             grid-row-end: 4;
-            grid-column-start: 9;
-            grid-column-end: 10;
+            // grid-column-start: 19;
+            grid-column-end: 21;
             z-index: 3;
             align-self: stretch;
+
           }
 
-        .whitebox {
-            width: 40px;
-            height: 40px;
-            float: left;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            grid-column-start: 9;
-            grid-column-end: 10;
-            background-color: white;
-            border-left: 3px #E03E52 solid;
-            border-top: 3px #E03E52 solid;
-            z-index: 2;
-        }
+        // .whitebox {
+        //     width: 40px;
+        //     height: 40px;
+        //     float: left;
+        //     grid-row-start: 3;
+        //     grid-row-end: 4;
+        //     // grid-column-start: 14;
+        //     grid-column-end: 21;
+        //     background-color: white;
+        //     border-left: 3px #E03E52 solid;
+        //     border-top: 3px #E03E52 solid;
+        //     z-index: 2;
+        //     padding-right: 20px;
+        // }
     }
 
     .contact__info {
