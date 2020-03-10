@@ -1,7 +1,22 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
+.hard__black_right {
+  @extend %hard__black_right;
+}
+
 @media(max-width: $sizeMobile) {
-  
+
+  .home {
+    // @ %hard__black_right;
+    border: 10px red solid;
+  }
+
+  .home__hlw {
+    @extend .hard__black_right;
+    
+  }
+
+
 
 }
