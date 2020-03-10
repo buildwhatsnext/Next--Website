@@ -13,6 +13,10 @@
   @extend %hard__black_right;
 }
 
+.soft__blue__title {
+  @extend %soft__blue__title;
+}
+
 @media(min-width: $sizeDesktop) {
   .contact {
     grid-column: 1 / -1;
@@ -27,6 +31,7 @@
     grid-column: 5/9;
     grid-row: 2/4;
     font-size: 36px;
+    // border: 10px red solid;
   }
   
   .contact__title {
