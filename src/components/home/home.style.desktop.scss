@@ -6,13 +6,24 @@
   .home {
     @extend .full_width_height;
     display: grid;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    padding-left: 250px;
-    padding-right: 250px;
+    grid-template-rows: auto auto auto;
+    grid-column: 3 / 9;
+    grid-row: 3 / 9;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    // padding-left: 250px;
+    // padding-right: 250px;
 
     .home__hlw {
-      padding-top: 200px;
+      
+    }
+
+    .home__tagline {
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      text-align: left;
     }
 
     .home__cta {
@@ -37,7 +48,6 @@
     display: grid;
     grid-template-columns: auto auto 1fr;
     grid-template-rows: auto 1fr;
-    white-space: pre;
+    white-space: pre-wrap;
   }
-
 }

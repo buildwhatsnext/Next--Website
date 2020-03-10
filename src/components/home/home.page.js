@@ -8,40 +8,66 @@ import './home.style.mobile.scss';
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    console.log('In the Home component');
+    this.state = {
+      designSummary: `We're advancing the way technology is used in `,
+      designStatement: '',
+      typeIndex: 0,
+      designTypes: [
+        "design",
+        "architecture",
+        "lighting",
+        "engineering",
+        "sustainability"
+      ]
+    }
+  }
+
+  changeDesignType = () => {
+    let i = this.state.typeIndex;
+
+    i = i + 1;
+    if(i >= this.state.designTypes.length)
+      i = 0;
+    
+    const newStatement = this.state.designSummary + this.state.designTypes[i];
+
+    this.setState({
+      designStatement: newStatement,
+      typeIndex: i
+    });
+  }
+
+  componentDidMount() {
+    console.log('Setting interval stuff');
+    this.interval = setInterval(() => this.changeDesignType(), 500);
+  }
+
+  componentWillUnmount() {
+    console.log('Clearing interval');
+    clearInterval(this.interval);
   }
 
   render() {
-    const options__design = [
-      "design",
-      "architecture",
-      "lighting",
-      "engineering",
-      "sustainability"
-    ]
-
     const company = "hlw";
-    const designNoun = options__design[0];
+    const designNoun = this.state.designTypes[this.state.typeIndex];
     const tagCompany = `Next is a startup inside of `;
-    const tagChange = `We're advancing the way technology is used in `;
+    // const tagChange = `We're advancing the way technology is used in `;
     const cta = 'See What We Do';
 
     return (
       <div className="home">
         <div className="soft__blue__title includes__highlight home__hlw">
-          <p>
-          { tagCompany }
-          </p>
+          <p> { tagCompany } </p>
           <LinkHighlighted value={ company } />
         </div>
         <div className="soft__blue__title includes__highlight home__tagline">
-          <p>{ tagChange }</p>
+          <p>{ this.state.designStatement }</p>
           {/* <p>{ designNoun } </p> */}
         </div>
         <div className="soft__blue__subtitle home__cta">
-          <p>
+          <div>
             <LinkHighlighted value={ cta } />
-          </p>
+          </div>
         </div>
       </div>
     )
