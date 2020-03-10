@@ -22,6 +22,10 @@ html, body, #root {
   @extend %full_width_height;
 }
 
+.full_width_height {
+  @extend %full_width_height;
+}
+
 // variables & magic numbers
 $sizeDesktop: 1280px;
 $sizeMobile: 1279px;
