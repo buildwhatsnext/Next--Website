@@ -8,19 +8,25 @@
 @media(max-width: $sizeMobile) {
 
   .home {
-    // @ %hard__black_right;
-    border: 10px red solid;
-    grid-column: 1/8;
-    grid-row: 1/8;
-    grid-template-columns: repeat(3, 20px);
-    grid-template-rows: repeat(3, 20px);
-    // width: 200px;
-    // height: 200px;
-  }
+    @extend .full_width_height;
+    grid-column: 1 / -1;
 
-  .soft__blue__title {
-    line-height: 100%;
-    font-size: 20px;
+    .home__hlw {
+      padding-top: 20%;
+      font-size: 24px;
+    }
+
+    .home__tagline {
+      padding-top: 10%;
+      font-size: 24px;
+    }
+
+    .home__cta {
+      padding-top: 30%;
+      padding-right: 10%;
+      float: right;
+      font-size: 16px;
+    }
   }
 
 
