@@ -22,6 +22,13 @@
     grid-template-rows: repeat(9, 1fr);
   }
   
+  .contact__quote {
+    @extend .soft__blue__title;
+    grid-column: 5/9;
+    grid-row: 2/4;
+    font-size: 36px;
+  }
+  
   .contact__title {
     @extend .soft__coral__title;
     grid-column-start: 2;

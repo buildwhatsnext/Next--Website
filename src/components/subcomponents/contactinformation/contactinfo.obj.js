@@ -53,7 +53,7 @@ export const Insta = () => (
 
 export const Location = () => {
   const locationData = `5 Penn Plaza
-  New York, NY 
+  New York, NY
   `;
 
   return (
