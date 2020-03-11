@@ -22,6 +22,9 @@ export default class Contact extends React.Component {
         <div className="contact__title">
           <p>See What's Next</p>
         </div>
+        <div className="contact__quote">
+          <p>We think of our clients as partners and encourage collaboration to invent new ways of approaching  projects. We’re a friendly bunch and love to talk, so please drop us a line and say hello.</p>
+        </div>
         <div className="contact__form">
           <ContactForm />
         </div>        

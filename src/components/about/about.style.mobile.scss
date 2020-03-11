@@ -1,6 +1,26 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
+.soft__blue__title {
+  @extend %soft__blue__title;
+}
+
+.soft__black__title {
+  @extend %soft__black__title;
+}
+
+.soft__blue__subtitle {
+  @extend %soft__blue__subtitle;
+}
+
+.soft__black__subtitle {
+  @extend %soft__black__subtitle;
+}
+
+.soft__white__subtitle {
+  @extend %soft__white__subtitle;
+}
+
 @media(max-width: $sizeMobile) {
   .about {
     display: grid;
@@ -14,6 +34,9 @@
     grid-row: 1/2;
     grid-column: 1/10;
     font-size: 12px;
+    border: 3px solid #E03E52;
+    height: 475px;
+    padding: 10px;
   }
 
   .about__title {
@@ -21,20 +44,24 @@
     grid-column: 1/10;
     font-size: 36px;
     line-height: 130%;
+    text-align: left;
+    line-height: 120%;
   }
 
   .about__description {
-    grid-row: 1/2;
+    @extend .soft__black__subtitle;
+    grid-row: 2/8;
     grid-column: 1/10;
     font-size: 12px;
-    white-space: pre-wrap;
+    white-space: pre-line;
+    text-align: left;
   }
 
   .about__quote {
     grid-row: 8/9;
     grid-column: 1/10;
     font-size: 12px;
-    white-space: pre-wrap;
+    white-space: pre;
   }
 
   .about__name {
@@ -44,7 +71,7 @@
   }
 
   .about__category {
-    grid-row: 10/20;
+    grid-row: 11/20;
     grid-column: 1/10;
     display: grid;
     grid-template-columns: repeat(9, 50px);
@@ -89,7 +116,7 @@
   .crossgrid {
     // border: 1px pink solid;
     grid-column: 1/2;
-    grid-row: 1/17;
+    grid-row: 2/17;
     display: grid;
     grid-template-columns: repeat(1, 50px);
     grid-template-rows: repeat(160, 5px);

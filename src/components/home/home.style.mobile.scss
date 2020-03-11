@@ -1,6 +1,10 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
+.hard__black_right {
+  @extend %hard__black_right;
+}
+
 @media(max-width: $sizeMobile) {
 
   .home {
@@ -10,11 +14,18 @@
     .home__hlw {
       padding-top: 20%;
       font-size: 24px;
+      text-align: left;
+    }
+
+    .home__cta {
+      justify-self: right;
+      // border: 5px solid red;
     }
 
     .home__tagline {
       padding-top: 10%;
       font-size: 24px;
+      text-align: left;
     }
 
     .home__cta {
