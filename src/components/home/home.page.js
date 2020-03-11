@@ -1,7 +1,9 @@
 import React from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import { LinkHighlighted } from '../subcomponents/special_link/links.object';
 
+import './home.style.general.scss';
 import './home.style.desktop.scss';
 import './home.style.mobile.scss';
 
@@ -10,7 +12,7 @@ export default class Home extends React.Component {
     super(props);
     this.state = {
       designSummary: `We're advancing the way technology is used in `,
-      designStatement: '',
+      designStatement: `We're advancing the way technology is used in `,
       typeIndex: 0,
       designTypes: [
         "design",
@@ -39,7 +41,7 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     console.log('Setting interval stuff');
-    this.interval = setInterval(() => this.changeDesignType(), 500);
+    this.interval = setInterval(() => this.changeDesignType(), 1500);
   }
 
   componentWillUnmount() {
@@ -49,9 +51,7 @@ export default class Home extends React.Component {
 
   render() {
     const company = "hlw";
-    const designNoun = this.state.designTypes[this.state.typeIndex];
     const tagCompany = `Next is a startup inside of `;
-    // const tagChange = `We're advancing the way technology is used in `;
     const cta = 'See What We Do';
 
     return (
@@ -61,8 +61,11 @@ export default class Home extends React.Component {
           <LinkHighlighted value={ company } />
         </div>
         <div className="soft__blue__title includes__highlight home__tagline">
-          <p>{ this.state.designStatement }</p>
-          {/* <p>{ designNoun } </p> */}
+          <CSSTransition>
+            <p>
+              { this.state.designStatement }
+            </p>
+          </CSSTransition>
         </div>
         <div className="soft__blue__subtitle home__cta">
           <div>

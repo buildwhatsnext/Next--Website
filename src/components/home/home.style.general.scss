@@ -1,0 +1,23 @@
+.elem {
+
+  &__enter, &__appear {
+
+
+
+    &__active {
+      background-color: blue;
+      transition: all 400ms;
+    }
+  }
+
+  &__exit {
+
+
+    &__active {
+      background-color: blue;
+      transition: all 400ms;
+    }
+  }
+  
+
+}
