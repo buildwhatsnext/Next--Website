@@ -2,6 +2,8 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { LinkHighlighted } from '../subcomponents/special_link/links.object';
+import { Link } from 'react-router-dom';
+import { ExternalLinkHighlighted, InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 import './home.style.general.scss';
 import './home.style.desktop.scss';
@@ -53,12 +55,13 @@ export default class Home extends React.Component {
     const company = "hlw";
     const tagCompany = `Next is a startup inside of `;
     const cta = 'See What We Do';
+    const hlwLink = "https://www.hlw.design/";
 
     return (
       <div className="home">
         <div className="soft__blue__title includes__highlight home__hlw">
-          <p> { tagCompany } </p>
-          <LinkHighlighted value={ company } />
+          <p>{ tagCompany }</p>
+          <ExternalLinkHighlighted value={ company } destination={ hlwLink }/>
         </div>
         <div className="soft__blue__title includes__highlight home__tagline">
           <CSSTransition>
@@ -68,9 +71,7 @@ export default class Home extends React.Component {
           </CSSTransition>
         </div>
         <div className="soft__blue__subtitle home__cta">
-          <div>
-            <LinkHighlighted value={ cta } />
-          </div>
+          <InternalLinkHighlighted value={cta} destination="/projects" />
         </div>
       </div>
     )

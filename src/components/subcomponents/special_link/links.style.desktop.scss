@@ -2,16 +2,25 @@
 @import '../../../styles/styles.general.scss';
 @import '../../../styles/styles.colors.scss';
 
-p {
-  // margin-bottom: 0;
-}
-
 @media(min-width: $sizeDesktop) {
   
   .link__highlighted {
     display: grid;
     grid-template-rows: auto;
     width: auto;
+    transition:  .1s ease-out;
+
+    &:hover {
+      .link__highlighted__background {
+        height: 30px;
+        margin-top: 50%;
+        // background-color: $next__blue;
+      }
+
+      // .link__highlighted__text {
+      //   color: $next__white;
+      // }
+    }
   }
 
   .link__highlighted__text {
@@ -19,6 +28,8 @@ p {
     grid-row: 1 / 2;
     display: inline-block;
     width: auto;
+    transition: all .5s ease-out;
+    transition-delay: .1s;
   }
 
   .link__highlighted__background {
@@ -30,5 +41,6 @@ p {
     align-self: end;
     z-index: -1;
     background: $next__coral;
+    transition: all .1s ease-in-out;
   }
 }

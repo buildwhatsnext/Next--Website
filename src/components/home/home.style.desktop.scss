@@ -9,13 +9,22 @@
     grid-template-rows: auto auto auto;
     grid-column: 3 / 9;
     grid-row: 3 / 9;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
-    // padding-left: 250px;
-    // padding-right: 250px;
 
     .home__hlw {
-      
+      .link__highlighted {
+
+        &:hover {
+          .link__highlighted__background {
+            height: 100%;
+            margin-top: 0;
+            background-color: $next__blue;
+          }
+    
+          .link__highlighted__text {
+            color: $next__white;
+          }
+        }
+      }
     }
 
     .home__tagline {
