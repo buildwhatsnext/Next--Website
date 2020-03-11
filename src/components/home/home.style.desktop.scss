@@ -11,12 +11,22 @@
     grid-row: 3 / 9;
 
     .home__hlw {
+
       .link__highlighted {
+
+        .link__highlighted__background {
+          margin-left: -10px;
+          margin-right: -10px;
+          margin-bottom: 20px;
+        }
 
         &:hover {
           .link__highlighted__background {
             height: 100%;
-            margin-top: 0;
+            margin-top: -30px;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: 0px;
             background-color: $next__blue;
           }
     
@@ -38,16 +48,26 @@
     .home__cta {
       justify-self: right;
 
-      p {
-        margin-bottom: 0;
+      &:hover {
+        .link__highlighted {
+          .link__highlighted__background {
+            // padding: 25px;
+            // height: 100%
+          }
+        }
+      }
 
+      .link__highlighted {
         .link__highlighted__background {
-          position: relative;
-          top: -10px;
-          height: 10px;
-          width: 105%;
-          justify-self: center;
-          margin-top: -15px;
+          margin-left: -10px;
+          margin-right: -10px;
+          margin-bottom: 10px;
+          // position: relative;
+          // top: -10px;
+          // height: 10px;
+          // width: 105%;
+          // justify-self: center;
+          // align-self: end;
         }
       }
     }

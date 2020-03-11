@@ -1,8 +1,5 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
-
-import { LinkHighlighted } from '../subcomponents/special_link/links.object';
-import { Link } from 'react-router-dom';
 import { ExternalLinkHighlighted, InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 import './home.style.general.scss';

@@ -12,14 +12,10 @@
 
     &:hover {
       .link__highlighted__background {
-        height: 30px;
-        margin-top: 50%;
-        // background-color: $next__blue;
+        height: 100%;
+        margin-bottom: 0px;
+        margin-top: 0px;
       }
-
-      // .link__highlighted__text {
-      //   color: $next__white;
-      // }
     }
   }
 
@@ -37,7 +33,6 @@
     grid-row: 1 / 2;
     height: 15px;
     width: auto;
-    // margin-top: 65%;
     align-self: end;
     z-index: -1;
     background: $next__coral;
