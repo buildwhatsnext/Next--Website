@@ -61,7 +61,12 @@ export default class Home extends React.Component {
           <ExternalLinkHighlighted value={ company } destination={ hlwLink }/>
         </div>
         <div className="soft__blue__title includes__highlight home__tagline">
-          <CSSTransition>
+          <CSSTransition
+            in={true}
+            appear={true}
+            timeout={300}
+            classNames="fade"
+          >
             <p>
               { this.state.designStatement }
             </p>
