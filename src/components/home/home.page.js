@@ -1,5 +1,5 @@
 import React from 'react';
-import { CSSTransition } from 'react-transition-group';
+import { StatementMutable } from '../subcomponents/statement.object';
 import { ExternalLinkHighlighted, InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 import './home.style.general.scss';
@@ -61,16 +61,7 @@ export default class Home extends React.Component {
           <ExternalLinkHighlighted value={ company } destination={ hlwLink }/>
         </div>
         <div className="soft__blue__title includes__highlight home__tagline">
-          <CSSTransition
-            in={true}
-            appear={true}
-            timeout={1000}
-            classNames="fade"
-          >
-            <p>
-              { this.state.designStatement }
-            </p>
-          </CSSTransition>
+          <StatementMutable data={this.state.designTypes} statement={this.state.designStatement}/>
         </div>
         <div className="soft__blue__subtitle home__cta">
           <InternalLinkHighlighted value={cta} destination="/projects" />
