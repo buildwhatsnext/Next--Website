@@ -64,7 +64,7 @@ export default class Home extends React.Component {
           <CSSTransition
             in={true}
             appear={true}
-            timeout={300}
+            timeout={1000}
             classNames="fade"
           >
             <p>
