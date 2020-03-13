@@ -35,14 +35,14 @@ const Routes = () => (
         <Route path="/team" render={(props) => (<TeamPage {...props} />)} />
         <Route path="/projects" render={(props) => (<ProjectPage {...props} />)} />
         <Route exact path='/' render={(props) => (
-          <CSSTransition
-            in={true}
-            appear={true}
-            timeout={1000}
-            classNames="fade"
-          >
+          // <CSSTransition
+          //   in={true}
+          //   appear={true}
+          //   timeout={1000}
+          //   classNames="fade"
+          // >
             <HomePage {...props}/>
-          </CSSTransition>
+          // </CSSTransition>
         )}/>
       </Switch>
     </div>

@@ -1,34 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import '../../styles/styles.interaction.scss';
 
 export function StatementMutable(props) {
   const { data, statement } = props;
-  let index = 0;
-  let displayStatement = statement;
+  const [ index, setIndex ] = useState(0);
+  const [ display, setDisplay ] = useState(statement);
 
   const incrementData = () => {
-    if(index >= data.length)
-      index = 0;
+    setDisplay(data[index]);
 
-    displayStatement = displayStatement + data[index];
+    let i = (index + 1) < data.length 
+      ? index + 1 
+      : 0;
+
+    setIndex(i);
   }
 
-  setInterval(() => incrementData(), 1500);
+  useEffect(() => {
+    setTimeout(incrementData, 1000);
+  });
 
   return (
-    <TransitionGroup>
-      <CSSTransition
-        key={index}
-        // in={true}
-        // appear={true}
-        timeout={300}
-        classNames="fade"
-      >
-        <p>
-          { displayStatement }
-        </p>
-      </CSSTransition>
-  </TransitionGroup>
+    <Fragment>
+      <p> { statement } </p>
+      <TransitionGroup>
+        <CSSTransition
+          key={index}
+          timeout={1500}
+          classNames="fade"
+        >
+          <p> { display } </p>
+        </CSSTransition>
+      </TransitionGroup>
+    </Fragment>
   )
 }

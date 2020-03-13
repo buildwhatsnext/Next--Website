@@ -10,7 +10,6 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      designSummary: `We're advancing the way technology is used in `,
       designStatement: `We're advancing the way technology is used in `,
       typeIndex: 0,
       designTypes: [
@@ -21,31 +20,6 @@ export default class Home extends React.Component {
         "sustainability"
       ]
     }
-  }
-
-  changeDesignType = () => {
-    let i = this.state.typeIndex;
-
-    i = i + 1;
-    if(i >= this.state.designTypes.length)
-      i = 0;
-    
-    const newStatement = this.state.designSummary + this.state.designTypes[i];
-
-    this.setState({
-      designStatement: newStatement,
-      typeIndex: i
-    });
-  }
-
-  componentDidMount() {
-    console.log('Setting interval stuff');
-    this.interval = setInterval(() => this.changeDesignType(), 1500);
-  }
-
-  componentWillUnmount() {
-    console.log('Clearing interval');
-    clearInterval(this.interval);
   }
 
   render() {

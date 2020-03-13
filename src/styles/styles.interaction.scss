@@ -4,7 +4,8 @@
 
     &-active {
       opacity: 1;
-      transition: opacity 1000ms linear;
+      transition: opacity 1500ms linear;
+      // transition-delay: 100ms;
     }
   }
 
@@ -14,14 +15,14 @@
 
     &-active {
       opacity: 1;
-      transition: opacity 300ms linear;
+      transition: opacity 1500ms linear;
     }
   }
 
   &-exit {
     &-active {
       opacity: 0;
-      transition: opacity 300ms linear;
+      // transition: opacity 10ms linear;
     }
 
     &-done {
