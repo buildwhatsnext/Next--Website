@@ -1,0 +1,67 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+@media(min-width: $sizeDesktop) {
+
+  .projectdetailpage {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    // border: 10px red solid;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    .project__title {
+      @extend .soft__blue__title;
+      grid-column: 2 / -1;
+      grid-row: 2/4;
+      text-align: left;
+      font-size: 100px;
+    }
+
+    .project__table {
+      border: black 1px solid;
+      grid-row: 4/6;
+      grid-column: 2/13;
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      grid-template-rows: repeat(1, 75px);
+    }
+
+    .project__client {
+      border: black 1px solid;
+      grid-row: 1 / 2;
+      grid-column: 1 / 7; 
+    }
+
+    .project__location {
+      border: black 1px solid;
+      grid-row: 1 / 2;
+      grid-column: 7 / 15;
+    }
+
+    .project__status {
+      border: black 1px solid;
+      grid-row: 1 / 2;
+      grid-column: 15 / 21;
+    }
+
+    .project__type {
+      border: black 1px solid;
+      grid-row: 2 / 3;
+      grid-column: 1 / 11;
+    }
+
+    .project__team {
+      border: black 1px solid;
+      grid-row: 2 / 3;
+      grid-column: 11 / 21;
+    }
+
+    .project__description {
+      border: solid 3px pink;
+      grid-row: 7 / 13;
+      grid-column: 2 / 13;
+    }
+  }
+}
