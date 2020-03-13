@@ -1,13 +1,38 @@
 @import './styles.colors.scss';
 
 .theme__blue {
-  background-color: $next__blue;
+  background-color: $next__blue !important;
+  color: $next__coral !important;
 }
 
 .theme__white {
-  background-color: $next__white;
+  background-color: $next__white !important;
+  color: $next__blue !important;
 }
 
 .theme__red {
-  background-color: $next__coral;
+  background-color: $next__coral !important;
+  color: $next__blue !important;
+}
+
+@mixin themeHandler($bgColor, $txtColor, $txtColor2) {
+  .app__theme__blue {
+    background-color: $bgColor !important;
+    color: $txtColor !important;
+  
+    .app__navigation {
+      background-color: $bgColor !important;
+      color: $txtColor !important;
+  
+      #next__navbar {
+        background-color: $bgColor !important;
+        color: $txtColor !important;
+  
+          .nav-link {
+            background-color: $bgColor !important;
+            color: $txtColor2 !important;
+          }
+      }
+    }
+  }
 }
