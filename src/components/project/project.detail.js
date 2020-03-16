@@ -7,7 +7,7 @@ export class ProjectDetailPage extends React.Component {
     const { projectId } = this.props.match.params;
     const info = data.projects[projectId];
     const errorQuote = "I'm afraid I can't do that Michael...";
-    console.log(data);
+    console.log(info);
 
     return info === null || info === undefined
       ? <div className="error"><p>{errorQuote}</p></div>
@@ -16,20 +16,36 @@ export class ProjectDetailPage extends React.Component {
 }
 
 
-export function ProjectDetail(data) {
+export function ProjectDetail(projData) {
   return (
-      <div className="projectdetailpage">
-          <div className="project__title">{ data.title }</div>
-          <div className="project__table">
-            <div className="project__client">Client{ data.client }</div>
-            <div className="project__location">{ data.location }</div>
-            <div className="project__status">{ data.status }</div>
-            <div className="project__type">{ data.type }</div>
-            <div className="project__team">{ data.team }</div>
-          </div>
-          <div className="project__description">{ data.decription }</div>
-          <div className="project__picture">{ data.picture }</div>
-        </div>
+    <div className="projectdetailpage">
+        <div className="project__title">{ projData.title }</div>
+        <ProjectDetailTable { ...projData } />
+        <div className="project__description">{ projData.description }</div>
+        <div className="picture"></div>
+        {/* <div className="project__pictureURL">{ projData.pictureURL }</div> */}
+        {/* <div className="project__pictureURL"></div> */}
+      </div>
+  )
+}
 
+function ProjectDetailTable(elemData) {
+  return (
+    <div className="project__table">
+      <ReusableTableElement data={ elemData.client } title='Client' dataType='client'/>
+      <ReusableTableElement data={ elemData.location } title='Location' dataType='location'/>
+      <ReusableTableElement data={ elemData.status } title='Status' dataType='status'/>
+      <ReusableTableElement data={ elemData.type } title='Type' dataType='type'/>
+      <ReusableTableElement data={ elemData.teams } title='Team' dataType='team'/>      
+    </div>
+  )
+}
+
+function ReusableTableElement(props) {
+  return (
+    <div className={`project__${props.dataType}`}>
+      <p className={`project__${props.dataType}__title`}>{props.title}</p>
+      <p className={`project__${props.dataType}__data`}>{props.data}</p>      
+    </div>
   )
 }

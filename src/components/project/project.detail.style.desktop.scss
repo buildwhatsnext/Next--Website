@@ -20,48 +20,141 @@
     }
 
     .project__table {
-      border: black 1px solid;
+      // border: black px solid;
       grid-row: 4/6;
       grid-column: 2/13;
       display: grid;
       grid-template-columns: repeat(20, 1fr);
-      grid-template-rows: repeat(1, 75px);
+      grid-template-rows: repeat(1, 1fr);
+      padding-top: 25px;
     }
 
     .project__client {
-      border: black 1px solid;
+      border-top: black 1px solid;
+      border-left: black 1px solid;
       grid-row: 1 / 2;
       grid-column: 1 / 7; 
+      padding: 10px;
+    }
+    
+    .project__client__title {
+      @extend .soft__blue__title;
+      font-size: 24px;
+      text-align: left;
     }
 
+    .project__client__data {
+      @extend .soft__black__title;
+      font-size: 16px;
+      text-align: left;
+    }
+
+
     .project__location {
-      border: black 1px solid;
+      border-top: black 1px solid;
+      border-left: black 1px solid;
       grid-row: 1 / 2;
       grid-column: 7 / 15;
+      padding: 10px;
+    }
+
+    .project__location__title {
+      @extend .soft__blue__title;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    .project__location__data {
+      @extend .soft__black__title;
+      font-size: 16px;
+      text-align: left;
     }
 
     .project__status {
-      border: black 1px solid;
+      border-top: black 1px solid;
+      border-left: black 1px solid;
+      border-right: black 1px solid;
       grid-row: 1 / 2;
       grid-column: 15 / 21;
+      padding: 10px;
+    }
+
+    .project__status__title {
+      @extend .soft__blue__title;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    .project__status__data {
+      @extend .soft__black__title;
+      font-size: 16px;
+      text-align: left;
     }
 
     .project__type {
-      border: black 1px solid;
+      border-top: black 1px solid;
+      border-left: black 1px solid;
+      border-bottom: black 1px solid;
       grid-row: 2 / 3;
       grid-column: 1 / 11;
+      padding: 10px;
+    }
+
+    .project__type__title {
+      @extend .soft__blue__title;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    .project__type__data {
+      @extend .soft__black__title;
+      font-size: 16px;
+      text-align: left;
     }
 
     .project__team {
       border: black 1px solid;
       grid-row: 2 / 3;
       grid-column: 11 / 21;
+      padding: 10px;
+    }
+
+    .project__team__title {
+      @extend .soft__blue__title;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    .project__team__data {
+      @extend .soft__black__title;
+      font-size: 16px;
+      text-align: left;
     }
 
     .project__description {
-      border: solid 3px pink;
-      grid-row: 7 / 13;
+      @extend .soft__black__title;
+      // border: solid 3px pink;
+      grid-row: 8 / 13;
       grid-column: 2 / 13;
+      text-align: left;
+      font-size: 24px;
+      white-space: pre-wrap;
+    }
+
+    .project__pirtureURL {
+      // background-image: url('../../assets/photo/team/professional/kp.PNG');
+      border: 2px red solid;
+      width: 100px;
+      height: 100px;
+    }
+
+    .picture {
+      background-image: url(../../assets/photo/project/innovation/google/placeholder.jpg);
+      // border: 10px red solid;
+      background-repeat: no-repeat;
+      background-size: 100%, 100%;
+      grid-row: 5/12;
+      grid-column: 17/30;
     }
   }
 }

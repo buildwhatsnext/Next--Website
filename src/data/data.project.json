@@ -56,10 +56,10 @@
       "client": "Google",
       "location": "New York, New York",
       "status": "Completed",
-      "type": "",
-      "teams": ["All"],
-      "description": "",
-      "pictureURL":[""]
+      "type": "Workspace",
+      "teams": ["Innovation _ Simulation _ Computation"],
+      "description": "Challenge: Help Google project team and its multidisciplinary group of stakeholders manage, integrate and coordinate the design development of a central atrium knitting together multiple floors, integrating shared amenities and serving as a the new heart of Google NYC. Outcome: A BIM process that utilized digital models as virtual repositories for data enabling the management, coordination and integration of:  post occupancy analyses,  custom sustainability practices,  wellness design,  healthy materials consulting,  LEED consulting  master planning,  interior design; and  landscape architecture.",
+      "pictureURL":"assets/photo/team/professional/kp.png"
     }
   }
 }
