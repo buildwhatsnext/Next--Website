@@ -1,0 +1,39 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+@media(max-width: $sizeMobile) {
+  .projectdetailpage {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    // border: 10px red solid;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .project__title {
+    // @extend .soft__blue__title;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    // font-size: 20px;
+  }
+
+  .project__table {
+    border: 2px solid black;
+    display: grid;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+  }
+
+  .project__client {
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 7; 
+    padding: 10px;
+    font-size: 10px;
+  }
+}

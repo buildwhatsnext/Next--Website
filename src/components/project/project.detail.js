@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import data from '../../data/data.project.json';
-import './project.detail.style.desktop.scss'
+import './project.detail.style.desktop.scss';
+import './project.detail.style.mobile.scss'; 
 
 export class ProjectDetailPage extends React.Component {
   render() {
