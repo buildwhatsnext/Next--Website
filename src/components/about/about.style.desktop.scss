@@ -23,6 +23,7 @@
 
 @media(min-width: $sizeDesktop) {
   .about {
+    background-color: #06038d;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: grid;

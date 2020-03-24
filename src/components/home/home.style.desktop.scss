@@ -7,6 +7,10 @@
 
 @media(min-width: $sizeDesktop) {
 
+  .app__content {
+    background-color: #06038d;
+  }
+
   .home {
     @extend .full_width_height;
     display: grid;
