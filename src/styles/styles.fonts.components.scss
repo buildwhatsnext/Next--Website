@@ -59,6 +59,13 @@
   text-align: right;
 }
 
+%hard__white_right {
+  @extend %hard;
+  color: $next__white;
+  font-size: 24px;
+  text-align: right;
+}
+
 %hard__black_left {
   @extend %hard;
   color: $next__black;
@@ -68,6 +75,12 @@
 
 %soft__blue__title {
   @extend %soft__blue;
+  font-size: 72px;
+  font-weight: 600;
+}
+
+%soft__white__title {
+  @extend %soft__white;
   font-size: 72px;
   font-weight: 600;
 }

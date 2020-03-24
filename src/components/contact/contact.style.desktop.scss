@@ -13,11 +13,26 @@
   @extend %hard__black_right;
 }
 
+.hard__white_right {
+  @extend %hard__white_right;
+}
+
+
 .soft__blue__title {
   @extend %soft__blue__title;
 }
 
+.soft__white__title {
+  @extend %soft__white__title;
+}
+
 @media(min-width: $sizeDesktop) {
+  .app {
+    border: 10px red solid;
+    background-color: #06038D;
+    z-index: 5;
+  }
+
   .contact {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
@@ -27,7 +42,7 @@
   }
   
   .contact__quote {
-    @extend .soft__blue__title;
+    @extend .soft__white__title;
     grid-column: 5/9;
     grid-row: 2/4;
     font-size: 36px;
@@ -43,11 +58,12 @@
   }
   
   .contact__form {
-    @extend .hard__black_left;
+    @extend .hard__white_right;
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 9;
+    text-align: left;
   
     .answerbox {
       border: 3px #E03E52 solid;
@@ -89,9 +105,9 @@
   }
   
   .contact__info {
-    @extend .hard__black_right;
+    @extend .hard__white_right;
     display: grid;
-    border: 0px solid red;
+    // border: 1px solid red;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
