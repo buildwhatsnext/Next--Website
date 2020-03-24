@@ -27,6 +27,11 @@ export default class About extends React.Component {
               <div className="about__titlepage">
                   <AboutTitle />
               </div>
+              <div className="about__categoryduplicate">
+                <div className="about__highlightexperience"></div>
+                <div className="about__highlightinsight"></div>
+                <div className="about__highlightcapabilities"></div>
+              </div>
               <div className="about__category">
                   <AboutCategory />
               </div>

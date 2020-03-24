@@ -53,15 +53,6 @@ export class AboutCategory extends React.Component {
                 <div className="about__seehowcapabilities">
                     <p>{ seehow }</p>
                 </div>
-                <div className="about__highlightexperience">
-                    
-                </div>
-                <div className="about__highlightinsight">
-                    
-                </div>
-                <div className="about__highlightcapabilities">
-                    
-                </div>
 
 
                 {/* <div className='monitor'>

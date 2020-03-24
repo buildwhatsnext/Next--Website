@@ -126,6 +126,16 @@
     grid-row-end: 10;
   }
 
+  .about__categoryduplicate {
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(42, 1fr);
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 10;
+  }
+
   .about__titleexperience {
     @extend .soft__white__title;
     font-size: 48px;
@@ -217,27 +227,27 @@
 
   .about__highlightexperience {
     border-top: #E03E52 9px solid;
-    grid-column-start: 13;
-    grid-column-end: 15;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 12;
+    grid-row-end: 13;
     bottom: 100px;
   }
 
   .about__highlightinsight {
     border-top: #E03E52 9px solid;
-    grid-column-start: 13;
-    grid-column-end: 15;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 26;
+    grid-row-end: 27;
   }
 
   .about__highlightcapabilities {
     border-top: #E03E52 9px solid;
-    grid-column-start: 13;
-    grid-column-end: 15;
-    grid-row-start: 9;
-    grid-row-end: 10;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 40;
+    grid-row-end: 41;
   }
 
   .monitor {
