@@ -11,11 +11,23 @@ export default class AppCursor extends React.Component {
     }
   }
   
-  updateMousePosition = (position) => {
-    this.setState({
-      positionX: position.X,
-      positionY: position.Y
-    });
+  updateMousePosition = (event) => {
+    event.preventDefault();
+    console.log('Mouse moved');
+    // this.setState({
+    //   positionX: position.X,
+    //   positionY: position.Y
+    // });
+  }
+
+  mouseEntered = (event) => {
+    event.preventDefault();
+    console.log('Entered!');
+  }
+
+  mouseLeaving = (event) => {
+    event.preventDefault();
+    console.log('Left!');
   }
 
   render() {
@@ -23,6 +35,9 @@ export default class AppCursor extends React.Component {
       <div 
         id="follower" 
         className="app__cursor" 
+        // onMouseEnter={this.mouseEntered}
+        // onMouseLeave={this.mouseLeaving}
+        // onMouseDown={this.updateMousePosition}
         onMouseMove={this.updateMousePosition}
       />
     )

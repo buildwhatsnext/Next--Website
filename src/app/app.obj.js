@@ -7,8 +7,8 @@ import './app.style.mobile.scss';
 export default function App() {
   return (
     <div className="app">
-      <AppRouter />
       <AppCursor />
+      <AppRouter />
     </div>
   )
 }
