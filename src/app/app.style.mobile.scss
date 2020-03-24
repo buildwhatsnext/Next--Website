@@ -1,10 +1,11 @@
 @import '../styles/styles.fonts.mobile.scss';
 @import '../styles/styles.general.scss';
-@import '../styles/styles.themes.scss';
+@import '../styles/styles.colors.scss';
 
 @media(max-width: $sizeMobile) {
 
   .app {
+    background-color: $next__blue;
     // border: 10px solid blue;
   }
 

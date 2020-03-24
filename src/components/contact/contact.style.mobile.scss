@@ -7,13 +7,10 @@
 
 
 @media(max-width: $sizeMobile) {
-  .html body {
-    background-color: #06038d;
-    z-index: 10;
-  }
+
 
     .contact {
-      border: 1px red solid;
+      // border: 1px red solid;
       background-color: #06038D;
       grid-column: 1/-1;
       grid-row: 1/-1;
@@ -22,14 +19,9 @@
       grid-template-rows: repeat(36, 35px);
     }
 
-    // .contact__quote {
-    //   // @extend .soft__blue__title;
-    //   grid-column: 1/6;
-    //   grid-row: 2/4;
-    //   font-size: 12px;
-    //   text-align: left;
-      
-    // }
+    .contact__quote {
+      display: none;
+    }
 
     .contact__title {
         font-size: 40px;
