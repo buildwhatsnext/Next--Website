@@ -1,6 +1,10 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
+.soft__white__title {
+  @extend %soft__white__title;
+}
+
 @media(min-width: $sizeDesktop) {
 
   .home {
@@ -9,8 +13,10 @@
     grid-template-rows: auto auto auto;
     grid-column: 3 / 9;
     grid-row: 3 / 9;
+    // border: 1px red solid;
 
     .home__hlw {
+      @extend .soft__coral__title;
 
       .link__highlighted {
 
@@ -27,25 +33,30 @@
             margin-left: -10px;
             margin-right: -10px;
             margin-bottom: 0px;
-            background-color: $next__blue;
+            background-color: $next__white;
+            z-index: 1;
           }
     
           .link__highlighted__text {
-            color: $next__white;
+            color: $next__blue;
+            z-index: 2;
           }
         }
       }
     }
 
     .home__tagline {
+      @extend .soft__coral__title;
       height: auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
       text-align: left;
+      // border: 1px red solid;
     }
 
     .home__cta {
+      @extend .soft__white__title;
       justify-self: right;
 
       &:hover {
