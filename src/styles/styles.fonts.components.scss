@@ -36,6 +36,11 @@
   color: $next__coral;
 }
 
+%hard__white {
+  @extend %hard;
+  color: $next__white;
+}
+
 %soft__info {
   @extend %soft;
   @extend %info;
