@@ -10,38 +10,60 @@ export class AboutCategory extends React.Component {
 
     render() {
 
-        const experiencehead = `Experience`
-        const experiencebody = `Extended Reality
-Fabrication`
-        const innovationhead = `Innovation`
-        const innovationbody = `UX/UI Design
-Tech Strategy & Consultation
-Application Prototyping
-Software Development`
-        const bimhead = `BIM`
-        const bimbody = `BIM Implementation
-Design Automation`
+        const titleexperience = `Craft Inclusive Experiences`
+        const subtitleexperience = `A pulvinar augue aliquam elementum fringilla. 
+        Risus, gravida tortor elementum suspendisse sit donec. 
+        Vel massa eu in risus mi eu rhoncus. `
+        const titleinsight = `Create Insight`
+        const subtitleinsight = `A pulvinar augue aliquam elementum fringilla. 
+        Risus, gravida tortor elementum suspendisse sit donec. 
+        Vel massa eu in risus mi eu rhoncus. `
+        const titlecapabilities = `Elevate Capabilities`
+        const subtitlecapabilities = `A pulvinar augue aliquam elementum fringilla. 
+        Risus, gravida tortor elementum suspendisse sit donec. 
+        Vel massa eu in risus mi eu rhoncus.`
+        const seehow = `See How`
 
         return (
             <Fragment>
-                <div className="about__experiencehead">
-                    <p>{ experiencehead }</p>
+                <div className="about__titleexperience">
+                    <p>{ titleexperience }</p>
                 </div>
-                <div className="about__experiencebody">
-                    <p>{ experiencebody }</p>
+                <div className="about__subtitleexperience">
+                    <p>{ subtitleexperience }</p>
                 </div>
-                <div className="about__innovationhead">
-                    <p>{ innovationhead }</p>
+                <div className="about__titleinsight">
+                    <p>{ titleinsight }</p>
                 </div>
-                <div className="about__innovationbody">
-                    <p>{ innovationbody }</p>
+                <div className="about__subtitleinsight">
+                    <p>{ subtitleinsight }</p>
                 </div>
-                <div className='about__bimhead'>
-                    <p>{ bimhead }</p>
+                <div className='about__titlecapabilities'>
+                    <p>{ titlecapabilities }</p>
                 </div>
-                <div className='about__bimbody'>
-                    <p>{ bimbody }</p>
+                <div className='about__subtitlecapabilities'>
+                    <p>{ subtitlecapabilities }</p>
                 </div>
+                <div className="about__seehowexperience">
+                    <p>{ seehow }</p>
+                </div>
+                <div className="about__seehowinsight">
+                    <p>{ seehow }</p>
+                </div>
+                <div className="about__seehowcapabilities">
+                    <p>{ seehow }</p>
+                </div>
+                <div className="about__highlightexperience">
+                    
+                </div>
+                <div className="about__highlightinsight">
+                    
+                </div>
+                <div className="about__highlightcapabilities">
+                    
+                </div>
+
+
                 {/* <div className='monitor'>
                     <img src={icon} alt="monitor"/>
                 </div> */}

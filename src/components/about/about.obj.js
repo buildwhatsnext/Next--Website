@@ -19,6 +19,10 @@ export default class About extends React.Component {
 
     render() {
         return (
+          <Fragment>
+            <div className="aboutduplicategrid">
+              <div className="about__titlepageback"></div>
+            </div>
             <div className="about">              
               <div className="about__titlepage">
                   <AboutTitle />
@@ -27,11 +31,12 @@ export default class About extends React.Component {
                   <AboutCategory />
               </div>
               <div className="crossgrid">
-                <div className="cross1"></div>
+                {/* <div className="cross1"></div>
                 <div className="cross2"></div>
-                <div className="cross3"></div>
+                <div className="cross3"></div> */}
               </div>
             </div>
+          </Fragment>
         )
     }
 }

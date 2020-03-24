@@ -18,9 +18,10 @@ Our mission is to craft, build, and launch immersive and data-driven approaches 
 We think of our clients as partners and encourage them to collaborate with us to invent new ways of  approaching their projects. 
 
 We are a powerful  conduit to help clients envision building, not more, but  smarter.`
-        const quote = `Technology should enable people 
- do what they are trained to do, better`
-        const quoter = '-John Gering'
+        const contactus = `Contact Us`
+//         const quote = `Technology should enable people 
+//  do what they are trained to do, better`
+//         const quoter = '-John Gering'
 
         return (
             <Fragment>
@@ -35,13 +36,17 @@ We are a powerful  conduit to help clients envision building, not more, but  sma
                     <p> { description }  </p>
                 </div>
 
-                <div className="about__quote">
+                <div className="about__contactus">
+                    <p> { contactus } </p>
+                </div>
+
+                {/* <div className="about__quote">
                     <p> { quote } </p>
                 </div>
 
                 <div className="about__name">
                     <p> { quoter } </p>
-                </div>
+                </div> */}
             </Fragment>
         )
     }   
