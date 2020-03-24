@@ -7,22 +7,29 @@
 
 
 @media(max-width: $sizeMobile) {
+  .html body {
+    background-color: #06038d;
+    z-index: 10;
+  }
+
     .contact {
-        grid-column: 1/-1;
-        grid-row: 1/-1;
-        display: grid;
-        grid-template-columns: repeat(8, 59px);
-        grid-template-rows: repeat(36, 35px);
+      border: 1px red solid;
+      background-color: #06038D;
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      display: grid;
+      grid-template-columns: repeat(8, 59px);
+      grid-template-rows: repeat(36, 35px);
     }
 
-    .contact__quote {
-      // @extend .soft__blue__title;
-      grid-column: 1/6;
-      grid-row: 2/4;
-      font-size: 12px;
-      text-align: left;
+    // .contact__quote {
+    //   // @extend .soft__blue__title;
+    //   grid-column: 1/6;
+    //   grid-row: 2/4;
+    //   font-size: 12px;
+    //   text-align: left;
       
-    }
+    // }
 
     .contact__title {
         font-size: 40px;
@@ -42,6 +49,8 @@
         grid-row-end: 11;
         font-size: 16px;
         line-height: 0px;
+        text-align: left;
+        
 
         .answerbox {
           border: 3px #E03E52 solid;

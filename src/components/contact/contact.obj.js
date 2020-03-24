@@ -19,7 +19,6 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
-        <div className="background"></div>
         <div className="contact__title">
           <p>See What's Next</p>
         </div>
