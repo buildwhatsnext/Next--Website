@@ -37,7 +37,7 @@
     .contact__form {
         grid-column-start: 1;
         grid-column-end: 7;
-        grid-row-start: 5;
+        grid-row-start: 3;
         grid-row-end: 11;
         font-size: 16px;
         line-height: 0px;
@@ -96,9 +96,9 @@
         grid-template-columns: repeat(2, 130px);
         grid-template-rows: repeat(13, 30px);
         grid-column: 1 / -1;
-        grid-row: 14 / 30;
-        grid-gap: 5px;
-        grid-column-gap: 30px;
+        grid-row: 12 / 30;
+        grid-gap: 20px;
+        grid-column-gap: 40px;
         height: 100%;
         width: 100%;
         padding-left: 5px;
