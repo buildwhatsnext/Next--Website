@@ -27,13 +27,9 @@
 }
 
 @media(min-width: $sizeDesktop) {
-  .app {
-    border: 10px red solid;
-    background-color: #06038D;
-    z-index: 5;
-  }
 
   .contact {
+    background-color: #06038D;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: grid;
