@@ -23,7 +23,7 @@ export default class About extends React.Component {
             <div className="aboutduplicategrid">
               <div className="about__titlepageback"></div>
             </div>
-            <div className="about">              
+            <div className="about">         
               <div className="about__titlepage">
                   <AboutTitle />
               </div>
