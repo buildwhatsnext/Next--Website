@@ -1,31 +1,38 @@
-html {
-  cursor: none;
-  background: #666;
-}
+// html {
+//   cursor: url(../assets/svg/icons/55bluecursor.svg), auto;
+// }
+
 #follower {
   position: absolute;
   top: 50%;
   left: 50%;
-}
-#follower #circle1 {
-  position: absolute;
-  -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
-  animation: pulse 2s infinite;
-  background: #fff;
+  background: red;
   border-radius: 50%;
   height: 0em;
   width: 0em;
   margin-top: 0em;
   margin-left: 0em;
 }
-#follower #circle2 {
-  position: absolute;
-  -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
-  animation: pulse 4s infinite;
-  background: rgba(200,0,0,0.8);
-  border-radius: 50%;
-  height: 0em;
-  width: 0em;
-  margin-top: 0em;
-  margin-left: 0em;
-}
+
+// #follower #circle1 {
+//   position: absolute;
+//   -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
+//   animation: pulse 2s infinite;
+//   background: #fff;
+//   border-radius: 50%;
+//   height: 0em;
+//   width: 0em;
+//   margin-top: 0em;
+//   margin-left: 0em;
+// }
+// #follower #circle2 {
+//   position: absolute;
+//   -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
+//   animation: pulse 4s infinite;
+//   background: rgba(200,0,0,0.8);
+//   border-radius: 50%;
+//   height: 0em;
+//   width: 0em;
+//   margin-top: 0em;
+//   margin-left: 0em;
+// }

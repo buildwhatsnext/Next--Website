@@ -4,6 +4,7 @@ import './app.cursor.style.desktop.scss';
 export default class AppCursor extends React.Component {
   constructor(props) {
     super(props);
+    this.updateMousePosition = this.updateMousePosition.bind(this);
     this.state = {
       positionX: 0,
       positionY: 0
@@ -19,10 +20,11 @@ export default class AppCursor extends React.Component {
 
   render() {
     return (
-    <div id="follower">
-      <div id="circle1"></div>
-      <div id="circle2"></div>
-    </div>
+      <div 
+        id="follower" 
+        className="app__cursor" 
+        onMouseMove={this.updateMousePosition}
+      />
     )
   }
 }

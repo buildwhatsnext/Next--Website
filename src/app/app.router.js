@@ -6,6 +6,7 @@ import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
 import { TeamPage } from '../components/team/team.obj';
 import { ProjectPage } from '../components/project/project.obj';
+import AppCursor from './app.cursor';
 
 
 export default function AppRouter() {
