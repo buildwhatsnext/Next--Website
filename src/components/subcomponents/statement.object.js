@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import '../../styles/styles.interaction.scss';
+import '../subcomponents/statements/statement.style.scss';
 
 export function StatementMutable(props) {
   const { data, statement } = props;
@@ -22,17 +23,21 @@ export function StatementMutable(props) {
   });
 
   return (
-    <Fragment>
-      <p> { statement } </p>
-      <TransitionGroup>
-        <CSSTransition
-          key={index}
-          timeout={1500}
-          classNames="fade"
-        >
-          <p> { display } </p>
-        </CSSTransition>
-      </TransitionGroup>
-    </Fragment>
+    <div className='statement__mutable'>
+      <div className='statement__description'>
+        <p> { statement } </p>
+      </div>
+      <div className='statement__changing'>
+        <TransitionGroup>
+          <CSSTransition
+            key={index}
+            timeout={1500}
+            classNames="fade"
+          >
+            <p> { display } </p>
+          </CSSTransition>
+        </TransitionGroup>
+      </div>
+    </div>
   )
 }
