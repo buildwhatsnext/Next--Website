@@ -12,16 +12,16 @@ export class AboutCategory extends React.Component {
 
         const titleexperience = `Craft Inclusive Experiences`
         const subtitleexperience = `A pulvinar augue aliquam elementum fringilla. 
-        Risus, gravida tortor elementum suspendisse sit donec. 
-        Vel massa eu in risus mi eu rhoncus. `
+Risus, gravida tortor elementum suspendisse sit donec. 
+Vel massa eu in risus mi eu rhoncus. `
         const titleinsight = `Create Insight`
         const subtitleinsight = `A pulvinar augue aliquam elementum fringilla. 
-        Risus, gravida tortor elementum suspendisse sit donec. 
-        Vel massa eu in risus mi eu rhoncus. `
+Risus, gravida tortor elementum suspendisse sit donec. 
+Vel massa eu in risus mi eu rhoncus. `
         const titlecapabilities = `Elevate Capabilities`
         const subtitlecapabilities = `A pulvinar augue aliquam elementum fringilla. 
-        Risus, gravida tortor elementum suspendisse sit donec. 
-        Vel massa eu in risus mi eu rhoncus.`
+Risus, gravida tortor elementum suspendisse sit donec. 
+Vel massa eu in risus mi eu rhoncus.`
         const seehow = `See How`
 
         return (
