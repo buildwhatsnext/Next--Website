@@ -1,0 +1,25 @@
+@import '../styles/styles.themes.scss';
+
+.app__theme__blue {
+  @include themeHandler(
+    $next__blue,
+    $next__coral,
+    $next__white 
+  );
+}
+
+.app__theme__white {
+  @include themeHandler(
+    $next__white,
+    $next__blue,
+    $next__coral 
+  );
+}
+
+.app__theme__red {
+  @include themeHandler(
+    $next__coral,
+    $next__blue,
+    $next__white 
+  );
+}

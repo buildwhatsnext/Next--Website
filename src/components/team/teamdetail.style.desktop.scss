@@ -67,23 +67,25 @@
   }
 
   .team__detail__pictureURL {
-    // border: 10px black solid;
-    height: 1000px;
-    width: 1000px;
-    z-index: 4;
-    // border: blue 1000px solid;
-  }
-
-  .team__detail__pictureURL__KyungPyo {
-    background-image: url('../../assets/photo/team/professional/kp.PNG');
     background-repeat: no-repeat;
     z-index: 4;
-    // border: 10px solid black;
     height: 700px;
     width: 500px;
     grid-row: 2/16;
     grid-column: 4/5;
     background-size: auto 101%;
+  }
+
+  .team__detail__pictureURL {
+    &__KyungPyo {
+      @extend .team__detail__pictureURL;
+      background-image: url('../../assets/photo/team/professional/kp.PNG');
+    }
+
+    &__Preston {
+      @extend .team__detail__pictureURL;
+      background-image: url('../../assets/photo/team/professional/preston.PNG');
+    }
   }
   
 

@@ -1,10 +1,32 @@
-// body {
-//   cursor: url('../assets/LOGO_NEXT_SLASH_CORAL.svg'), auto;
-// }
+.fade {
+  &-appear {
+    opacity: 0;
 
-// p {
-//   &:hover {
-//     cursor: url('../assets/LOGO_NEXT_SLASH_BLUE.svg'), auto;
-    
-//   }
-// }
+    &-active {
+      opacity: 1;
+      transition: opacity 1500ms linear;
+      // transition-delay: 100ms;
+    }
+  }
+
+  &-enter {
+    opacity: 0;
+    z-index: 1;
+
+    &-active {
+      opacity: 1;
+      transition: opacity 1500ms linear;
+    }
+  }
+
+  &-exit {
+    &-active {
+      opacity: 0;
+      // transition: opacity 10ms linear;
+    }
+
+    &-done {
+      opacity: 0;
+    }
+  }
+}
