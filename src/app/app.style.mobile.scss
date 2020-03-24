@@ -1,5 +1,6 @@
 @import '../styles/styles.fonts.mobile.scss';
 @import '../styles/styles.general.scss';
+@import '../styles/styles.themes.scss';
 
 @media(max-width: $sizeMobile) {
 
@@ -17,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    grid-gap: 20px;
+    // grid-gap: 20px;
 
     padding-left: 20px;
     padding-right: 20px;
