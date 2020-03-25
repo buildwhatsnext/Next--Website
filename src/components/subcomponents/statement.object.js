@@ -1,7 +1,8 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import '../../styles/styles.interaction.scss';
-import '../subcomponents/statements/statement.style.scss';
+import '../subcomponents/statements/statement.style.desktop.scss';
+import '../subcomponents/statements/statement.style.mobile.scss';
 
 export function StatementMutable(props) {
   const { data, statement } = props;
