@@ -30,8 +30,8 @@
     display: grid;
     grid-column: 1/8;
     grid-row: 1/8;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(20, 50px);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
   }
 
   .aboutduplicategrid {
@@ -44,8 +44,8 @@
 
   .about__titlepage {
     background-color: #E03E52;
-    grid-row: 1/2;
-    grid-column: 2/10;
+    grid-row: 2/3;
+    grid-column: 2/20;
     font-size: 12px;
     height: 475px;
     padding: 15px;
@@ -56,8 +56,8 @@
 
   .about__titlepageback {
     background-color: white;
-    grid-column: 2 / 35;
-    grid-row: 2 / 14;
+    grid-column: 1 / 33;
+    grid-row: 1 / 25;
     border: 3px #E03E52 solid;
 
   }

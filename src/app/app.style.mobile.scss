@@ -16,6 +16,7 @@
 
   .app__content {
     // border: 5px solid green;
+    background-color: $next__blue;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
