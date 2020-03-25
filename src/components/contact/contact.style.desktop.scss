@@ -159,6 +159,18 @@
     grid-row: 4 / 5;
     
   }
+
+  .contact__nameslash {
+    display: none;
+  }
+
+  .contact__emailslash {
+    display: none;
+  }
+
+  .contact__messageslash {
+    display: none;
+  }
 }
 
 // .cellphoneicon, .emailicon, .cameraicon, .locationicon {
