@@ -13,6 +13,10 @@
   @extend %soft__white__title;
 }
 
+.soft__white__secondtitle {
+  @extend %soft__white__secondtitle;
+}
+
 .soft__blue__subtitle {
   @extend %soft__blue__subtitle;
 }
@@ -144,6 +148,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: left;
+    // border: 10px red solid;
   }
 
   .about__subtitleexperience {

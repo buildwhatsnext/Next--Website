@@ -97,7 +97,7 @@
   }
 
   .about__titleexperience {
-    @extend .soft__white__title;
+    // @extend .soft__white__title;
     font-size: 24px;
     grid-column: 2 / 6;
     grid-row: 2 / 3;
@@ -110,7 +110,7 @@
     grid-column: 3/7;
   }
   .about__titleinsight {
-    @extend .soft__white__title;
+    // @extend .soft__white__title;
     font-size: 24px;
     grid-row: 10/15;
     grid-column: 2/6;
@@ -123,7 +123,7 @@
     
   }
   .about__titlecapabilities {
-    @extend .soft__white__title;
+    // @extend .soft__white__title;
     font-size: 24px;
     grid-row: 16/16;
     grid-column: 2/5;

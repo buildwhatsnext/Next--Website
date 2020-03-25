@@ -147,6 +147,12 @@
   font-weight: 600;
 }
 
+%soft__white__secondtitle {
+  @extend %soft__white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 %soft__white__subtitle {
   @extend %soft__white;
   font-size: 18px;
