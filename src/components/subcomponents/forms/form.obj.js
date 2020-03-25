@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 import button from '../../../assets/svg/icons/50contactbutton.svg'
+import slash from '../../../assets/svg/icons/55thickslash.svg';
 
 export class ContactForm extends React.Component {
   constructor(props) {
@@ -35,6 +36,9 @@ export function EntryForm(props) {
 export function NameEntryForm(props) {
   return (
     <Fragment>
+      <div className="contact__nameslash">
+        <img src={slash} alt="slash"/>
+      </div>
       <p>Name</p>
       <div className="answerbox"></div>
       <EntryForm name={props.name} value={props.value} />
@@ -45,6 +49,9 @@ export function NameEntryForm(props) {
 export function EmailEntryForm(props) {
   return (
     <fragment>
+      <div className="contact__emailslash">
+        <img src={slash} alt="slash"/>
+      </div>
       <p>Email</p>
       <div className="answerbox"></div>
       <EntryForm name={props.name} value={props.value} />
@@ -55,6 +62,9 @@ export function EmailEntryForm(props) {
 export function MessageEntryForm(props) {
   return (
     <fragment>
+      <div className="contact__messageslash">
+        <img src={slash} alt="slash"/>
+      </div>
       <p>Message</p>
       <div className="answerboxfat">
         <div className="button">

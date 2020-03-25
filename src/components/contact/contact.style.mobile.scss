@@ -42,6 +42,32 @@
         font-size: 16px;
         line-height: 0px;
         text-align: left;
+        text-indent: 20px;
+    
+
+        .contact__nameslash {
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          // padding-top: 4px
+        }
+        
+        .contact__emailslash {
+
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          padding-top: 4px;
+          grid-row: 5/6;
+        }
+        .contact__messageslash {
+
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          padding-top: 4px;
+          grid-row: 3/4;
+        }
         
 
         .answerbox {
