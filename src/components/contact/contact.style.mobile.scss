@@ -80,23 +80,27 @@
 
         .answerboxfat {
             display: grid;
-            grid-template-columns: repeat(20, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            // grid-template-columns: repeat(7, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
             border: 3px #E03E52 solid;
             height: 120px;
             width: 320px;
             z-index: -2;
-            
-          }
 
-        .button {
-            width: 35px;
-            height: 35px;
-            grid-row-end: 4;
-            // grid-column-start: 19;
-            grid-column-end: 21;
-            z-index: 3;
-            align-self: stretch;
+            .button {
+              background-image: url(../../assets/svg/icons/50contactbutton.svg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 36px;
+              height: 36px;
+              align-self: end;
+              justify-self: end;
+              // vertical-align: left;
+                // grid-row: 4 / 5;
+                // grid-column: 1 / 2;
+                // z-index: 3;
+                // align-self: stretch;
+              }
 
           }
 

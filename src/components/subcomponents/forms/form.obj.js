@@ -68,9 +68,9 @@ export function MessageEntryForm(props) {
       <p>Message</p>
       <div className="answerboxfat">
         <div className="button">
-          <img src={button} alt="button"/> 
+          {/* <img src={button} alt="button"/>  */}
         </div>
-        <div className="whitebox"></div>
+        {/* <div className="whitebox"></div> */}
         {/* <div className="twosideborder"></div> */}
       </div>
       
