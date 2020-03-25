@@ -14,38 +14,34 @@ import '../styles/styles.interaction.scss';
 export default function AppRouter() {
   return (
     <Router>
-      <Routes/>
+      <Route render={(location) => {return (<Routes {...location} />)}} />
     </Router>
   )
 }
 
 
-const Routes = () => (
+const Routes = (props) => (
   <Fragment>
     <div className="app__navigation">
       <Navbar />
     </div>
     <div className="app__content">
-      <Switch>
-        <Route path='/about'>
-          <About />
-        </Route>
-        <Route path='/contact'>
-          <Contact />
-        </Route>
-        <Route path="/team" render={(props) => (<TeamPage {...props} />)} />
-        <Route path="/projects" render={(props) => (<ProjectPage {...props} />)} />
-        <Route exact path='/' render={(props) => (
-          // <CSSTransition
-          //   in={true}
-          //   appear={true}
-          //   timeout={1000}
-          //   classNames="fade"
-          // >
-            <HomePage {...props}/>
-          // </CSSTransition>
-        )}/>
-      </Switch>
+      <RouteCollection {...props} />
     </div>
   </Fragment>
+)
+
+const RouteCollection = () => (
+  <Switch>
+    <Route path='/about'>
+      <About />
+    </Route>
+    <Route path='/contact'>
+      <Contact />
+    </Route>
+    <Route path="/team" render={(props) => (<TeamPage {...props} />)} />
+    <Route path="/projects" render={(props) => (<ProjectPage {...props} />)} />
+    <Route exact path='/' render={(props) => (<HomePage {...props}/>
+    )}/>
+  </Switch>
 )
