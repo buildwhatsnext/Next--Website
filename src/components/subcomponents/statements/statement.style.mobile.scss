@@ -1,3 +1,10 @@
+@import '../../../styles/styles.fonts.components.scss';
+@import '../../../styles/styles.general.scss';
+
+.soft__white__title {
+  @extend %soft__white__title;
+}
+
 .statement__mutable {
   white-space: initial;
   display: grid;
@@ -14,6 +21,8 @@
 }
 
 .statement__changing {
+  @extend .soft__white__title;
+  font-size: 24px;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   // border: 10px pink solid;

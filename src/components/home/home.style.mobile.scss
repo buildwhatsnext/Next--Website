@@ -15,8 +15,8 @@
     @extend .full_width_height;
     display: grid;
     grid-column: 1 / -1;
-    // grid-template-columns: repeat(10, 1fr);
-    // grid-template-rows: repeat(10, 1fr);
+    // grid-template-columns: repeat(10, 100px);
+    // grid-template-rows: repeat(10, 100px);
 
     .link__highlighted__text {
       @extend .soft__white__title;
@@ -42,11 +42,14 @@
 
     .home__cta {
       @extend .soft__white__title;
-      padding-top: 30%;
-      padding-right: 10%;
+      // padding-top: 30%;
+      // padding-right: 10%;
+      grid-row: 3/4;
+      // grid-column: 1/2;
       float: right;
       font-size: 16px;
       justify-self: right;
+      border: 10px red solid;
 
     }
   }
