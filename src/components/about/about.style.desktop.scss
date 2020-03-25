@@ -98,10 +98,12 @@
 
   .about__contactus {
     @extend .soft__white__subtitle;
-    grid-column-start: 7;
+    grid-column-start: 8;
     grid-column-end: 9;
     grid-row-start: 17;
     grid-row-end: 18;
+    width: 89px;
+    border-bottom: 12px solid #06038D;
     text-align: right;
   }
 
