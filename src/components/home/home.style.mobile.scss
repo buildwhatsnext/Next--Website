@@ -21,7 +21,7 @@
     .link__highlighted__text {
       @extend .soft__white__title;
       font-size: 24px;
-      line-height: 30%;
+      // line-height: 30%;
     }
 
     .home__hlw {
@@ -44,16 +44,35 @@
       @extend .soft__white__title;
       // padding-top: 30%;
       // padding-right: 10%;
-      grid-row: 3/4;
       // grid-column: 1/2;
       float: right;
-      font-size: 16px;
+      font-size: 2px;
       justify-self: right;
       border: 10px red solid;
+      // display: grid;
+      // grid-template-rows: 50px 50px 50px;
+    }
 
+    .link__highlighted {
+      .link__highlighted__background {
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 30px;
+        align-self: start;
+        justify-self: start;
+        // position: relative;
+        // top: -10px;
+        // height: 10px;
+        // width: 105%;
+        // justify-self: center;
+        // align-self: end;
+      }
+      .link__highlighted__text {
+        align-self: start;
+        justify-self: start; 
+        font-size: 24px;
+        line-height: 40%;
+      }
     }
   }
-
-
-
 }
