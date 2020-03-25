@@ -21,6 +21,10 @@
   @extend %soft__blue__subtitle;
 }
 
+.hard__blue__subtitle {
+  @extend %hard__blue__subtitle;
+}
+
 .soft__black__subtitle {
   @extend %soft__black__subtitle;
 }
@@ -81,7 +85,8 @@
   }
 
   .about__description {
-    @extend .soft__white__subtitle;
+    @extend .soft__blue__subtitle;
+    font-size: 18px;
     grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 7;

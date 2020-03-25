@@ -73,7 +73,8 @@
   }
 
   .about__description {
-    @extend .soft__black__subtitle;
+    // @extend .soft__black__subtitle;
+    font-size: 12px;
     grid-row: 2/8;
     grid-column: 1/10;
     font-size: 12px;
