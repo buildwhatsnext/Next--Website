@@ -26,6 +26,8 @@
     width: auto;
     transition: all .5s ease-out;
     transition-delay: .1s;
+    color: $next__white;
+    z-index: 2;
   }
 
   .link__highlighted__background {
@@ -34,7 +36,7 @@
     height: 15px;
     width: auto;
     align-self: end;
-    z-index: -1;
+    z-index: 1;
     background: $next__coral;
     transition: all .1s ease-in-out;
   }

@@ -9,5 +9,6 @@ export default function App() {
     <div className="app app__theme__blue">
       <AppRouter />
     </div>
+    
   )
 }

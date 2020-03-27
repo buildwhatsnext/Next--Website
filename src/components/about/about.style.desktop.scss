@@ -9,8 +9,20 @@
   @extend %soft__black__title;
 }
 
+.soft__white__title {
+  @extend %soft__white__title;
+}
+
+.soft__white__secondtitle {
+  @extend %soft__white__secondtitle;
+}
+
 .soft__blue__subtitle {
   @extend %soft__blue__subtitle;
+}
+
+.hard__blue__subtitle {
+  @extend %hard__blue__subtitle;
 }
 
 .soft__black__subtitle {
@@ -23,27 +35,47 @@
 
 @media(min-width: $sizeDesktop) {
   .about {
+    background-color: #06038d;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: grid;
     grid-template-columns: repeat(9, 200px);
     grid-template-rows: repeat(9, 100px);
   }
+
+  .aboutduplicategrid {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    grid-template-columns: repeat(20, 15px);
+    grid-template-rows: repeat(20, 16px);
+  }
     
   .about__titlepage {
     display: grid;
     grid-template-columns: repeat(9, 77px);
     grid-template-rows: repeat(18, 44px);
-    border: 3px black solid;
+    // border: 3px black solid;
     width: 700px;
     height: 800px;
     grid-column-start: 2;
     grid-row-start: 2;
     background-color: #E03E52;
+    z-index: 2;
+  }
+
+  .about__titlepageback {
+    background-color: white;
+    border: 5px #E03E52 solid;
+    z-index: 1;
+    width: 700px;
+    height: 800px;
+    grid-column-start: 13;
+    grid-row-start: 6;
   }
 
   .about__title {
-    @extend .soft__blue__title;
+    @extend .soft__white__title;
     grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 2;
@@ -53,25 +85,37 @@
   }
 
   .about__description {
-    @extend .soft__white__subtitle;
-    grid-column-start: 2;
+    @extend .soft__blue__subtitle;
+    font-size: 18px;
+    grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 7;
     grid-row-end: 12;
     white-space: pre-wrap;
     text-align: right;
-    line-height: 130%;
+    // line-height: 130%;
   }
 
-  .about__quote {
-    @extend .soft__blue__subtitle;
-    grid-column-start: 6;
+  .about__contactus {
+    @extend .soft__white__subtitle;
+    grid-column-start: 8;
     grid-column-end: 9;
-    grid-row-start: 14;
-    grid-row-end: 16;
+    grid-row-start: 17;
+    grid-row-end: 18;
+    width: 89px;
+    border-bottom: 12px solid #06038D;
     text-align: right;
-    font-size: 18px;
   }
+
+  // .about__quote {
+  //   @extend .soft__blue__subtitle;
+  //   grid-column-start: 6;
+  //   grid-column-end: 9;
+  //   grid-row-start: 14;
+  //   grid-row-end: 16;
+  //   text-align: right;
+  //   font-size: 18px;
+  // }
 
   .about__name {
     @extend .soft__blue__subtitle;
@@ -93,64 +137,129 @@
     grid-row-end: 10;
   }
 
-  .about__experiencehead {
-    @extend .soft__black__title;
-    font-size: 50px;
+  .about__categoryduplicate {
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(42, 1fr);
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 10;
+  }
+
+  .about__titleexperience {
+    @extend .soft__white__title;
+    font-size: 48px;
     grid-column-start: 2;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+    // border: 10px red solid;
+  }
+
+  .about__subtitleexperience {
+    @extend .soft__white__subtitle;
+    // font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 14;
+    grid-row-start: 2;
+    grid-row-end: 3;
     text-align: left;
   }
 
-  .about__experiencebody {
-    @extend .soft__blue__title;
-    font-size: 20px;
-    grid-column-start: 3;
-    grid-column-end: 7;
+  .about__titleinsight {
+    @extend .soft__white__title;
+    font-size: 48px;
+    grid-column-start: 2;
+    grid-column-end: 20;
     grid-row-start: 4;
     grid-row-end: 5;
     text-align: left;
   }
 
-  .about__innovationhead {
-    @extend .soft__black__title;
-    font-size: 50px;
-    grid-column-start: 2;
-    grid-column-end: 9;
+  .about__subtitleinsight {
+    @extend .soft__white__subtitle;
+    // font-size: 16px;
+    grid-column-start: 3;
+    grid-column-end: 14;
     grid-row-start: 5;
     grid-row-end: 6;
     text-align: left;
   }
 
-  .about__innovationbody {
-    @extend .soft__blue__title;
-    font-size: 20px;
-    grid-column-start: 3;
-    grid-column-end: 8;
-    grid-row-start: 6;
-    grid-row-end: 7;
+  .about__titlecapabilities {
+    @extend .soft__white__title;
+    font-size: 48px;
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 8;
     text-align: left;
   }
 
-  .about__bimhead {
-    @extend .soft__black__title;
-    font-size: 50px;
-    grid-column-start: 2;
-    grid-column-end: 9;
+  .about__subtitlecapabilities {
+    @extend .soft__white__subtitle;
+    // font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 14;
     grid-row-start: 8;
     grid-row-end: 9;
     text-align: left;
   }
 
-  .about__bimbody {
-    @extend .soft__blue__title;
-    font-size: 20px;
-    grid-column-start: 3;
-    grid-column-end: 8;
+  .about__seehowexperience {
+    @extend .soft__white__subtitle;
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: right;
+  }
+
+  
+  .about__seehowinsight {
+    @extend .soft__white__subtitle;
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: right;
+  }
+
+  
+  .about__seehowcapabilities {
+    @extend .soft__white__subtitle;
+    grid-column-start: 13;
+    grid-column-end: 15;
     grid-row-start: 9;
     grid-row-end: 10;
-    text-align: left;
+    text-align: right;
+  }
+
+  .about__highlightexperience {
+    border-top: #E03E52 9px solid;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    bottom: 100px;
+  }
+
+  .about__highlightinsight {
+    border-top: #E03E52 9px solid;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 26;
+    grid-row-end: 27;
+  }
+
+  .about__highlightcapabilities {
+    border-top: #E03E52 9px solid;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 40;
+    grid-row-end: 41;
   }
 
   .monitor {

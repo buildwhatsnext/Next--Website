@@ -13,12 +13,23 @@
   @extend %hard__black_right;
 }
 
+.hard__white_right {
+  @extend %hard__white_right;
+}
+
+
 .soft__blue__title {
   @extend %soft__blue__title;
 }
 
+.soft__white__title {
+  @extend %soft__white__title;
+}
+
 @media(min-width: $sizeDesktop) {
+
   .contact {
+    background-color: #06038D;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: grid;
@@ -27,7 +38,7 @@
   }
   
   .contact__quote {
-    @extend .soft__blue__title;
+    @extend .soft__white__title;
     grid-column: 5/9;
     grid-row: 2/4;
     font-size: 36px;
@@ -43,11 +54,12 @@
   }
   
   .contact__form {
-    @extend .hard__black_left;
+    @extend .hard__white_right;
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 9;
+    text-align: left;
   
     .answerbox {
       border: 3px #E03E52 solid;
@@ -58,8 +70,6 @@
   
     .answerboxfat {
       display: grid;
-      grid-template-columns: repeat(22, 40px);
-      grid-template-rows: repeat(3, 1fr);
       border: 3px #E03E52 solid;
       grid-column-start: 5;
       grid-column-end: 9;
@@ -67,13 +77,14 @@
     }
     
     .button {
+      background-image: url(../../assets/svg/icons/50contactbutton.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 40px;
       height: 40px;
-      float: right;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 22;
-      grid-column-end: 23;
+      align-self: end;
+      justify-self: end;
+      z-index: 10;
     }
   
     .fragment {
@@ -89,9 +100,9 @@
   }
   
   .contact__info {
-    @extend .hard__black_right;
+    @extend .hard__white_right;
     display: grid;
-    border: 0px solid red;
+    // border: 1px solid red;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
@@ -146,6 +157,18 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     
+  }
+
+  .contact__nameslash {
+    display: none;
+  }
+
+  .contact__emailslash {
+    display: none;
+  }
+
+  .contact__messageslash {
+    display: none;
   }
 }
 

@@ -36,6 +36,11 @@
   color: $next__coral;
 }
 
+%hard__white {
+  @extend %hard;
+  color: $next__white;
+}
+
 %soft__info {
   @extend %soft;
   @extend %info;
@@ -59,6 +64,13 @@
   text-align: right;
 }
 
+%hard__white_right {
+  @extend %hard;
+  color: $next__white;
+  font-size: 24px;
+  text-align: right;
+}
+
 %hard__black_left {
   @extend %hard;
   color: $next__black;
@@ -68,6 +80,12 @@
 
 %soft__blue__title {
   @extend %soft__blue;
+  font-size: 72px;
+  font-weight: 600;
+}
+
+%soft__white__title {
+  @extend %soft__white;
   font-size: 72px;
   font-weight: 600;
 }
@@ -89,6 +107,13 @@
   font-size: 36px;
   font-weight: 600;
 }
+
+%hard__blue__subtitle {
+  @extend %hard__blue;
+  font-size: 36px;
+  font-weight: 600;
+}
+
 
 %soft__coral__subtitle {
   @extend %soft__coral;
@@ -117,7 +142,7 @@
   text-align: right;
 }
 
-.soft__coral__subtitle {
+%soft__coral__subtitle {
   @extend %soft__coral;
   font-size: 36px;
   font-weight: 600;
@@ -125,6 +150,12 @@
 
 %soft__black__subtitle {
   @extend %soft__black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+%soft__white__secondtitle {
+  @extend %soft__white;
   font-size: 18px;
   font-weight: 600;
 }
