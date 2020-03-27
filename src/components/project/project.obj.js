@@ -106,6 +106,7 @@ export function ProjectItem(props) {
     <div className={`project__item project__item__${props.align}`}>
       <div className="project__item__title">{ props.title } </div>
       <div className="project__item__type"> { props.type } </div>
+      <div className={`project__item__image project__item__image__${props.title}`}/>
     </div>
   );
 }
