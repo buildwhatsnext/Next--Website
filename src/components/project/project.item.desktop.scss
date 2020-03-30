@@ -55,17 +55,27 @@
   }
   
   .project__item__title {
-    @extend .soft__coral__title;
-    font-size: 200px;
-    @supports (-webkit-text-stroke: 3px black) {
-      -webkit-text-stroke: 3px $next__coral;
-      -webkit-text-fill-color: $next__blue;
-      transition: all .25s ease-in-out;
-    }
+    p {
+      @extend .soft__coral__title;
+      font-size: 200px;
+      @supports (-webkit-text-stroke: 3px black) {
+        -webkit-text-stroke: 3px $next__coral;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: all 2s ease-in-out;
 
-    &:hover {
-      color: $next__coral;
-      -webkit-text-fill-color: $next__coral;
+        // test
+        background-color: white;
+        background-repeat: no-repeat;
+        height: -100px;
+        background-position: 25% 75%;
+        
+      }
+
+      &:hover {
+        color: $next__coral;
+        -webkit-text-fill-color: $next__coral;
+      }
     }
   }
   
@@ -75,3 +85,4 @@
     // border: 1px solid green;
   }
 }
+
