@@ -3,8 +3,7 @@
 
 
 #next__navbar {
-  background-color: $next__white !important;
-  
+  background-color: $next__blue !important;
 
   button {
     border-color: transparent;
@@ -37,7 +36,7 @@
     }
 
     .nav-link {
-      @extend %hard__blue;
+      @extend %hard__white;
       font-weight: 700;
       padding-bottom: 0;
       align-self: end;

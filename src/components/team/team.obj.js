@@ -7,7 +7,7 @@ import teamData from '../../data/data.team.json';
 import './team.style.desktop.scss';
 import './team.style.mobile.scss';
 
-export function TeamPage(props) {
+export function TeamRouter(props) {
   const { match } = props;
 
   return (

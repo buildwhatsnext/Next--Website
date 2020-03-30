@@ -3,6 +3,7 @@ import AppRouter from './app.router';
 import AppCursor from './app.cursor';
 import './app.style.desktop.scss';
 import './app.style.mobile.scss';
+import './app.style.general.scss';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -32,7 +33,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-    <div className="app" onMouseMove={this.updateMousePosition}>
+    <div className="app app__theme__blue" onMouseMove={this.updateMousePosition}>
       <AppCursor 
         positionX={ this.state.positionX } 
         positionY={ this.state.positionY } 
