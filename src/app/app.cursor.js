@@ -17,8 +17,13 @@ export default class AppCursor extends React.Component {
     // console.log(event);
     console.log(event.clientX);
     console.log(event.clientY);
-    console.log(event.pageX);
-    console.log(event.pageY);
+    const position = {
+      x : event.clientX,
+      y : event.clientY
+    }
+
+    console.log('This is the position: ' + position);
+
     // this.setState({
     //   positionX: event.clientX,
     //   positionY: event.clientY
