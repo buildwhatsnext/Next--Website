@@ -4,8 +4,9 @@ import './project.item.desktop.scss';
 import './project.item.mobile.scss';
 import ProjectData from '../../data/data.project.json';
 
-export function ProjectList() {
+export function ProjectList(props) {
   const { projects } = ProjectData;
+  const { history } = props;
 
   const pNames = Object.getOwnPropertyNames(projects);
 
@@ -13,7 +14,7 @@ export function ProjectList() {
   const projectList = pNames.map(project => {
     const info = projects[project];
 
-    return <ProjectItem key={i++} {...info } />
+    return <ProjectItem key={i++} {...info } history={ history } />
   })
 
   return (
@@ -24,8 +25,10 @@ export function ProjectList() {
 }
 
 export function ProjectItem(props) {
+  const path = props.history.location.pathname;
   const title = props.title ? props.title : "/";
-  const route = title.toString().toLowerCase();
+  const projectName = title.toString().toLowerCase();
+  const route = `${path}/${projectName}`;
 
   return (
     <Link to={route}>
