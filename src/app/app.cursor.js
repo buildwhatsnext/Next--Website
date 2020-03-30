@@ -13,10 +13,15 @@ export default class AppCursor extends React.Component {
   
   updateMousePosition = (event) => {
     event.preventDefault();
-    console.log('Mouse moved');
+    // console.log('Mouse moved');
+    // console.log(event);
+    console.log(event.clientX);
+    console.log(event.clientY);
+    console.log(event.pageX);
+    console.log(event.pageY);
     // this.setState({
-    //   positionX: position.X,
-    //   positionY: position.Y
+    //   positionX: event.clientX,
+    //   positionY: event.clientY
     // });
   }
 
