@@ -7,7 +7,7 @@ import ProjectOverviewPage from './project.overview';
 import './project.style.desktop.scss';
 import './project.style.mobile.scss';
 
-export function ProjectPage(props) {
+export function ProjectRouter(props) {
   const { match } = props;
 
   return (
