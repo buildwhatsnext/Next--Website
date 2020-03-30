@@ -5,8 +5,8 @@ import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
-import { TeamPage } from '../components/team/team.obj';
-import { ProjectPage } from '../components/project/project.obj';
+import { TeamRouter } from '../components/team/team.obj';
+import { ProjectRouter } from '../components/project/project.obj';
 
 import '../styles/styles.interaction.scss';
 
@@ -18,6 +18,7 @@ export default function AppRouter() {
     </Router>
   )
 }
+
 
 const Routes = () => (
   <Fragment>
@@ -32,17 +33,10 @@ const Routes = () => (
         <Route path='/contact'>
           <Contact />
         </Route>
-        <Route path="/team" render={(props) => (<TeamPage {...props} />)} />
-        <Route path="/projects" render={(props) => (<ProjectPage {...props} />)} />
+        <Route path="/team" render={(props) => (<TeamRouter {...props} />)} />
+        <Route path="/projects" render={(props) => (<ProjectRouter {...props} />)} />
         <Route exact path='/' render={(props) => (
-          // <CSSTransition
-          //   in={true}
-          //   appear={true}
-          //   timeout={1000}
-          //   classNames="fade"
-          // >
             <HomePage {...props}/>
-          // </CSSTransition>
         )}/>
       </Switch>
     </div>

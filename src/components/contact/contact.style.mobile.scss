@@ -7,21 +7,20 @@
 
 
 @media(max-width: $sizeMobile) {
+
+
     .contact {
-        grid-column: 1/-1;
-        grid-row: 1/-1;
-        display: grid;
-        grid-template-columns: repeat(8, 59px);
-        grid-template-rows: repeat(36, 35px);
+      // border: 1px red solid;
+      background-color: #06038D;
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      display: grid;
+      grid-template-columns: repeat(8, 59px);
+      grid-template-rows: repeat(36, 35px);
     }
 
     .contact__quote {
-      // @extend .soft__blue__title;
-      grid-column: 1/6;
-      grid-row: 2/4;
-      font-size: 12px;
-      text-align: left;
-      
+      display: none;
     }
 
     .contact__title {
@@ -38,10 +37,38 @@
     .contact__form {
         grid-column-start: 1;
         grid-column-end: 7;
-        grid-row-start: 5;
+        grid-row-start: 3;
         grid-row-end: 11;
         font-size: 16px;
         line-height: 0px;
+        text-align: left;
+        text-indent: 20px;
+    
+
+        .contact__nameslash {
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          // padding-top: 4px
+        }
+        
+        .contact__emailslash {
+
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          padding-top: 4px;
+          grid-row: 5/6;
+        }
+        .contact__messageslash {
+
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          padding-top: 4px;
+          grid-row: 3/4;
+        }
+        
 
         .answerbox {
           border: 3px #E03E52 solid;
@@ -53,23 +80,27 @@
 
         .answerboxfat {
             display: grid;
-            grid-template-columns: repeat(20, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            // grid-template-columns: repeat(7, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
             border: 3px #E03E52 solid;
             height: 120px;
             width: 320px;
             z-index: -2;
-            
-          }
 
-        .button {
-            width: 35px;
-            height: 35px;
-            grid-row-end: 4;
-            // grid-column-start: 19;
-            grid-column-end: 21;
-            z-index: 3;
-            align-self: stretch;
+            .button {
+              background-image: url(../../assets/svg/icons/50contactbutton.svg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 36px;
+              height: 36px;
+              align-self: end;
+              justify-self: end;
+              // vertical-align: left;
+                // grid-row: 4 / 5;
+                // grid-column: 1 / 2;
+                // z-index: 3;
+                // align-self: stretch;
+              }
 
           }
 
@@ -95,13 +126,16 @@
         grid-template-columns: repeat(2, 130px);
         grid-template-rows: repeat(13, 30px);
         grid-column: 1 / -1;
-        grid-row: 14 / 30;
-        grid-gap: 5px;
-        grid-column-gap: 30px;
+        grid-row: 12 / 30;
+        // grid-gap: 5px;
+        // grid-column-gap: 40px;
         height: 100%;
         width: 100%;
+        padding-top: 20px;
         padding-left: 5px;
         padding-right: 10px;
+        margin: 5px;
+        column-gap: 50px;
     }
 
     .contact__info__item {
@@ -138,8 +172,8 @@
     }
 
     .contact__info__insta {
-        grid-column: 2 / 4;
-        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
     }
 
     .contact__info__location {

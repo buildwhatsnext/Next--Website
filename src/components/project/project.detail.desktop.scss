@@ -1,0 +1,35 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+@media(min-width: $sizeDesktop) {
+  .project__detail {
+    // border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  .project__detail__image__main {
+    border: 1px solid red;
+    background-color: $next__white;
+    grid-column: 1 / -1;
+    grid-row: 1 / 7;
+  }
+
+  .project__detail__name {
+    @extend .soft__white__title;
+    color: $next__white;
+    font-size: 144px;
+    font-weight: 600;
+    // border: 1px solid $next__white;
+    line-height: 180px;
+    background-color: $next__blue;
+    grid-column: 1 / 4;
+    grid-row: 4 / 8;
+    margin-left: 40px;
+    padding-bottom: 40px;
+  }
+}

@@ -1,10 +1,11 @@
 @import '../styles/styles.fonts.desktop.scss';
 @import '../styles/styles.general.scss';
+@import '../styles/styles.colors.scss';
 
 @media(min-width: $sizeDesktop) {
 
   .app {
-    
+    background-color: $next__blue;
     // padding: 20px;
   }  
 
