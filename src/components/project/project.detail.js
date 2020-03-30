@@ -1,5 +1,7 @@
 import React from 'react';
 import data from '../../data/data.project.json';
+import './project.detail.desktop.scss';
+import './project.detail.mobile.scss';
 
 export class ProjectDetailPage extends React.Component {
   render() {
@@ -17,8 +19,16 @@ export class ProjectDetailPage extends React.Component {
 
 export function ProjectDetail(data) {
   return (
+    
     <div className="project__detail">
-      Name: { data.name }
+      <div className="project__detail__image__main"></div>
+      <div className="project__detail__name">
+        {/* Name: { data.title } */}
+        Fordham University
+      </div>
+      <div className="project__detail__infotable"></div>
+      <div className="project__detail__image__extras"></div>
+      <div className="project__detail__summary"></div>
     </div>
   )
 }
