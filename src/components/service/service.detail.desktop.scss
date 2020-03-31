@@ -1,6 +1,14 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
+.soft__blue__subtitle {
+  @extend %soft__blue__subtitle;
+}
+
+.soft__white__subtitle {
+  @extend %soft__white__subtitle;
+}
+
 @media(min-width: $sizeDesktop) {
   .service__detail {
     display: grid;
@@ -9,10 +17,10 @@
     
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    border: 10px red solid;
+    // border: 10px red solid;
   }
 
-  .service__detail__box {
+  .service__detail__mainbox {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -28,19 +36,131 @@
     width: 700px;
     height: 800px;
     background-color: #E03E52;;
-    border-bottom: 20px white solid;
-    border-left: 20px white solid;
   }
 
-  .service__detail__box__coral:after {
-    position: absolute;
-    height: 50%;
-  }
-
-  .info__item__value {
+  .service__detail__title {
     @extend .soft__white__title;
-    font-size: 40px;
+
+    grid-column: 5/10;
+    grid-row: 3/4;
+    z-index: 3;
+    text-align: right;
   }
+
+  .service__detail__description {
+    @extend .soft__blue__subtitle;
+    font-size: 20px;
+    grid-column: 5/10;
+    grid-row: 5/9;
+    z-index: 3;
+    text-align: right;
+  }
+
+  .cta_contactus {
+    @extend .soft__blue__subtitle;
+    font-size: 20px;
+    grid-column: 5/10;
+    grid-row: 9/10;
+    z-index: 3;
+    text-align: right;
+    justify-self: end;
+    align-self: end;
+    padding: none;
+    border-bottom: 10px white solid;
+  }
+
+  .service__detail__outerbox {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+    grid-column: 7 / 11;
+    grid-row: 1 / 11;
+  }
+
+  .service__detail__subtitle1 {
+    @extend .soft__white__title;
+
+    font-size: 48px;
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+
+  .service__detail__subtitle1description {
+    @extend .soft__white__subtitle;
+
+    font-size: 16px;
+    grid-column: 2/10;
+    grid-row: 4/5;
+    
+  }
+
+  .cta1 {
+    @extend .soft__white__subtitle;
+
+    font-size: 20px;
+    grid-column: 2/10;
+    grid-row: 4/5;
+    align-self: end;
+    justify-self: end;
+    border-bottom: 10px #E03E52 solid;
+  }
+
+  .service__detail__subtitle2 {
+    @extend .soft__white__title;
+
+    font-size: 48px;
+    grid-column: 1/6;
+    grid-row: 6/7;
+    
+  }
+
+  .service__detail__subtitle2description {
+    @extend .soft__white__subtitle;
+    font-size: 16px;
+    grid-column: 2/10;
+    grid-row: 7/8;
+  }
+
+  .cta2 {
+    @extend .soft__white__subtitle;
+
+    font-size: 20px;
+    grid-column: 2/10;
+    grid-row: 7/8;
+    align-self: end;
+    justify-self: end;
+    border-bottom: 10px #E03E52 solid;
+    // border: 10px red solid;
+  }
+
+  .service__detail__subtitle3 {
+    @extend .soft__white__title;
+    
+    font-size: 48px;
+    grid-column: 1/6;
+    grid-row: 9/10;
+  }
+
+  .service__detail__subtitle3description {
+    @extend .soft__white__subtitle;
+    font-size: 16px;
+    grid-column: 2/10;
+    grid-row: 10/11;
+  }
+
+  .cta3 {
+    @extend .soft__white__subtitle;
+
+    font-size: 20px;
+    grid-column: 2/10;
+    grid-row: 10/11;
+    align-self: end;
+    justify-self: end;
+    border-bottom: 10px #E03E52 solid;
+    // border: 10px red solid;
+  }
+
 
   // .service__detail__box__white {
   //   // grid-column: 2 / 6;

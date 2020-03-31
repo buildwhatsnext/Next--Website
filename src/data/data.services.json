@@ -3,32 +3,32 @@
   "services" : {    
     "computation" : {
       "title": "Computation",
-      "description": "description",
+      "description": "BIM or Building Information Modeling is a digital,  model-based process providing architects, engineers and constructors a tool to create and manage data across a building project’s lifecycle. Through a wide array of design and computation software, we find efficient solutions for the pinch points in the AECO  (Architecture, Engineering, Construction, and Owner) industries. Utilizing integrated databases, we also develop data strategies by slicing and visualizing information to create insights into any aspect of a project realization pipeline",
       "subtitle1": " Execution Plans",
-      "subtitle1description": "-",
+      "subtitle1description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. ",
       "subtitle2": "Laser Scanning",
-      "subtitle2description": "-",
+      "subtitle2description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. ",
       "subtitle3": "Model Support",
-      "subtitle3description": "-"
+      "subtitle3description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. "
     },
     "experience" : {
       "title": "Experience",
       "description": "-",
       "subtitle1": "VR Execution Plans",
-      "subtitle1description": "-",
+      "subtitle1description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. ",
       "subtitle2": "VR Scanning",
-      "subtitle2description": "-",
+      "subtitle2description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. ",
       "subtitle3": "VR Support",
-      "subtitle3description": "-"
+      "subtitle3description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. "
     },
     "innovation" : {
       "title": "Innovation",
       "description": "-",
-      "subtitle1description": "-",
+      "subtitle1description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. ",
       "subtitle2": "Code Scanning",
-      "subtitle2description": "-",
+      "subtitle2description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. ",
       "subtitle3": "Code Support",
-      "subtitle3description":"-"
+      "subtitle3description":"A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. "
     }
   }
 }
