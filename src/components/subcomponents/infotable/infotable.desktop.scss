@@ -1,0 +1,25 @@
+.info__table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+
+  .info__item {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  
+    .info__item__title {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+    
+    .info__item__value {
+      grid-row: 2 / 3;
+    }
+  }
+}
+
+
+
