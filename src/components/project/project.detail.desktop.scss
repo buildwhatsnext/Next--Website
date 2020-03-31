@@ -92,7 +92,7 @@
           }
 
           .title__icon {
-            height: 100%;
+            height: 100;
             // border: 1px solid red;
             align-self: center;
           }
@@ -114,6 +114,13 @@
 
           .title__text {
             @extend .soft__white__title;
+            text-align: left;
+            padding-left: 40px;
+          }
+
+          .title__icon {
+            align-self: center;
+            height: 100;
           }
         }
 
