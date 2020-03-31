@@ -1,8 +1,8 @@
 {
   "type" : "services information",
   "services" : {    
-    "computation" : {
-      "title": "Computation",
+    "Computation" : {
+      "title": "BIM & Computation",
       "description": "BIM or Building Information Modeling is a digital,  model-based process providing architects, engineers and constructors a tool to create and manage data across a building project’s lifecycle. Through a wide array of design and computation software, we find efficient solutions for the pinch points in the AECO  (Architecture, Engineering, Construction, and Owner) industries. Utilizing integrated databases, we also develop data strategies by slicing and visualizing information to create insights into any aspect of a project realization pipeline",
       "subtitle1": " Execution Plans",
       "subtitle1description": "A pulvinar augue aliquam elementum fringilla. Risus, gravida tortor elementum suspendisse sit donec. Vel massa eu in risus mi eu rhoncus. ",
