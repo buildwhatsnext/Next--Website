@@ -4,7 +4,7 @@
     "piper" : {
       "title": "Piper",
       "client": "HLW Sustainability",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Ongoing",
       "type": "Application",
       "teams": ["All"],
@@ -14,7 +14,7 @@
     "turing" : {
       "title": "Turing",
       "client": "",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Ongoing",
       "type": "Application",
       "teams": ["All"],
@@ -24,7 +24,7 @@
     "1950Grand" : {
       "title": "1950 Grand",
       "client": "",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Completed",
       "type": "",
       "teams": ["All"],
@@ -34,7 +34,7 @@
     "stamford" : {
       "title": "First Stamford Place",
       "client": "",
-      "location": "Stamford, Connecticut",
+      "location": "Connecticut",
       "status": "Completed",
       "type": "",
       "teams": ["All"],
@@ -44,7 +44,7 @@
     "fordham" : {
       "title": "Fordham NRHCC",
       "client": "Fordham University",
-      "location": "Bronx, New York",
+      "location": "New York",
       "status": "Completed",
       "type": "",
       "teams": ["All"],
@@ -54,7 +54,7 @@
     "google" : {
       "title": "Google Chelsea Market",
       "client": "Google",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Completed",
       "type": "Workspace",
       "teams": ["Innovation _ Simulation _ Computation"],

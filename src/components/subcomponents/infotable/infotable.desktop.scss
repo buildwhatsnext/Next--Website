@@ -1,25 +1,23 @@
+@import '../../../styles/styles.fonts.components.scss';
+
 .info__table {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr;
-  background-color: white;
+  grid-column: 6 / 10;
+  height: 100%;
+  background-color: $next__white;
 
   .info__item {
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  
-    .info__item__title {
-      grid-column: 1 / -1;
-      grid-row: 1 / 2;
+    border: 1px solid $next__blue;
+    padding-left: 10px;
+
+    &__title {
+      @extend .soft__blue__info;
+      text-transform: capitalize;
     }
-    
-    .info__item__value {
-      grid-row: 2 / 3;
+
+    &__value {
+      @extend .hard__coral__info;
+      text-transform: uppercase;
+      font-weight: 400;
     }
   }
 }
-
-
-

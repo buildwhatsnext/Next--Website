@@ -32,4 +32,33 @@
     margin-left: 40px;
     padding-bottom: 40px;
   }
+
+  .project__detail__infotable {
+    grid-column-start: 6 ;
+    grid-column-end: 10 ;
+    // border: 1px solid red;
+    grid-row-start: 6;
+    grid-row-end: 8;
+
+    .info__table {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+
+      .info__item {
+        // border: 1px solid orange;
+
+        &__client {
+          grid-column: span 4;
+        }
+
+        &__location {
+          grid-column: span 2;
+        }
+
+        &__status, &__type, &__team {
+          grid-column: span 2;
+        }
+      }
+    }
+  }
 }

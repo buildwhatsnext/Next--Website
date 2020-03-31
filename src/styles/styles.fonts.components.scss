@@ -205,3 +205,13 @@
   @extend %soft__coral__subtitle;
 }
 
+.soft__blue__info {
+  @extend %soft__info;
+  color: $next__blue;
+}
+
+.hard__coral__info {
+  @extend %hard__info;
+  color: $next__coral;
+}
+
