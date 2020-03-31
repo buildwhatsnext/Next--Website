@@ -18,12 +18,10 @@ export default class App extends React.Component {
   updateMousePosition = (event) => {
     event.preventDefault();
     const position = {
-      x : event.clientX,
-      y : event.clientY
+      x : event.clientX, // subtracting half the width of the follower element will center this
+      y : event.clientY  // however, for some reason, it makes things completely unclickable
     }
 
-    console.log('This is the positionX: ' + position.x);
-    console.log('This is the positionY: ' + position.y);
 
     this.setState({
       positionX: position.x,

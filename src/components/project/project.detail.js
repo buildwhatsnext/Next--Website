@@ -61,6 +61,8 @@ function convertObjectDataToArray(data) {
   return array;
 }
 
+// export function ProjectDetail(projData) {
+//   return (
 //     <div className="projectdetailpage">
 //         <div className="project__title">{ projData.title }</div>
 //         <ProjectDetailTable { ...projData } />
