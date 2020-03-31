@@ -63,4 +63,60 @@
       }
     }
   }
+
+  .project__detail__summary {
+    border: 1px solid orange;
+    grid-column: 1 / -1;
+    grid-row: 9 / -1;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+
+      &__challenge {
+        border: 1px solid orchid;
+
+        &__title {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          border: 1px solid white;
+
+          .title__text {
+            @extend .soft__coral__title;
+            text-align: left;
+            padding-left: 40px;
+            border: 1px solid white;
+          }
+
+          .title__icon {
+            height: 100%;
+            border: 1px solid red;
+            align-self: center;
+          }
+        }
+      }
+
+      &__outcome {
+        border: 1px solid green;
+
+        &__title {
+          display: grid;
+          grid-template-columns: auto 1fr;
+
+          .title__text {
+            @extend .soft__white__title;
+          }
+        }
+      }
+    }
+  }
+
+  .title__icon {
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+  }
 }

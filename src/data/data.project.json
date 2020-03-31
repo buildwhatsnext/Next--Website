@@ -9,8 +9,8 @@
       "type": "Application",
       "teams": ["All"],
       "description": {
-        "challenge" : "info about the challenge",
-        "outcome" : "info about the outcome"
+        "challenge" : "Help Google project team and its multidisciplinary group of stakeholders manage, integrate and coordinate the design development of a central atrium knitting together multiple floors, integrating shared amenities and serving as a the new heart of Google NYC",
+        "outcome" : "A BIM process that utilized digital models as virtual repositories for data enabling the management, coordination and integration of:  post occupancy analyses,   custom sustainability practices,   wellness design,   healthy materials consulting,   LEED consulting  master planning,  interior design; and  landscape architecture."
       },
       "pictureURL":[""]
     },
