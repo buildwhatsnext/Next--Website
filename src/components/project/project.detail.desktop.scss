@@ -28,9 +28,11 @@
     line-height: 180px;
     background-color: $next__blue;
     grid-column: 1 / 4;
-    grid-row: 4 / 8;
+    grid-row: 6 / 8;
+    height: auto;
     margin-left: 40px;
     padding-bottom: 40px;
+    padding-left: 40px;
   }
 
   .project__detail__infotable {

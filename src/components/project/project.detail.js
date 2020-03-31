@@ -24,14 +24,54 @@ export function ProjectDetail(data) {
     <div className="project__detail">
       <div className="project__detail__image__main"/>
       <div className="project__detail__name">
-        {/* Name: { data.title } */}
-        Fordham University
+        { data.title }
       </div>
       <div className="project__detail__infotable">
         <ProjectInfoTable {...data} />
       </div>
-      <div className="project__detail__summary"></div>
+      <div className="project__detail__summary">
+        <ProjectSummary {...data.description } />
+      </div>
       <div className="project__detail__image__extras"></div>
+    </div>
+  )
+}
+
+function ProjectSummary(info) {
+  const { challenge, outcome } = info;
+
+  const sumC = {
+    title: "The Challenge",
+    summary: challenge,
+    icon: ""
+  }
+
+  const sumO = {
+    title: "The Outcome",
+    summary: outcome,
+    icon: ""
+  }
+
+  return (
+    <div className="summary">
+      <div className="summary__challenge">
+        <div className="summary__challenge__title">
+          <div className="title__text">{ sumC.title}</div>
+          <div className="title__icon"> { sumC.icon } </div>
+        </div>
+        <div className="summary__challenge__summary">
+          { sumC.summary }
+        </div>
+      </div>
+      <div className="summary__outcome">
+        <div className="summary__outcome__title">
+        <div className="title__text">{ sumO.title}</div>
+        <div className="title__icon"> { sumO.icon } </div>
+        </div>
+        <div className="summary__outcome__summary">
+        { sumO.summary }
+        </div>
+      </div>
     </div>
   )
 }

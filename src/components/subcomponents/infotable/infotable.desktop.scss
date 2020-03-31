@@ -2,8 +2,9 @@
 
 .info__table {
   grid-column: 6 / 10;
-  height: 100%;
+  height: auto;
   background-color: $next__white;
+  border: 1px solid $next__blue;
 
   .info__item {
     border: 1px solid $next__blue;
@@ -12,12 +13,15 @@
     &__title {
       @extend .soft__blue__info;
       text-transform: capitalize;
+      padding-top: 10px;
     }
 
     &__value {
       @extend .hard__coral__info;
       text-transform: uppercase;
       font-weight: 400;
+      padding-top: 20px;
+      padding-bottom: 10px;
     }
   }
 }
