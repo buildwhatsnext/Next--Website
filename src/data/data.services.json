@@ -1,0 +1,33 @@
+{
+  "type" : "services information",
+  "services" : {    
+    "bim" : {
+      "title": "BIM & Computation",
+      "description": "-",
+      "subtitle1description": "-",
+      "subtitle2": "Laser Scanning",
+      "subtitle2description": "-",
+      "subtitle3": "Model Support",
+      "subtitle3description": "-"
+    },
+    "experience" : {
+      "title": "Experience",
+      "description": "-",
+      "subtitle1": "VR Execution Plans",
+      "subtitle1description": "-",
+      "subtitle2": "VR Scanning",
+      "subtitle2description": "-",
+      "subtitle3": "VR Support",
+      "subtitle3description": "-"
+    },
+    "innovation" : {
+      "title": "Innovation",
+      "description": "-",
+      "subtitle1description": "-",
+      "subtitle2": "Code Scanning",
+      "subtitle2description": "-",
+      "subtitle3": "Code Support",
+      "subtitle3description":"-"
+    }
+  }
+}
