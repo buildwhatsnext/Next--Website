@@ -51,11 +51,15 @@
   @extend %info;
 }
 
+%soft__body {
+  @extend %soft;
+  @extend %body;
+}
+
 %hard__subinfo {
   @extend %hard;
   @extend %subinfo;
 }
-
 
 %hard__black_right {
   @extend %hard;
@@ -205,6 +209,14 @@
   @extend %soft__coral__subtitle;
 }
 
+.soft__blue__subtitle {
+  @extend %soft__blue__subtitle;
+}
+
+.soft__white__subtitle {
+  @extend %soft__white__subtitle;
+}
+
 .soft__blue__info {
   @extend %soft__info;
   color: $next__blue;
@@ -215,3 +227,7 @@
   color: $next__coral;
 }
 
+.soft__white__body {
+  @extend %soft__body;
+  color: $next__white;
+}

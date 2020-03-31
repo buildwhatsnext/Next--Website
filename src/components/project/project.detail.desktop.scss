@@ -97,6 +97,10 @@
             align-self: center;
           }
         }
+
+        &__summary {
+          // @extend .soft__white__body;
+        }
       }
 
       &__outcome {
