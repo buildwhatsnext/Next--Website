@@ -13,7 +13,7 @@ export function InfoTable(props) {
 
 const InfoTableItem = (props) => (
   <div className="info__item">
-    <div className="info__item__title">{props.title}</div>
+    {/* <div className="info__item__title">{props.title}</div> */}
     <div className="info__item__value">{props.value}</div>
   </div>
 )

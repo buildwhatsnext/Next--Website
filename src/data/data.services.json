@@ -1,9 +1,10 @@
 {
   "type" : "services information",
   "services" : {    
-    "bim" : {
-      "title": "BIM & Computation",
+    "computation" : {
+      "title": "Computation",
       "description": "-",
+      "subtitle1": " Execution Plans",
       "subtitle1description": "-",
       "subtitle2": "Laser Scanning",
       "subtitle2description": "-",
