@@ -5,67 +5,67 @@
   
   .project__data__list {
     margin-bottom: 200px;
-  }
 
-  .project__item__line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2 / 3;
-  }
+    .project__item {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
   
-  .project__item {
-    
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  .project__item__type {
-    @extend %hard__subinfo;
-    color: $next__grey;
-    display: none;
-  }
-  
-  .project__item__title {
-    direction: rtl;
-
-    div {
-      @extend .soft__coral__title;
-      // border: 1px solid white;
-      text-align: left;
-      white-space: nowrap;
-      font-size: 200px;
-      margin-left: 200px;
-      width: auto;
-      direction: ltr;
-
-      @supports (-webkit-text-stroke: 3px black) {
-        -webkit-text-stroke: 3px $next__coral;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        transition: all .5s ease-in-out;
-      }
-
       &:hover {
-        -webkit-text-fill-color: $next__coral;
-        animation: slideLeft .5s ease-in-out .5s;
-        animation-fill-mode: forwards;
+        cursor: pointer;
       }
     }
-
-    &:hover {
-      &:after {
-        @extend %project__underline__filled;
-      }
-    }  
+  
+    .project__item__type {
+      @extend %hard__subinfo;
+      color: $next__grey;
+      display: none;
+    }
+  
+    .project__item__image {
+      border: 1px solid red;
+      width: 100%;
+      height: 100%;
+    }
     
-    &::after {
-      // direction: rtl;
-      @extend %project__underline__none;
+    .project__item__title {
+      direction: rtl;
+  
+      div {
+        @extend .soft__coral__title;
+        // border: 1px solid white;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 200px;
+        margin-left: 200px;
+        width: auto;
+        direction: ltr;
+  
+        @supports (-webkit-text-stroke: 3px black) {
+          -webkit-text-stroke: 3px $next__coral;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          transition: all .5s ease-in-out;
+        }
+  
+        &:hover {
+          -webkit-text-fill-color: $next__coral;
+          animation: slideLeft .5s ease-in-out .5s;
+          animation-fill-mode: forwards;
+        }
+      }
+  
+      &:hover {
+        &:after {
+          @extend %project__underline__filled;
+        }
+      }  
+      
+      &::after {
+        @extend %project__underline__none;
+      }
     }
   }
-  
-  
+
 
   @keyframes slideLeft {
     0% { margin-left: 200px; }
@@ -89,8 +89,6 @@
   }
 
   %project__underline__filled {
-
-
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     // margin: 0 auto; /* This will center the border. */
@@ -99,7 +97,3 @@
     border-bottom: 1px solid $next__white; /* This creates the border. Replace black with whatever color you want. */
   }
 }
-
-
-
-
