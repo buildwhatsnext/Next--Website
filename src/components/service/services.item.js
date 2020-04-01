@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './service.item.desktop.scss';
-import './service.style.mobile.scss';
+import './service.item.mobile.scss';
 
 import ServiceData from '../../data/data.services.json';
 

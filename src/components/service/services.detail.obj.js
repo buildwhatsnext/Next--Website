@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../data/data.services.json';
 import './service.detail.desktop.scss';
-// import './service.detail.mobile.scss';
+import './service.detail.mobile.scss';
 
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 
