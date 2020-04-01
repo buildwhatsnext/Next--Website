@@ -117,6 +117,7 @@
   }
   .about__subtitleexperience {
     @extend .soft__white__subtitle;
+    font-weight: 400;
     margin-top: 5px;
     font-size: 12px;
     white-space: initial;
@@ -131,6 +132,7 @@
     grid-column: 2/6;
   }
   .about__subtitleinsight {
+    font-weight: 400;
     font-size: 12px;
     white-space: initial;
     grid-row: 12/15;
@@ -145,6 +147,7 @@
     grid-column: 2/5;
   }
   .about__subtitlecapabilities {
+    font-weight: 400;
     font-size: 12px;
     white-space: pre-wrap;
     grid-row: 19/20;
