@@ -36,7 +36,7 @@
         text-align: left;
         white-space: nowrap;
         font-size: 200px;
-        margin-left: 200px;
+        // margin-left: 200px;
         width: auto;
         direction: ltr;
   
@@ -49,7 +49,7 @@
   
         &:hover {
           -webkit-text-fill-color: $next__coral;
-          animation: slideLeft .5s ease-in-out .5s;
+          // animation: slideLeft .5s ease-in-out .5s;
           animation-fill-mode: forwards;
         }
       }
@@ -65,7 +65,6 @@
       }
     }
   }
-
 
   @keyframes slideLeft {
     0% { margin-left: 200px; }

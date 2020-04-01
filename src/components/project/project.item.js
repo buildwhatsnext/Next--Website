@@ -31,14 +31,14 @@ export function ProjectItem(props) {
   const route = `${path}/${projectName}`;
 
   return (
-    <Link to={route}>
       <div className={`project__item project__item__${props.slug}`}>
         <div className={`project__item__image project__item__image__${props.slug}`}/> 
         <div className="project__item__title">
-          <div> { props.shortName } </div>
+          <Link to={route}>
+            <div> { props.shortName } </div>
+          </Link>
         </div>
         <div className="project__item__type"> { props.type } </div>
       </div>
-    </Link>
   );
 }
