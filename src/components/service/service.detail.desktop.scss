@@ -68,7 +68,7 @@
   }
 
   .cta_contactus {
-    @extend .soft__blue__subtitle;
+    @extend .soft__white__subtitle;
     font-size: 24px;
     grid-column: 5 / 9;
     grid-row: 9 / 10;
@@ -79,7 +79,7 @@
     height: 30px;
     margin-bottom: 50px;
     
-    border-bottom: 10px white solid;
+    border-bottom: 10px $next__blue solid;
   }
 
   .service__detail__outerbox {
