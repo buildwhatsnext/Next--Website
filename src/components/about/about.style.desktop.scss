@@ -1,37 +1,6 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-.soft__blue__title {
-  @extend %soft__blue__title;
-}
-
-.soft__black__title {
-  @extend %soft__black__title;
-}
-
-.soft__white__title {
-  @extend %soft__white__title;
-}
-
-.soft__white__secondtitle {
-  @extend %soft__white__secondtitle;
-}
-
-.soft__blue__subtitle {
-  @extend %soft__blue__subtitle;
-}
-
-.hard__blue__subtitle {
-  @extend %hard__blue__subtitle;
-}
-
-.soft__black__subtitle {
-  @extend %soft__black__subtitle;
-}
-
-.soft__white__subtitle {
-  @extend %soft__white__subtitle;
-}
 
 @media(min-width: $sizeDesktop) {
   .about {
@@ -97,7 +66,7 @@
   }
 
   .about__contactus {
-    @extend .soft__white__subtitle;
+    // @extend .soft__white__subtitle !optional;
     grid-column-start: 8;
     grid-column-end: 9;
     grid-row-start: 17;

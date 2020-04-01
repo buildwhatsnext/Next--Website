@@ -1,45 +1,20 @@
-html {
-  // cursor: url(../assets/svg/icons/55bluecursor.svg), auto;
-  cursor: none;
-}
+@import '../styles/styles.colors.scss';
+
+// * {
+//   cursor: none;
+
+//   &:hover {
+//     cursor: none;
+//   }
+// }
 
 #follower {
-  width: 50px;
-  height: 50px;
-  // width: 100%;
-  // height: 100%;
-  position: absolute;
-  // top: 0;
-  // left: 0;
-  top: 50%;
-  left: 50%;
-  background: red;
-  border: 10px solid red;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  background: $next__coral;
+  border: 10px solid $next__coral;
   border-radius: 50%;
-  margin-top: 0em;
-  margin-left: 0em;
+  mix-blend-mode: difference;
   z-index: 10;
 }
-
-// #follower #circle1 {
-//   position: absolute;
-//   -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
-//   animation: pulse 2s infinite;
-//   background: #fff;
-//   border-radius: 50%;
-//   height: 0em;
-//   width: 0em;
-//   margin-top: 0em;
-//   margin-left: 0em;
-// }
-// #follower #circle2 {
-//   position: absolute;
-//   -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
-//   animation: pulse 4s infinite;
-//   background: rgba(200,0,0,0.8);
-//   border-radius: 50%;
-//   height: 0em;
-//   width: 0em;
-//   margin-top: 0em;
-//   margin-left: 0em;
-// }
