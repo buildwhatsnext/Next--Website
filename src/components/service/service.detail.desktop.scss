@@ -31,18 +31,28 @@
 
   .service__detail__box__coral {
     position: relative;
-    grid-column:  3/ 6;
-    grid-row: 2 / 8;
-    width: 700px;
-    height: 800px;
-    background-color: #E03E52;;
+    grid-column:  4 / 10;
+    grid-row: 2 / 10;
+    background-color: #E03E52;
+    margin: 10px;
+    z-index: 3;
+  }
+
+  .service__detail__box__white {
+    position: relative;
+    grid-column:  4 / 10;
+    grid-row: 2 / 10;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 2px solid #E03E52;
   }
 
   .service__detail__title {
     @extend .soft__white__title;
 
-    grid-column: 5/10;
-    grid-row: 3/4;
+    grid-column: 5/9;
+    grid-row: 3 / 5;
     z-index: 3;
     text-align: right;
   }
@@ -50,7 +60,8 @@
   .service__detail__description {
     @extend .soft__blue__subtitle;
     font-size: 20px;
-    grid-column: 5/10;
+    font-weight: 400;
+    grid-column: 5/9;
     grid-row: 5/9;
     z-index: 3;
     text-align: right;
@@ -58,14 +69,16 @@
 
   .cta_contactus {
     @extend .soft__blue__subtitle;
-    font-size: 20px;
-    grid-column: 5/10;
-    grid-row: 9/10;
+    font-size: 24px;
+    grid-column: 5 / 9;
+    grid-row: 9 / 10;
     z-index: 3;
     text-align: right;
     justify-self: end;
     align-self: end;
-    padding: none;
+    height: 30px;
+    margin-bottom: 50px;
+    
     border-bottom: 10px white solid;
   }
 
@@ -76,13 +89,14 @@
     
     grid-column: 7 / 11;
     grid-row: 1 / 11;
+    margin-top: 30px;
   }
 
   .service__detail__subtitle1 {
     @extend .soft__white__title;
 
     font-size: 48px;
-    grid-column: 1/6;
+    grid-column: 1/8;
     grid-row: 3/4;
   }
 
@@ -92,17 +106,19 @@
     font-size: 16px;
     grid-column: 2/10;
     grid-row: 4/5;
+    font-weight: 400;
     
   }
 
   .cta1 {
     @extend .soft__white__subtitle;
 
-    font-size: 20px;
+    font-size: 24px;
     grid-column: 2/10;
     grid-row: 4/5;
     align-self: end;
     justify-self: end;
+    height: 32px;
     border-bottom: 10px #E03E52 solid;
   }
 
@@ -120,16 +136,18 @@
     font-size: 16px;
     grid-column: 2/10;
     grid-row: 7/8;
+    font-weight: 400;
   }
 
   .cta2 {
     @extend .soft__white__subtitle;
 
-    font-size: 20px;
+    font-size: 24px;
     grid-column: 2/10;
     grid-row: 7/8;
     align-self: end;
     justify-self: end;
+    height: 32px;
     border-bottom: 10px #E03E52 solid;
     // border: 10px red solid;
   }
@@ -147,16 +165,18 @@
     font-size: 16px;
     grid-column: 2/10;
     grid-row: 10/11;
+    font-weight: 400;
   }
 
   .cta3 {
     @extend .soft__white__subtitle;
 
-    font-size: 20px;
+    font-size: 24px;
     grid-column: 2/10;
     grid-row: 10/11;
     align-self: end;
     justify-self: end;
+    height: 32px;
     border-bottom: 10px #E03E52 solid;
     // border: 10px red solid;
   }
