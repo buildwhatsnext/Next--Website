@@ -24,7 +24,9 @@ export class ProjectDetailPage extends React.Component {
 export function ProjectDetail(data) {
   return (
     <div className="project__detail">
-      <div className="project__detail__image__main"/>
+      <div className="project__detail__image__main">
+        {data.pictureURL}
+      </div>
       <div className="project__detail__name">
         { data.title }
       </div>
@@ -34,7 +36,8 @@ export function ProjectDetail(data) {
       <div className="project__detail__summary">
         <ProjectSummary {...data.description } />
       </div>
-      <div className="project__detail__image__extras"></div>
+      <div className="project__detail__image__extras">
+      </div>
     </div>
   )
 }
