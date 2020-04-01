@@ -4,9 +4,7 @@
 @media(min-width: $sizeDesktop) {
   
   .project__data__list {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // grid-column-start: 2;
+    margin-bottom: 200px;
   }
 
   .project__item__line {
@@ -20,6 +18,12 @@
     &:hover {
       cursor: pointer;
     }
+  }
+
+  .project__item__type {
+    @extend %hard__subinfo;
+    color: $next__grey;
+    display: none;
   }
   
   .project__item__title {
@@ -44,18 +48,9 @@
 
       &:hover {
         -webkit-text-fill-color: $next__coral;
-        // animation: slideLeft .5s ease-in-out .5s;
-        // animation-fill-mode: forwards;
-
-        // &:after {
-        //   @extend %project__underline__filled;
-        // }
+        animation: slideLeft .5s ease-in-out .5s;
+        animation-fill-mode: forwards;
       }
-
-      // &::after {
-      //   @extend %project__underline__none;
-      //   // @extend %project__underline__filled;
-      // }
     }
 
     &:hover {
@@ -70,14 +65,16 @@
     }
   }
   
-  .project__item__type {
-    @extend %hard__subinfo;
-    color: $next__grey;
-  }
+  
 
   @keyframes slideLeft {
     0% { margin-left: 200px; }
     100% { margin-left: 0px; }
+  }
+
+  @keyframes expandWidth {
+    0% { width: 0%; }
+    100% { width: 100%; }
   }
   
   %project__underline__none {
@@ -92,6 +89,8 @@
   }
 
   %project__underline__filled {
+
+
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     // margin: 0 auto; /* This will center the border. */
