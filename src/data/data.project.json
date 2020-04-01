@@ -3,6 +3,7 @@
   "projects" : {    
     "piper" : {
       "title": "Piper",
+      "shortName": "Piper",
       "client": "HLW Sustainability",
       "location": "New York",
       "status": "Ongoing",
@@ -17,6 +18,7 @@
     },
     "turing" : {
       "title": "Turing",
+      "shortName": "Turing",
       "client": "",
       "location": "New York",
       "status": "Ongoing",
@@ -31,6 +33,7 @@
     },
     "1950" : {
       "title": "1950 Grand",
+      "shortName": "1950 Grand",
       "client": "",
       "location": "New York",
       "status": "Completed",
@@ -45,6 +48,7 @@
     },
     "stamford" : {
       "title": "First Stamford Place",
+      "shortName": "Stamford",
       "client": "",
       "location": "Connecticut",
       "status": "Completed",
@@ -59,6 +63,7 @@
     },
     "fordham" : {
       "title": "Fordham NRHCC",
+      "shortName": "Fordham",
       "client": "Fordham University",
       "location": "New York",
       "status": "Completed",
@@ -73,6 +78,7 @@
     },
     "google" : {
       "title": "Google Chelsea Market",
+      "shortName": "Google",
       "client": "Google",
       "location": "New York",
       "status": "Completed",
