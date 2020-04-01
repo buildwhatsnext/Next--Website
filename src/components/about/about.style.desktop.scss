@@ -98,13 +98,16 @@
 
   .about__contactus {
     @extend .soft__white__subtitle;
-    grid-column-start: 8;
+    font-size: 32px;
+    grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 17;
     grid-row-end: 18;
-    width: 89px;
+    // width: 89px;
     border-bottom: 12px solid #06038D;
     text-align: right;
+    margin-left: 75px;
+    margin-bottom: 2px;
   }
 
   // .about__quote {
@@ -210,7 +213,8 @@
 
   .about__seehowexperience {
     @extend .soft__white__subtitle;
-    grid-column-start: 13;
+    font-size: 24px;
+    grid-column-start: 12;
     grid-column-end: 15;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -220,7 +224,8 @@
   
   .about__seehowinsight {
     @extend .soft__white__subtitle;
-    grid-column-start: 13;
+    font-size: 24px;
+    grid-column-start: 12;
     grid-column-end: 15;
     grid-row-start: 6;
     grid-row-end: 7;
@@ -230,36 +235,44 @@
   
   .about__seehowcapabilities {
     @extend .soft__white__subtitle;
-    grid-column-start: 13;
+    font-size: 24px;
+    grid-column-start: 12;
     grid-column-end: 15;
     grid-row-start: 9;
     grid-row-end: 10;
     text-align: right;
+    
   }
 
   .about__highlightexperience {
     border-top: #E03E52 9px solid;
-    grid-column-start: 15;
+    grid-column-start: 14;
     grid-column-end: 18;
     grid-row-start: 12;
     grid-row-end: 13;
     bottom: 100px;
+    margin-left: 30px;
+    margin-right: 18px;
   }
 
   .about__highlightinsight {
     border-top: #E03E52 9px solid;
-    grid-column-start: 15;
+    grid-column-start: 14;
     grid-column-end: 18;
     grid-row-start: 26;
     grid-row-end: 27;
+    margin-left: 30px;
+    margin-right: 18px;
   }
 
   .about__highlightcapabilities {
     border-top: #E03E52 9px solid;
-    grid-column-start: 15;
+    grid-column-start: 14;
     grid-column-end: 18;
     grid-row-start: 40;
     grid-row-end: 41;
+    margin-left: 30px;
+    margin-right: 18px;
   }
 
   .monitor {
