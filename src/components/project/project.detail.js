@@ -3,7 +3,7 @@ import data from '../../data/data.project.json';
 import './project.detail.desktop.scss';
 import './project.detail.mobile.scss';
 import chip from '../../assets/svg/icons/14chip.svg';
-import bulb from '../../assets/svg/icons/56whitebulb.svg';
+import bulb from '../../assets/svg/icons/56.whitebulb.svg';
 
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 
