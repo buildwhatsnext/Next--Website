@@ -219,6 +219,9 @@
     grid-row-start: 3;
     grid-row-end: 4;
     text-align: right;
+    border-bottom: #E03E52 9px solid;
+    margin-bottom: 55px;
+    margin-left: 40px;
   }
 
   
@@ -230,6 +233,9 @@
     grid-row-start: 6;
     grid-row-end: 7;
     text-align: right;
+    border-bottom: #E03E52 9px solid;
+    margin-bottom: 55px;
+    margin-left: 40px;
   }
 
   
@@ -241,39 +247,45 @@
     grid-row-start: 9;
     grid-row-end: 10;
     text-align: right;
+    border-bottom: #E03E52 9px solid;
+    margin-bottom: 55px;
+    margin-left: 40px;
     
   }
 
-  .about__highlightexperience {
-    border-top: #E03E52 9px solid;
-    grid-column-start: 14;
-    grid-column-end: 18;
-    grid-row-start: 12;
-    grid-row-end: 13;
-    bottom: 100px;
-    margin-left: 30px;
-    margin-right: 18px;
-  }
+  // .about__highlightexperience {
+  //   border-top: #E03E52 9px solid;
+  //   grid-column-start: 14;
+  //   grid-column-end: 18;
+  //   grid-row-start: 12;
+  //   grid-row-end: 13;
+  //   bottom: 100px;
+  //   margin-left: 30px;
+  //   margin-right: 18px;
+  //   margin-bottom: 10px;
+  // }
 
-  .about__highlightinsight {
-    border-top: #E03E52 9px solid;
-    grid-column-start: 14;
-    grid-column-end: 18;
-    grid-row-start: 26;
-    grid-row-end: 27;
-    margin-left: 30px;
-    margin-right: 18px;
-  }
+  // .about__highlightinsight {
+  //   border-top: #E03E52 9px solid;
+  //   grid-column-start: 14;
+  //   grid-column-end: 18;
+  //   grid-row-start: 26;
+  //   grid-row-end: 27;
+  //   margin-left: 30px;
+  //   margin-right: 18px;
+  //   margin-bottom: 1px;
+  // }
 
-  .about__highlightcapabilities {
-    border-top: #E03E52 9px solid;
-    grid-column-start: 14;
-    grid-column-end: 18;
-    grid-row-start: 40;
-    grid-row-end: 41;
-    margin-left: 30px;
-    margin-right: 18px;
-  }
+  // .about__highlightcapabilities {
+  //   border-top: #E03E52 9px solid;
+  //   grid-column-start: 14;
+  //   grid-column-end: 18;
+  //   grid-row-start: 40;
+  //   grid-row-end: 41;
+  //   margin-left: 30px;
+  //   margin-right: 18px;
+  //   margin-bottom: 25px;
+  // }
 
   .monitor {
     grid-column-start: 15;
