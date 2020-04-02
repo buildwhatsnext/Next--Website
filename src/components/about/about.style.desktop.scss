@@ -87,6 +87,7 @@
   .about__description {
     @extend .soft__blue__subtitle;
     font-size: 18px;
+    font-weight: 400;
     grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 7;
@@ -164,6 +165,7 @@
   .about__subtitleexperience {
     @extend .soft__white__subtitle;
     // font-size: 20px;
+    font-weight: 400;
     grid-column-start: 3;
     grid-column-end: 14;
     grid-row-start: 2;
@@ -184,6 +186,7 @@
   .about__subtitleinsight {
     @extend .soft__white__subtitle;
     // font-size: 16px;
+    font-weight: 400;
     grid-column-start: 3;
     grid-column-end: 14;
     grid-row-start: 5;
@@ -204,6 +207,7 @@
   .about__subtitlecapabilities {
     @extend .soft__white__subtitle;
     // font-size: 20px;
+    font-weight: 400;
     grid-column-start: 3;
     grid-column-end: 14;
     grid-row-start: 8;
