@@ -1,4 +1,5 @@
 import React from 'react';
+import './infotable.desktop.scss';
 
 export function InfoTable(props) {
   const { data } = props;
@@ -12,8 +13,10 @@ export function InfoTable(props) {
 }
 
 const InfoTableItem = (props) => (
-  <div className="info__item">
-    {/* <div className="info__item__title">{props.title}</div> */}
+  // <div className="info__item">
+  //   {/* <div className="info__item__title">{props.title}</div> */}
+  <div className={`info__item info__item__${props.title}`}>
+    <div className="info__item__title">{props.title}</div>
     <div className="info__item__value">{props.value}</div>
   </div>
 )
