@@ -68,10 +68,10 @@
 
   .about__contactus {
     @extend .soft__white__subtitle;
-    // font-size: 32px;
+    font-size: 32px;
     // grid-column-start: 6;
     // @extend .soft__white__subtitle !optional;
-    grid-column-start: 8;
+    grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 17;
     grid-row-end: 18;
