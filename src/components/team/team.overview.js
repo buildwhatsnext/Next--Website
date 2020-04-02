@@ -1,7 +1,7 @@
 import React from 'react';
-import TeamMemberList from '../subcomponents/team/team.list';
+import { TeamList as TeamMemberList} from './team.list';
 
-export default function ProjectOverviewPage(props) {
+export default function TeamOverviewPage(props) {
   const { history } = props;
 
   return (

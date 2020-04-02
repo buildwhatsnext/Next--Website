@@ -4,9 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import TeamOverviewPage from './team.overview';
 import TeamMemberDetailPage from './team.detail.obj';
 
-import './team.style.desktop.scss';
-import './team.style.mobile.scss';
-
 export function TeamRouter(props) {
   const { match } = props;
 

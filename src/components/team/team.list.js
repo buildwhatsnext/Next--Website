@@ -6,14 +6,14 @@ import './team.list.mobile.scss';
 import TeamData from '../../data/data.team.json';
 
 export function TeamList(props) {
-  const { teams } = TeamData;
+  const { members } = TeamData;
   const { history } = props;
 
-  const tNames = Object.getOwnPropertyNames(teams);
+  const tNames = Object.getOwnPropertyNames(members);
 
   let i = 0;
   const teamList = tNames.map(team => {
-    const info = teams[team];
+    const info = members[team];
 
     return <TeamItem key={i++} {...info } history={ history } />
   })
@@ -33,12 +33,14 @@ export function TeamItem(props) {
 
   return (
     <Link to={route}>
-      <div className={`team__item team__item__${props.align}`}>
-        <div className="team__item__title">
-          <p> { props.title } </p>
+      <div className={`team__item team__item__${props.shortName}`}>
+        <div className="team__item__name">
+          <p> { props.name } </p>
         </div>
-        <div className="team__item__type"> { props.type } </div>
-        <div className={`team__item__image team__item__image__${props.title}`}/>
+        <div className="team__item__position"> { props.position } </div>
+        <div className="team__item__location"> { props.location } </div>
+        <div className={`team__item__image team__item__image__${props.shortName}`}/>
+        <div className="team__item__block"/>
       </div>
     </Link>
   );
