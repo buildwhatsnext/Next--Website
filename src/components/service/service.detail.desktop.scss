@@ -34,6 +34,7 @@
     grid-column:  4 / 10;
     grid-row: 2 / 10;
     background-color: #E03E52;
+    // background-color: black;
     margin: 10px;
     z-index: 3;
   }
@@ -78,8 +79,11 @@
     align-self: end;
     height: 30px;
     margin-bottom: 50px;
-    
-    border-bottom: 10px $next__blue solid;
+
+    .link__highlighted__background {
+      background-color: $next__blue;
+
+    }
   }
 
   .service__detail__outerbox {

@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../../data/data.services.json';
 import './service.detail.desktop.scss';
 import './service.detail.mobile.scss';
+import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 
@@ -19,6 +20,10 @@ export class ServiceDetailPage extends React.Component {
 
 
 export function ServiceDetail(data) {
+
+  const contactus = "Contact Us";
+  const seehow = "See How";
+
   return (
     <div className= "service__detail">
       <div className="service__detail__mainbox">
@@ -26,7 +31,9 @@ export function ServiceDetail(data) {
         <div className="service__detail__box__white"></div>
         <div className="service__detail__title">{ data.title }</div>
         <div className="service__detail__description">{ data.description }</div>
-        <div className="cta_contactus"><p>Contact Us</p></div>
+        <div className="cta_contactus">
+          <InternalLinkHighlighted value={contactus} destination="/contact" />
+          </div>
       </div>
       <div className="service__detail__outerbox">
         <div className="service__detail__subtitle1">{ data.subtitle1 }</div>
