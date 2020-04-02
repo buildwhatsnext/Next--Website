@@ -1,9 +1,9 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-.soft__coral__title{
-  @extend %soft__coral__title;
-}
+// .soft__coral__title{
+//   @extend %soft__coral__title;
+// }
 
 @media(min-width: $sizeDesktop) {
   .page__project {
@@ -18,12 +18,13 @@
     grid-template-rows: repeat(12, 1fr);
   }
   
-  .page__project__title {
-    @extend .soft__coral__title;
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-    padding-left: 160px;
-  }
+  // .page__project__title {
+  //   // @extend .soft__coral__title;
+  //   grid-column: 1 / 3;
+  //   grid-row: 1 / 4;
+  //   padding-left: 160px;
+  //   text-align: right;
+  // }
   
   .page__project__items {
     grid-column: 1 / -1;

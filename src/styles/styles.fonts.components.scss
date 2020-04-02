@@ -132,6 +132,13 @@
   text-align: right;
 }
 
+%soft__coral__title__left {
+  @extend %soft__coral;
+  font-size: 72px;
+  font-weight: 600;
+  text-align: left;
+}
+
 %soft__black__title {
   @extend %soft__black;
   font-size: 72px;

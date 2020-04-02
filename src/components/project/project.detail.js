@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import data from '../../data/data.project.json';
 import './project.detail.desktop.scss';
 import './project.detail.mobile.scss';
-import idea from '../../assets/svg/icons/10idea.svg';
 import chip from '../../assets/svg/icons/14chip.svg';
+import bulb from '../../assets/svg/icons/56.whitebulb.svg';
 
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 
@@ -24,7 +24,9 @@ export class ProjectDetailPage extends React.Component {
 export function ProjectDetail(data) {
   return (
     <div className="project__detail">
-      <div className="project__detail__image__main"/>
+      <div className="project__detail__image__main">
+        {data.pictureURL}
+      </div>
       <div className="project__detail__name">
         { data.title }
       </div>
@@ -34,7 +36,8 @@ export function ProjectDetail(data) {
       <div className="project__detail__summary">
         <ProjectSummary {...data.description } />
       </div>
-      <div className="project__detail__image__extras"></div>
+      <div className="project__detail__image__extras">
+      </div>
     </div>
   )
 }
@@ -51,7 +54,7 @@ function ProjectSummary(info) {
   const sumO = {
     title: "The Outcome",
     summary: outcome,
-    icon: idea
+    icon: bulb
   }
 
   return (
@@ -68,7 +71,7 @@ function ProjectSummary(info) {
       <div className="summary__outcome">
         <div className="summary__outcome__title">
           <div className="title__icon"> <img src={ sumO.icon } alt=""/> </div>
-          <div className="title__text">{ sumO.title}</div>
+          <div className="title__text">{ sumO.title }</div>
         </div>
         <div className="summary__outcome__summary">
           { sumO.summary }
