@@ -64,6 +64,7 @@
         -webkit-background-clip: text;
         transition: all 2s ease-in-out;
         text-align: left;
+        margin-left: 20px;
 
         // test
         background-color: #06038D;
@@ -84,5 +85,6 @@
     @extend %hard__subinfo;
     color: $next__grey;
     // border: 1px solid green;
+    display: none;
   }
 }
