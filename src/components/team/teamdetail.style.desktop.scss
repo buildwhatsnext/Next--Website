@@ -79,12 +79,12 @@
   .team__detail__pictureURL {
     &__KyungPyo {
       @extend .team__detail__pictureURL;
-      background-image: url('../../assets/photo/team/professional/kp.PNG');
+      // background-image: url('../../assets/photo/team/professional/kp.PNG');
     }
 
     &__Preston {
       @extend .team__detail__pictureURL;
-      background-image: url('../../assets/photo/team/professional/preston.PNG');
+      // background-image: url('../../assets/photo/team/professional/preston.PNG');
     }
   }
   
