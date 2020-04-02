@@ -35,11 +35,6 @@ export default class About extends React.Component {
               <div className="about__category">
                   <AboutCategory />
               </div>
-              <div className="crossgrid">
-                {/* <div className="cross1"></div>
-                <div className="cross2"></div>
-                <div className="cross3"></div> */}
-              </div>
             </div>
           </Fragment>
         )

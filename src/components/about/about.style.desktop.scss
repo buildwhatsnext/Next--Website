@@ -79,18 +79,13 @@
     border-bottom: 12px solid #06038D;
     text-align: right;
     margin-left: 75px;
-    margin-bottom: 2px;
-  }
+    z-index: 5;
 
-  // .about__quote {
-  //   @extend .soft__blue__subtitle;
-  //   grid-column-start: 6;
-  //   grid-column-end: 9;
-  //   grid-row-start: 14;
-  //   grid-row-end: 16;
-  //   text-align: right;
-  //   font-size: 18px;
-  // }
+    .link__highlighted__background {
+      background-color: #06038D;
+      border-bottom: 12px solid #06038D;
+    }
+  }
 
   .about__name {
     @extend .soft__blue__subtitle;
@@ -226,79 +221,5 @@
     margin-bottom: 55px;
     margin-left: 40px;
     
-  }
-
-  // .about__highlightexperience {
-  //   border-top: #E03E52 9px solid;
-  //   grid-column-start: 14;
-  //   grid-column-end: 18;
-  //   grid-row-start: 12;
-  //   grid-row-end: 13;
-  //   bottom: 100px;
-  //   margin-left: 30px;
-  //   margin-right: 18px;
-  //   margin-bottom: 10px;
-  // }
-
-  // .about__highlightinsight {
-  //   border-top: #E03E52 9px solid;
-  //   grid-column-start: 14;
-  //   grid-column-end: 18;
-  //   grid-row-start: 26;
-  //   grid-row-end: 27;
-  //   margin-left: 30px;
-  //   margin-right: 18px;
-  //   margin-bottom: 1px;
-  // }
-
-  // .about__highlightcapabilities {
-  //   border-top: #E03E52 9px solid;
-  //   grid-column-start: 14;
-  //   grid-column-end: 18;
-  //   grid-row-start: 40;
-  //   grid-row-end: 41;
-  //   margin-left: 30px;
-  //   margin-right: 18px;
-  //   margin-bottom: 25px;
-  // }
-
-  .monitor {
-    grid-column-start: 15;
-    grid-column-end: 17;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .crossgrid {
-    // border: 3px pink solid;
-    grid-column: 8/9;
-    grid-row: 3/9;
-    display: grid;
-    grid-template-columns: repeat(1, 50px);
-    grid-template-rows: repeat(160, 5px);
-  }
-
-  .cross1 {
-    height: 100px;
-    grid-column: 1/2;
-    grid-row: 19/20;
-    background-repeat: no-repeat;
-    background-image: url(../../assets/svg/icons/51cross.svg);
-  }
-
-  .cross2 {
-    height: 100px;
-    grid-column: 1/2;
-    grid-row: 55/56;
-    background-repeat: no-repeat;
-    background-image: url(../../assets/svg/icons/51cross.svg);
-  }
-
-  .cross3 {
-    height: 100px;
-    grid-column: 1/2;
-    grid-row: 108/110;
-    background-repeat: no-repeat;
-    background-image: url(../../assets/svg/icons/51cross.svg);
   }
 }
