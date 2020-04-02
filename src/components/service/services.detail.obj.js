@@ -38,13 +38,19 @@ export function ServiceDetail(data) {
       <div className="service__detail__outerbox">
         <div className="service__detail__subtitle1">{ data.subtitle1 }</div>
         <div className="service__detail__subtitle1description">{ data.subtitle1description }</div>
-        <div className="cta1"><p>See How</p></div>
+        <div className="cta1">
+          <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
+        </div>
         <div className="service__detail__subtitle2">{ data.subtitle2 }</div>
         <div className="service__detail__subtitle2description">{ data.subtitle2description }</div>
-        <div className="cta2"><p>See How</p></div>
+        <div className="cta2">
+          <InternalLinkHighlighted value={seehow} destination="/projects/turing" />
+        </div>
         <div className="service__detail__subtitle3">{ data.subtitle3 }</div>
         <div className="service__detail__subtitle3description">{ data.subtitle3description }</div>
-        <div className="cta3"><p>See How</p></div>
+        <div className="cta3">
+          <InternalLinkHighlighted value={seehow} destination="/projects/google" />
+        </div>
       </div>
     </div>
   )
