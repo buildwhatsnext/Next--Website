@@ -4,62 +4,80 @@
     "piper" : {
       "title": "Piper",
       "client": "HLW Sustainability",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Ongoing",
       "type": "Application",
       "teams": ["All"],
-      "description": "",
+      "description": {
+        "challenge" : "Help Google project team and its multidisciplinary group of stakeholders manage, integrate and coordinate the design development of a central atrium knitting together multiple floors, integrating shared amenities and serving as a the new heart of Google NYC",
+        "outcome" : "A BIM process that utilized digital models as virtual repositories for data enabling the management, coordination and integration of:  post occupancy analyses,   custom sustainability practices,   wellness design,   healthy materials consulting,   LEED consulting  master planning,  interior design; and  landscape architecture."
+      },
       "pictureURL":[""]
     },
     "turing" : {
       "title": "Turing",
       "client": "",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Ongoing",
       "type": "Application",
       "teams": ["All"],
-      "description": "",
+      "description": {
+        "challenge" : "info about the challenge",
+        "outcome" : "info about the outcome"
+      },
       "pictureURL":[""]
     },
     "1950Grand" : {
       "title": "1950 Grand",
       "client": "",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Completed",
       "type": "",
       "teams": ["All"],
-      "description": "",
+      "description": {
+        "challenge" : "info about the challenge",
+        "outcome" : "info about the outcome"
+      },
       "pictureURL":[""]
     },
     "stamford" : {
       "title": "First Stamford Place",
       "client": "",
-      "location": "Stamford, Connecticut",
+      "location": "Connecticut",
       "status": "Completed",
       "type": "",
       "teams": ["All"],
-      "description": "",
+      "description": {
+        "challenge" : "info about the challenge",
+        "outcome" : "info about the outcome"
+      },
       "pictureURL":[""]
     },
     "fordham" : {
       "title": "Fordham NRHCC",
       "client": "Fordham University",
-      "location": "Bronx, New York",
+      "location": "New York",
       "status": "Completed",
       "type": "",
       "teams": ["All"],
-      "description": "",
+      "description": {
+        "challenge" : "info about the challenge",
+        "outcome" : "info about the outcome"
+      },
       "pictureURL":[""]
     },
     "google" : {
       "title": "Google Chelsea Market",
       "client": "Google",
-      "location": "New York, New York",
+      "location": "New York",
       "status": "Completed",
-      "type": "",
-      "teams": ["All"],
-      "description": "",
-      "pictureURL":[""]
+      "type": "Workspace",
+      "teams": ["Innovation _ Simulation _ Computation"],
+      "description": {
+        "challenge" : "info about the challenge",
+        "outcome" : "info about the outcome"
+      },
+      "pictureURL":"assets/photo/team/professional/kp.png"
     }
   }
 }

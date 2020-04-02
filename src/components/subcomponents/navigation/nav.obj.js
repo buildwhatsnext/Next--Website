@@ -28,7 +28,6 @@ export default class NavbarPage extends React.Component {
           <img 
             src={logo} 
             alt="NEXT/"
-            width="150px"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
