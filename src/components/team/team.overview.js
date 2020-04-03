@@ -5,8 +5,8 @@ export default function TeamOverviewPage(props) {
   const { history } = props;
 
   return (
-    <div className="page page__project">
-      <div className="page__project__items">
+    <div className="page page__team">
+      <div className="page__team__items">
         <TeamMemberList history={history} />
       </div>
     </div>
