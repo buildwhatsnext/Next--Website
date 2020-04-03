@@ -5,6 +5,7 @@ import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
+import { ServiceRouter } from '../components/service/services.obj';
 import { TeamRouter } from '../components/team/team.obj';
 import { ProjectRouter } from '../components/project/project.obj';
 
@@ -35,6 +36,7 @@ const Routes = () => (
         </Route>
         <Route path="/team" render={(props) => (<TeamRouter {...props} />)} />
         <Route path="/projects" render={(props) => (<ProjectRouter {...props} />)} />
+        <Route path="/services" render={(props) => (<ServiceRouter {...props} />)} />
         <Route exact path='/' render={(props) => (
             <HomePage {...props}/>
         )}/>

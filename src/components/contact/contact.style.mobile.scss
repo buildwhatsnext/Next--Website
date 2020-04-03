@@ -135,7 +135,7 @@
         padding-left: 5px;
         padding-right: 10px;
         margin: 5px;
-        column-gap: 50px;
+        column-gap: 40px;
     }
 
     .contact__info__item {
@@ -155,7 +155,7 @@
         background-repeat: no-repeat;
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        font-size: 10px;
+        font-size: 12px;
         text-align: left;
         white-space: pre;
         padding-left: 40px;
@@ -180,7 +180,7 @@
         grid-template-rows: 20px 20px;
         grid-column: 2 / 4;
         grid-row: 1 / 3;
-        
+        line-height: 15.2px;
         
     }
 

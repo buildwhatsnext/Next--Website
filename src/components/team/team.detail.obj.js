@@ -8,7 +8,6 @@ export default class TeamMemberDetailPage extends React.Component {
     const { memberId } = this.props.match.params;
     const info = data.members[memberId];
     const errorQuote = "I'm afraid I can't do that Michael...";
-    console.log(data);
 
     return info === null || info === undefined
       ? <div className="error"><p>{errorQuote}</p></div>

@@ -1,0 +1,199 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+.soft__blue__subtitle {
+  @extend %soft__blue__subtitle;
+}
+
+.soft__white__subtitle {
+  @extend %soft__white__subtitle;
+}
+
+@media(max-width: $sizeMobile) {
+  .service__detail {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    // border: 10px red solid;
+  }
+
+  .service__detail__mainbox {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+    grid-column: 1 / -1;
+    grid-row: 1 / 11;
+  }
+
+  .service__detail__box__coral {
+    position: relative;
+    grid-column:  1 / -1;
+    grid-row: 1 / 8;
+    // width: 700px;
+    // height: 800px;
+    margin: 10px;
+    background-color: #E03E52;
+    z-index: 2;
+  }
+
+  .service__detail__box__white {
+    position: relative;
+    grid-column:  1 / -1;
+    grid-row: 1 / 8;
+    // width: 700px;
+    // height: 800px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 1px solid #E03E52;
+    background-color: white;
+  }
+
+  .service__detail__title {
+    // @extend .soft__white__title;
+
+    font-size: 32px;
+    grid-column: 2 / 10;
+    grid-row: 1 / 2;
+    z-index: 3;
+    text-align: left;
+    // padding-left: 32px;
+    padding-top: 20px;
+  }
+
+  .service__detail__description {
+    // @extend .soft__blue__subtitle;
+    font-size: 12px;
+    font-weight: 400;
+    grid-column: 2/10;
+    grid-row: 3/8;
+    z-index: 3;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .cta_contactus {
+    // @extend .soft__blue__subtitle;
+    font-size: 20px;
+    grid-column: 5/10;
+    grid-row: 7/8;
+    z-index: 3;
+    text-align: right;
+    justify-self: end;
+    align-self: end;
+    height: 30px;
+    margin-bottom: 30px;
+    border-bottom: 10px #06038D solid;
+  }
+
+  .service__detail__outerbox {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+    grid-column: 1 / -1;
+    grid-row: 9 / -1;
+  }
+
+  .service__detail__subtitle1 {
+    // @extend .soft__white__title;
+
+    font-size: 24px;
+    grid-column: 1/10;
+    grid-row: 3/4;
+    margin-left: 30px;
+  }
+
+  .service__detail__subtitle1description {
+    // @extend .soft__white__subtitle;
+
+    font-size: 12px;
+    font-weight: 400;
+    grid-column: 2/10;
+    grid-row: 4/5;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+  }
+
+  .cta1 {
+    // @extend .soft__white__subtitle;
+
+    font-size: 20px;
+    grid-column: 2/10;
+    grid-row: 5/6;
+    height: 30px;
+    align-self: end;
+    justify-self: end;
+    border-bottom: 10px #E03E52 solid;
+  }
+
+  .service__detail__subtitle2 {
+    // @extend .soft__white__title;
+
+    font-size: 24px;
+    grid-column: 1/8;
+    grid-row: 6/7;
+    margin-left: 30px;
+    
+  }
+
+  .service__detail__subtitle2description {
+    // @extend .soft__white__subtitle;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    grid-column: 2/10;
+    grid-row: 7/8;
+    margin-left: 10px;
+  }
+
+  .cta2 {
+    // @extend .soft__white__subtitle;
+
+    font-size: 20px;
+    grid-column: 2/10;
+    grid-row: 8/9;
+    align-self: end;
+    justify-self: end;
+    height: 30px;
+    border-bottom: 10px #E03E52 solid;
+  }
+
+  .service__detail__subtitle3 {
+    // @extend .soft__white__title;
+    
+    margin-left: 30px;
+    font-size: 24px;
+    grid-column: 1/8;
+    grid-row: 9/10;
+  }
+
+  .service__detail__subtitle3description {
+    // @extend .soft__white__subtitle;
+    font-size: 12px;
+    grid-column: 2/10;
+    grid-row: 10/11;
+    font-weight: 400;
+    padding-top: 20px;
+    margin-left: 10px;
+  }
+
+  .cta3 {
+    // @extend .soft__white__subtitle;
+
+    font-size: 20px;
+    grid-column: 2/10;
+    grid-row: 11/12;
+    align-self: end;
+    justify-self: end;
+    height: 30px;
+    border-bottom: 10px #E03E52 solid;
+    // border: 10px red solid;
+  }
+}

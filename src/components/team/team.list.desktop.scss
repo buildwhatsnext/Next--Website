@@ -1,0 +1,43 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+
+@media(min-width: $sizeDesktop) {
+
+  .page__team {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 10;
+    grid-row: 1 / -1;
+    margin-top: 60px;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    .page__team__items {
+      grid-column: 1 / -1;
+      grid-row: 3 / 12;
+    }
+  }
+
+  .team__list {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 100px;
+  }
+
+  .team__item {
+    border: 1px solid orange;
+    height: 300px;
+    display: grid;
+
+    &__block {
+      background-image: url('../../assets/svg/icons/53trapazoid.svg');
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

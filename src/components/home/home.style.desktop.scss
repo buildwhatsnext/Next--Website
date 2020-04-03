@@ -8,7 +8,8 @@
 @media(min-width: $sizeDesktop) {
 
   .app__content {
-    background-color: #06038d;
+    // background-color: #06038d;
+    // overflow: hidden;
   }
 
   .home {
@@ -17,7 +18,7 @@
     grid-template-rows: auto 150px 150px 150px;
     grid-column: 3 / 9;
     grid-row: 3 / 9;
-    // border: 1px red solid;
+    
 
     .home__hlw {
       @extend .soft__coral__title;
@@ -73,6 +74,13 @@
           .link__highlighted__background {
             // padding: 25px;
             // height: 100%
+            background-color: $next__white;
+          }
+
+          .link__highlighted__text{
+            @extend .soft__coral__title;
+            font-size: 36px;
+            margin-bottom: 20px;
           }
         }
       }
