@@ -3,6 +3,7 @@
   "members" : {    
     "adam" : {
       "name": "Adam Strudwick",
+      "shortName": "adam",
       "email": "astrudwick@hlw.com",
       "position": "Principal",
       "location": "London",
@@ -12,6 +13,7 @@
     },
     "ruyi" : {
       "name": "Ruyi Igiehon",
+      "shortName": "ruyi",
       "email": "rigiehon@hlw.com",
       "position": "Director",
       "location": "New York",
@@ -21,6 +23,7 @@
     },
     "preston" : {
       "name": "Preston Smith",
+      "shortName": "preston",
       "email": "psmith@hlw.com",
       "position": "Innovation Lead",
       "location": "New York",
@@ -30,6 +33,7 @@
     },
     "chris" : {
       "name": "Chris Sower",
+      "shortName": "chris",
       "email": "csower@hlw.com",
       "position": "Architecture Designer",
       "location": "Los Angeles",
@@ -39,6 +43,7 @@
     },
     "stephen" : {
       "name": "Stephen Magee",
+      "shortName": "stephen",
       "email": "smagee@hlw.com",
       "position": "Assocaite, Design Technology & Technical Lead",
       "location": "London",
@@ -48,6 +53,7 @@
     },
     "andrew" : {
       "name": "Andrew Delgado",
+      "shortName": "andrew",
       "email": "adelgado@hlw.com",
       "position": "Experience Lead",
       "location": "New York",
@@ -57,6 +63,7 @@
     },
     "kp" : {
       "name": "KyungPyo (KP) Kim",
+      "shortName": "kp",
       "email": "kpkim@hlw.com",
       "position": "Design Technology Specialist/ Designer",
       "location": "New York",
@@ -66,6 +73,7 @@
     },
     "bharti" : {
       "name": "Bharti Kodnani",
+      "shortName": "bharti",
       "email": "bkodnani@hlw.com",
       "position": "Design Technology Specialist / Designer",
       "location": "New York",
@@ -75,6 +83,7 @@
     },
     "jeff" : {
       "name": "Jeff Bailey",
+      "shortName": "jeff",
       "email": "jbailey@hlw.com",
       "position": "BIM Specialist",
       "location": "New York",
@@ -84,10 +93,11 @@
     },
     "mina" : {
       "name": "Mina Nassif",
+      "shortName": "mina",
       "email": "mnassif@hlw.com",
       "position": "BIM Specialist",
       "location": "New York",
-      "description": "Mina always fascinated by how technology can shape the Architecture world. He started studying Architecture at NJIT, where he graduated with a Bachelor's degree. He worked as a designer in MMA, did renders, animations, and construction documents. Officially started his BIM Career in Toll Brother, where he helped in transforming the company from the 2D world (Autocad) to 3D world and create a single source of truth models. He also published the first version of the BIM world. In NEXT, he's interesting in computation graphs and creating an excellent experience for clients using VR/AR,  realtime animations and renders.",
+      "description": "Mina has always been fascinated by how technology can shape the Architecture world. He started studying Architecture at NJIT, where he graduated with a Bachelor's degree. He worked as a designer in MMA, did renders, animations, and construction documents. Officially started his BIM Career in Toll Brother, where he helped in transforming the company from the 2D world (Autocad) to 3D world and create a single source of truth models. He also published the first version of the BIM world. In NEXT, he's interesting in computation graphs and creating an excellent experience for clients using VR/AR,  realtime animations and renders.",
       "team": "BIM / Computation",
       "pictureURL": null
     }

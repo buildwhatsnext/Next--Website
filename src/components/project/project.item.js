@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './project.item.desktop.scss';
 import './project.item.mobile.scss';
+
 import ProjectData from '../../data/data.project.json';
 
 export function ProjectList(props) {
