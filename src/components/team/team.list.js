@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import './team.list.desktop.scss';
 import './team.list.mobile.scss';
@@ -35,9 +35,11 @@ export function TeamList(props) {
   teamList.reverse();
 
   return (
-    <div className="team__list">
-      { teamList }
-    </div>
+    <Fragment>
+      <div className="team__list">
+        { teamList }
+      </div>
+    </Fragment>
   );
 }
 
@@ -50,9 +52,7 @@ export function TeamItem(props) {
   return (
     <Link to={route}>
       <div className={`team__item team__item__${props.shortName}`}>
-        <div className="team__item__name">
-          <p> { props.name } </p>
-        </div>
+        <div className="team__item__name"> <p> { props.name } </p> </div>
         <div className="team__item__position"> { props.position } </div>
         <div className="team__item__location"> { props.location } </div>
         <div className={`team__item__image team__item__image__${props.shortName}`}/>

@@ -36,8 +36,10 @@
     &__block {
       background-image: url('../../assets/svg/icons/53trapazoid.svg');
       background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
+      background-size: cover;
+      height: 1000%;
+      width: 1000%;
+      // border: red 10px solid;
     }
   }
 }
