@@ -25,7 +25,7 @@ export function TeamMemberDetail(data) {
       <div className="team__detail__position">{ data.position }</div>
       {/* <div className="team__detail__location">{ data.location }</div> */}
       <div className="team__detail__description">{ data.description }</div>
-      <div className={`team__detail__pictureURL__${data.name}`} />
+      <div className={`team__detail__pictureURL__${data.shortName}`} />
       <div className="trapazoid"></div>
       <div className="slash"></div>
       <div className="borderbottom"></div>

@@ -21,9 +21,36 @@
     .team__item__name {
       @extend .soft__white__title;
       font-size: 24px;
-      
-      border: 10px red solid;
-      margin-bottom: 0rem;
+
+      // border: 10px red solid;
+      margin: 0rem;
+      padding: 0px;
+    }
+
+    .team__item__position {
+      @extend .soft__white__title;
+      font-size: 12px;
+
+      // border: 10px red solid;
+      margin: 0rem;
+      padding: 0px;
+    }
+
+    .team__item__location {
+      @extend .soft__white__title;
+      font-size: 12px;
+
+      // border: 10px red solid;
+      margin: 0rem;
+      padding: 0px;
+    }
+
+    .team__item__block {
+      @extend .soft__white__title;
+      background-image: url(../../assets/svg/icons/53trapazoid.svg);
+      background-size: cover;
+      height: 100px;
+      width: 200px;   
     }
   }
 
