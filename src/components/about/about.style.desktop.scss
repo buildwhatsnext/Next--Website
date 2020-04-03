@@ -56,6 +56,7 @@
   .about__description {
     @extend .soft__blue__subtitle;
     font-size: 18px;
+    font-weight: 400;
     grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 7;
@@ -66,25 +67,25 @@
   }
 
   .about__contactus {
+    @extend .soft__white__subtitle;
+    font-size: 32px;
+    // grid-column-start: 6;
     // @extend .soft__white__subtitle !optional;
-    grid-column-start: 8;
+    grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 17;
     grid-row-end: 18;
-    width: 89px;
+    // width: 89px;
     border-bottom: 12px solid #06038D;
     text-align: right;
-  }
+    margin-left: 75px;
+    z-index: 5;
 
-  // .about__quote {
-  //   @extend .soft__blue__subtitle;
-  //   grid-column-start: 6;
-  //   grid-column-end: 9;
-  //   grid-row-start: 14;
-  //   grid-row-end: 16;
-  //   text-align: right;
-  //   font-size: 18px;
-  // }
+    .link__highlighted__background {
+      background-color: #06038D;
+      border-bottom: 12px solid #06038D;
+    }
+  }
 
   .about__name {
     @extend .soft__blue__subtitle;
@@ -130,6 +131,7 @@
   .about__subtitleexperience {
     @extend .soft__white__subtitle;
     // font-size: 20px;
+    font-weight: 400;
     grid-column-start: 3;
     grid-column-end: 14;
     grid-row-start: 2;
@@ -150,6 +152,7 @@
   .about__subtitleinsight {
     @extend .soft__white__subtitle;
     // font-size: 16px;
+    font-weight: 400;
     grid-column-start: 3;
     grid-column-end: 14;
     grid-row-start: 5;
@@ -170,6 +173,7 @@
   .about__subtitlecapabilities {
     @extend .soft__white__subtitle;
     // font-size: 20px;
+    font-weight: 400;
     grid-column-start: 3;
     grid-column-end: 14;
     grid-row-start: 8;
@@ -179,95 +183,43 @@
 
   .about__seehowexperience {
     @extend .soft__white__subtitle;
-    grid-column-start: 13;
+    font-size: 24px;
+    grid-column-start: 12;
     grid-column-end: 15;
     grid-row-start: 3;
     grid-row-end: 4;
     text-align: right;
+    // border-bottom: #E03E52 9px solid;
+    margin-bottom: 55px;
+    margin-left: 40px;
   }
 
   
   .about__seehowinsight {
     @extend .soft__white__subtitle;
-    grid-column-start: 13;
+    font-size: 24px;
+    grid-column-start: 12;
     grid-column-end: 15;
     grid-row-start: 6;
     grid-row-end: 7;
     text-align: right;
+    border-bottom: #E03E52 9px solid;
+    margin-bottom: 55px;
+    margin-left: 40px;
   }
 
   
   .about__seehowcapabilities {
     @extend .soft__white__subtitle;
-    grid-column-start: 13;
+    font-size: 24px;
+    grid-column-start: 12;
     grid-column-end: 15;
     grid-row-start: 9;
     grid-row-end: 10;
     text-align: right;
-  }
-
-  .about__highlightexperience {
-    border-top: #E03E52 9px solid;
-    grid-column-start: 15;
-    grid-column-end: 18;
-    grid-row-start: 12;
-    grid-row-end: 13;
-    bottom: 100px;
-  }
-
-  .about__highlightinsight {
-    border-top: #E03E52 9px solid;
-    grid-column-start: 15;
-    grid-column-end: 18;
-    grid-row-start: 26;
-    grid-row-end: 27;
-  }
-
-  .about__highlightcapabilities {
-    border-top: #E03E52 9px solid;
-    grid-column-start: 15;
-    grid-column-end: 18;
-    grid-row-start: 40;
-    grid-row-end: 41;
-  }
-
-  .monitor {
-    grid-column-start: 15;
-    grid-column-end: 17;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .crossgrid {
-    // border: 3px pink solid;
-    grid-column: 8/9;
-    grid-row: 3/9;
-    display: grid;
-    grid-template-columns: repeat(1, 50px);
-    grid-template-rows: repeat(160, 5px);
-  }
-
-  .cross1 {
-    height: 100px;
-    grid-column: 1/2;
-    grid-row: 19/20;
-    background-repeat: no-repeat;
-    background-image: url(../../assets/svg/icons/51cross.svg);
-  }
-
-  .cross2 {
-    height: 100px;
-    grid-column: 1/2;
-    grid-row: 55/56;
-    background-repeat: no-repeat;
-    background-image: url(../../assets/svg/icons/51cross.svg);
-  }
-
-  .cross3 {
-    height: 100px;
-    grid-column: 1/2;
-    grid-row: 108/110;
-    background-repeat: no-repeat;
-    background-image: url(../../assets/svg/icons/51cross.svg);
+    border-bottom: #E03E52 9px solid;
+    margin-bottom: 55px;
+    margin-left: 40px;
+    
   }
 }

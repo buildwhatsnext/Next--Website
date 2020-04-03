@@ -2,6 +2,8 @@ import React from 'react';
 import { Fragment } from 'react';
 import icon from '../../../../src/assets/svg/icons/12monitor.svg'
 import cross from '../../../../src/assets/svg/icons/51cross.svg'
+import { InternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
+
 
 export class AboutCategory extends React.Component {
   constructor(props) {
@@ -39,13 +41,13 @@ export class AboutCategory extends React.Component {
                     <p>{ subtitlecapabilities }</p>
                 </div>
                 <div className="about__seehowexperience">
-                    <p>{ seehow }</p>
+                    <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
                 </div>
                 <div className="about__seehowinsight">
-                    <p>{ seehow }</p>
+                    <InternalLinkHighlighted value={seehow} destination="/projects/turing" />
                 </div>
                 <div className="about__seehowcapabilities">
-                    <p>{ seehow }</p>
+                    <InternalLinkHighlighted value={seehow} destination="/projects/google" />
                 </div>
 
 

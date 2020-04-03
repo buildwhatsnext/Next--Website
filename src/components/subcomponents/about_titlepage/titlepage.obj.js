@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
+import { InternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
 
 
 export class AboutTitle extends React.Component {
@@ -35,7 +36,8 @@ We think of our clients as partners and encourage them to collaborate with us to
                 </div>
 
                 <div className="about__contactus">
-                    <p> { contactus } </p>
+                    {/* <p> { contactus } </p> */}
+                    <InternalLinkHighlighted value={contactus} destination="/contact" />
                 </div>
 
                 {/* <div className="about__quote">
