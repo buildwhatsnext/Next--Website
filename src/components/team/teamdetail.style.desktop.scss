@@ -5,6 +5,10 @@
   @extend %soft__white__title;
 }
 
+.hard__coral__subtitle {
+  @extend %hard__coral__subtitle;
+}
+
 @media(min-width: $sizeDesktop) {
 
   .app__content {
@@ -33,30 +37,31 @@
     grid-row: 9/10;
     // height: 100px;
     // width: 100px;
-    border-top: 5px black solid;
+    border-top: 3px white solid;
   }
 
   .team__detail__name {
     @extend .soft__coral__title;
-    grid-column: 12/15;
-    grid-row: 2/4;
+    grid-column: 12/16;
+    grid-row: 2/6;
     text-align: left;
-    font-size: 64px;
+    font-size: 96px;
     z-index: 5;
-    white-space: nowrap;
+    white-space: pre-wrap;
+    line-height: 110px;
     // border: 10px red solid;
   }
 
   .team__detail__position {
     @extend .soft__white__title;
-    grid-column: 12/17;
+    grid-column: 12/19;
     grid-row: 7/8;
     font-size: 24px;
     text-align: left;
   }
 
   .team__detail__email {
-    @extend .soft__black__title;
+    @extend .hard__coral__subtitle;
     grid-column: 12/17;
     grid-row: 8/9;
     font-size: 24px;
@@ -64,7 +69,7 @@
   }
 
   .team__detail__description {
-    @extend .soft__black__title;
+    @extend .soft__white__title;
     // border: 10px black solid;
     grid-column: 12/17;
     grid-row: 10/16;
@@ -80,7 +85,7 @@
     width: 500px;
     grid-row: 2/16;
     grid-column: 4/5;
-    background-size: auto 101%;
+    background-size: auto 120%;
   }
 
   .team__detail__pictureURL {
@@ -91,51 +96,61 @@
     &__adam {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/adam_prof.png');
+      filter: grayscale(1);
     }
 
     &__andrew {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/andrew_prof.png');
+      filter: grayscale(1);
     }
 
     &__bharti {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/bharti_prof.png');
+      filter: grayscale(1);
     }
 
     &__chris {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/chris_prof.png');
+      filter: grayscale(1);
     }
 
     &__jeff {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/jeff_prof.png');
+      filter: grayscale(1);
     }
  
     &__kp {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/kp_prof.png');
+      filter: grayscale(1);
     }
 
     &__mina {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/mina_prof.png');
+      filter: grayscale(1);
     }
 
     &__ruyi {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/ruyi_prof.png');
+      filter: grayscale(1);
     }
 
     &__stephen {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/stephen_prof.png');
+      filter: grayscale(1);
     }
 
     &__preston {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/preston_prof.png');
+      filter: grayscale(1);
     }
   }
   
@@ -146,6 +161,9 @@
     grid-column: 15/18;
     font-size: 36px;
     text-align: left;
+    border-bottom: 10px #e03e52 solid;
+    margin-right: 90px;
+    margin-bottom: 5px
     
   }
 }
