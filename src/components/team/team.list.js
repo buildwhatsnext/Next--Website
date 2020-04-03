@@ -33,13 +33,6 @@ export function TeamList(props) {
   }
 
   teamList.reverse();
-  
-  // const teamList = tNames.map(team => {
-  //   const info = members[team];
-
-
-  //   return <TeamItem key={i++} {...info } history={ history } />
-  // })
 
   return (
     <div className="team__list">
@@ -50,7 +43,7 @@ export function TeamList(props) {
 
 export function TeamItem(props) {
   const path = props.history.location.pathname;
-  const title = props.title ? props.title : "/";
+  const title = props.shortName ? props.shortName : "/";
   const teamName = title.toString().toLowerCase();
   const route = `${path}/${teamName}`;
 
