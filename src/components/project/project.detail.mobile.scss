@@ -134,6 +134,7 @@
           font-size: 12px;
           // padding: 48px;
           padding-top: 20px;
+          font-weight: 400;
         }
       }
 
@@ -183,4 +184,18 @@
     height: 50px;
     width: 50px;
   }
+
+  .project__detail__pictureURL__Piper {
+    background-image: url('../../assets/photo/team/professional/kp_prof.png');
+    background-repeat: no-repeat;
+    z-index: 4;
+    // border: 10px solid black;
+    height: 125px;
+    width: 100px;
+    grid-row: 1/6;
+    grid-column: 10/13;
+    background-size: auto 100%;
+    padding-left: 200px;
+  }
+
 }

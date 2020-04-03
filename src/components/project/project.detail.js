@@ -72,6 +72,7 @@ function ProjectSummary(info) {
         <div className="summary__outcome__title">
           <div className="title__icon"> <img src={ sumO.icon } alt=""/> </div>
           <div className="title__text">{ sumO.title }</div>
+          <div className={`project__detail__pictureURL__${data.title}`} />
         </div>
         <div className="summary__outcome__summary">
           { sumO.summary }
