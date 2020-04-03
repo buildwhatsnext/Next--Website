@@ -46,7 +46,7 @@ function ProjectSummary(info) {
   const { challenge, outcome } = info;
 
   const sumC = {
-    title: "The Challenge",
+    title: "The Challenges",
     summary: challenge,
     icon: chip
   }
