@@ -19,8 +19,8 @@
     }
 
     .team__item__name {
-      @extend .soft__white__title;
-      font-size: 24px;
+      // @extend .soft__white__title;
+      // font-size: 24px;
 
       // border: 10px red solid;
       margin: 0rem;
@@ -28,7 +28,7 @@
     }
 
     .team__item__position {
-      @extend .soft__white__title;
+      // @extend .soft__white__title;
       font-size: 12px;
 
       // border: 10px red solid;
@@ -37,7 +37,7 @@
     }
 
     .team__item__location {
-      @extend .soft__white__title;
+      // @extend .soft__white__title;
       font-size: 12px;
 
       // border: 10px red solid;

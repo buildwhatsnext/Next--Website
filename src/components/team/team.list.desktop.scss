@@ -22,24 +22,123 @@
   }
 
   .team__list {
-    border: 1px solid red;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    // border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 100px;
+    grid-gap: 50px;
   }
 
   .team__item {
-    border: 1px solid orange;
+    // border: 1px solid orange;
     height: 300px;
     display: grid;
+
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: repeat(5, 1fr);
+
+    &__name {
+      @extend .soft__white__title;
+      font-size: 36px;
+      white-space: nowrap;
+      
+      grid-row: 1/2;
+      grid-column: 3/4;
+      z-index: 2;
+      line-height: 100px;
+    }
+
+    &__position {
+      @extend .soft__white__title;
+      font-size: 24px;
+      white-space: nowrap;
+
+      grid-row: 2 / 3;
+      grid-column: 3/4;
+      z-index: 2;
+    }
+
+    &__location {
+      @extend .soft__white__title;
+      font-size: 24px;
+      white-space: nowrap;
+
+      grid-column: 3/4;
+      grid-row: 3/4;
+      z-index: 2;
+    }
 
     &__block {
       background-image: url('../../assets/svg/icons/53trapazoid.svg');
       background-repeat: no-repeat;
       background-size: cover;
-      height: 1000%;
-      width: 1000%;
+      // height: 400px;
+      // width: 500px;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
       // border: red 10px solid;
+      z-index: 1;
+    }
+  }
+
+  .team__item__image {
+
+    // border: 10px red solid;
+    background-position: center;
+    grid-row: 1 / -1;
+    grid-column: 1 / 3;
+    background-size: cover;
+    z-index: 6;
+
+    &__adam {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/adam_prof.png');
+    }
+
+    &__andrew {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/andrew_prof.png');
+    }
+
+    &__bharti {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/bharti_prof.png');
+    }
+
+    &__chris {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/chris_prof.png');
+    }
+
+    &__jeff {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/jeff_prof.png');
+    }
+ 
+    &__kp {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/kp_prof.png');
+    }
+
+    &__mina {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/mina_prof.png');
+    }
+
+    &__ruyi {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/ruyi_prof.png');
+    }
+
+    &__stephen {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/stephen_prof.png');
+    }
+
+    &__preston {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/preston_prof.png');
     }
   }
 }

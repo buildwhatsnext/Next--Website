@@ -53,8 +53,8 @@ export function TeamItem(props) {
     <Link to={route}>
       <div className={`team__item team__item__${props.shortName}`}>
         <div className="team__item__name"> <p> { props.name } </p> </div>
-        <div className="team__item__position"> { props.position } </div>
-        <div className="team__item__location"> { props.location } </div>
+        <div className="team__item__position"> <p> { props.position } </p></div>
+        <div className="team__item__location"> <p> { props.location } </p></div>
         <div className={`team__item__image team__item__image__${props.shortName}`}/>
         <div className="team__item__block"/>
       </div>
