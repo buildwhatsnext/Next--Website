@@ -41,6 +41,7 @@
     margin-left: 10px;
     padding-bottom: 40px;
     padding: 10px;
+    z-index: 10;
   }
 
   .project__detail__infotable {
@@ -83,6 +84,51 @@
       }
     }
   }
+
+  .project__detail__pictureURL {
+    z-index: 1;
+    &__Piper {
+      background-image: url('../../assets/photo/project/piper/piper.PNG');
+      grid-column: 1 / -1;
+      grid-row: 1 / 6;
+      background-size: cover;
+      // z-index: 10;
+      // border: 10px red solid;
+    }
+
+    &__Turing {
+      background-image: url('../../assets/photo/project/1950grand/1950grand.png');
+      grid-column: 1 / -1;
+      grid-row: 1 / 6;
+      background-size: auto 100%;
+      background-position: -98px;
+      background-repeat: no-repeat;
+    }
+
+    &__1950grand {
+      background-image: url('../../assets/photo/project/1950grand/1950grand.png');
+      grid-column: 1 / -1;
+      grid-row: 1 / 7;
+    }
+
+    &__stamford {
+      background-image: url('../../assets/photo/project/firststamford/firststamford.png');
+      grid-column: 1 / -1;
+      grid-row: 1 / 7;
+    }
+
+    &__fordham {
+      background-image: url('../../assets/photo/project/fordham/fordham.jpg');
+      grid-column: 1 / -1;
+      grid-row: 1 / 7;
+    }
+
+    &__google {
+      background-image: url('../../assets/photo/project/google/google.jpg');
+      grid-column: 1 / -1;
+      grid-row: 1 / 7;
+    }
+  }  
 
   .project__detail__summary {
     // border: 1px solid orange;
@@ -184,18 +230,4 @@
     height: 50px;
     width: 50px;
   }
-
-  .project__detail__pictureURL__Piper {
-    background-image: url('../../assets/photo/team/professional/kp_prof.png');
-    background-repeat: no-repeat;
-    z-index: 4;
-    // border: 10px solid black;
-    height: 125px;
-    width: 100px;
-    grid-row: 1/6;
-    grid-column: 10/13;
-    background-size: auto 100%;
-    padding-left: 200px;
-  }
-
 }
