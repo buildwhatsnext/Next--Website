@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import './nav.desktop.scss';
 import './nav.mobile.scss';
 import logo from '../../../assets/logo_next.svg';
