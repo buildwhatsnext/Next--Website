@@ -19,7 +19,7 @@ export function TeamList(props) {
   })
 
   return (
-    <div className="team__data__list">
+    <div className="team__list">
       { teamList }
     </div>
   );
