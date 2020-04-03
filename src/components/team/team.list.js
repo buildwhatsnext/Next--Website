@@ -9,14 +9,37 @@ export function TeamList(props) {
   const { members } = TeamData;
   const { history } = props;
 
-  const tNames = Object.getOwnPropertyNames(members);
+  const tNames = Object.getOwnPropertyNames(members).sort();
 
-  let i = 0;
-  const teamList = tNames.map(team => {
-    const info = members[team];
+  let i = tNames.length * 2;
+  let teamList = [];
+  for(i; i >= 0; i--) {
+    let useSpace = i % 2 === 0;
 
-    return <TeamItem key={i++} {...info } history={ history } />
-  })
+    const info = useSpace
+      ? members[tNames[i/2]]
+      : null;
+
+    let data = info
+      ? <TeamItem 
+          key={i} 
+          position={i} 
+          history={history}
+          {...info}
+        />
+      : <Spacer key={i} position={i} />
+
+    teamList.push(data);
+  }
+
+  teamList.reverse();
+  
+  // const teamList = tNames.map(team => {
+  //   const info = members[team];
+
+
+  //   return <TeamItem key={i++} {...info } history={ history } />
+  // })
 
   return (
     <div className="team__list">
@@ -44,4 +67,10 @@ export function TeamItem(props) {
       </div>
     </Link>
   );
+}
+
+export function Spacer(props) {
+  return (
+    <div className={`spacer spacer__position__${props.position}`}></div>
+  )
 }
