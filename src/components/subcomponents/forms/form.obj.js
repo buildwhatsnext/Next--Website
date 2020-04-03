@@ -1,6 +1,5 @@
-import React from 'react';
-import { Fragment } from 'react';
-import button from '../../../assets/svg/icons/50contactbutton.svg'
+import React, { Fragment } from 'react';
+import { Form } from 'react-bootstrap' ;
 import slash from '../../../assets/svg/icons/55thickslash.svg';
 
 export class ContactForm extends React.Component {
@@ -40,8 +39,10 @@ export function NameEntryForm(props) {
         <img src={slash} alt="slash"/>
       </div>
       <p>Name</p>
-      <div className="answerbox"></div>
-      <EntryForm name={props.name} value={props.value} />
+      <div className="answerbox">
+        <Form.Control type="text" placeholder="Please enter your name" />
+      </div>
+      
     </Fragment>
   )
 }
@@ -53,8 +54,10 @@ export function EmailEntryForm(props) {
         <img src={slash} alt="slash"/>
       </div>
       <p>Email</p>
-      <div className="answerbox"></div>
-      <EntryForm name={props.name} value={props.value} />
+      <div className="answerbox">
+      <Form.Control type="email" placeholder="" />
+      </div>
+      {/* <EntryForm name={props.name} value={props.value} /> */}
     </fragment>
   )
 }
@@ -67,14 +70,10 @@ export function MessageEntryForm(props) {
       </div>
       <p>Message</p>
       <div className="answerboxfat">
+        <Form.Control type="text" placeholder="Please enter your name" />
         <div className="button">
-          {/* <img src={button} alt="button"/>  */}
         </div>
-        {/* <div className="whitebox"></div> */}
-        {/* <div className="twosideborder"></div> */}
       </div>
-      
-      <EntryForm name={props.name} value={props.value} />
     </fragment>
   )
 }
