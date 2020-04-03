@@ -20,18 +20,18 @@
     grid-row: 1 / -1;
     grid-column: 1 / -1;
     display: grid;
-    grid-template-rows: repeat(40, 50px);
-    grid-template-columns: repeat(20, 100px);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
   }
 
-  .slash {
-    background-image: url(../../assets/svg/icons/54slash.svg);
-    background-repeat: no-repeat;
-    height: 100px;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    margin-left: 50px;
-  }
+  // .slash {
+  //   background-image: url(../../assets/svg/icons/54slash.svg);
+  //   background-repeat: no-repeat;
+  //   height: 100px;
+  //   grid-column: 3/4;
+  //   grid-row: 2/3;
+  //   margin-left: 50px;
+  // }
 
   .borderbottom {
     grid-column: 12/17;
@@ -48,29 +48,30 @@
     text-align: right;
     font-size: 32px;
     z-index: 5;
-    white-space: pre-wrap;
-    margin-right: 50px;
+    white-space: pre-line;
+    margin-left: 4px;
     // line-height: 110px;
     // border: 10px red solid;
   }
 
   .team__detail__position {
     // @extend .soft__white__title;
-    grid-column: 1/3;
+    grid-column: 1/5;
     grid-row: 3/4;
     font-size: 12px;
-    margin-right: 50px;
+    // margin-right: 50px;
     // margin-top: 12px;
     text-align: right;
     align-self: start;
+    white-space: pre-wrap;
   }
 
   .team__detail__email {
     // @extend .hard__coral__subtitle;
-    grid-column: 1/3;
+    grid-column: 1/5;
     grid-row: 3/4;
     font-size: 12px;
-    margin-right: 50px;
+    // margin-right: 50px;
     text-align: right;
     justify-self: end;
     align-self: end;
@@ -79,9 +80,10 @@
   .team__detail__description {
     // @extend .soft__white__title;
     // border: 10px black solid;
-    grid-column: 1 / 4;
-    grid-row: 6/ 7;
-    font-size: 16px;
+    grid-column: 1 / -1;
+    grid-row: 5 / 8;
+    font-size: 12px;
+    position: center;
     text-align: left;
     white-space: pre-wrap;
   }
@@ -93,10 +95,10 @@
     // height: 700px;
     // width: 500px;
     grid-row: 1/4;
-    grid-column: 2/5;
+    grid-column: 7/11;
     // margin-right: 10px;
-    background-size: auto 150%;
-    margin-right: 10px;
+    background-size: auto 120%;
+    // margin-right: 10px;
   }
 
   .team__detail__pictureURL {
@@ -166,12 +168,12 @@
   }
 
   .cta {
-    grid-row: 10/11;
-    grid-column: 3/4;
+    grid-row: 8/10;
+    grid-column: 7/10;
     font-size: 16px;
     border-bottom: 10px #e03e52 solid;
-    margin-bottom: 25px;
-    margin-right: 8px;
+    // margin-bottom: 30px;
     justify-self: end;
+    height: 25px;
   }
 }
