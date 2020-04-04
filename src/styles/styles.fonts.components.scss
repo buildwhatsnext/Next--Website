@@ -135,6 +135,12 @@
   font-weight: 600;
 }
 
+%hard__white__subtitle {
+  @extend %hard__white;
+  font-size: 36px;
+  font-weight: 600;
+}
+
 
 %soft__coral__subtitle {
   @extend %soft__coral;

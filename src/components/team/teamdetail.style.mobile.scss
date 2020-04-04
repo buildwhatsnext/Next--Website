@@ -9,6 +9,10 @@
   @extend %hard__coral__subtitle;
 }
 
+.hard__white__subtitle {
+  @extend %hard__white__subtitle;
+}
+
 @media(max-width: $sizeMobile) {
 
   .app__content {
@@ -24,14 +28,16 @@
     grid-template-columns: repeat(10, 1fr);
   }
 
-  // .slash {
-  //   background-image: url(../../assets/svg/icons/54slash.svg);
-  //   background-repeat: no-repeat;
-  //   height: 100px;
-  //   grid-column: 3/4;
-  //   grid-row: 2/3;
-  //   margin-left: 50px;
-  // }
+  .slash {
+    background-image: url(../../assets/svg/icons/57reversetrapezoid.svg);
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    // height: 300px;
+    // width: 200px;
+    z-index: 3;
+    grid-column: 5 / 11;
+    grid-row: 1/4;
+  }
 
   .borderbottom {
     grid-column: 12/17;
@@ -42,39 +48,41 @@
   }
 
   .team__detail__name {
-    // @extend .soft__coral__title;
+    @extend .soft__white__title;
     grid-column: 1/5;
-    grid-row: 1/3;
-    text-align: right;
+    grid-row: 1/4;
+    text-align: left;
     font-size: 32px;
     z-index: 5;
     white-space: pre-line;
-    margin-left: 4px;
-    // line-height: 110px;
+    margin-right: 2px;
+    line-height: 40px;
+    align-self: start;
+    margin-top: 20px;
     // border: 10px red solid;
   }
 
   .team__detail__position {
-    // @extend .soft__white__title;
-    grid-column: 1/5;
-    grid-row: 3/4;
+    @extend .hard__white__subtitle;
+    grid-column: 1/6;
+    grid-row: 1/4;
     font-size: 12px;
-    // margin-right: 50px;
-    // margin-top: 12px;
-    text-align: right;
-    align-self: start;
+    text-align: left;
     white-space: pre-wrap;
+    line-height: 200px;
+    margin-top: 20px;
+    font-weight: 400;
   }
 
   .team__detail__email {
-    // @extend .hard__coral__subtitle;
+    @extend .hard__white__subtitle;
     grid-column: 1/5;
-    grid-row: 3/4;
+    grid-row: 1/4;
     font-size: 12px;
-    // margin-right: 50px;
-    text-align: right;
-    justify-self: end;
-    align-self: end;
+    text-align: left;
+    line-height: 250px;
+    margin-top: 20px;
+    font-weight: 400;
   }
 
   .team__detail__description {
@@ -86,6 +94,7 @@
     position: center;
     text-align: left;
     white-space: pre-wrap;
+    // font-weight: 400;
   }
 
 
@@ -95,7 +104,7 @@
     // height: 700px;
     // width: 500px;
     grid-row: 1/4;
-    grid-column: 7/11;
+    grid-column: 6/11;
     // margin-right: 10px;
     background-size: auto 120%;
     // margin-right: 10px;
@@ -109,61 +118,61 @@
     &__adam {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/adam_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__andrew {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/andrew_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__bharti {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/bharti_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__chris {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/chris_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__jeff {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/jeff_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
  
     &__kp {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/kp_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__mina {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/mina_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__ruyi {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/ruyi_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__stephen {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/stephen_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
 
     &__preston {
       @extend .team__detail__pictureURL;
       background-image: url('../../assets/photo/team/professional/preston_prof.png');
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
   }
 

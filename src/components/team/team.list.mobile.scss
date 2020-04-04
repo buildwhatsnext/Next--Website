@@ -36,7 +36,6 @@
     height: 300px;
     display: grid;
     grid-gap: 10px;
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(10, 1fr);
     // line-height: 10px;
@@ -45,12 +44,12 @@
       // @extend .soft__white__title;
       font-size: 24px;
       white-space: nowrap;
-      grid-row: 2/3;
+      grid-row: 1/2;
       grid-column: 2/3;
       z-index: 2;
-      line-height: 25px;
-      
-      white-space: pre-line;
+      height: 20px;
+      // line-height: 25px;
+      // margin-bottom: 200px;
     }
 
     &__position {
@@ -62,7 +61,7 @@
       grid-row: 2 / 3;
       grid-column: 2 / 3;
       z-index: 2;
-      line-height: 150px;
+      line-height: 70px;
     }
 
     &__location {
@@ -73,7 +72,7 @@
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       z-index: 2;
-      line-height: 200px;
+      line-height: 30px;
     }
 
     &__block {
@@ -83,7 +82,7 @@
       // height: 400px;
       // width: 500px;
       grid-column: 1 / -1;
-      grid-row: 1 / -1;
+      grid-row: 2 / -1;
       // border: red 10px solid;
       z-index: 1;
     }
@@ -100,7 +99,7 @@
     z-index: 6;
     // align-self: start;
     margin-right: 150px;
-    margin-bottom: 11px;
+    margin-bottom: 0px;
 
     &__adam {
       @extend .team__item__image;

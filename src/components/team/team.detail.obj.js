@@ -29,7 +29,7 @@ export function TeamMemberDetail(data) {
       <div className="trapazoid"></div>
       <div className="slash"></div>
       <div className="borderbottom"></div>
-      <div className="cta">Get in Touch!</div>
+      <div className="cta">Contact Us</div>
     </div>
   )
 }
