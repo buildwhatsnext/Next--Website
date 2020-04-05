@@ -33,6 +33,7 @@
     margin-left: 40px;
     // padding-bottom: 40px;
     padding-left: 20px;
+    // margin-right: 20px;
     z-index: 2;
   }
 
@@ -159,24 +160,31 @@
       background-image: url('../../assets/photo/project/piper/piper.PNG');
       grid-column: 1 / -1;
       grid-row: 1 / 7;
+      
     }
 
-    // &__Turing {
-    //   background-image: url('../../assets/photo/project/');
-    //   grid-column: 1 / -1;
-    //   grid-row: 1 / 7;
-    // }
+    &__turing {
+      background-image: url('../../assets/photo/project/turing/turingplaceholder.jpg');
+      grid-column: 1 / -1;
+      grid-row: 1 / 7;
+    }
 
     &__1950 {
       background-image: url('../../assets/photo/project/1950grand/1950grand.png');
       grid-column: 1 / -1;
       grid-row: 1 / 7;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     &__stamford {
       background-image: url('../../assets/photo/project/firststamford/firststamford.png');
       grid-column: 1 / -1;
       grid-row: 1 / 7;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     &__fordham {
@@ -193,6 +201,9 @@
       background-image: url('../../assets/photo/project/google/google.jpg');
       grid-column: 1 / -1;
       grid-row: 1 / 7;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 }
