@@ -1,4 +1,6 @@
 import React from 'react';
+import { TweenLite } from 'gsap';
+
 import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
 import './teamdetail.style.mobile.scss';
@@ -16,20 +18,53 @@ export default class TeamMemberDetailPage extends React.Component {
 }
 
 
-export function TeamMemberDetail(data) {
-  
-  return (
-    <div className="team__detail">
+class TeamMemberDetail extends React.Component {
+  constructor(props) {
+    super(props);
+    this.image = null;
+    this.tween = null;
+  }
+
+  componentDidMount() {
+    console.log(`In the team detail ${this.props.name}`);
+    this.tween = TweenLite.from(this.image, 1, 
+      { x: 0, y: 100}
+    );
+  }
+
+  render() {
+    return (
+      <div className="team__detail">
       <div className="team__detail__name">{ data.name }</div>
       <div className="team__detail__email">{ data.email }</div>
       <div className="team__detail__position">{ data.position }</div>
       {/* <div className="team__detail__location">{ data.location }</div> */}
       <div className="team__detail__description">{ data.description }</div>
       <div className={`team__detail__pictureURL__${data.shortName}`} />
-      <div className="trapazoid"></div>
+      <div className="trapazoid" ref={ d => this.image = d } ></div>
       <div className="slash"></div>
       <div className="borderbottom"></div>
       <div className="cta">Contact Us</div>
     </div>
-  )
+    )
+  }
 }
+
+
+// export function TeamMemberDetail(data) {
+  
+//   return (
+//     <div className="team__detail">
+//       <div className="team__detail__name">{ data.name }</div>
+//       <div className="team__detail__email">{ data.email }</div>
+//       <div className="team__detail__position">{ data.position }</div>
+//       {/* <div className="team__detail__location">{ data.location }</div> */}
+//       <div className="team__detail__description">{ data.description }</div>
+//       <div className={`team__detail__pictureURL__${data.shortName}`} />
+//       <div className="trapazoid"></div>
+//       <div className="slash"></div>
+//       <div className="borderbottom"></div>
+//       <div className="cta">Contact Us</div>
+//     </div>
+//   )
+// }
