@@ -91,21 +91,23 @@
             @extend .soft__coral__title;
             text-align: left;
             // align-self: center;
-            padding-left: 40px;
+            padding-left: 20px;
             // border: 1px solid white;
           }
 
           .title__icon {
             height: 100;
             align-self: center;
-            margin-left: 48px;
+            margin-left: 20px;
           }
         }
 
         &__summary {
           @extend .soft__white__body;
           color: $next__coral;
-          padding: 48px;
+          padding-top: 48px;
+          padding-right: 88px;
+          padding-left: 20px;
         }
       }
 
