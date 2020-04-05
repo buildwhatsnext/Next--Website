@@ -89,7 +89,7 @@
         "challenge" : "info about the challenge",
         "outcome" : "info about the outcome"
       },
-      "pictureURL":[""]
+      "pictureURL":"assets/photo/team/professional/kp.png"
     }
   }
 }
