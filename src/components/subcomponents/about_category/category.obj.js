@@ -2,6 +2,8 @@ import React from 'react';
 import { Fragment } from 'react';
 import icon from '../../../../src/assets/svg/icons/12monitor.svg'
 import cross from '../../../../src/assets/svg/icons/51cross.svg'
+import { InternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
+
 
 export class AboutCategory extends React.Component {
   constructor(props) {
@@ -11,17 +13,11 @@ export class AboutCategory extends React.Component {
     render() {
 
         const titleexperience = `Craft Inclusive Experiences`
-        const subtitleexperience = `A pulvinar augue aliquam elementum fringilla. 
-Risus, gravida tortor elementum suspendisse sit donec. 
-Vel massa eu in risus mi eu rhoncus. `
+        const subtitleexperience = `We craft immersive, narrative-driven, and collaborative experiences for project stakeholders. `
         const titleinsight = `Create Insight`
-        const subtitleinsight = `A pulvinar augue aliquam elementum fringilla. 
-Risus, gravida tortor elementum suspendisse sit donec. 
-Vel massa eu in risus mi eu rhoncus. `
+        const subtitleinsight = `We create a platform for intelligent decision-making in the design process.`
         const titlecapabilities = `Elevate Capabilities`
-        const subtitlecapabilities = `A pulvinar augue aliquam elementum fringilla. 
-Risus, gravida tortor elementum suspendisse sit donec. 
-Vel massa eu in risus mi eu rhoncus.`
+        const subtitlecapabilities = `We help build structure, resources, knowledge to help project teams run smarter.`
         const seehow = `See How`
 
         return (
@@ -45,13 +41,13 @@ Vel massa eu in risus mi eu rhoncus.`
                     <p>{ subtitlecapabilities }</p>
                 </div>
                 <div className="about__seehowexperience">
-                    <p>{ seehow }</p>
+                    <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
                 </div>
                 <div className="about__seehowinsight">
-                    <p>{ seehow }</p>
+                    <InternalLinkHighlighted value={seehow} destination="/projects/turing" />
                 </div>
                 <div className="about__seehowcapabilities">
-                    <p>{ seehow }</p>
+                    <InternalLinkHighlighted value={seehow} destination="/projects/google" />
                 </div>
 
 

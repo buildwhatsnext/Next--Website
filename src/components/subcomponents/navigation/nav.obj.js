@@ -28,13 +28,13 @@ export default class NavbarPage extends React.Component {
           <img 
             src={logo} 
             alt="NEXT/"
-            width="100px"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="next__navbar__nav__outer">
           <Nav className="mr-auto" id="next__navbar__nav__inner">
             <Nav.Link href="/about">about</Nav.Link>
+            <Nav.Link href="/Services">services</Nav.Link>
             <Nav.Link href="/team">team</Nav.Link>
             <Nav.Link href="/projects">projects</Nav.Link>
             <Nav.Link href="/contact">contact us</Nav.Link>

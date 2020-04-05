@@ -1,12 +1,13 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import '../../styles/styles.interaction.scss';
-import '../subcomponents/statements/statement.style.scss';
+import '../subcomponents/statements/statement.style.desktop.scss';
+import '../subcomponents/statements/statement.style.mobile.scss';
 
 export function StatementMutable(props) {
   const { data, statement } = props;
-  const [ index, setIndex ] = useState(0);
-  const [ display, setDisplay ] = useState(statement);
+  const [ index, setIndex ] = useState(1);
+  const [ display, setDisplay ] = useState('design');
 
   const incrementData = () => {
     setDisplay(data[index]);
@@ -19,7 +20,7 @@ export function StatementMutable(props) {
   }
 
   useEffect(() => {
-    setTimeout(incrementData, 1000);
+    setTimeout(incrementData, 2000);
   });
 
   return (

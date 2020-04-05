@@ -1,0 +1,32 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+@media(min-width: $sizeDesktop) {
+
+  .page__services {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 10;
+    grid-row: 1 / -1;
+    margin-top: 60px;
+    // border: 10px red solid;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .page__services__title {
+    @extend .soft__coral__title;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    padding-left: 160px;
+    // border: 10px peachpuff solid;
+  }
+
+  .page__services__items {
+    grid-column: 1 / -1;
+    grid-row: 1 / 12;
+    // border: 10px green solid;
+  }
+}

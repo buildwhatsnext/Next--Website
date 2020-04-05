@@ -5,8 +5,9 @@ import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
-import { TeamPage } from '../components/team/team.obj';
-import { ProjectPage } from '../components/project/project.obj';
+import { ServiceRouter } from '../components/service/services.obj';
+import { TeamRouter } from '../components/team/team.obj';
+import { ProjectRouter } from '../components/project/project.obj';
 
 import '../styles/styles.interaction.scss';
 
@@ -18,7 +19,6 @@ export default function AppRouter() {
     </Router>
   )
 }
-
 
 const Routes = (props) => (
   <Fragment>
@@ -39,8 +39,9 @@ const RouteCollection = () => (
     <Route path='/contact'>
       <Contact />
     </Route>
-    <Route path="/team" render={(props) => (<TeamPage {...props} />)} />
-    <Route path="/projects" render={(props) => (<ProjectPage {...props} />)} />
+    <Route path="/team" render={(props) => (<TeamRouter {...props} />)} />
+    <Route path="/services" render={(props) => (<ServiceRouter {...props} />)} />
+    <Route path="/projects" render={(props) => (<ProjectRouter {...props} />)} />
     <Route exact path='/' render={(props) => (<HomePage {...props}/>
     )}/>
   </Switch>

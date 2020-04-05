@@ -70,8 +70,6 @@
   
     .answerboxfat {
       display: grid;
-      grid-template-columns: repeat(22, 40px);
-      grid-template-rows: repeat(3, 1fr);
       border: 3px #E03E52 solid;
       grid-column-start: 5;
       grid-column-end: 9;
@@ -79,13 +77,14 @@
     }
     
     .button {
+      background-image: url(../../assets/svg/icons/50contactbutton.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 40px;
       height: 40px;
-      float: right;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 22;
-      grid-column-end: 23;
+      align-self: end;
+      justify-self: end;
+      z-index: 10;
     }
   
     .fragment {
@@ -158,6 +157,18 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     
+  }
+
+  .contact__nameslash {
+    display: none;
+  }
+
+  .contact__emailslash {
+    display: none;
+  }
+
+  .contact__messageslash {
+    display: none;
   }
 }
 

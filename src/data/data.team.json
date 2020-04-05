@@ -3,6 +3,7 @@
   "members" : {    
     "adam" : {
       "name": "Adam Strudwick",
+      "shortName": "adam",
       "email": "astrudwick@hlw.com",
       "position": "Principal",
       "location": "London",
@@ -12,6 +13,7 @@
     },
     "ruyi" : {
       "name": "Ruyi Igiehon",
+      "shortName": "ruyi",
       "email": "rigiehon@hlw.com",
       "position": "Director",
       "location": "New York",
@@ -21,6 +23,7 @@
     },
     "preston" : {
       "name": "Preston Smith",
+      "shortName": "preston",
       "email": "psmith@hlw.com",
       "position": "Innovation Lead",
       "location": "New York",
@@ -30,6 +33,7 @@
     },
     "chris" : {
       "name": "Chris Sower",
+      "shortName": "chris",
       "email": "csower@hlw.com",
       "position": "Architecture Designer",
       "location": "Los Angeles",
@@ -39,8 +43,9 @@
     },
     "stephen" : {
       "name": "Stephen Magee",
+      "shortName": "stephen",
       "email": "smagee@hlw.com",
-      "position": "Assocaite, Design Technology & Technical Lead",
+      "position": "NEXT Lead UK",
       "location": "London",
       "description": "An Interior Designer with passion for delivery & technical excellence. Fascinated by its potential, I took my first BIM role before opening Revit & never looked back! Meticulous (OCD) for process & standards but it’s served me well!",
       "team": "BIM/Computation",
@@ -48,6 +53,7 @@
     },
     "andrew" : {
       "name": "Andrew Delgado",
+      "shortName": "andrew",
       "email": "adelgado@hlw.com",
       "position": "Experience Lead",
       "location": "New York",
@@ -56,18 +62,20 @@
       "pictureURL": null
     },
     "kp" : {
-      "name": "KyungPyo (KP) Kim",
+      "name": "KyungPyo Kim",
+      "shortName": "kp",
       "email": "kpkim@hlw.com",
-      "position": "Design Technology Specialist/ Designer",
+      "position": "Design Tech Specialist",
       "location": "New York",
-      "description": "Always intrigued by art that make people fall in wonder. Graduated from Pratt Institute, earned Bachelor of Architecture and minor in Construction Management, specialized on real estate. Now his focus is on full-stack development coding, UI/UX application prototyping, architectural computation design and software development where he is scrutinizing the idea, “What is beyond the blueprints and renderings in the field of architecture / design?”. Favorite artists are Hajime Sorayama _ Georgio de Chirico _ Mark Rothko // favorite architects are Peter Zumthor _ Tadao Ando // Favorite musician are Frank Sinatra _ Daft Punk.",
+      "description": "Always intrigued by art that make people fall in wonder. Graduated from Pratt Institute, earned Bachelor of Architecture and minor in Construction Management, specialized on real estate. Now his focus is on full-stack development coding, UI/UX application prototyping, architectural computation design and software development where he is scrutinizing the idea, “What is beyond the blueprints and renderings in the field of architecture / design?”. Favorite artist is Hajime Sorayama // favorite architect is Peter Zumthor // Favorite musician is Daft Punk.",
       "team": "Innovation",
-      "pictureURL": "assets/photo/team/professional/kp.png"
+      "pictureURL": null
     },
     "bharti" : {
       "name": "Bharti Kodnani",
+      "shortName": "bharti",
       "email": "bkodnani@hlw.com",
-      "position": "Design Technology Specialist / Designer",
+      "position": "Design Tech Specialist",
       "location": "New York",
       "description": "Bharti is a designer based in NY with a B. Arch from Pratt Institute. With nearly three years of experience in robotics, Bharti’s true interest lies in exploring new technologies. At Next/ she's working on real time rendering projects, animations, front end development and 3d print fabrication . She is quite quirky, and that peeks through in her work.",
       "team": "Experience",
@@ -75,6 +83,7 @@
     },
     "jeff" : {
       "name": "Jeff Bailey",
+      "shortName": "jeff",
       "email": "jbailey@hlw.com",
       "position": "BIM Specialist",
       "location": "New York",
@@ -84,10 +93,11 @@
     },
     "mina" : {
       "name": "Mina Nassif",
+      "shortName": "mina",
       "email": "mnassif@hlw.com",
       "position": "BIM Specialist",
       "location": "New York",
-      "description": "Mina always fascinated by how technology can shape the Architecture world. He started studying Architecture at NJIT, where he graduated with a Bachelor's degree. He worked as a designer in MMA, did renders, animations, and construction documents. Officially started his BIM Career in Toll Brother, where he helped in transforming the company from the 2D world (Autocad) to 3D world and create a single source of truth models. He also published the first version of the BIM world. In NEXT, he's interesting in computation graphs and creating an excellent experience for clients using VR/AR,  realtime animations and renders.",
+      "description": "Mina has always been fascinated by how technology can shape the Architecture world. He started studying Architecture at NJIT, where he graduated with a Bachelor's degree. He worked as a designer in MMA, did renders, animations, and construction documents. Officially started his BIM Career in Toll Brother, where he helped in transforming the company from the 2D world (Autocad) to 3D world and create a single source of truth models. He also published the first version of the BIM world. In NEXT, he's interesting in computation graphs and creating an excellent experience for clients using VR/AR,  realtime animations and renders.",
       "team": "BIM / Computation",
       "pictureURL": null
     }

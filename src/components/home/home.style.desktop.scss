@@ -8,7 +8,8 @@
 @media(min-width: $sizeDesktop) {
 
   .app__content {
-    background-color: #06038d;
+    // background-color: #06038d;
+    // overflow: hidden;
   }
 
   .home {
@@ -17,7 +18,7 @@
     grid-template-rows: auto 150px 150px 150px;
     grid-column: 3 / 9;
     grid-row: 3 / 9;
-    // border: 1px red solid;
+    
 
     .home__hlw {
       @extend .soft__coral__title;
@@ -56,12 +57,15 @@
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
       text-align: left;
+      // grid-row: 1 / 4;
+      // grid-column: 1 / 5;
       // border: 1px red solid;
     }
 
     .home__cta {
       @extend .soft__white__title;
       justify-self: right;
+      font-size: 18px;
       // border: 10px red solid;
       grid-row: 4 / 5;
 
@@ -70,6 +74,13 @@
           .link__highlighted__background {
             // padding: 25px;
             // height: 100%
+            background-color: $next__white;
+          }
+
+          .link__highlighted__text{
+            @extend .soft__coral__title;
+            font-size: 36px;
+            margin-bottom: 20px;
           }
         }
       }
@@ -85,6 +96,9 @@
           // width: 105%;
           // justify-self: center;
           // align-self: end;
+        }
+        .link__highlighted__text { 
+          font-size: 36px;
         }
       }
     }

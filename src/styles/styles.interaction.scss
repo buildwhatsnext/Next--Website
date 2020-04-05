@@ -20,9 +20,9 @@
   }
 
   &-exit {
+    display: none;
     &-active {
       opacity: 0;
-      // transition: opacity 10ms linear;
     }
 
     &-done {

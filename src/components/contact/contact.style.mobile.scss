@@ -42,6 +42,32 @@
         font-size: 16px;
         line-height: 0px;
         text-align: left;
+        text-indent: 20px;
+    
+
+        .contact__nameslash {
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          // padding-top: 4px
+        }
+        
+        .contact__emailslash {
+
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          padding-top: 4px;
+          grid-row: 5/6;
+        }
+        .contact__messageslash {
+
+          width: 10px;
+          height: 10px;
+          text-indent: 0px;
+          padding-top: 4px;
+          grid-row: 3/4;
+        }
         
 
         .answerbox {
@@ -54,23 +80,27 @@
 
         .answerboxfat {
             display: grid;
-            grid-template-columns: repeat(20, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            // grid-template-columns: repeat(7, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
             border: 3px #E03E52 solid;
             height: 120px;
             width: 320px;
             z-index: -2;
-            
-          }
 
-        .button {
-            width: 35px;
-            height: 35px;
-            grid-row-end: 4;
-            // grid-column-start: 19;
-            grid-column-end: 21;
-            z-index: 3;
-            align-self: stretch;
+            .button {
+              background-image: url(../../assets/svg/icons/50contactbutton.svg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 36px;
+              height: 36px;
+              align-self: end;
+              justify-self: end;
+              // vertical-align: left;
+                // grid-row: 4 / 5;
+                // grid-column: 1 / 2;
+                // z-index: 3;
+                // align-self: stretch;
+              }
 
           }
 
@@ -97,12 +127,15 @@
         grid-template-rows: repeat(13, 30px);
         grid-column: 1 / -1;
         grid-row: 12 / 30;
-        grid-gap: 20px;
-        grid-column-gap: 40px;
+        // grid-gap: 5px;
+        // grid-column-gap: 40px;
         height: 100%;
         width: 100%;
+        padding-top: 20px;
         padding-left: 5px;
         padding-right: 10px;
+        margin: 5px;
+        column-gap: 40px;
     }
 
     .contact__info__item {
@@ -122,7 +155,7 @@
         background-repeat: no-repeat;
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        font-size: 10px;
+        font-size: 12px;
         text-align: left;
         white-space: pre;
         padding-left: 40px;
@@ -139,15 +172,15 @@
     }
 
     .contact__info__insta {
-        grid-column: 2 / 4;
-        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
     }
 
     .contact__info__location {
         grid-template-rows: 20px 20px;
         grid-column: 2 / 4;
         grid-row: 1 / 3;
-        
+        line-height: 15.2px;
         
     }
 
