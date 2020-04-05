@@ -6,7 +6,6 @@
 
   .app {
     background-color: $next__blue;
-    // padding: 20px;
   }  
 
   .app__navigation {
@@ -19,8 +18,14 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 20px;
+
+    // div {
+    //   grid-column: 1 / -1;
+    //   grid-row: 1 / -1;
+    //   display: grid;
+    //   grid-template-columns: repeat(10, 1fr);
+    //   grid-template-rows: repeat(10, 1fr);
+    //   grid-gap: 20px;
+    // }
   }
-
 }
-
-

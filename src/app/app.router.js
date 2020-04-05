@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { Transition, TransitionGroup } from 'react-transition-group';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
@@ -15,7 +15,9 @@ import '../styles/styles.interaction.scss';
 export default function AppRouter() {
   return (
     <Router>
-      <Route render={(location) => {return (<Routes {...location} />)}} />
+      <Route render={(lprops) => {
+        return (<Routes {...lprops} />)
+      }} />
     </Router>
   )
 }
@@ -26,12 +28,23 @@ const Routes = (props) => (
       <Navbar />
     </div>
     <div className="app__content">
-      <RouteCollection {...props} />
+      <AnimatedRoutes {...props} />
+      {/* <RouteCollection {...props} /> */}
     </div>
   </Fragment>
 )
 
-const RouteCollection = () => (
+const AnimatedRoutes = (props) => (
+  <TransitionGroup>
+    <Transition
+      // appear={true}
+    >
+      <RouteCollection {...props} />
+    </Transition>
+  </TransitionGroup>
+)
+
+const RouteCollection = (props) => (
   <Switch>
     <Route path='/about'>
       <About />
