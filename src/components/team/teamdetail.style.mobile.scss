@@ -48,7 +48,7 @@
   }
 
   .team__detail__name {
-    @extend .soft__white__title;
+    // @extend .soft__white__title;
     grid-column: 1/5;
     grid-row: 1/4;
     text-align: left;
@@ -63,7 +63,7 @@
   }
 
   .team__detail__position {
-    @extend .hard__white__subtitle;
+    // @extend .hard__white__subtitle;
     grid-column: 1/6;
     grid-row: 1/4;
     font-size: 12px;
@@ -75,7 +75,7 @@
   }
 
   .team__detail__email {
-    @extend .hard__white__subtitle;
+    // @extend .hard__white__subtitle;
     grid-column: 1/5;
     grid-row: 1/4;
     font-size: 12px;

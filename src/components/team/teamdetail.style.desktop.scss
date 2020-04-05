@@ -34,45 +34,49 @@
 
   .borderbottom {
     grid-column: 12/17;
-    grid-row: 9/10;
+    grid-row: 7/8;
     // height: 100px;
     // width: 100px;
-    border-top: 3px white solid;
+    border-bottom: 3px white solid;
   }
 
   .team__detail__name {
-    @extend .soft__coral__title;
+    @extend .soft__white__title;
     grid-column: 12/16;
     grid-row: 2/6;
     text-align: left;
     font-size: 96px;
     z-index: 5;
     white-space: pre-wrap;
-    line-height: 110px;
+    line-height: 90px;
     // border: 10px red solid;
   }
 
   .team__detail__position {
     @extend .soft__white__title;
     grid-column: 12/19;
-    grid-row: 7/8;
+    grid-row: 6/7;
     font-size: 24px;
     text-align: left;
+    font-weight: 400;
+    align-self: end;
   }
 
   .team__detail__email {
     @extend .hard__coral__subtitle;
     grid-column: 12/17;
-    grid-row: 8/9;
+    grid-row: 7/8;
     font-size: 24px;
     text-align: left;
+    font-weight: 400;
+    align-self: start;
   }
 
   .team__detail__description {
     @extend .soft__white__title;
     // border: 10px black solid;
     grid-column: 12/17;
-    grid-row: 10/16;
+    grid-row: 9/15;
     font-size: 16px;
     text-align: left;
     white-space: pre-line;
@@ -158,12 +162,12 @@
   .cta {
     @extend .soft__white__title;
     grid-row: 16/17;
-    grid-column: 15/18;
+    grid-column: 15/17;
     font-size: 36px;
-    text-align: left;
+    // text-align: left;
     border-bottom: 10px #e03e52 solid;
-    margin-right: 90px;
-    margin-bottom: 5px
-    
+    // margin-right: 12px;
+    margin-bottom: 5px;
+    justify-self: end;
   }
 }

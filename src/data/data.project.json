@@ -3,11 +3,13 @@
   "projects" : {    
     "piper" : {
       "title": "Piper",
+      "shortName": "Piper",
       "client": "HLW Sustainability",
       "location": "New York",
       "status": "Ongoing",
       "type": "Application",
       "teams": ["All"],
+      "slug": "piper",
       "description": {
         "challenge" : "Help Google project team and its multidisciplinary group of stakeholders manage, integrate and coordinate the design development of a central atrium knitting together multiple floors, integrating shared amenities and serving as a the new heart of Google NYC",
         "outcome" : "A BIM process that utilized digital models as virtual repositories for data enabling the management, coordination and integration of:  post occupancy analyses,   custom sustainability practices,   wellness design,   healthy materials consulting,   LEED consulting  master planning,  interior design; and  landscape architecture."
@@ -16,68 +18,78 @@
     },
     "turing" : {
       "title": "Turing",
-      "client": "",
+      "shortName": "Turing",
+      "client": "-",
       "location": "New York",
       "status": "Ongoing",
       "type": "Application",
       "teams": ["All"],
+      "slug": "turing",
       "description": {
-        "challenge" : "info about the challenge",
-        "outcome" : "info about the outcome"
+        "challenge" : "Help Google project team and its multidisciplinary group of stakeholders manage, integrate and coordinate the design development of a central atrium knitting together multiple floors, integrating shared amenities and serving as a the new heart of Google NYC",
+        "outcome" : "A BIM process that utilized digital models as virtual repositories for data enabling the management, coordination and integration of:  post occupancy analyses,   custom sustainability practices,   wellness design,   healthy materials consulting,   LEED consulting  master planning,  interior design; and  landscape architecture."
       },
       "pictureURL":[""]
     },
-    "1950Grand" : {
+    "1950" : {
       "title": "1950 Grand",
-      "client": "",
+      "shortName": "1950 Grand",
+      "client": "-",
       "location": "New York",
       "status": "Completed",
-      "type": "",
+      "type": "-",
       "teams": ["All"],
+      "slug": "1950",
       "description": {
-        "challenge" : "info about the challenge",
-        "outcome" : "info about the outcome"
+        "challenge" : "A brand new ground up project was envisioned using real time rendering to help our clients understand how we redesigned the park and open spaces to create a new tight knit campus for the tenants at 1950 and 1960 Grand.",
+        "outcome" : "A brand new ground up project was envisioned using real time rendering to help our clients understand how we redesigned the park and open spaces to create a new tight knit campus for the tenants at 1950 and 1960 Grand."
       },
       "pictureURL":[""]
     },
     "stamford" : {
       "title": "First Stamford Place",
-      "client": "",
+      "shortName": "Stamford",
+      "client": "-",
       "location": "Connecticut",
       "status": "Completed",
-      "type": "",
+      "type": "-",
       "teams": ["All"],
+      "slug": "stamford",
       "description": {
-        "challenge" : "info about the challenge",
-        "outcome" : "info about the outcome"
+        "challenge" : "A reinvisioned landscape to tie the outside and inside together, using interactive 360 panoramas were used to help the clients understand the important sustainability features HLW designed to be the first in Connecticut to achieve SITES certification",
+        "outcome" : "A reinvisioned landscape to tie the outside and inside together, using interactive 360 panoramas were used to help the clients understand the important sustainability features HLW designed to be the first in Connecticut to achieve SITES certification"
       },
       "pictureURL":[""]
     },
     "fordham" : {
       "title": "Fordham NRHCC",
+      "shortName": "Fordham",
       "client": "Fordham University",
       "location": "New York",
       "status": "Completed",
-      "type": "",
+      "type": "-",
       "teams": ["All"],
+      "slug": "fordham",
       "description": {
-        "challenge" : "info about the challenge",
-        "outcome" : "info about the outcome"
+        "challenge" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the",
+        "outcome" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the"
       },
       "pictureURL":[""]
     },
     "google" : {
       "title": "Google Chelsea Market",
+      "shortName": "Google",
       "client": "Google",
       "location": "New York",
       "status": "Completed",
       "type": "Workspace",
       "teams": ["Innovation _ Simulation _ Computation"],
+      "slug": "google",
       "description": {
-        "challenge" : "info about the challenge",
-        "outcome" : "info about the outcome"
+        "challenge" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the",
+        "outcome" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the"
       },
-      "pictureURL":"assets/photo/team/professional/kp.png"
+      "pictureURL":[""]
     }
   }
 }

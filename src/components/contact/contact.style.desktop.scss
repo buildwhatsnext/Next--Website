@@ -29,7 +29,6 @@
 @media(min-width: $sizeDesktop) {
 
   .contact {
-    background-color: #06038D;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: grid;
@@ -42,7 +41,7 @@
     grid-column: 5/9;
     grid-row: 2/4;
     font-size: 36px;
-    // border: 10px red solid;
+    font-weight: 400;
   }
   
   .contact__title {
