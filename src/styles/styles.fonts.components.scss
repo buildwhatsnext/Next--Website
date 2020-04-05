@@ -26,6 +26,11 @@
   color: $next__white;
 }
 
+%soft__smudge {
+  @extend %soft;
+  color: $next__smudge;
+}
+
 %hard__blue {
   @extend %hard;
   color: $next__blue;
@@ -88,6 +93,12 @@
   font-weight: 600;
 }
 
+%soft__smudge__title {
+  @extend %soft__smudge;
+  font-size: 72px;
+  font-weight: 600;
+}
+
 %soft__white__title {
   @extend %soft__white;
   font-size: 72px;
@@ -114,6 +125,18 @@
 
 %hard__blue__subtitle {
   @extend %hard__blue;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+%hard__coral__subtitle {
+  @extend %hard__coral;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+%hard__white__subtitle {
+  @extend %hard__white;
   font-size: 36px;
   font-weight: 600;
 }
