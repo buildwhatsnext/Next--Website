@@ -1,0 +1,21 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+@media(min-width: $sizeDesktop) {
+  .page__project {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 10;
+    grid-row: 1 / -1;
+    margin-top: 60px;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  
+  .page__project__items {
+    grid-column: 1 / -1;
+    grid-row: 3 / 12;
+  }
+}

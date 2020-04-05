@@ -1,0 +1,198 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+.hard__black__subtitle {
+  @extend %hard__black__subtitle;
+}
+
+.hard__white__subtitle {
+  @extend %hard__white__subtitle;
+}
+
+@media(min-width: $sizeDesktop) {
+
+  .page__team {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 10;
+    grid-row: 1 / -1;
+    margin-bottom: 0px;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    .page__team__items {
+      grid-column: 1 / -1;
+      grid-row: 3 / 12;
+    }
+  }
+
+  .team__list {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 10rem;
+    // row-gap: 10px;
+  }
+
+  .team__item {
+    // border: 1px solid orange;
+    height: 300px;
+    display: grid;
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: repeat(5, 1fr);
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    &__name {
+      @extend .soft__white__title;
+      font-size: 24px;
+      white-space: nowrap;
+      align-self: end;
+      // justify-self: end;
+      grid-row: 1/2;
+      grid-column: 2/4;
+      z-index: 2;
+      margin-bottom: 0;
+      text-align: left;
+      margin-left: 50px;
+      // align-self: start;
+      // line-height: 100px
+    }
+
+    &__position {
+      @extend .hard__white__subtitle;
+      font-size: 18px;
+      white-space: nowrap;
+      margin-top: 1px;
+      grid-row: 2 / 3;
+      grid-column: 2 / 4;
+      z-index: 2;
+      margin-left: 50px;
+      // text-align: right;
+    }
+
+    &__location {
+      @extend .hard__white__subtitle;
+      font-size: 18px;
+      white-space: nowrap;
+      align-self: end;
+      margin-bottom: 0;
+      grid-column: 2/4;
+      grid-row: 2/3;
+      z-index: 2;
+      text-align: left;
+      margin-left: 50px;
+    }
+
+    &__block {
+      background-image: url('../../assets/svg/icons/53trapazoid.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      // height: 400px;
+      // width: 500px;
+      grid-column: 1 / -1;
+      grid-row: 2 / 6;
+      // border: red 10px solid;
+      z-index: 1;
+    }
+  }
+
+  .team__item__image {
+
+    // border: 10px red solid;
+    background-position: center;
+    grid-row: 2 / 6;
+    grid-column: 1 / 3;
+    background-size: cover;
+    z-index: 6;
+
+    &__adam {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/adam_prof.png');
+    }
+
+    &__andrew {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/andrew_prof.png');
+    }
+
+    &__bharti {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/bharti_prof.png');
+    }
+
+    &__chris {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/chris_prof.png');
+    }
+
+    &__jeff {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/jeff_prof.png');
+    }
+ 
+    &__kp {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/kp_prof.png');
+    }
+
+    &__mina {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/mina_prof.png');
+    }
+
+    &__ruyi {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/ruyi_prof.png');
+    }
+
+    &__stephen {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/stephen_prof.png');
+    }
+
+    &__preston {
+      @extend .team__item__image;
+      background-image: url('../../assets/photo/team/professional/preston_prof.png');
+    }
+  }
+  
+  .spacer__position__1 {
+    display: 1fr;
+  }
+
+  .spacer__position__3 {
+    display: 1fr;
+  }
+
+  .spacer__position__5 {
+    display: 1fr;
+  }
+
+  .spacer__position__7 {
+    display: 1fr;
+  }
+
+  .spacer__position__9 {
+    display: 1fr;
+  }
+  .spacer__position__11 {
+    display: 1fr;
+  }
+  .spacer__position__13 {
+    display: 1fr;
+  }
+  .spacer__position__15 {
+    display: 1fr;
+  }
+  .spacer__position__17 {
+    display: 1fr;
+  }
+}

@@ -1,0 +1,20 @@
+@import '../styles/styles.colors.scss';
+
+// * {
+//   cursor: none;
+
+//   &:hover {
+//     cursor: none;
+//   }
+// }
+
+#follower {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  background: $next__coral;
+  border: 10px solid $next__coral;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 10;
+}

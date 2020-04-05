@@ -1,0 +1,16 @@
+@import './nav.style.general.scss';
+@import '../../../styles/styles.general.scss';
+
+@media(min-width: $sizeDesktop) {
+  #next__navbar {
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .navbar-brand {
+      img {
+        width: 250px;
+      }
+    }
+  }
+}

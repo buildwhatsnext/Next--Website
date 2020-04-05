@@ -1,0 +1,119 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+.soft__white__title {
+  @extend %soft__white__title;
+}
+
+@media(min-width: $sizeDesktop) {
+
+  .app__content {
+    // background-color: #06038d;
+    // overflow: hidden;
+  }
+
+  .home {
+    @extend .full_width_height;
+    display: grid;
+    grid-template-rows: auto 150px 150px 150px;
+    grid-column: 3 / 9;
+    grid-row: 3 / 9;
+    
+
+    .home__hlw {
+      @extend .soft__coral__title;
+
+      p {
+        margin-right: 1rem;
+        margin-bottom: 5rem;
+      }
+
+      .link__highlighted {
+
+        .link__highlighted__background {
+          margin-left: -10px;
+          margin-right: -10px;
+          margin-bottom: 20px;
+        }
+
+        &:hover {
+          .link__highlighted__background {
+            height: 100%;
+            margin-top: -30px;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: 0px;
+            background-color: $next__white;
+            z-index: 1;
+          }
+    
+          .link__highlighted__text {
+            color: $next__blue;
+            z-index: 2;
+          }
+        }
+      }
+    }
+
+    .home__tagline {
+      @extend .soft__coral__title;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      text-align: left;
+      // grid-row: 1 / 4;
+      // grid-column: 1 / 5;
+      // border: 1px red solid;
+    }
+
+    .home__cta {
+      @extend .soft__white__title;
+      justify-self: right;
+      font-size: 18px;
+      // border: 10px red solid;
+      grid-row: 4 / 5;
+
+      &:hover {
+        .link__highlighted {
+          .link__highlighted__background {
+            // padding: 25px;
+            // height: 100%
+            background-color: $next__white;
+          }
+
+          .link__highlighted__text{
+            @extend .soft__coral__title;
+            font-size: 36px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .link__highlighted {
+        .link__highlighted__background {
+          margin-left: -10px;
+          margin-right: -10px;
+          margin-bottom: 10px;
+          // position: relative;
+          // top: -10px;
+          // height: 10px;
+          // width: 105%;
+          // justify-self: center;
+          // align-self: end;
+        }
+        .link__highlighted__text { 
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  .includes__highlight {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto 1fr;
+    white-space: pre-wrap;
+    
+  }
+}

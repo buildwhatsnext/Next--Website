@@ -1,0 +1,43 @@
+@import '../../../styles/styles.fonts.components.scss';
+@import '../../../styles/styles.general.scss';
+@import '../../../styles/styles.colors.scss';
+
+@media(min-width: $sizeDesktop) {
+  
+  .link__highlighted {
+    display: grid;
+    grid-template-rows: auto;
+    width: auto;
+    transition:  .1s ease-out;
+
+    &:hover {
+      .link__highlighted__background {
+        height: 100%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .link__highlighted__text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: inline-block;
+    width: auto;
+    transition: all .5s ease-out;
+    transition-delay: .1s;
+    color: $next__white;
+    z-index: 2;
+  }
+
+  .link__highlighted__background {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 15px;
+    width: auto;
+    align-self: end;
+    z-index: 1;
+    background: $next__coral;
+    transition: all .1s ease-in-out;
+  }
+}

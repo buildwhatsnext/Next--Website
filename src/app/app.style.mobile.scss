@@ -1,0 +1,29 @@
+@import '../styles/styles.fonts.mobile.scss';
+@import '../styles/styles.general.scss';
+@import '../styles/styles.colors.scss';
+
+@media(max-width: $sizeMobile) {
+
+  .app {
+    background-color: $next__blue;
+    // border: 10px solid blue;
+  }
+
+  .app__navigation {
+    // border: 5px solid brown;
+    grid-column: 1 / -1;
+  }
+
+  .app__content {
+    // border: 5px solid green;
+    background-color: $next__blue;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    // grid-gap: 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,37 @@
+@import './styles.fonts.families.scss';
+
+.soft__desktop__title {
+  @extend %soft;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+.soft__desktop__title__big {
+  @extend %soft;
+  font-weight: 600;
+  font-size: 72px;
+}
+
+.soft__desktop__subtitle {
+  @extend %soft;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.soft__desktop__subtitle__small {
+  @extend %soft;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.soft__desktop__body {
+  @extend %soft;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.soft__desktop__body__small {
+  @extend %soft;
+  font-weight: 400;
+  font-size: 16px;
+}
