@@ -1,4 +1,6 @@
 import React from 'react';
+import { TweenLite } from 'gsap';
+
 import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
 import './teamdetail.style.mobile.scss';
@@ -29,7 +31,7 @@ export function TeamMemberDetail(data) {
       {/* <div className="team__detail__location">{ data.location }</div> */}
       <div className="team__detail__description">{ data.description }</div>
       <div className={`team__detail__pictureURL__${data.shortName}`} />
-      <div className="trapazoid"></div>
+      <div className="trapazoid" ref={ d => this.image = d } ></div>
       <div className="slash"></div>
       <div className="borderbottom"></div>
       <div className="cta">
@@ -38,3 +40,22 @@ export function TeamMemberDetail(data) {
     </div>
   )
 }
+
+
+// export function TeamMemberDetail(data) {
+  
+//   return (
+//     <div className="team__detail">
+//       <div className="team__detail__name">{ data.name }</div>
+//       <div className="team__detail__email">{ data.email }</div>
+//       <div className="team__detail__position">{ data.position }</div>
+//       {/* <div className="team__detail__location">{ data.location }</div> */}
+//       <div className="team__detail__description">{ data.description }</div>
+//       <div className={`team__detail__pictureURL__${data.shortName}`} />
+//       <div className="trapazoid"></div>
+//       <div className="slash"></div>
+//       <div className="borderbottom"></div>
+//       <div className="cta">Contact Us</div>
+//     </div>
+//   )
+// }

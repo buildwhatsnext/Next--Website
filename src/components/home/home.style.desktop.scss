@@ -23,6 +23,11 @@
     .home__hlw {
       @extend .soft__coral__title;
 
+      p {
+        margin-right: 1rem;
+        margin-bottom: 5rem;
+      }
+
       .link__highlighted {
 
         .link__highlighted__background {

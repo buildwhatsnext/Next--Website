@@ -3,86 +3,117 @@
 
 @media(min-width: $sizeDesktop) {
   
-  .project__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  .project__data__list {
+    margin-bottom: 200px;
 
-  .project__item__line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2 / 3;
-  }
+    .project__item {
+      display: grid;
+      grid-template-columns: 400px auto;
   
-  .project__item {
-  
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  
-  .project__item__right {
-    margin-bottom: 100px;
-    float: right;
-    text-align: right;
-    border-right: 3px solid $next__coral;
-    padding-right: 20px;
-    grid-column: 1;  
-  }
-  
-  .spacer__right {
-    width: 100%;
-    height: 100%;
-    // background-color: red;
-    grid-column: 2;
-  }
-  
-  .spacer__left {
-    width: 100%;
-    height: 100%;
-    content: "";
-    // background-color: red;
-    grid-column: 1;
-  }
-  
-  .project__item__left {
-    margin-bottom: 100px;
-    text-align: left;
-    float: left;
-    border-left: 3px solid $next__coral;
-    padding-left: 20px;
-    grid-column: 2;
-  }
-  
-  .project__item__title {
-    p {
-      @extend .soft__coral__title;
-      font-size: 200px;
-      @supports (-webkit-text-stroke: 3px black) {
-        -webkit-text-stroke: 3px $next__coral;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        transition: all 2s ease-in-out;
-
-        // test
-        background-color: #06038D;
-        background-repeat: no-repeat;
-        height: -100px;
-        background-position: 25% 75%;
-        
-      }
-
       &:hover {
-        color: $next__coral;
-        -webkit-text-fill-color: $next__coral;
+        cursor: pointer;
+
+        .project__item__image {
+          animation: fadeInAndSlideIn 1s ease-out 1s;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  
+    .project__item__type {
+      @extend %hard__subinfo;
+      color: $next__grey;
+      display: none;
+    }
+  
+    .project__item__image {
+      background-image: url('../../assets/photo/team/group/grouppicture.png');
+      width: 100%;
+      height: 0%;
+      transition: all .75s ease-in-out 1s;
+    }
+    
+    .project__item__title {
+      direction: rtl;
+  
+      div {
+        @extend .soft__coral__title;
+        // border: 1px solid white;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 200px;
+        margin-left: 200px;
+        width: auto;
+        direction: ltr;
+  
+        @supports (-webkit-text-stroke: 3px black) {
+          -webkit-text-stroke: 3px $next__coral;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          transition: all .5s ease-in-out ;
+        }
+  
+        &:hover {
+          -webkit-text-fill-color: $next__coral;
+          animation: slideLeft .75s ease-out .5s;
+          animation-fill-mode: forwards;
+        }
+      }
+  
+      &:hover {
+        &:after {
+          @extend %project__underline__filled;
+        }
+      }  
+      
+      &::after {
+        @extend %project__underline__none;
       }
     }
   }
+
+  @keyframes slideLeft {
+    0% { margin-left: 200px; }
+    100% { margin-left: 0px; }
+  }
+
+  @keyframes expandWidth {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+
+  @keyframes fadeInAndSlideIn {
+    0% {
+      width: 150%;
+      height: 150%;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      transform: translateY(50px);
+      opacity: 100;
+    }
+  }
   
-  .project__item__type {
-    @extend %hard__subinfo;
-    color: $next__grey;
-    // border: 1px solid green;
+  %project__underline__none {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    direction: rtl;
+    display: block; /* This will put the pseudo element on its own line. */
+    // margin: 0 auto; /* This will center the border. */
+    width: 0%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid $next__white; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s;
+  }
+
+  %project__underline__filled {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    // margin: 0 auto; /* This will center the border. */
+    // margin-left: -200px;
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid $next__white; /* This creates the border. Replace black with whatever color you want. */
   }
 }
-
