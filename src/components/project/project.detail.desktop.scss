@@ -183,6 +183,10 @@
       background-image: url('../../assets/photo/project/fordham/fordham.jpg');
       grid-column: 1 / -1;
       grid-row: 1 / 7;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
     }
 
     &__google {
