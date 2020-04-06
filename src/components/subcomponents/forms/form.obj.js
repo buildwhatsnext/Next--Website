@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Form } from 'react-bootstrap' ;
-import slash from '../../../assets/svg/icons/55thickslash.svg';
+// import slash from '../../../assets/svg/icons/55thickslash.svg';
 import firebase from '../../../app/app.firebase';
 
 export class ContactForm extends React.Component {
@@ -83,7 +83,7 @@ export function NameEntryForm(props) {
   return (
     <Fragment>
       <div className="contact__nameslash">
-        <img src={slash} alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/LOGO_NEXT_SLASH_CORAL_fqzdgx.svg' alt="slash"/>
       </div>
       <p>Name</p>
       <div className="answerbox">
@@ -102,7 +102,7 @@ export function EmailEntryForm(props) {
   return (
     <fragment>
       <div className="contact__emailslash">
-        <img src={slash} alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/LOGO_NEXT_SLASH_CORAL_fqzdgx.svg' alt="slash"/>
       </div>
       <p>Email</p>
       <div className="answerbox">
@@ -121,7 +121,7 @@ export function MessageEntryForm(props) {
   return (
     <fragment>
       <div className="contact__messageslash">
-        <img src={slash} alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/LOGO_NEXT_SLASH_CORAL_fqzdgx.svg' alt="slash"/>
       </div>
       <p>Message</p>
       <div className="answerboxfat">
