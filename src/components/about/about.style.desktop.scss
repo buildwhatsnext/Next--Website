@@ -34,6 +34,18 @@
     z-index: 3;
   }
 
+  .about__whitecard {
+    position: relative;
+    grid-column:  4 / 10;
+    grid-row: 2 / 10;
+    background-color: white;
+    border: 2px solid #E03E52;
+    // margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+
   .about__title {
     @extend .soft__white__title;
     font-size: 72px;

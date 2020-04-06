@@ -25,6 +25,7 @@ export default class About extends React.Component {
             <div className="about__coralcard">
               <AboutTitle />
             </div>
+            <div className="about__whitecard"></div>
           </div>
           <div className="about__category">
             <AboutCategory />
