@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Form } from 'react-bootstrap' ;
 import slash from '../../../assets/svg/icons/55thickslash.svg';
+import firebase from '../../../app/app.firebase';
 
 export class ContactForm extends React.Component {
   constructor(props) {
@@ -10,26 +11,72 @@ export class ContactForm extends React.Component {
       email: '',
       message: ''
     }
+
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleMessageChange = this.handleMessageChange.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this);
+  }
+
+  handleSubmit(e){
+    e.preventDefault();
+    this.sendToDatabase();
+    this.clearState();
+  }
+
+  sendToDatabase() {
+    const itemsRef = firebase.database().ref('userContacts');
+
+    const newRequest = {
+      userName: this.state.name,
+      userEmail: this.state.email,
+      userMessage: this.state.message
+    }
+
+    itemsRef.push(newRequest);
+  }
+
+  clearState() {
+    this.setState({
+      email: '',
+      message: '',
+      name: ''
+    });
+  }
+
+  handleEmailChange(e) {
+    e.preventDefault();
+    this.setState({
+      email: e.target.value
+    });
+  }
+
+  handleNameChange(e) {
+    e.preventDefault();
+    this.setState({
+      name: e.target.value
+    });
+  }
+
+  handleMessageChange(e) {
+    e.preventDefault();
+    this.setState({
+      message: e.target.value
+    });
   }
 
   render() {
     return (
       <div className="contact__form">
-        <NameEntryForm />
-        <EmailEntryForm />
-        <MessageEntryForm />
+        <NameEntryForm handleChange={ (e) => this.handleNameChange(e) } value={ this.state.name } />
+        <EmailEntryForm handleChange={(e) => this.handleEmailChange(e) } value={ this.state.email } />
+        <MessageEntryForm 
+          handleChange={ (e) => this.handleMessageChange(e) } 
+          handleClick={ (e) => this.handleSubmit(e) } 
+          value={ this.state.message }
+        />
       </div>
     )
   }
-}
-
-export function EntryForm(props) {
-  return (
-    <Fragment>
-      <p className="entry__form__name">{props.name}</p>
-      <div className="entry__form__value">{props.value}</div>
-    </Fragment>
-  )
 }
 
 export function NameEntryForm(props) {
@@ -40,9 +87,13 @@ export function NameEntryForm(props) {
       </div>
       <p>Name</p>
       <div className="answerbox">
-        <Form.Control type="text" placeholder="Please enter your name" />
+        <Form.Control 
+          type="text" 
+          placeholder="Please enter your name" 
+          onChange={ props.handleChange }
+          value={ props.value }
+        />
       </div>
-      
     </Fragment>
   )
 }
@@ -55,9 +106,13 @@ export function EmailEntryForm(props) {
       </div>
       <p>Email</p>
       <div className="answerbox">
-      <Form.Control type="email" placeholder="" />
+      <Form.Control 
+        type="email" 
+        placeholder="Please enter your email" 
+        onChange={ props.handleChange }
+        value={ props.value }
+      />
       </div>
-      {/* <EntryForm name={props.name} value={props.value} /> */}
     </fragment>
   )
 }
@@ -70,9 +125,13 @@ export function MessageEntryForm(props) {
       </div>
       <p>Message</p>
       <div className="answerboxfat">
-        <Form.Control type="text" placeholder="Please enter your name" />
-        <div className="button">
-        </div>
+        <Form.Control 
+          type="text" 
+          placeholder="What would you like to tell us?" 
+          onChange={ props.handleChange }
+          value={ props.value }
+        />
+        <div className="button" onClick={ props.handleClick }/>
       </div>
     </fragment>
   )
