@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import './nav.desktop.scss';
 import './nav.mobile.scss';
 import logo from '../../../assets/logo_next.svg';
@@ -34,7 +34,7 @@ export default class NavbarPage extends React.Component {
         <Navbar.Collapse id="next__navbar__nav__outer">
           <Nav className="mr-auto" id="next__navbar__nav__inner">
             <Nav.Link href="/about">about</Nav.Link>
-            <Nav.Link href="/Services">services</Nav.Link>
+            <Nav.Link href="/services">services</Nav.Link>
             <Nav.Link href="/team">team</Nav.Link>
             <Nav.Link href="/projects">projects</Nav.Link>
             <Nav.Link href="/contact">contact us</Nav.Link>
