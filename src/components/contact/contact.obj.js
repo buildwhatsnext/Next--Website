@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
     return (
       <div className="contact">
         <div className="contact__title">
-          <p>Get In Touch With Us</p>
+          <p>Get In Touch</p>
         </div>
         <div className="contact__quote">
           <p>We think of our clients as partners and encourage collaboration to invent new ways of approaching  projects. We’re a friendly bunch and love to talk, so please drop us a line and say hello.</p>
