@@ -56,9 +56,10 @@
     @extend .soft__white__title;
 
     font-size: 72px;
-    grid-column: 3 / 10;
+    grid-column: 1 / 10;
     grid-row: 1 / 2;
     z-index: 3;
+    white-space: pre-line;
     text-align: right;
     padding-top: 32px;
     padding-bottom: 58px;
