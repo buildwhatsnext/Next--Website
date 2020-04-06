@@ -8,78 +8,65 @@
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: grid;
-    grid-template-columns: repeat(9, 200px);
-    grid-template-rows: repeat(9, 100px);
-  }
-
-  .aboutduplicategrid {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    grid-template-columns: repeat(20, 15px);
-    grid-template-rows: repeat(20, 16px);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
   }
     
   .about__titlepage {
     display: grid;
-    grid-template-columns: repeat(9, 77px);
-    grid-template-rows: repeat(18, 44px);
-    // border: 3px black solid;
-    width: 700px;
-    height: 800px;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    background-color: #E03E52;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-row: 1 / -1;
+    grid-column: 1 / 6;
     z-index: 2;
   }
 
-  .about__titlepageback {
-    background-color: white;
-    border: 5px #E03E52 solid;
-    z-index: 1;
-    width: 700px;
-    height: 800px;
-    grid-column-start: 13;
-    grid-row-start: 6;
+  .about__coralcard {
+    position: relative;
+    grid-column:  4 / 10;
+    grid-row: 2 / 10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #E03E52;
+    // background-color: black;
+    margin: 10px;
+    z-index: 3;
   }
 
   .about__title {
     @extend .soft__white__title;
-    grid-column-start: 4;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    font-size: 72px;
+    grid-column: 3 / 10;
+    grid-row: 1 / 2;
+    z-index: 3;
     text-align: right;
-    line-height: 120%;
+    padding-top: 32px;
+    padding-bottom: 58px;
   }
 
   .about__description {
     @extend .soft__blue__subtitle;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    grid-column-start: 4;
-    grid-column-end: 9;
-    grid-row-start: 7;
-    grid-row-end: 12;
-    white-space: pre-wrap;
+    grid-column: 3/10;
+    grid-row: 2/10;
+    z-index: 3;
     text-align: right;
-    // line-height: 130%;
+    padding-bottom: 44px;
   }
 
   .about__contactus {
     @extend .soft__white__subtitle;
-    font-size: 32px;
-    // grid-column-start: 6;
-    // @extend .soft__white__subtitle !optional;
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 17;
-    grid-row-end: 18;
-    // width: 89px;
-    border-bottom: 12px solid #06038D;
+    font-size: 24px;
+    grid-column: 7 / 10;
+    grid-row: 10 / 11;
+    z-index: 3;
     text-align: right;
-    margin-left: 75px;
-    z-index: 5;
+    justify-self: end;
+    align-self: end;
+    // height: 30px;
+    padding-bottom: 12px;
 
     .link__highlighted__background {
       background-color: #06038D;
@@ -87,139 +74,101 @@
     }
   }
 
-  .about__name {
-    @extend .soft__blue__subtitle;
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 17;
-    grid-row-end: 18;
-    text-align: right;
-    font-size: 18px;
-  }
-
   .about__category {
-    grid-template-columns: repeat(20, 44.5px);
-    grid-template-rows: repeat(9, 88.5px);
     display: grid;
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 2;
-    grid-row-end: 10;
-  }
-
-  .about__categoryduplicate {
-    grid-template-columns: repeat(21, 1fr);
-    grid-template-rows: repeat(42, 1fr);
-    display: grid;
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 2;
-    grid-row-end: 10;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+    grid-column: 7 / 11;
+    grid-row: 1 / 11;
+    margin-top: 30px;
   }
 
   .about__titleexperience {
     @extend .soft__white__title;
     font-size: 48px;
-    grid-column-start: 2;
-    grid-column-end: 20;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    text-align: left;
-    // border: 10px red solid;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    align-self: end;
+    padding-bottom: 20px;
   }
 
   .about__subtitleexperience {
     @extend .soft__white__subtitle;
-    // font-size: 20px;
+    font-size: 16px;
+    grid-column: 2/10;
+    grid-row: 5/6;
     font-weight: 400;
-    grid-column-start: 3;
-    grid-column-end: 14;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    text-align: left;
+    padding-bottom: 29px;
+    // padding-top: 20px;
   }
 
   .about__titleinsight {
     @extend .soft__white__title;
     font-size: 48px;
-    grid-column-start: 2;
-    grid-column-end: 20;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    text-align: left;
+    grid-column: 1/6;
+    grid-row: 6/7;
+    
   }
 
   .about__subtitleinsight {
     @extend .soft__white__subtitle;
-    // font-size: 16px;
+    font-size: 16px;
+    grid-column: 2/10;
+    grid-row: 7/8;
     font-weight: 400;
-    grid-column-start: 3;
-    grid-column-end: 14;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    text-align: left;
+    padding-bottom: 29px;
   }
 
   .about__titlecapabilities {
     @extend .soft__white__title;
     font-size: 48px;
-    grid-column-start: 2;
-    grid-column-end: 20;
-    grid-row-start: 7;
-    grid-row-end: 8;
-    text-align: left;
+    grid-column: 1/-1;
+    grid-row: 8/9;
   }
-
   .about__subtitlecapabilities {
     @extend .soft__white__subtitle;
-    // font-size: 20px;
+    font-size: 16px;
+    grid-column: 2/10;
+    grid-row: 9/10;
     font-weight: 400;
-    grid-column-start: 3;
-    grid-column-end: 14;
-    grid-row-start: 8;
-    grid-row-end: 9;
-    text-align: left;
+    padding-bottom: 30px;
   }
 
   .about__seehowexperience {
     @extend .soft__white__subtitle;
     font-size: 24px;
-    grid-column-start: 12;
-    grid-column-end: 15;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    text-align: right;
-    // border-bottom: #E03E52 9px solid;
-    margin-bottom: 55px;
-    margin-left: 40px;
+    grid-column: 2/10;
+    grid-row: 5/6;
+    align-self: end;
+    justify-self: end;
+    height: 32px;
+    border-bottom: 10px #E03E52 solid;
   }
 
   
   .about__seehowinsight {
     @extend .soft__white__subtitle;
     font-size: 24px;
-    grid-column-start: 12;
-    grid-column-end: 15;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    text-align: right;
-    border-bottom: #E03E52 9px solid;
-    margin-bottom: 55px;
-    margin-left: 40px;
+    grid-column: 2/10;
+    grid-row: 7/8;
+    align-self: end;
+    justify-self: end;
+    height: 32px;
+    border-bottom: 10px #E03E52 solid;
+    // border: 10px red solid;
   }
 
   
   .about__seehowcapabilities {
     @extend .soft__white__subtitle;
     font-size: 24px;
-    grid-column-start: 12;
-    grid-column-end: 15;
-    grid-row-start: 9;
-    grid-row-end: 10;
-    text-align: right;
-    border-bottom: #E03E52 9px solid;
-    margin-bottom: 55px;
-    margin-left: 40px;
-    
+    grid-column: 2/10;
+    grid-row: 9/10;
+    align-self: end;
+    justify-self: end;
+    height: 32px;
+    border-bottom: 10px #E03E52 solid;
+    // border: 10px red solid;
   }
 }

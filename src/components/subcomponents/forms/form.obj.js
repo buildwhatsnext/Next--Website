@@ -40,7 +40,7 @@ export function NameEntryForm(props) {
       </div>
       <p>Name</p>
       <div className="answerbox">
-        <Form.Control type="text" placeholder="Please enter your name" />
+        <Form.Control type="text" placeholder="Please Enter Your Name" />
       </div>
       
     </Fragment>
@@ -55,7 +55,7 @@ export function EmailEntryForm(props) {
       </div>
       <p>Email</p>
       <div className="answerbox">
-      <Form.Control type="email" placeholder="" />
+      <Form.Control type="email" placeholder="Please Enter Your E-mail" />
       </div>
       {/* <EntryForm name={props.name} value={props.value} /> */}
     </fragment>
@@ -65,14 +65,13 @@ export function EmailEntryForm(props) {
 export function MessageEntryForm(props) {
   return (
     <fragment>
-      <div className="contact__messageslash">
-        <img src={slash} alt="slash"/>
-      </div>
-      <p>Message</p>
-      <div className="answerboxfat">
-        <Form.Control type="text" placeholder="Please enter your name" />
-        <div className="button">
+        <div className="contact__messageslash">
+          <img src={slash} alt="slash"/>
         </div>
+        <p>Message</p>
+        <div className="answerboxfat">
+          <Form.Control type="text" placeholder="Please Enter Your Message" />
+        <div className="button"></div>
       </div>
     </fragment>
   )

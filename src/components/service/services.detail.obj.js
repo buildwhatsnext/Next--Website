@@ -27,13 +27,14 @@ export function ServiceDetail(data) {
   return (
     <div className= "service__detail">
       <div className="service__detail__mainbox">
-        <div className="service__detail__box__coral"></div>
-        <div className="service__detail__box__white"></div>
-        <div className="service__detail__title">{ data.title }</div>
-        <div className="service__detail__description">{ data.description }</div>
-        <div className="cta_contactus">
-          <InternalLinkHighlighted value={contactus} destination="/contact" />
+        <div className="service__detail__box__coral">
+          <div className="service__detail__title">{ data.title }</div>
+          <div className="service__detail__description">{ data.description }</div>
+          <div className="cta_contactus">
+            <InternalLinkHighlighted value={contactus} destination="/contact" />
           </div>
+        </div>
+        <div className="service__detail__box__white"></div>
       </div>
       <div className="service__detail__outerbox">
         <div className="service__detail__subtitle1">{ data.subtitle1 }</div>
