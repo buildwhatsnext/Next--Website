@@ -1,9 +1,9 @@
 import React from 'react';
 import { Fragment } from 'react';
 // import cellphone from '../../../assets/svg/icons/01phone.svg';
-import mail from '../../../assets/svg/icons/06envelope.svg';
-import camera from '../../../assets/svg/icons/13camera.svg';
-import location from '../../../assets/svg/icons/34location.svg';
+// import mail from '../../../assets/svg/icons/06envelope.svg';
+// import camera from '../../../assets/svg/icons/13camera.svg';
+// import location from '../../../assets/svg/icons/34location.svg';
 
 export function ContactInfoList(props) {
   return (
