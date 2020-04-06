@@ -1,9 +1,9 @@
 import React from 'react';
 import { Fragment } from 'react';
-import cellphone from '../../../assets/svg/icons/01phone.svg';
-import mail from '../../../assets/svg/icons/06envelope.svg';
-import camera from '../../../assets/svg/icons/13camera.svg';
-import location from '../../../assets/svg/icons/34location.svg';
+// import cellphone from '../../../assets/svg/icons/01phone.svg';
+// import mail from '../../../assets/svg/icons/06envelope.svg';
+// import camera from '../../../assets/svg/icons/13camera.svg';
+// import location from '../../../assets/svg/icons/34location.svg';
 
 export function ContactInfoList(props) {
   return (
@@ -31,7 +31,7 @@ export const Phone = () => (
   <ContactInfoItem 
     infoType="phone"
     value="212-353-4600"
-    iconUrl={cellphone}
+    iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/01phone_rkbsq8.svg'
   />
 );
 
@@ -39,7 +39,7 @@ export const Email = () => (
   <ContactInfoItem 
     infoType="email"
     value="next@hlw.com"
-    iconUrl={mail}
+    iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/06envelope_jwyoim.svg'
   />
 )
 
@@ -47,7 +47,7 @@ export const Insta = () => (
   <ContactInfoItem 
     infoType="insta"
     value="@buildwhatsnext"
-    iconUrl={camera}
+    iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/13camera_thjurf.svg'
   />
 )
 
@@ -63,7 +63,7 @@ export const Location = () => {
     <ContactInfoItem 
       infoType="location"
       value={locationData}
-      iconUrl={location}
+      iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/34location_q4lzpx.svg'
     />
   )
 }
