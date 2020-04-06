@@ -31,7 +31,8 @@
         grid-column-start: 1;
         grid-column-end: 7;
         text-align: left;
-        line-height: 10px;
+        padding-bottom: 22px;
+        // line-height: 10px;
     }
 
     .contact__form {
@@ -49,7 +50,8 @@
           width: 10px;
           height: 10px;
           text-indent: 0px;
-          // padding-top: 4px
+          padding-top: 4px;
+          grid-row: 5/6;
         }
         
         .contact__emailslash {

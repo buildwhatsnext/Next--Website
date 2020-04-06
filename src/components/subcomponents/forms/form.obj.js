@@ -83,7 +83,7 @@ export function NameEntryForm(props) {
   return (
     <Fragment>
       <div className="contact__nameslash">
-        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/LOGO_NEXT_SLASH_CORAL_fqzdgx.svg' alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg'/>
       </div>
       <p>Name</p>
       <div className="answerbox">
@@ -102,7 +102,7 @@ export function EmailEntryForm(props) {
   return (
     <fragment>
       <div className="contact__emailslash">
-        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/LOGO_NEXT_SLASH_CORAL_fqzdgx.svg' alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
       <p>Email</p>
       <div className="answerbox">
@@ -121,7 +121,7 @@ export function MessageEntryForm(props) {
   return (
     <fragment>
       <div className="contact__messageslash">
-        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/LOGO_NEXT_SLASH_CORAL_fqzdgx.svg' alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
       <p>Message</p>
       <div className="answerboxfat">
