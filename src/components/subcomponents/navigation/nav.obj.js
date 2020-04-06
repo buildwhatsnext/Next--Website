@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './nav.desktop.scss';
 import './nav.mobile.scss';
-import logo from '../../../assets/logo_next.svg';
+// import logo from '../../../assets/logo_next.svg';
 
 const defaultState = {
   collapsed: true,
@@ -26,7 +26,7 @@ export default class NavbarPage extends React.Component {
       <Navbar bg="light" expand="lg" id="next__navbar">
         <Navbar.Brand href="/">
           <img 
-            src={logo} 
+            src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/logo_next_uxfhmb.svg' 
             alt="NEXT/"
           />
         </Navbar.Brand>
