@@ -7,6 +7,9 @@
 
 
 @media(max-width: $sizeMobile) {
+  p {
+    margin-bottom: 0rem;
+  }
 
   .contact {
     grid-column: 1 / -1;
@@ -41,31 +44,31 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    grid-row: 1 / 8;
 
 
     .contact__nameslash {
       height: 8px;
       width: 7px;
-      margin-bottom: 31px;
       grid-row: 1/2;
       grid-column: 1/2;
+      margin-top: 3px;
     }
 
     .contact__emailslash {
       height: 8px;
       width: 7px;
-      margin-bottom: 31px;
       grid-row: 3 / 4;
       grid-column: 1 / -1;
+      margin-top: 3px;
     }
 
     .contact__messageslash {
       height: 8px;
       width: 7px;
-      margin-bottom: 31px;
       grid-row: 5 / 6;
       grid-column: 1 / -1;
+      margin-top: 3px;
     }
 
     .contact__name {
@@ -75,6 +78,7 @@
       grid-row: 1 / 2;  
       text-align: left;
       align-self: center;
+      
     }
 
     .contact__email {
@@ -128,7 +132,10 @@
     }
 
     .answerboxmessage {
-      grid-row: 6 / 7;
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-row: 6 / 8;
       grid-column: 1 / -1;
       border: 3px #E03E52 solid;
 
@@ -136,11 +143,64 @@
         background-color: transparent;
         border: none;
         height: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
       }
       
       .form-control::placeholder {
         color: white;
       }
+
+      .button {
+        background-image: url(https://res.cloudinary.com/next-hlw/image/upload/v1586192303/icon/50contactbutton_e12drk.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 3 / 4;
+        grid-column: 9 / 10;
+        width: 30px;
+        height: 30px;
+        align-self: end;
+        justify-self: end;
+        z-index: 10;
+      }
+    }
+  }
+
+  .contact__info {
+    grid-row: 7 / 11;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+    .info__icon {
+      height: 15px;
+      width: 12px;
+      background-repeat: no-repeat;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .info__icon {
+      height: 15px;
+      width: 12px;
+      background-repeat: no-repeat;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .info__icon {
+      height: 15px;
+      width: 12px;
+      background-repeat: no-repeat;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .info__text {
+      font-size: 12px;
+      grid-row: 1 / 3;
+      grid-column: 2 / 4;
     }
   }
 }
