@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
-import icon from '../../../../src/assets/svg/icons/12monitor.svg'
-import cross from '../../../../src/assets/svg/icons/51cross.svg'
+// import icon from '../../../../src/assets/svg/icons/12monitor.svg'
+// import cross from '../../../../src/assets/svg/icons/51cross.svg'
 import { InternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
 
 
@@ -49,12 +49,6 @@ export class AboutCategory extends React.Component {
                 <div className="about__seehowcapabilities">
                     <InternalLinkHighlighted value={seehow} destination="/projects/google" />
                 </div>
-
-
-                {/* <div className='monitor'>
-                    <img src={icon} alt="monitor"/>
-                </div> */}
-                {/* <div className="cross"></div> */}
             </Fragment>
         )
     }

@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import data from '../../data/data.project.json';
 import './project.detail.desktop.scss';
 import './project.detail.mobile.scss';
-import chip from '../../assets/svg/icons/14chip.svg';
-import bulb from '../../assets/svg/icons/56.whitebulb.svg';
+// import chip from 'https://res.cloudinary.com/next-hlw/image/upload/v1586185305/icon/14chip_xnacgj.svg';
+// import bulb from 'https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/56.whitebulb_y75fno.svg';
 
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 
@@ -49,13 +49,13 @@ function ProjectSummary(info) {
   const sumC = {
     title: "The Challenges",
     summary: challenge,
-    icon: chip
+    icon: 'https://res.cloudinary.com/next-hlw/image/upload/v1586185305/icon/14chip_xnacgj.svg'
   }
 
   const sumO = {
     title: "The Outcome",
     summary: outcome,
-    icon: bulb
+    icon: 'https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/56.whitebulb_y75fno.svg'
   }
 
   return (
