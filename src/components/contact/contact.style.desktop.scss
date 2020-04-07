@@ -130,7 +130,7 @@
   
   .contact__info__item {
     display: grid;
-    grid-template-columns: 1fr 30px;        
+    grid-template-columns: 1fr 1fr;        
   }
   
   .info__icon {
@@ -139,6 +139,7 @@
     background-repeat: no-repeat;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    justify-self: end;
     
   }
   
