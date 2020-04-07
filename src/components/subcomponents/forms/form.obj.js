@@ -90,7 +90,7 @@ export function NameEntryForm(props) {
         <Form.Control 
           type="text" 
           placeholder="Please enter your name" 
-          onfocus="this.placeholder =''"
+          onFocus="placeholder =''"
           onblur="this.placeholder='kp'"
           onChange={ props.handleChange }
           value={ props.value }
