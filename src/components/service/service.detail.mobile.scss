@@ -30,6 +30,9 @@
   }
 
   .service__detail__box__coral {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     position: relative;
     grid-column:  1 / -1;
     grid-row: 1 / 8;
@@ -59,11 +62,11 @@
 
     font-size: 32px;
     grid-column: 2 / 10;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     z-index: 3;
-    text-align: left;
+    // text-align: left;
     // padding-left: 32px;
-    padding-top: 20px;
+    padding-bottom: 22px;
   }
 
   .service__detail__description {
@@ -74,14 +77,15 @@
     grid-row: 3/8;
     z-index: 3;
     text-align: left;
-    margin-top: 10px;
+    // margin-top: 10px;
+    padding-bottom: 22px;
   }
 
   .cta_contactus {
     // @extend .soft__blue__subtitle;
     font-size: 20px;
     grid-column: 5/10;
-    grid-row: 7/8;
+    grid-row: 10/11;
     z-index: 3;
     text-align: right;
     justify-self: end;
