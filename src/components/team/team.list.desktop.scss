@@ -67,7 +67,7 @@
     }
 
     &__position {
-      @extend .hard__white__subtitle;
+      @extend .soft__white__title;
       font-size: 18px;
       white-space: nowrap;
       margin-top: 1px;
@@ -79,7 +79,7 @@
     }
 
     &__location {
-      @extend .hard__white__subtitle;
+      @extend .soft__white__title;
       font-size: 18px;
       white-space: nowrap;
       align-self: end;
