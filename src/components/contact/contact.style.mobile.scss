@@ -106,16 +106,28 @@
       grid-column: 1 / -1;
       border: 3px #E03E52 solid;
 
-      .answerboxname input:focus {
+      .form-control:focus::-moz-placeholder,
+      textarea:focus::-moz-placeholder { /* Firefox browsers */ 
+        color: transparent; 
+      }
+
+      .form-control:focus::-webkit-input-placeholder {
+      // textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ 
+        color:transparent; 
       }
 
       .form-control {
         background-color: transparent;
         border: none;
         height: 100%;
+        color: white;
       }
       
-      .form-control::placeholder {
+      .form-control::-moz-placeholder {
+        color: white;
+      }
+
+      .form-control::-webkit-placeholder {
         color: white;
       }
     }
@@ -125,13 +137,28 @@
       grid-column: 1 / -1;
       border: 3px #E03E52 solid;
 
-            .form-control {
+      .form-control {
         background-color: transparent;
         border: none;
         height: 100%;
+        color: white;
+      }
+
+      .form-control:focus::-moz-placeholder,
+      textarea:focus::-moz-placeholder { /* Firefox browsers */ 
+        color: transparent; 
+      }
+
+      .form-control:focus::-webkit-input-placeholder {
+      // textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ 
+        color:transparent; 
       }
       
-      .form-control::placeholder {
+      .form-control::-moz-placeholder {
+        color: white;
+      }
+
+      .form-control::-webkit-placeholder {
         color: white;
       }
     }
@@ -144,12 +171,23 @@
       grid-column: 1 / -1;
       border: 3px #E03E52 solid;
 
+      .form-control:focus::-moz-placeholder, 
+      textarea:focus::-moz-placeholder { /* Firefox browsers */ 
+        color:transparent; 
+      }
+
+      .form-control:focus::-webkit-input-placeholder, 
+      textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ 
+        color:transparent; 
+      }
+
       .form-control {
         background-color: transparent;
         border: none;
         height: 100%;
         grid-column: 1 / -1;
         grid-row: 1 / 2;
+        color: white;
       }
 
 
