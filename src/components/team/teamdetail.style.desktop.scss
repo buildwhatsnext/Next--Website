@@ -27,9 +27,9 @@
   .trapazoid {
     background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.svg");
     background-repeat: no-repeat;
-    height: 700px;
-    grid-column: 1/10;
-    grid-row: 2/14;
+    background-size: contain 100%;
+    grid-column: 1/11;
+    grid-row: 2/16;
   }
 
   .borderbottom {
@@ -80,6 +80,7 @@
     font-size: 16px;
     text-align: left;
     white-space: pre-line;
+    font-weight: 400;
   }
 
   .team__detail__pictureURL {
@@ -88,7 +89,7 @@
     height: 700px;
     width: 500px;
     grid-row: 2/16;
-    grid-column: 4/5;
+    grid-column: 2/5;
     background-size: auto 120%;
   }
 
