@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import data from '../../data/data.project.json';
 import './project.detail.desktop.scss';
 import './project.detail.mobile.scss';
+import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 // import chip from 'https://res.cloudinary.com/next-hlw/image/upload/v1586185305/icon/14chip_xnacgj.svg';
 // import bulb from 'https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/56.whitebulb_y75fno.svg';
 

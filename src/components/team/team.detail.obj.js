@@ -5,6 +5,8 @@ import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
 import './teamdetail.style.mobile.scss';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
+import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+
 
 export default class TeamMemberDetailPage extends React.Component {
   render() {
@@ -37,6 +39,7 @@ export function TeamMemberDetail(data) {
       <div className="cta">
         <InternalLinkHighlighted value={contactus} destination="/contact" />
       </div>
+      {/* <Image cloudName="next-hlw" publicId="adam.jpg" width="300" crop="scale" /> */}
     </div>
   )
 }
