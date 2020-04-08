@@ -12,7 +12,7 @@ export default class App extends React.Component {
       positionX: 0,
       positionY: 0
     }
-    this.updateMousePosition = this.updateMousePosition.bind(this);
+    // this.updateMousePosition = this.updateMousePosition.bind(this);
   }
 
   updateMousePosition = (event) => {
@@ -32,10 +32,10 @@ export default class App extends React.Component {
   render() {
     return (
     <div className="app app__theme__blue" onMouseMove={this.updateMousePosition}>
-      <AppCursor 
+      {/* <AppCursor 
         positionX={ this.state.positionX } 
         positionY={ this.state.positionY } 
-      />
+      /> */}
       <AppRouter />
     </div>
     )
