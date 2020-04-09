@@ -39,7 +39,7 @@ export function TeamMemberDetail(data) {
       <div className="cta">
         <InternalLinkHighlighted value={contactus} destination="/contact" />
       </div>
-      {/* <Image cloudName="next-hlw" publicId="adam.jpg" width="300" crop="scale" /> */}
+      {/* <Image cloudName="next-hlw" publicId="anime.webp" width="300" dpr="2.0" crop="scale" /> */}
     </div>
   )
 }
