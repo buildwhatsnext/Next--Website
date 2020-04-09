@@ -24,10 +24,12 @@ export class ProjectDetailPage extends React.Component {
 export function ProjectDetail(data) {
 
   let projectimage = useRef(null)
+  let masksize = useRef(null)
 
   useEffect(() => {
-    console.log (projectimage)
-    TweenMax.from(projectimage, 1.5, {scale: 2, opacity: 0, y: -500, ease: Power1.easeInOut})
+    // console.log (projectimage)
+    TweenMax.from(projectimage, 1, {scale: 2, ease: Power1.easeOut})
+    TweenMax.from(masksize, 1, {height:0, ease: Power1.easeOut})
   }, [])
 
 
@@ -46,7 +48,7 @@ export function ProjectDetail(data) {
         <ProjectSummary {...data.description } />
       </div>
       <div className="project__detail__image">
-        <div className="mask">
+        <div className="mask" ref={mask => masksize = mask}>
           <div className = {`image__container image__container__${data.slug}`} ref={img => projectimage = img}/>
         </div>
         {/* <div className={`project__detail__pictureURL__${data.slug}`} ref={img => projectimage = img}/> */}
