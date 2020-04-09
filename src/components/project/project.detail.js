@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useRef, useEffect } from 'react';
 import data from '../../data/data.project.json';
 import './project.detail.desktop.scss';
 import './project.detail.mobile.scss';
 import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
-// import chip from 'https://res.cloudinary.com/next-hlw/image/upload/v1586185305/icon/14chip_xnacgj.svg';
-// import bulb from 'https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/56.whitebulb_y75fno.svg';
+import { TweenMax, Timeline, Power1 } from 'gsap';
 
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 
@@ -23,6 +22,15 @@ export class ProjectDetailPage extends React.Component {
 
 
 export function ProjectDetail(data) {
+
+  let projectimage = useRef(null)
+
+  useEffect(() => {
+    console.log (projectimage)
+    TweenMax.from(projectimage, 1.5, {scale: 2, opacity: 0, y: -500, ease: Power1.easeInOut})
+  }, [])
+
+
   return (
     <div className="project__detail">
       <div className="project__detail__image__main">
@@ -37,7 +45,12 @@ export function ProjectDetail(data) {
       <div className="project__detail__summary">
         <ProjectSummary {...data.description } />
       </div>
-      <div className={`project__detail__pictureURL__${data.slug}`} />
+      <div className="project__detail__image">
+        <div className="mask">
+          <div className = {`image__container image__container__${data.slug}`} ref={img => projectimage = img}/>
+        </div>
+        {/* <div className={`project__detail__pictureURL__${data.slug}`} ref={img => projectimage = img}/> */}
+      </div>
       <div className="project__detail__image__extras">
       </div>
     </div>
