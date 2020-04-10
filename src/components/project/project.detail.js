@@ -39,25 +39,31 @@ export function ProjectDetail(data) {
 
   return (
     <div className="project__detail">
+
       <div className="project__detail__image__main">
         {data.pictureURL}
       </div>
+
       <div className="project__detail__title">
         <div className="titlemask">
           <div className="title" ref={ttlmask => titlemask = ttlmask}> { data.title } </div>
         </div>
       </div>
+
       <div className="project__detail__infotable" ref={info => infotable = info}>
         <ProjectInfoTable {...data} />
       </div>
+
       <div className="project__detail__summary">
         <ProjectSummary {...data.description } />
       </div>
+
       <div className="project__detail__image">
         <div className="mask" ref={mask => masksize = mask}>
           <div className = {`image__container image__container__${data.slug}`} ref={img => projectimage = img}/>
         </div>
       </div>
+      
       <div className="project__detail__image__extras">
       </div>
     </div>
