@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useRef, useEffect } from 'react';
 import { ContactForm } from '../subcomponents/forms/form.obj';
 import { ContactInfoList } from '../subcomponents/contactinformation/contactinfo.obj';
 import './contact.style.desktop.scss';
 import './contact.style.mobile.scss';
+import { TweenMax, Timeline, Power1 } from 'gsap';
 
 export default class Contact extends React.Component {
     constructor(props) {
@@ -12,9 +13,11 @@ export default class Contact extends React.Component {
       }
     }
   
+    
   setName = (name) => {
     this.setState({name});
   }
+
 
   render() {
     return (
