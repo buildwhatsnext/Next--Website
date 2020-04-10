@@ -25,11 +25,15 @@ export function ProjectDetail(data) {
 
   let projectimage = useRef(null)
   let masksize = useRef(null)
+  let titlemask = useRef(null)
+  let infotable = useRef(null)
 
   useEffect(() => {
     // console.log (projectimage)
-    TweenMax.from(projectimage, 1, {scale: 2, ease: Power1.easeOut})
+    TweenMax.from(projectimage, 1.25, {scale: 1.15, ease: Power1.easeOut})
     TweenMax.from(masksize, 1, {height:0, ease: Power1.easeOut})
+    TweenMax.from(titlemask, 1, { y:-300, ease: Power1.easeOut})
+    // TweenMax.from(infotable, 2, {opacity:0, ease: Power1.easeOut})
   }, [])
 
 
@@ -38,10 +42,12 @@ export function ProjectDetail(data) {
       <div className="project__detail__image__main">
         {data.pictureURL}
       </div>
-      <div className="project__detail__name">
-        { data.title }
+      <div className="project__detail__title">
+        <div className="titlemask">
+          <div className="title" ref={ttlmask => titlemask = ttlmask}> { data.title } </div>
+        </div>
       </div>
-      <div className="project__detail__infotable">
+      <div className="project__detail__infotable" ref={info => infotable = info}>
         <ProjectInfoTable {...data} />
       </div>
       <div className="project__detail__summary">
@@ -51,7 +57,6 @@ export function ProjectDetail(data) {
         <div className="mask" ref={mask => masksize = mask}>
           <div className = {`image__container image__container__${data.slug}`} ref={img => projectimage = img}/>
         </div>
-        {/* <div className={`project__detail__pictureURL__${data.slug}`} ref={img => projectimage = img}/> */}
       </div>
       <div className="project__detail__image__extras">
       </div>
