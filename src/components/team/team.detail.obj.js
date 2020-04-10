@@ -1,5 +1,5 @@
-import React from 'react';
-import { TweenLite } from 'gsap';
+import React, { Fragment, useRef, useEffect } from 'react';
+import { TweenMax, Timeline, Power1 } from 'gsap';
 
 import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
@@ -25,6 +25,15 @@ export function TeamMemberDetail(data) {
   
   const contactus = "Contact Us";
 
+  let myTrapazoid = useRef(null)
+  let myPicture = useRef(null)
+
+  useEffect(() => {
+    TweenMax.from(myTrapazoid, 1.25, {opacity: 0, x: -400, ease: Power1.easeOut})
+    TweenMax.from(myPicture, 1.25, {x: -400, ease: Power1.easeOut})
+  }, [])
+
+
   return (
     <div className="team__detail">
       <div className="team__detail__name">{ data.name }</div>
@@ -32,8 +41,8 @@ export function TeamMemberDetail(data) {
       <div className="team__detail__position">{ data.position }</div>
       {/* <div className="team__detail__location">{ data.location }</div> */}
       <div className="team__detail__description">{ data.description }</div>
-      <div className={`team__detail__pictureURL__${data.shortName}`} />
-      <div className="trapazoid"></div>
+      <div className={`team__detail__pictureURL__${data.shortName}`} ref={item => myPicture = item} />
+      <div className="trapazoid" ref={item => myTrapazoid = item}></div>
       <div className="slash"></div>
       <div className="borderbottom"></div>
       <div className="cta">
