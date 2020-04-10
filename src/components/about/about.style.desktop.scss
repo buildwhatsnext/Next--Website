@@ -19,7 +19,35 @@
     grid-template-columns: repeat(20, 15px);
     grid-template-rows: repeat(20, 16px);
   }
-    
+
+  .pinkbig {
+
+    // display: grid;
+    // grid-template-columns: repeat(9, 77px);
+    // grid-template-rows: repeat(18, 44px);
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    width: 700px;
+    height: 800px;
+
+    .pinkmask {
+
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      overflow: hidden;
+
+  
+      .about__titlepage {
+        height: 100%;
+        width: 100%;
+        width: 700px;
+        height: 800px;
+        z-index: 2;
+      }
+    }
+  }
+
   .about__titlepage {
     display: grid;
     grid-template-columns: repeat(9, 77px);
