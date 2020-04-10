@@ -17,8 +17,8 @@ export default class Contact extends React.Component {
     componentDidMount(){
       this.myTitle = TweenMax.from(this.myTitle, 1.5, {y: 300, ease: Power1.easeOut})
       this.myForm = TweenMax.from(this.myForm, 1.5, {y: 600, ease: Power1.easeOut})
-      this.myInfo = TweenMax.from(this.myInfo, 1.75, {delay: 0.5, opacity: 0, ease: Power1.easeOut})
-      this.myQuote = TweenMax.from(this.myQuote, 1.75, {delay: 0.5, opacity: 0, ease: Power1.easeOut})
+      this.myInfo = TweenMax.from(this.myInfo, 1.75, {delay: 1, opacity: 0, ease: Power1.easeOut})
+      this.myQuote = TweenMax.from(this.myQuote, 1.75, {delay: 1, opacity: 0, ease: Power1.easeOut})
     }
   
   setName = (name) => {
