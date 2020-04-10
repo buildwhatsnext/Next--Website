@@ -14,7 +14,7 @@ export default class About extends React.Component {
   }
 
   componentDidMount(){
-    this.myPink = TweenMax.from(this.myPink, 1.5, {y: 700, ease: Power1.easeOut})
+    this.myPink = TweenMax.from(this.myPink, 1.5, {y: 700, ease: Power1.easeInOut})
     this.myWhite = TweenMax.from(this.myWhite, 1.5, {delay: 1.75, opacity: 0, x: 20, y: 20, ease: Power1.easeOut})
   }
 
