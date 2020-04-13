@@ -71,6 +71,21 @@
       margin-top: 10px;
     }
 
+    .contact__nameform__wrap {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;  
+    }
+
+    .contact__emailform__wrap {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;  
+    }
+
+    .contact__messageform__wrap {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;  
+    }
+
     .contact__name {
       font-size: 14px;
       padding-left: 15px;

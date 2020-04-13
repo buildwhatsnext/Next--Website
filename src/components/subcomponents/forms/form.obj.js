@@ -85,16 +85,18 @@ export function NameEntryForm(props) {
       <div className="contact__nameslash">
         <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg'/>
       </div>
-      <div className="contact__name"><p>Name</p></div>
-      <div className="answerboxname">
-        <Form.Control 
-          type="text" 
-          placeholder="Please enter your name" 
-          onFocus="placeholder =''"
-          onblur="this.placeholder='kp'"
-          onChange={ props.handleChange }
-          value={ props.value }
-        />
+      <div className="contact__nameform__wrap">
+        <div className="contact__name"><p>Name</p></div>
+        <div className="answerboxname">
+          <Form.Control 
+            type="text" 
+            placeholder="Please enter your name" 
+            onFocus="placeholder =''"
+            onblur="this.placeholder='kp'"
+            onChange={ props.handleChange }
+            value={ props.value }
+          />
+        </div>
       </div>
     </Fragment>
   )
@@ -106,14 +108,16 @@ export function EmailEntryForm(props) {
       <div className="contact__emailslash">
         <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
-      <div className="contact__email"><p>E-Mail</p></div>
-      <div className="answerboxemail">
-      <Form.Control 
-        type="email" 
-        placeholder="Please enter your email" 
-        onChange={ props.handleChange }
-        value={ props.value }
-      />
+      <div className="contact__emailform__wrap">
+        <div className="contact__email"><p>E-Mail</p></div>
+        <div className="answerboxemail">
+        <Form.Control 
+          type="email" 
+          placeholder="Please enter your email" 
+          onChange={ props.handleChange }
+          value={ props.value }
+        />
+        </div>
       </div>
     </Fragment>
   )
@@ -125,15 +129,17 @@ export function MessageEntryForm(props) {
       <div className="contact__messageslash">
         <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
-      <div className="contact__message"><p>Message</p></div>
-      <div className="answerboxmessage">
-        <Form.Control 
-          type="text" 
-          placeholder="What would you like to tell us?" 
-          onChange={ props.handleChange }
-          value={ props.value }
-        />
-        <div className="button" onClick={ props.handleClick }/>
+      <div className="contact__messageform__wrap">
+        <div className="contact__message"><p>Message</p></div>
+        <div className="answerboxmessage">
+          <Form.Control 
+            type="text" 
+            placeholder="What would you like to tell us?" 
+            onChange={ props.handleChange }
+            value={ props.value }
+          />
+          <div className="button" onClick={ props.handleClick }/>
+        </div>
       </div>
     </Fragment>
   )

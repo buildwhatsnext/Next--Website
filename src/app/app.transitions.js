@@ -12,6 +12,9 @@ export const play = (pathname, node, appears) => {
     case '/team':
       timeline = getTeamTimeline(node, delay);
       break;
+    case '/contact':
+      timeline = getContactTimeline(node, delay);
+      break;
     default:
       timeline = getDefaultTimeline(node, delay);
       break;
@@ -54,5 +57,11 @@ const getDefaultTimeline = (node, delay) => {
   //   .from(blocks, .5, { y: 500, ease: Power1.easeOut })
   //   .from(members, 1.5, { autoAlpha: 0 , ease: Power1.easeInOut });
 
+  return timeline;
+}
+
+const getContactTimeline = (node, delay) => {
+  const timeline = new Timeline({ paused: true });
+  
   return timeline;
 }
