@@ -39,20 +39,19 @@ const Routes = (props) => (
 const AnimatedRoutes = (props) => {
   console.log(props.location.pathname);
   return (
-  
-
-  <TransitionGroup component={null}>
-    <Transition
-      key={ props.pathname }
-      appear={ true }
-      onEnter={(node, appears) => play(props.location.pathname, node, appears)}
-      timeout={{enter: 750, exit: 750}}
-      classNames="fade"
-    >
-      <RouteCollection {...props} />
-    </Transition>
-  </TransitionGroup>
-)}
+    <TransitionGroup component={null}>
+      <Transition
+        key={ props.pathname }
+        appear={ true }
+        onEnter={(node, appears) => play(props.location.pathname, node, appears)}
+        timeout={{enter: 750, exit: 750}}
+        classNames="fade"
+      >
+        <RouteCollection {...props} />
+      </Transition>
+    </TransitionGroup>
+  )
+}
 
 const RouteCollection = (props) => (
   <Switch>
