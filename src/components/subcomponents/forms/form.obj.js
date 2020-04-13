@@ -1,7 +1,7 @@
-import React from 'react';
-import { Fragment } from 'react';
-import button from '../../../assets/svg/icons/50contactbutton.svg'
-import slash from '../../../assets/svg/icons/55thickslash.svg';
+import React, { Fragment } from 'react';
+import { Form } from 'react-bootstrap' ;
+// import slash from '../../../assets/svg/icons/55thickslash.svg';
+import firebase from '../../../app/app.firebase';
 
 export class ContactForm extends React.Component {
   constructor(props) {
@@ -11,70 +11,130 @@ export class ContactForm extends React.Component {
       email: '',
       message: ''
     }
+
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleMessageChange = this.handleMessageChange.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this);
+  }
+
+  handleSubmit(e){
+    e.preventDefault();
+    this.sendToDatabase();
+    this.clearState();
+  }
+
+  sendToDatabase() {
+    const itemsRef = firebase.database().ref('userContacts');
+
+    const newRequest = {
+      userName: this.state.name,
+      userEmail: this.state.email,
+      userMessage: this.state.message
+    }
+
+    itemsRef.push(newRequest);
+  }
+
+  clearState() {
+    this.setState({
+      email: '',
+      message: '',
+      name: ''
+    });
+  }
+
+  handleEmailChange(e) {
+    e.preventDefault();
+    this.setState({
+      email: e.target.value
+    });
+  }
+
+  handleNameChange(e) {
+    e.preventDefault();
+    this.setState({
+      name: e.target.value
+    });
+  }
+
+  handleMessageChange(e) {
+    e.preventDefault();
+    this.setState({
+      message: e.target.value
+    });
   }
 
   render() {
     return (
-      <div className="contact__form">
-        <NameEntryForm />
-        <EmailEntryForm />
-        <MessageEntryForm />
+      <div className="contact__form__grid">
+        <NameEntryForm handleChange={ (e) => this.handleNameChange(e) } value={ this.state.name } />
+        <EmailEntryForm handleChange={(e) => this.handleEmailChange(e) } value={ this.state.email } />
+        <MessageEntryForm 
+          handleChange={ (e) => this.handleMessageChange(e) } 
+          handleClick={ (e) => this.handleSubmit(e) } 
+          value={ this.state.message }
+        />
       </div>
     )
   }
-}
-
-export function EntryForm(props) {
-  return (
-    <Fragment>
-      <p className="entry__form__name">{props.name}</p>
-      <div className="entry__form__value">{props.value}</div>
-    </Fragment>
-  )
 }
 
 export function NameEntryForm(props) {
   return (
     <Fragment>
       <div className="contact__nameslash">
-        <img src={slash} alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg'/>
       </div>
-      <p>Name</p>
-      <div className="answerbox"></div>
-      <EntryForm name={props.name} value={props.value} />
+      <div className="contact__name"><p>Name</p></div>
+      <div className="answerboxname">
+        <Form.Control 
+          type="text" 
+          placeholder="Please enter your name" 
+          onFocus="placeholder =''"
+          onblur="this.placeholder='kp'"
+          onChange={ props.handleChange }
+          value={ props.value }
+        />
+      </div>
     </Fragment>
   )
 }
 
 export function EmailEntryForm(props) {
   return (
-    <fragment>
+    <Fragment>
       <div className="contact__emailslash">
-        <img src={slash} alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
-      <p>Email</p>
-      <div className="answerbox"></div>
-      <EntryForm name={props.name} value={props.value} />
-    </fragment>
+      <div className="contact__email"><p>E-Mail</p></div>
+      <div className="answerboxemail">
+      <Form.Control 
+        type="email" 
+        placeholder="Please enter your email" 
+        onChange={ props.handleChange }
+        value={ props.value }
+      />
+      </div>
+    </Fragment>
   )
 }
 
 export function MessageEntryForm(props) {
   return (
-    <fragment>
+    <Fragment>
       <div className="contact__messageslash">
-        <img src={slash} alt="slash"/>
+        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
-      <p>Message</p>
-      <div className="answerboxfat">
-        <div className="button">
-          {/* <img src={button} alt="button"/>  */}
-        </div>
-        {/* <div className="whitebox"></div> */}
-        {/* <div className="twosideborder"></div> */}
+      <div className="contact__message"><p>Message</p></div>
+      <div className="answerboxmessage">
+        <Form.Control 
+          type="text" 
+          placeholder="What would you like to tell us?" 
+          onChange={ props.handleChange }
+          value={ props.value }
+        />
+        <div className="button" onClick={ props.handleClick }/>
       </div>
-      
-      <EntryForm name={props.name} value={props.value} />
-    </fragment>
+    </Fragment>
   )
 }

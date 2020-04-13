@@ -28,7 +28,7 @@ export function ServiceList(props) {
 
 export function ServiceItem(props) {
   const path = props.history.location.pathname;
-  const title = props.title ? props.title : "/";
+  const title = props.slug ? props.slug : "/";
   const serviceName = title.toString().toLowerCase();
   const route = `${path}/${serviceName}`;
 

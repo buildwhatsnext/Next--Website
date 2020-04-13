@@ -1,7 +1,10 @@
 import React from 'react';
+import { TweenLite } from 'gsap';
+
 import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
 import './teamdetail.style.mobile.scss';
+import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 export default class TeamMemberDetailPage extends React.Component {
   render() {
@@ -18,6 +21,8 @@ export default class TeamMemberDetailPage extends React.Component {
 
 export function TeamMemberDetail(data) {
   
+  const contactus = "Contact Us";
+
   return (
     <div className="team__detail">
       <div className="team__detail__name">{ data.name }</div>
@@ -29,7 +34,9 @@ export function TeamMemberDetail(data) {
       <div className="trapazoid"></div>
       <div className="slash"></div>
       <div className="borderbottom"></div>
-      <div className="cta">Contact Us</div>
+      <div className="cta">
+        <InternalLinkHighlighted value={contactus} destination="/contact" />
+      </div>
     </div>
   )
 }

@@ -6,37 +6,32 @@ import { AboutCategory } from '../subcomponents/about_category/category.obj';
 
 
 export default class About extends React.Component {
-    constructor(props) {
-        super (props);
-        this.state = {
-            name:''
-        }
+  constructor(props) {
+    super (props);
+    this.state = {
+      name:''
     }
+  }
 
-    setName = (name) => {
-        this.setState({name});
-    }
+  setName = (name) => {
+      this.setState({name});
+  }
 
-    render() {
-        return (
-          <Fragment>
-            <div className="aboutduplicategrid">
-              <div className="about__titlepageback"></div>
+  render() {
+    return (
+      <Fragment>
+        <div className="about">       
+          <div className="about__titlepage">  
+            <div className="about__coralcard">
+              <AboutTitle />
             </div>
-            <div className="about">         
-              <div className="about__titlepage">
-                  <AboutTitle />
-              </div>
-              <div className="about__categoryduplicate">
-                {/* <div className="about__highlightexperience"></div>
-                <div className="about__highlightinsight"></div>
-                <div className="about__highlightcapabilities"></div> */}
-              </div>
-              <div className="about__category">
-                  <AboutCategory />
-              </div>
-            </div>
-          </Fragment>
-        )
-    }
+            <div className="about__whitecard"></div>
+          </div>
+          <div className="about__category">
+            <AboutCategory />
+          </div>  
+        </div>
+      </Fragment>
+    )
+  }
 }

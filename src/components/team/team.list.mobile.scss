@@ -17,7 +17,7 @@
 
     .page__team__items {
       grid-column: 1 / -1;
-      grid-row: 3 / 12;
+      grid-row: 1 / 12;
     }
   }
 
@@ -28,7 +28,8 @@
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
+    column-gap: 5rem;
+    row-gap: 7rem;
   }
 
   .team__item {
@@ -42,7 +43,7 @@
 
     &__name {
       // @extend .soft__white__title;
-      font-size: 24px;
+      font-size: 23px;
       white-space: nowrap;
       grid-row: 1/2;
       grid-column: 2/3;
@@ -54,29 +55,29 @@
 
     &__position {
       // @extend .soft__white__title;
-      font-size: 12px;
+      font-size: 16px;
       white-space: pre-line;
       // align-self: end;
       // height: 10px;
       grid-row: 2 / 3;
-      grid-column: 2 / 3;
+      grid-column: 2 / -1;
       z-index: 2;
-      line-height: 70px;
+      // line-height: 70px;
     }
 
     &__location {
       // @extend .soft__white__title;
-      font-size: 12px;
+      font-size: 16px;
       white-space: nowrap;
       // height: 10px;
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       z-index: 2;
-      line-height: 30px;
+      line-height: 70px;
     }
 
     &__block {
-      background-image: url('../../assets/svg/icons/53trapazoid.svg');
+      background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.svg");
       background-repeat: no-repeat;
       // background-size: auto 70%;
       // height: 400px;
@@ -103,52 +104,52 @@
 
     &__adam {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/adam_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/adam_prof_vnuote.png');
     }
 
     &__andrew {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/andrew_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184761/team/professional/andrew_prof_gfhnk8.png');
     }
 
     &__bharti {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/bharti_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/bharti_prof_zqcyam.png');
     }
 
     &__chris {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/chris_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/chris_prof_uon3ej.png');
     }
 
     &__jeff {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/jeff_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/jeff_prof_nwg57e.png');
     }
  
     &__kp {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/kp_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/kp_prof_tfl4w6.png');
     }
 
     &__mina {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/mina_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/mina_prof_ddmoby.png');
     }
 
     &__ruyi {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/ruyi_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/ruyi_prof_sajziz.png');
     }
 
     &__stephen {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/stephen_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/stephen_prof_d5z3dp.png');
     }
 
     &__preston {
       @extend .team__item__image;
-      background-image: url('../../assets/photo/team/professional/preston_prof.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/preston_prof_jw5qgs.png');
     }
   }
 

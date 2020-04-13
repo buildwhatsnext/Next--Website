@@ -33,6 +33,9 @@
     position: relative;
     grid-column:  4 / 10;
     grid-row: 2 / 10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     background-color: #E03E52;
     // background-color: black;
     margin: 10px;
@@ -52,33 +55,40 @@
   .service__detail__title {
     @extend .soft__white__title;
 
-    grid-column: 5/9;
-    grid-row: 3 / 5;
+    font-size: 72px;
+    grid-column: 1 / 10;
+    grid-row: 1 / 2;
     z-index: 3;
+    white-space: pre-line;
     text-align: right;
+    padding-top: 32px;
+    padding-bottom: 58px;
   }
 
   .service__detail__description {
     @extend .soft__blue__subtitle;
     font-size: 20px;
     font-weight: 400;
-    grid-column: 5/9;
-    grid-row: 5/9;
+    grid-column: 3/10;
+    grid-row: 2/10;
     z-index: 3;
     text-align: right;
+    padding-bottom: 44px;
+    align-self: center;
+    justify-self: center;
   }
 
   .cta_contactus {
     @extend .soft__white__subtitle;
     font-size: 24px;
-    grid-column: 5 / 9;
-    grid-row: 9 / 10;
+    grid-column: 7 / 10;
+    grid-row: 10 / 11;
     z-index: 3;
     text-align: right;
     justify-self: end;
     align-self: end;
-    height: 30px;
-    margin-bottom: 50px;
+    // height: 30px;
+    padding-bottom: 12px;
 
     .link__highlighted__background {
       background-color: $next__blue;
@@ -91,7 +101,7 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     
-    grid-column: 7 / 11;
+    grid-column: 6 / 10;
     grid-row: 1 / 11;
     margin-top: 30px;
   }
@@ -101,7 +111,9 @@
 
     font-size: 48px;
     grid-column: 1/8;
-    grid-row: 3/4;
+    grid-row: 4/5;
+    align-self: end;
+    padding-bottom: 20px;
   }
 
   .service__detail__subtitle1description {
@@ -109,9 +121,10 @@
 
     font-size: 16px;
     grid-column: 2/10;
-    grid-row: 4/5;
+    grid-row: 5/6;
     font-weight: 400;
-    
+    padding-bottom: 29px;
+    // padding-top: 20px;
   }
 
   .cta1 {
@@ -119,7 +132,7 @@
 
     font-size: 24px;
     grid-column: 2/10;
-    grid-row: 4/5;
+    grid-row: 5/6;
     align-self: end;
     justify-self: end;
     height: 32px;
@@ -141,6 +154,7 @@
     grid-column: 2/10;
     grid-row: 7/8;
     font-weight: 400;
+    padding-bottom: 29px;
   }
 
   .cta2 {
@@ -161,15 +175,16 @@
     
     font-size: 48px;
     grid-column: 1/6;
-    grid-row: 9/10;
+    grid-row: 8/9;
   }
 
   .service__detail__subtitle3description {
     @extend .soft__white__subtitle;
     font-size: 16px;
     grid-column: 2/10;
-    grid-row: 10/11;
+    grid-row: 9/10;
     font-weight: 400;
+    padding-bottom: 30px;
   }
 
   .cta3 {
@@ -177,7 +192,7 @@
 
     font-size: 24px;
     grid-column: 2/10;
-    grid-row: 10/11;
+    grid-row: 9/10;
     align-self: end;
     justify-self: end;
     height: 32px;
