@@ -92,7 +92,7 @@
     }
 
     &__block {
-      background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.svg");
+      background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.webp");
       background-repeat: no-repeat;
       background-size: contain;
       // height: 400px;
@@ -107,6 +107,7 @@
   .team__item__image {
 
     // border: 10px red solid;
+    position: relative;
     background-position: center;
     grid-row: 2 / 6;
     grid-column: 1 / 3;
@@ -115,52 +116,52 @@
 
     &__adam {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/adam_prof_vnuote.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184762/team/professional/adam_prof_vnuote.webp');
     }
 
     &__andrew {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184761/team/professional/andrew_prof_gfhnk8.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184761/team/professional/andrew_prof_gfhnk8.webp');
     }
 
     &__bharti {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/bharti_prof_zqcyam.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184762/team/professional/bharti_prof_zqcyam.webp');
     }
 
     &__chris {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/chris_prof_uon3ej.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184762/team/professional/chris_prof_uon3ej.webp');
     }
 
     &__jeff {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/jeff_prof_nwg57e.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184762/team/professional/jeff_prof_nwg57e.webp');
     }
  
     &__kp {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/kp_prof_tfl4w6.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184762/team/professional/kp_prof_tfl4w6.webp');
     }
 
     &__mina {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/mina_prof_ddmoby.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184762/team/professional/mina_prof_ddmoby.webp');
     }
 
     &__ruyi {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184911/team/funny/ruyi_funny_sflhlk.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184911/team/funny/ruyi_funny_sflhlk.webp');
     }
 
     &__stephen {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/stephen_prof_d5z3dp.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_400,h_400,dpr_2.0/v1586184762/team/professional/stephen_prof_d5z3dp.webp');
     }
 
     &__preston {
       @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/preston_prof_jw5qgs.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184911/team/funny/preston_funny_tg7pnf.webp');
     }
   }
   

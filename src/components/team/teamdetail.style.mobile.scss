@@ -33,7 +33,7 @@
   }
 
   .slash {
-    background-image: url(https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/57reversetrapezoid_wuzyob.svg);
+    background-image: url(https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/57reversetrapezoid_wuzyob.webp);
     background-repeat: no-repeat;
     background-size: auto 120%;
     // height: 300px;
@@ -98,7 +98,7 @@
     grid-row: 5 / 8;
     font-size: 14px;
     justify-self: center;
-    align-self: center;
+    align-self: start;
     text-align: left;
     white-space: pre-wrap;
     // padding-bottom: 100px;
@@ -125,61 +125,61 @@
 
     &__adam {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/adam_prof_vnuote.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/adam_prof_vnuote.webp');
       // filter: grayscale(1);
     }
 
     &__andrew {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184761/team/professional/andrew_prof_gfhnk8.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184761/team/professional/andrew_prof_gfhnk8.webp');
       // filter: grayscale(1);
     }
 
     &__bharti {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/bharti_prof_zqcyam.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/bharti_prof_zqcyam.webp');
       // filter: grayscale(1);
     }
 
     &__chris {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/chris_prof_uon3ej.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/chris_prof_uon3ej.webp');
       // filter: grayscale(1);
     }
 
     &__jeff {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/jeff_prof_nwg57e.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/jeff_prof_nwg57e.webp');
       // filter: grayscale(1);
     }
  
     &__kp {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/kp_prof_tfl4w6.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/kp_prof_tfl4w6.webp');
       // filter: grayscale(1);
     }
 
     &__mina {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/mina_prof_ddmoby.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/mina_prof_ddmoby.webp');
       // filter: grayscale(1);
     }
 
     &__ruyi {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/ruyi_prof_sajziz.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/ruyi_prof_sajziz.webp');
       // filter: grayscale(1);
     }
 
     &__stephen {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/stephen_prof_d5z3dp.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/stephen_prof_d5z3dp.webp');
       // filter: grayscale(1);
     }
 
     &__preston {
       @extend .team__detail__pictureURL;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184762/team/professional/preston_prof_jw5qgs.png');
+      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/w_300,h_300,dpr_1.0/v1586184762/team/professional/preston_prof_jw5qgs.webp');
       // filter: grayscale(1);
     }
   }

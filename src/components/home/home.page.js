@@ -24,7 +24,7 @@ export default class Home extends React.Component {
 
   render() {
     const company = "hlw";
-    const tagCompany = `Next is a startup inside of `;
+    const tagCompany = `Next is a design startup within `;
     const cta = 'See What We Do';
     const hlwLink = "https://www.hlw.design/";
 
