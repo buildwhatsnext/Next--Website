@@ -22,11 +22,18 @@
   @extend %soft__blue__title;
 }
 
+.hard__white__subtitle {
+  @extend %hard__white__subtitle;
+}
+
 .soft__white__title {
   @extend %soft__white__title;
 }
 
 @media(min-width: $sizeDesktop) {
+  p {
+    margin-bottom: 0rem;
+  }
 
   .contact {
     grid-column: 1 / -1;
@@ -35,214 +42,481 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
   }
-  
+
+  .contact__title {
+    @extend .soft__coral__title;
+    // font-size: 32px;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    text-align: right;
+    padding-bottom: 22px;
+  }
+
   .contact__quote {
     @extend .soft__white__title;
-    grid-column: 5/9;
-    grid-row: 2/4;
+    grid-row: 2 / 4;
+    grid-column: 5 / 9;
     font-size: 36px;
     font-weight: 400;
   }
-  
-  .contact__title {
-    @extend .soft__coral__title;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-  }
 
   .contact__form {
-    @extend .hard__white_right;
-    grid-row: 5/9;
-    grid-column: 5/9;
-    text-align: left;
-    
-    p {
-      padding-top: 10px;
-      padding-bottom: 0px;
-    }
-  
-    .answerbox {
-      border: 3px #E03E52 solid;
-      grid-column: 5 / 9;
-      height: 40px;
-      
-      
-      .form-control {
-        background-color: transparent;
-        border: none;
-        height: 100%;
-      }
-      
-      .form-control::placeholder {
-        color: white;
-      }
-    }
-  
-    .answerboxfat {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      border: 3px #E03E52 solid;
-      grid-column: 5 / 9;
-      height: 130px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column: 5 / 9;
+    grid-row: 4 / 9;
+  }
 
-      .form-control {
-        // border: 10px green solid;
-        height: 100%;
-        width: 100%;
-        background-color: transparent;
-        grid-row: 1 / -1;
-        grid-column: 1 / -1;
-        border: none;
-      }
-        
-      .form-control::placeholder {
-        color: white;
-        line-height: 30px;
-      }
+  .contact__form__grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column: 1 / -1;
+    grid-row: 1 / 8;
+
+
+    .contact__nameslash {
+      display: none;
     }
-    
-    .button {
-      background-image: url(https://res.cloudinary.com/next-hlw/image/upload/v1586192303/icon/50contactbutton_e12drk.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      grid-row: 1 / -1;
+
+    .contact__emailslash {
+      display: none;
+    }
+
+    .contact__messageslash {
+      display: none;
+    }
+
+    .contact__name {
+      @extend .hard__white__subtitle;
+      font-size: 24px;
+      font-weight: 400;
       grid-column: 1 / -1;
-      width: 40px;
-      height: 40px;
-      align-self: end;
-      justify-self: end;
-      z-index: 10;
+      grid-row: 1 / 2;  
+      text-align: left;
+      align-self: center;
+      padding-bottom: 16px;
+      padding-top: 20px;
+    }
+
+    .contact__email {
+      @extend .hard__white__subtitle;
+      font-size: 24px;
+      font-weight: 400;
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;  
+      text-align: left;
+      align-self: center;
+      padding-bottom: 16px;
+      padding-top: 20px;
+    }
+
+    .contact__message {
+      @extend .hard__white__subtitle;
+      font-size: 24px;
+      font-weight: 400;
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;  
+      text-align: left;
+      align-self: center;
+      padding-bottom: 16px;
+      padding-top: 20px;
+    }
+
+    .answerboxname {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      border: 3px #E03E52 solid;
+
+      .form-control:focus::-moz-placeholder, 
+      textarea:focus::-moz-placeholder { /* Firefox browsers */ 
+        color:transparent; 
+      }
+
+      .form-control:focus::-webkit-input-placeholder, 
+      textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ 
+        color:transparent; 
+      }
+
+      .form-control {
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        color: white;
+      }
+
+      .form-control::-moz-placeholder {
+        color: white;
+      }
+
+      .form-control::-webkit-placeholder {
+        color: white;
+      }
+    }
+
+    .answerboxemail {
+      grid-row: 4 / 5;
+      grid-column: 1 / -1;
+      border: 3px #E03E52 solid;
+
+      .form-control:focus::-moz-placeholder, 
+      textarea:focus::-moz-placeholder { /* Firefox browsers */ 
+        color:transparent; 
+      }
+
+      .form-control:focus::-webkit-input-placeholder, 
+      textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ 
+        color:transparent; 
+      }
+
+        .form-control {
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        color: white;
+      }
+
+      .form-control::-moz-placeholder {
+        color: white;
+      }
+
+      .form-control::-webkit-placeholder {
+        color: white;
+      }
+    }
+
+    .answerboxmessage {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-row: 6 / 10;
+      grid-column: 1 / -1;
+      border: 3px #E03E52 solid;
+
+      .form-control:focus::-moz-placeholder, 
+      textarea:focus::-moz-placeholder { /* Firefox browsers */ 
+        color:transparent; 
+      }
+
+      .form-control:focus::-webkit-input-placeholder, 
+      textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ 
+        color:transparent; 
+      }
+
+      .form-control {
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        color: white;
+      }
+
+      .form-control::-moz-placeholder {
+        color: white;
+      }
+
+      .form-control::-webkit-placeholder {
+        color: white;
+      }
+
+      .button {
+        background-image: url(https://res.cloudinary.com/next-hlw/image/upload/v1586192303/icon/50contactbutton_e12drk.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 3 / 4;
+        grid-column: 9 / 10;
+        width: 30px;
+        height: 30px;
+        align-self: end;
+        justify-self: end;
+        z-index: 10;
+      }
     }
   }
-  
+
   .contact__info {
-    @extend .hard__white_right;
+    grid-row: 4 / -1;
+    grid-column: 1 / 4;
     display: grid;
-    // border: 1px solid red;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 9;
-  }
-  
-  .contact__info__item {
-    display: grid;
-    grid-template-columns: 1fr 30px;        
-  }
-  
-  .info__icon {
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 30px);
+    grid-row-gap: 40px;
+
+    .contact__info__item {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      display: grid;
+      grid-template-columns: 1fr 50px;
+      grid-template-rows: 1fr 
+    }
+
+    .contact__info__phone {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      height: 30px;
+      grid-column-gap: 20px;
+
+      .info__text {
+        @extend .hard__white__subtitle;
+        text-align: right;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .info__icon {
+        height: 20px;
+        width: 25px;
+        background-repeat: no-repeat;
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        align-self: center;
+        justify-self: center;
+      }
     
-  }
-  
-  .info__text {
-    background-repeat: no-repeat;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    font-size: 20px;
-    text-align: right;
-    white-space: pre;
-    padding-right: 50px;
-  }
-  
-  .contact__info__phone {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  
-  }
-  
-  .contact__info__email {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding-right: 3px;
-  }
-  
-  .contact__info__insta {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    padding-right: 3px;
-  
-  }
-  
-  .contact__info__location {
-    grid-template-rows: 20px 20px;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    }
     
-  }
+    .contact__info__email {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      height: 30px;
+      grid-column-gap: 20px;
 
-  .contact__nameslash {
-    display: none;
-  }
+      .info__text {
+        @extend .hard__white__subtitle;
+        text-align: right;
+        font-size: 12px;
+        font-size: 24px;
+        font-weight: 400;
+      }
 
-  .contact__emailslash {
-    display: none;
-  }
+      .info__icon {
+        height: 15px;
+        width: 25px;
+        background-repeat: no-repeat;
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        margin-top: 3px;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+    
+    .contact__info__insta {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;  
+      grid-column-gap: 20px;
 
-  .contact__messageslash {
-    display: none;
+      .info__text {
+        @extend .hard__white__subtitle;
+        text-align: right;
+        font-size: 12px;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .info__icon {
+        height: 15px;
+        width: 25px;
+        background-repeat: no-repeat;
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+    
+    .contact__info__location {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      grid-column-gap: 20px;
+
+      .info__text {
+        @extend .hard__white__subtitle;
+        font-size: 12px;
+        white-space: pre-line;
+        line-height: 100%;
+        text-align: right;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .info__icon {
+        height: 20px;
+        width: 25px;
+        background-repeat: no-repeat;
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        align-self: start;
+        justify-self: center;
+        margin-top: 5px;
+      }
+    }
   }
 }
+//   .contact {
+//     grid-column: 1 / -1;
+//     grid-row: 1 / -1;
+//     display: grid;
+//     grid-template-columns: repeat(9, 1fr);
+//     grid-template-rows: repeat(9, 1fr);
+//   }
+  
+//   .contact__quote {
+//     @extend .soft__white__title;
+//     grid-column: 5/9;
+//     grid-row: 2/4;
+//     font-size: 36px;
+//     font-weight: 400;
+//   }
+  
+//   .contact__title {
+//     @extend .soft__coral__title;
+//     grid-column-start: 2;
+//     grid-column-end: 4;
+//     grid-row-start: 2;
+//     grid-row-end: 4;
+//   }
 
-// .cellphoneicon, .emailicon, .cameraicon, .locationicon {
-//   width: 30px;
-//   height: 30px;
-//   float: right;
-// }
+//   .contact__form {
+//     @extend .hard__white_right;
+//     grid-row: 5/9;
+//     grid-column: 5/9;
+//     text-align: left;
+    
+//     p {
+//       padding-top: 10px;
+//       padding-bottom: 0px;
+//     }
+  
+//     .answerbox {
+//       border: 3px #E03E52 solid;
+//       grid-column: 5 / 9;
+//       height: 40px;
+      
+      
+//       .form-control {
+//         background-color: transparent;
+//         border: none;
+//         height: 100%;
+//       }
+      
+//       .form-control::placeholder {
+//         color: white;
+//       }
+//     }
+  
+//     .answerboxfat {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       grid-template-rows: repeat(2, 1fr);
+//       border: 3px #E03E52 solid;
+//       grid-column: 5 / 9;
+//       grid-row: 1 / 3;
+//       height: 130px;
 
-// .information {
-//   // border: 1px solid red;
-//   display: grid;
-//   grid-template-columns: repeat(6, 1fr);
-//   grid-gap: 20px;
-//   padding: 5px;
-
-
-//   .text {
-//     border: 0px solid green;
-//     grid-column: 1 / 6;
-//     text-align: center;
+//       .form-control {
+//         // border: 10px green solid;
+//         height: 100%;
+//         width: 100%;
+//         background-color: transparent;
+//         grid-row: 1 / -1;
+//         grid-column: 1 / -1;
+//         border: none;
+//       }
+        
+//       .form-control::placeholder {
+//         color: white;
+//         line-height: 30px;
+//       }
+//     }
+    
+//     .button {
+//       background-image: url(https://res.cloudinary.com/next-hlw/image/upload/v1586192303/icon/50contactbutton_e12drk.svg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       grid-row: 1 / -1;
+//       grid-column: 1 / -1;
+//       width: 40px;
+//       height: 40px;
+//       align-self: end;
+//       justify-self: end;
+//       z-index: 10;
+//     }
+//   }
+  
+//   .contact__info {
+//     @extend .hard__white_right;
+//     display: grid;
+//     // border: 1px solid red;
+//     grid-column-start: 2;
+//     grid-column-end: 4;
+//     grid-row-start: 5;
+//     grid-row-end: 9;
+//   }
+  
+//   .contact__info__item {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;        
+//   }
+  
+//   .info__icon {
+//     height: 30px;
+//     width: 30px;
+//     background-repeat: no-repeat;
+//     grid-column: 2 / 3;
+//     grid-row: 1 / 2;
+//     justify-self: end;
+    
+//   }
+  
+//   .info__text {
+//     background-repeat: no-repeat;
+//     grid-column: 1 / 3;
+//     grid-row: 1 / 2;
+//     font-size: 20px;
 //     text-align: right;
-//     padding: 10px;
+//     white-space: pre;
+//     padding-right: 50px;
+//   }
+  
+//   .contact__info__phone {
+//     grid-column: 1 / 2;
+//     grid-row: 1 / 2;
+  
+//   }
+  
+//   .contact__info__email {
+//     grid-column: 1 / 2;
+//     grid-row: 2 / 3;
+//     padding-right: 3px;
+//   }
+  
+//   .contact__info__insta {
+//     grid-column: 1 / 2;
+//     grid-row: 3 / 4;
+//     padding-right: 3px;
+  
+//   }
+  
+//   .contact__info__location {
+//     grid-template-rows: 20px 20px;
+//     grid-column: 1 / 2;
+//     grid-row: 4 / 5;
     
 //   }
 
-//   .icon {
-//     border: 0px solid blue;
-//     grid-column: 6/ 7;
-//     padding: 10px;
-
-//   }
-// }
-
-// .information_location {
-//   display: grid;
-//   grid-template-columns: repeat(6, 1fr);
-//   grid-row: 7/8;
-//   grid-column: 2/4;
-//   grid-gap: 20px;
-//   padding: 5px;
-
-//   .location_text {
-//     border: 0px solid green;
-//     grid-column: 1 / 6;
-//     text-align: center;
-//     text-align: right;
-//     padding: 10px;
+//   .contact__nameslash {
+//     display: none;
 //   }
 
-//   .location_icon {
-//     border: 0px solid blue;
-//     grid-column: 6/ 7;
-//     padding: 10px;
+//   .contact__emailslash {
+//     display: none;
 //   }
 
+//   .contact__messageslash {
+//     display: none;
+//   }
 // }
 
