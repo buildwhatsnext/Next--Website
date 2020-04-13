@@ -11,19 +11,19 @@
       "team": "INNOVATION",
       "slug": "piper",
       "description": {
-        "challenge" : "Help Google project team and its multidisciplinary group of stakeholders manage, integrate and coordinate the design development of a central atrium knitting together multiple floors, integrating shared amenities and serving as a the new heart of Google NYC",
-        "outcome" : "A BIM process that utilized digital models as virtual repositories for data enabling the management, coordination and integration of:  post occupancy analyses,   custom sustainability practices,   wellness design,   healthy materials consulting,   LEED consulting  master planning,  interior design; and  landscape architecture."
+        "challenge" : "Companies will face one of the defining challenges of our time when they look to build, battling climate change through 'sustainability' and 'wellness.'  Unfortunately, these organizations must now wade through the acronyms and initials of sustainability and wellness rankings and their respective rating schemes to obtain a firmer grasp of where they stand and look to go with their sustainability and wellness efforts. Mostly, they are left perplexed.",
+        "outcome" : "Piper is a smart assistant built to help companies discover, learn about, and compare sustainability and wellness frameworks across their building projects. NEXT, in conjunction with sustainability experts at HLW, created Piper to replicate an early engagement with a subject matter expert and guide companies down the right path as they strategize building, or to course-correct in late-stage planning. With Piper, we have invented a means to scale organizations' abilities to tackle climate change."
       },
       "pictureURL":[""]
     },
     "1950" : {
       "title": "1950 Grand",
       "shortName": "1950 Grand",
-      "client": "-",
+      "client": "Artisan Reality",
       "location": "New York",
-      "status": "Completed",
+      "status": "On-Going",
       "type": "EDUCATION",
-      "team": "SIMULATION",
+      "team": "COMMERCIAL",
       "slug": "1950",
       "description": {
         "challenge" : "A brand new ground up project was envisioned using real time rendering to help our clients understand how we redesigned the park and open spaces to create a new tight knit campus for the tenants at 1950 and 1960 Grand.",
@@ -34,10 +34,10 @@
     "stamford" : {
       "title": "First Stamford Place",
       "shortName": "Stamford",
-      "client": "Empire Development Ground",
+      "client": "Empire Development Group",
       "location": "Connecticut",
-      "status": "Completed",
-      "type": "EDUCATION",
+      "status": "On-Going",
+      "type": "COMMERCIAL",
       "team": "SIMULATION",
       "slug": "stamford",
       "description": {
@@ -56,8 +56,8 @@
       "team": "SIMULATION",
       "slug": "fordham",
       "description": {
-        "challenge" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the",
-        "outcome" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the"
+        "challenge" : "Fordham's new campus center was envisioned as the heart of their Rose Hill campus - a space for dining, recreation and fitness, and a beacon to welcome visitors and tell the unique story of the Jesuit university in the city. Building buy-in for the vision and its funding among students, faculty, alumni, and donors in the 10,000-strong historical campus would not be an easy feat for its leadership. How could we craft an experience to knit the Fordham community together around its leadership's visionary proposal?",
+        "outcome" : "NEXT utilized immersive storytelling through its VR platforms to build visualizations that could be modified from within the experience in real-time. Together with Fordham's leadership, NEXT's Simulation team was able to craft and vet several narratives in real-time through workflows based on the Unreal gaming engine. Utilizing this approach, Fordham's leadership would co-author this mission-critical experience with NEXT and help steer it to success."
       },
       "pictureURL":[""]
     },
