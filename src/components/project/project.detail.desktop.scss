@@ -175,6 +175,13 @@
   .project__detail__image {
     grid-column: 1 / -1;
     grid-row: 1 / 7;
+  // .project__detail__pictureURL {
+  //   z-index: 3;
+  //   &__piper {
+  //     background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
+  //     grid-column: 1 / -1;
+  //     grid-row: 1 / 7;
+  //   }
 
     .mask {
       overflow: hidden;

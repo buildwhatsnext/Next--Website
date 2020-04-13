@@ -29,10 +29,7 @@
   .project__detail__name {
     @extend .soft__white__title;
     color: $next__white;
-    font-size: 48px;
-    // font-weight: 600;
-    // border: 1px solid $next__white;
-    // line-height: 180px;
+    font-size: 36px;
     background-color: $next__blue;
     grid-column: 1 / 4;
     grid-row: 5 / 6;
@@ -41,7 +38,8 @@
     margin-left: 10px;
     padding-bottom: 40px;
     padding: 10px;
-    z-index: 6;
+    z-index: 9;
+    line-height: 100%;
   }
 
   .project__detail__infotable {
@@ -92,10 +90,6 @@
       grid-column: 1 / -1;
       grid-row: 1 / 6;
       background-size: cover;
-      // width: 400px;
-      // background-position: center center;
-      // z-index: 10;
-      // border: 10px red solid;
     }
 
     &__Turing {
@@ -117,18 +111,24 @@
       background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.webp');
       grid-column: 1 / -1;
       grid-row: 1 / 6;
+      background-size: cover;
+      background-position: center;
     }
 
     &__fordham {
       background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.webp');
       grid-column: 1 / -1;
       grid-row: 1 / 6;
+      background-size: cover;
+      background-position: center;
     }
 
     &__google {
       background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.webp');
       grid-column: 1 / -1;
       grid-row: 1 / 6;
+      background-size: cover;
+      background-position: center;
     }
   }
 

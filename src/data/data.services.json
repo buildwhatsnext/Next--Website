@@ -3,19 +3,21 @@
   "services" : {    
     "computation" : {
       "title": "BIM & Computation",
-      "shortName": "computation",
+      "slug": "computation",
       "description": "BIM or Building Information Modeling is a digital,  model-based process providing architects, engineers and constructors a tool to create and manage data across a building project’s lifecycle. Through a wide array of design and computation software, we find efficient solutions for the pinch points in the AECO  (Architecture, Engineering, Construction, and Owner) industries. Utilizing integrated databases, we also develop data strategies by slicing and visualizing information to create insights into any aspect of a project realization pipeline",
       "subtitle1": "Strategy",
       "subtitle1description": "NEXT builds BIM strategies to get your organization up and running no matter the level of experience. · We specialize in designing and deploying custom BIM architectures that enable data flows and arm you with the knowhow to maximize your potential.",
       "subtitle2": "Consultation",
-      "subtitle2description": "NEXT produces well thought-out project execution plans for your project teams with clarity in scope of work, milestones, timelines, and well-defined collaborative processes. · We advise your teams on data management, resourcing, and project health to guide them in meeting project goals."
+      "subtitle2description": "NEXT produces well thought-out project execution plans for your project teams with clarity in scope of work, milestones, timelines, and well-defined collaborative processes. · We advise your teams on data management, resourcing, and project health to guide them in meeting project goals.",
+      "subtitle3": "Upskilling Strategy",
+      "subtitle3description": "Transferring knowhow about the ecosystem of digital tools"
     },
     "experience" : {
       "title": "Experience",
-      "shortName": "experience",
+      "slug": "experience",
       "description": "Within architecture, simulation encompasses visualization and fabrication technologies providing rapid and cost-effective ways for designers to communicate their ideas and problem solve. Through visualization and extended reality (XR - an umbrella term for immersive technologies) we can walk a client through an unbuilt space and the client can take an active role in refining the design. Fabrication via 3D printing helps designers and clients understand their project new and insightful ways.",
       "subtitle1": "Immersive Storytelling",
-      "subtitle1description": "NEXT crafts in the most powerful content formats in storytelling, empowering you to transport viewers to the center of your narrative. · We help you build highly immersive experiences of your design scenarios or real-world events.",
+      "subtitle1description": "NEXT crafts in the most powerful content formats in storytelling, empowering you to transport viewers to the center of your narrative. · We help you build highly immersive experiences of your design scenarios or real-world events",
       "subtitle2": "XR Design",
       "subtitle2description": "NEXT creates entire worlds out of nothing in virtual reality. By fusing them with real world scenarios we empower your users to re-imagine the present. · NEXT engineers physics into virtual experiences enabling your users to interact with them, transforming them from passive viewers into active participants in your experience.",
       "subtitle3": "Rapid Prototyping",
@@ -23,10 +25,10 @@
     },
     "innovation" : {
       "title": "Innovation",
-      "shortName": "innovation",
-      "description": "The Innovation team build technology and data to help people do what they’re trained to do, better. We partner with clients on how to use software to streamline their design workflows, build beautiful mobile and web interfaces and integrate data in creative and new ways.",
-      "subtitle1": "Web Applications",
-      "subtitle1description": "NEXT provides strong product leadership and strategic guidance when evaluating the challenges and goals of your application. · We strive to deliver the highest quality products and solutions for your project.",
+      "slug": "innovation",
+      "description": "Within architecture, simulation encompasses visualization and fabrication technologies providing rapid and cost-effective ways for designers to communicate their ideas and problem solve. Through visualization and extended reality (XR - an umbrella term for immersive technologies) we can walk a client through an unbuilt space and the client can take an active role in refining the design. Fabrication via 3D printing helps designers and clients understand their project new and insightful ways.",
+      "subtitle1": "Web Application",
+      "subtitle1description": "NEXT provides strong product leadership and strategic guidance when evaluating the challenges and goals of your application. We strive to deliver the highest quality products and solutions for your project.",
       "subtitle2": "User Experience Design",
       "subtitle2description": "NEXT creates elegant, engaging, and innovative designs that elevate your brand and reinforce your vision.",
       "subtitle3": "Data Analytics",

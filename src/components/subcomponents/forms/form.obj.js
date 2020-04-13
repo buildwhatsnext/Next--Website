@@ -66,7 +66,7 @@ export class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className="contact__form">
+      <div className="contact__form__grid">
         <NameEntryForm handleChange={ (e) => this.handleNameChange(e) } value={ this.state.name } />
         <EmailEntryForm handleChange={(e) => this.handleEmailChange(e) } value={ this.state.email } />
         <MessageEntryForm 
@@ -85,11 +85,13 @@ export function NameEntryForm(props) {
       <div className="contact__nameslash">
         <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg'/>
       </div>
-      <p>Name</p>
-      <div className="answerbox">
+      <div className="contact__name"><p>Name</p></div>
+      <div className="answerboxname">
         <Form.Control 
           type="text" 
           placeholder="Please enter your name" 
+          onFocus="placeholder =''"
+          onblur="this.placeholder='kp'"
           onChange={ props.handleChange }
           value={ props.value }
         />
@@ -100,12 +102,12 @@ export function NameEntryForm(props) {
 
 export function EmailEntryForm(props) {
   return (
-    <fragment>
+    <Fragment>
       <div className="contact__emailslash">
         <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
-      <p>Email</p>
-      <div className="answerbox">
+      <div className="contact__email"><p>E-Mail</p></div>
+      <div className="answerboxemail">
       <Form.Control 
         type="email" 
         placeholder="Please enter your email" 
@@ -113,18 +115,18 @@ export function EmailEntryForm(props) {
         value={ props.value }
       />
       </div>
-    </fragment>
+    </Fragment>
   )
 }
 
 export function MessageEntryForm(props) {
   return (
-    <fragment>
+    <Fragment>
       <div className="contact__messageslash">
         <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
       </div>
-      <p>Message</p>
-      <div className="answerboxfat">
+      <div className="contact__message"><p>Message</p></div>
+      <div className="answerboxmessage">
         <Form.Control 
           type="text" 
           placeholder="What would you like to tell us?" 
@@ -133,6 +135,6 @@ export function MessageEntryForm(props) {
         />
         <div className="button" onClick={ props.handleClick }/>
       </div>
-    </fragment>
+    </Fragment>
   )
 }

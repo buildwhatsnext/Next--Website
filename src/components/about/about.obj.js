@@ -26,27 +26,17 @@ export default class About extends React.Component {
   render() {
     return (
       <Fragment>
-        <div className="aboutduplicategrid">
-          <div className="about__titlepageback" ref={item => this.myWhite = item}></div>
-        </div>
-
-        <div className="about">
-
-        <div className="pinkbig">
-          <div className="pinkmask">
-              <div className="about__titlepage" ref={item => this.myPink = item}>
-                <AboutTitle />
-              </div>
+        <div className="about">       
+          <div className="about__titlepage">  
+            <div className="about__coralcard">
+              <AboutTitle />
             </div>
-        </div>
-
-          <div className="about__categoryduplicate">
+            <div className="about__whitecard"></div>
           </div>
 
           <div className="about__category">
             <AboutCategory />
-          </div>
-
+          </div>  
         </div>
         
       </Fragment>
