@@ -30,22 +30,27 @@ const Routes = (props) => (
     </div>
     <div className="app__content">
       <AnimatedRoutes {...props} />
-      {/* <RouteCollection {...props} /> */}
     </div>
   </Fragment>
 )
 
-const AnimatedRoutes = (props) => (
+const AnimatedRoutes = (props) => {
+  console.log(props.location.pathname);
+  return (
+  
+
   <TransitionGroup component={null}>
     <Transition
-      appear={true}
-      onEnter={(node, appears) => play(props.pathname, node, appears)}
-      timeout={{enter: 750, exit: 0}}
+      key={ props.pathname }
+      appear={ true }
+      onEnter={(node, appears) => play(props.location.pathname, node, appears)}
+      timeout={{enter: 750, exit: 750}}
+      classNames="fade"
     >
       <RouteCollection {...props} />
     </Transition>
   </TransitionGroup>
-)
+)}
 
 const RouteCollection = (props) => (
   <Switch>
@@ -83,8 +88,8 @@ const getHomeTimeline = (node, delay) => {
 
 const getDefaultTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
-  const content = node.querySelector('.content');
-  const contentInner = node.querySelector('.content--inner');
+  const content = node.querySelector('.team__item');
+  const contentInner = node.querySelector('.team__item__block');
 
   timeline
     .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
