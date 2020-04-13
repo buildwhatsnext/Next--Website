@@ -22,13 +22,13 @@
   .project__detail__name {
     @extend .soft__white__title;
     // color: $next__white;
-    font-size: 144px;
+    font-size: 150px;
     font-weight: 600;
     // border: 1px solid $next__white;
-    // line-height: 180px;
+    line-height: 180px;
     background-color: $next__blue;
     grid-column: 1 / 4;
-    grid-row: 6 / 8;
+    grid-row: 5 / 8;
     height: auto;
     margin-left: 40px;
     // padding-bottom: 40px;

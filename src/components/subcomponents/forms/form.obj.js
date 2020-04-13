@@ -82,10 +82,10 @@ export class ContactForm extends React.Component {
 export function NameEntryForm(props) {
   return (
     <Fragment>
-      <div className="contact__nameslash">
-        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg'/>
-      </div>
       <div className="contact__nameform__wrap">
+        <div className="contact__nameslash">
+          <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg'/>
+        </div>
         <div className="contact__name"><p>Name</p></div>
         <div className="answerboxname">
           <Form.Control 
@@ -105,10 +105,10 @@ export function NameEntryForm(props) {
 export function EmailEntryForm(props) {
   return (
     <Fragment>
-      <div className="contact__emailslash">
-        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
-      </div>
       <div className="contact__emailform__wrap">
+        <div className="contact__emailslash">
+          <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
+        </div>
         <div className="contact__email"><p>E-Mail</p></div>
         <div className="answerboxemail">
         <Form.Control 
@@ -126,10 +126,10 @@ export function EmailEntryForm(props) {
 export function MessageEntryForm(props) {
   return (
     <Fragment>
-      <div className="contact__messageslash">
-        <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
-      </div>
       <div className="contact__messageform__wrap">
+        <div className="contact__messageslash">
+          <img src='https://res.cloudinary.com/next-hlw/image/upload/v1586193012/icon/55thickslash_mvvxr3.svg' alt="slash"/>
+        </div>
         <div className="contact__message"><p>Message</p></div>
         <div className="answerboxmessage">
           <Form.Control 
