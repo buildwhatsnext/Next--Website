@@ -62,6 +62,10 @@ const getDefaultTimeline = (node, delay) => {
 
 const getContactTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
-  
+  const title = node.querySelector('.contact__title > p');
+  timeline
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
+    .from(title, 0.5, {y: 100})
+
   return timeline;
 }
