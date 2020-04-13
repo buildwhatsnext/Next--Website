@@ -59,6 +59,22 @@
     grid-column: 5 / 9;
     font-size: 36px;
     font-weight: 400;
+
+    .contact__quote__p01 {
+      overflow: hidden;
+    }
+
+    .contact__quote__p02 {
+      overflow: hidden;
+    }
+
+    .contact__quote__p03 {
+      overflow: hidden;
+    }
+
+    .contact__quote__p04 {
+      overflow: hidden;
+    }
   }
 
   .contact__form {
@@ -91,7 +107,7 @@
 
     .contact__nameform__wrap {
       grid-column: 1 / -1;
-      grid-row: 1 / 2;  
+      grid-row: 1 / 2;
     }
 
     .contact__emailform__wrap {
