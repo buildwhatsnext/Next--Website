@@ -67,6 +67,10 @@ const getContactTimeline = (node, delay) => {
   const quote2 = node.querySelector('.contact__quote__p02 > p');
   const quote3 = node.querySelector('.contact__quote__p03 > p');
   const quote4 = node.querySelector('.contact__quote__p04 > p');
+  const nameform = node.querySelector('.contact__nameform__wrap');
+  const emailform = node.querySelector('.contact__emailform__wrap');
+  const messageform = node.querySelector('.contact__messageform__wrap');
+  const information = node.querySelector('.contact__info');
   timeline
     .from(node, 0.5, { y: 10, display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
     .from(title, 0.5, {y: 100}, 1)
@@ -74,6 +78,10 @@ const getContactTimeline = (node, delay) => {
     .from(quote2, 0.5, {delay: 0.2, y: 100}, 1)
     .from(quote3, 0.5, {delay: 0.3, y: 100}, 1)
     .from(quote4, 0.5, {delay: 0.4, y: 100}, 1)
+    .from(nameform, 0.5, {delay: 0.7, opacity: 0}, 1)
+    .from(emailform, 0.5, {delay: 0.7, opacity: 0}, 1)
+    .from(messageform, 0.5, {delay: 0.7, opacity: 0}, 1)
+    .from(information, 0.5, {delay: 0.7, opacity: 0}, 1)
 
   return timeline;
 }
