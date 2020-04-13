@@ -92,15 +92,18 @@
     }
 
     &__block {
-      background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      // height: 400px;
-      // width: 500px;
+      overflow: hidden;
       grid-column: 1 / -1;
       grid-row: 2 / 6;
-      // border: red 10px solid;
       z-index: 1;
+
+      &__content {
+        background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
