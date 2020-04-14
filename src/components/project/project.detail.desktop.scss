@@ -159,7 +159,8 @@
 
 
     .project__detail__pictureURL {
-      z-index: 3;
+      z-index: 1;
+    
       &__piper {
         background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
         grid-column: 1 / -1;

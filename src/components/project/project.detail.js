@@ -35,7 +35,7 @@ export function ProjectDetail(data) {
       </div>
 
       <div className="project__detail__pictureURL__wrap">
-        <div className={`project__detail__pictureURL__${data.slug}`} />
+        <div className={`project__detail__pictureURL project__detail__pictureURL__${data.slug}`} />
       </div>
 
     </div>

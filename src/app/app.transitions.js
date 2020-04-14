@@ -3,7 +3,7 @@ import { TimelineMax as Timeline, Power1 } from 'gsap';
 export const play = (pathname, node, appears) => {
   const delay = appears ? 0 : 0.5
   let timeline;
-  console.log(pathname);
+  // console.log(pathname);
 
   // const path = (pathname)
   // path = path.
@@ -19,6 +19,7 @@ export const play = (pathname, node, appears) => {
       timeline = getContactTimeline(node, delay);
       break;
     case '/projects/1950': case '/projects/piper': case '/projects/stamford': case '/projects/google': case '/projects/fordham':
+      console.log("happened!");
       timeline = getProjectDetailTimeline(node, delay);
       break;
     default:
@@ -97,17 +98,18 @@ const getContactTimeline = (node, delay) => {
 const getProjectDetailTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
   const title = node.querySelector('.project__detail__name > p');
-  const image = node.querySelector('.project__detail__pictureURL__1950, .project__detail__pictureURL__piper, .project__detail__pictureURL__fordham, .project__detail__pictureURL__google, .project__detail__pictureURL__stamford');
+  const wrap = node.querySelector('.project__detail__pictureURL__wrap')
+  const image = node.querySelector('.project__detail__pictureURL');
   const info = node.querySelector('.project__detail__infotable');
   const challenges = node.querySelector('.project__detail__summary')
 
   timeline
     .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-    // .from(info, 0.5, { delay: 0.75, opacity: 0, ease: Power1.easeOut }, 1)
+    .from(info, 0.5, { delay: 0.5, opacity: 0, ease: Power1.easeOut }, 1)
+    .from(challenges, 0.5, { delay: 0.5, opacity: 0, ease: Power1.easeOut }, 1)
     .from(title, 0.5, { y: 400, ease: Power1.easeOut }, 1)
-    // .from(image, 0.5, { y: 800, ease: Power1.easeInOut }, 1)
-    // .from(image, 0.5, { delay: 0.25, scale: 1.2, ease: Power1.easeInOut }, 1)
-    // .from(challenges, 1, { y: 400, ease: Power1.easeOut }, 1)
+    .from(wrap, 0.35, { height: 0, ease: Power1.easeOut }, 1)
+    .from(image, 0.5, { scale: 1.1, ease: Power1.easeInOut }, 1)
 
   return timeline;
 }
