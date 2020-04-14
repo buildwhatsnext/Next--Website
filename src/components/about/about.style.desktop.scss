@@ -55,6 +55,7 @@
     text-align: right;
     padding-top: 32px;
     padding-bottom: 58px;
+    // overflow: hidden;
   }
 
   .about__description {
@@ -103,6 +104,7 @@
     grid-row: 4/5;
     align-self: end;
     padding-bottom: 20px;
+    overflow: hidden;
   }
 
   .about__subtitleexperience {
@@ -120,6 +122,7 @@
     font-size: 48px;
     grid-column: 1/6;
     grid-row: 6/7;
+    overflow: hidden;
     
   }
 
@@ -137,7 +140,9 @@
     font-size: 48px;
     grid-column: 1/-1;
     grid-row: 8/9;
+    overflow: hidden;
   }
+
   .about__subtitlecapabilities {
     @extend .soft__white__subtitle;
     font-size: 16px;

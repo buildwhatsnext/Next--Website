@@ -26,7 +26,7 @@ We think of our clients as partners and encourage them to collaborate with us to
             <Fragment>
 
                 <div className="about__textbox"></div>
-
+                
                 <div className="about__title">
                     <p> { title } </p>
                 </div>
