@@ -19,7 +19,7 @@ export const play = (pathname, node, appears) => {
       break;
   }
 
-  timeline.play()
+  timeline.play();
 }
 
 const getHomeTimeline = (node, delay) => {
@@ -62,12 +62,12 @@ const getTeamTimeline = (node, delay) => {
   const location = node.querySelectorAll('.team__item__location');
 
   timeline
-    .from(node, 0.5, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn }, 0)
-    .from(blocks, .5, { x: -500, stagger: .1, ease: Power1.easeOut, }, 1)
-    .from(members, .5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 1)
-    .from(name, .5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
-    .from(position, .5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
-    .from(location, .5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn }, 0)
+    .from(blocks, 0.5, { x: -500, stagger: .1, ease: Power1.easeOut, }, 1)
+    .from(members, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 1)
+    .from(name, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
+    .from(position, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
+    .from(location, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
 
   return timeline;
 }

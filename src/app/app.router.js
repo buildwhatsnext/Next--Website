@@ -44,7 +44,7 @@ const AnimatedRoutes = (props) => {
         appear={ true }
         onEnter={(node, appears) => play(props.location.pathname, node, appears)}
         timeout={{enter: 750, exit: 750}}
-        classNames="fade"
+        // classNames="fade"
       >
         <RouteCollection {...props} />
       </Transition>
