@@ -33,7 +33,7 @@ const getHomeTimeline = (node, delay) => {
     .from(node, 1, { display: 'none', autoAlpha: 0, delay }, 0)
     .from(headline, 1, { autoAlpha: 0, y: 500, ease: Power1.easeOut }, 0)
     .from(hlw, 0.9, { y: -500, ease: Power1.easeOut }, 0)
-    .from(statement, 1, { y: 300, ease: Power1.easeOut}, 0)
+    .from(statement, 1, { y: 500, ease: Power1.easeOut}, 0)
     .from(cta, 1, { autoAlpha: 0, ease: Power1.easeInOut});
 
   return timeline
