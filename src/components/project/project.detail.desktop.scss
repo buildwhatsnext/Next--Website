@@ -21,24 +21,47 @@
 
   .project__detail__name {
     @extend .soft__white__title;
-    // color: $next__white;
-    font-size: 150px;
+    font-size: 140px;
     font-weight: 600;
-    // border: 1px solid $next__white;
     line-height: 180px;
     background-color: $next__blue;
     grid-column: 1 / 4;
     grid-row: 5 / 7;
     height: auto;
     margin-left: 40px;
-    // padding-bottom: 40px;
     padding-left: 20px;
-    // margin-right: 20px;
     z-index: 2;
     overflow: hidden;
 
     &__piper {
       grid-row: 5/7;
+      grid-column: 1 / 4;
+    }
+
+    &__1950 {
+      grid-row: 5/8;
+      grid-column: 1 / 4;
+      line-height: 110%;
+    }
+
+    &__google {
+      grid-row: 5/9;
+      grid-column: 1 / 4;
+      line-height: 90%;
+      padding-top: 15px;
+    }
+
+    &__fordham {
+      grid-row: 5/8;
+      grid-column: 1 / 5;
+      line-height: 110%;
+    }
+
+    &__stamford {
+      grid-column: 1 / 5;
+      grid-row: 5/9;
+      line-height: 88%;
+      padding-top: 15px;
     }
   }
 
