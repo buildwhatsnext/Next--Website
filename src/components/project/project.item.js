@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { TimelineMax as Timeline, Power1 } from 'gsap';
+import { TimelineMax as Timeline, Power1, gsap } from 'gsap';
+import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 
 import './project.item.desktop.scss';
 import './project.item.mobile.scss';
+
+gsap.registerPlugin(CSSRulePlugin);
 
 export function ProjectItem(props) {
   const path = props.history.location.pathname;
@@ -33,9 +36,14 @@ function slideLeft(event){
 
   const node = event.currentTarget;
   const title = node.querySelector('.project__item__title');
-  // const titleAfter = node.querySelector()
+  // const titleAfter = CSSRulePlugin.getRule('.project__item__title:after');
+
+  // console.log(titleAfter);
 
   const timeline = new Timeline({ paused: true});
+
+  // timeline
+  //   .to(title, .5, { borderBottom: '1px solid white', direction: 'rtl' }  )
 
   timeline
     .to(title, .5, { 
@@ -56,7 +64,7 @@ function revert(event){
   const timeline = new Timeline({ paused: true});
 
   timeline
-    .to(title, .5, { x: 0, ease: Power1.easeOut });
+    .to(title, .5, { x: 0, borderBottom: 'none', ease: Power1.easeOut });
 
   timeline.play();
   
