@@ -2,11 +2,11 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './nav.desktop.scss';
 import './nav.mobile.scss';
-// import logo from '../../../assets/logo_next.svg';
 
 const defaultState = {
   collapsed: true,
 }
+const logo = 'https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/logo_next_uxfhmb.svg';
 
 export default class NavbarPage extends React.Component {
   constructor(props) {
@@ -14,19 +14,18 @@ export default class NavbarPage extends React.Component {
     this.state = defaultState;
   }
 
-  toggleNavbar(){
+  toggleNavbar() {
     this.setState({
       collapsed: !this.collapsed
     });
   }
 
-  render(){
-
+  render() {
     return(
-      <Navbar bg="light" expand="lg" id="next__navbar">
+      <Navbar bg="light" expand="lg" id="next__navbar" onLoad={ (event) => animateNav(event)}>
         <Navbar.Brand href="/">
           <img 
-            src='https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/logo_next_uxfhmb.svg' 
+            src={logo}
             alt="NEXT/"
           />
         </Navbar.Brand>
@@ -43,4 +42,13 @@ export default class NavbarPage extends React.Component {
       </Navbar>
     )
   }
+}
+
+function animateNav(e) {
+  e.preventDefault()
+  
+  const node = e.currentTarget;
+
+  // leave non-animated for now
+  // we shouldn't do it unless we're going to change colors and stuff
 }

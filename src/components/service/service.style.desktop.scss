@@ -9,8 +9,6 @@
     grid-column: 2 / 10;
     grid-row: 1 / -1;
     margin-top: 60px;
-    // border: 10px red solid;
-  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -21,12 +19,13 @@
     grid-column: 1 / 3;
     grid-row: 1 / 4;
     padding-left: 160px;
+    
   }
 
   .page__services__items {
     grid-column: 1 / -1;
     grid-row: 3 / 12;
-    // border: 10px green solid;
+    
   }
 
   .service__item {
