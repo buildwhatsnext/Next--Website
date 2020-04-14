@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+import { TimelineMax as Timeline, Power1 } from 'gsap';
+
 import './project.item.desktop.scss';
 import './project.item.mobile.scss';
 
@@ -24,10 +27,15 @@ export function ProjectItem(props) {
 
 function animate(event){
   event.preventDefault();
-  event.persist();
-  console.log(event);
 
   const node = event.currentTarget;
-  const image = node.querySelectorAll('.project__item__image');
-  console.log(image);
+  const title = node.querySelectorAll('.project__item__title');
+
+  const timeline = new Timeline({ paused: true});
+
+  timeline
+    .to(title, .5, { x: 100, ease: Power1.easeOut } );
+
+  timeline.play();
+  
 }
