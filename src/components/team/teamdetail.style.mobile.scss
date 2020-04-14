@@ -67,7 +67,7 @@
   }
 
   .team__detail__position {
-    @extend .hard__white__subtitle;
+    // @extend .hard__white__subtitle;
     grid-column: 1/6;
     grid-row: 3/4;
     font-size: 12px;
@@ -80,7 +80,7 @@
   }
 
   .team__detail__email {
-    @extend .hard__white__subtitle;
+    // @extend .hard__white__subtitle;
     grid-column: 1/5;
     grid-row: 3/4;
     font-size: 12px;

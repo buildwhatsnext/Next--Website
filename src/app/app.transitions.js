@@ -18,6 +18,9 @@ export const play = (pathname, node, appears) => {
     case '/contact':
       timeline = getContactTimeline(node, delay);
       break;
+    case '/team/andrew' : case '/team/preston' : case '/team/ruyi' : case '/team/kp' : case '/team/bharti' : case '/team/chris' : case '/team/stephen' : case '/team/mina' : case '/team/jeff' : case '/team/adam' :
+      timeline = getTeamDetailTimeline(node, delay);
+      break;
     case '/projects/1950': case '/projects/piper': case '/projects/stamford': case '/projects/google': case '/projects/fordham':
       console.log("happened!");
       timeline = getProjectDetailTimeline(node, delay);
@@ -110,6 +113,35 @@ const getProjectDetailTimeline = (node, delay) => {
     .from(title, 0.5, { y: 400, ease: Power1.easeOut }, 1)
     .from(wrap, 0.35, { height: 0, ease: Power1.easeOut }, 1)
     .from(image, 0.5, { scale: 1.1, ease: Power1.easeInOut }, 1)
+
+  return timeline;
+}
+
+const getTeamDetailTimeline = (node, delay) => {
+  const timeline = new Timeline({ paused: true });
+  const wrap = node.querySelector('.team__detail__name__wrap');
+  const firstname = node.querySelector('.team__detail__firstname > p');
+  const lastname = node.querySelector('.team__detail__lastname > p');
+  const position = node.querySelector('.team__detail__position > p');
+  const email = node.querySelector('.team__detail__email > p');
+  const desc = node.querySelector('.team__detail__description > p');
+  const line = node.querySelector('.borderbottom');
+  const cta = node.querySelector('.cta');
+  const trapazoid =
+
+
+
+  timeline
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
+    // .from(wrap, 0.35, { height: 0, ease: Power1.easeOut }, 1)
+    .from(firstname, 0.5, { y: 100, ease: Power1.easeOut }, 1)
+    .from(lastname, 0.75, { y: 100, ease: Power1.easeOut }, 1)
+    .from(position, 0.8, { y: 100, ease: Power1.easeOut }, 1)
+    .from(email, 0.95, { y: 100, ease: Power1.easeOut }, 1)
+    .from(desc, 1.1, { opacity: 0, ease: Power1.easeOut }, 1)
+    .from(line, 1.1, { width: 0, ease: Power1.easeOut }, 1)
+    .from(cta, 1.1, { opacity: 0, ease: Power1.easeOut }, 1)
+
 
   return timeline;
 }

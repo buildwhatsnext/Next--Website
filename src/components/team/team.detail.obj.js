@@ -25,24 +25,19 @@ export function TeamMemberDetail(data) {
   
   const contactus = "Contact Us";
 
-  let myTrapazoid = useRef(null)
-  let myPicture = useRef(null)
-
-  useEffect(() => {
-    TweenMax.from(myTrapazoid, 1.25, {opacity: 0, x: -400, ease: Power1.easeOut})
-    TweenMax.from(myPicture, 1.25, {x: -400, ease: Power1.easeOut})
-  }, [])
-
-
   return (
     <div className="team__detail">
-      <div className="team__detail__name">{ data.name }</div>
-      <div className="team__detail__email">{ data.email }</div>
-      <div className="team__detail__position">{ data.position }</div>
-      {/* <div className="team__detail__location">{ data.location }</div> */}
-      <div className="team__detail__description">{ data.description }</div>
-      <div className={`team__detail__pictureURL__${data.shortName}`} ref={item => myPicture = item} />
-      <div className="trapazoid" ref={item => myTrapazoid = item}></div>
+
+      <div className="team__detail__name__wrap">
+        <div className="team__detail__firstname"><p>{ data.firstname }</p></div>
+        <div className="team__detail__lastname"><p>{ data.lastname }</p></div>
+      </div>
+
+      <div className="team__detail__email"><p>{ data.email }</p></div>
+      <div className="team__detail__position"><p>{ data.fullpositiontitle }</p></div>
+      <div className="team__detail__description"><p>{ data.description }</p></div>
+      <div className={`team__detail__pictureURL__${data.shortName}`}/>
+      <div className="trapazoid"></div>
       <div className="slash"></div>
       <div className="borderbottom"></div>
       <div className="cta">
