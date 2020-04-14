@@ -14,6 +14,9 @@ export const play = (pathname, node, appears) => {
     case '/projects':
       timeline = getProjectTimeline(node, delay);
       break;
+    case '/services':
+      timeline = getServicesTimeline(node, delay);
+      break;
     default:
       timeline = getDefaultTimeline(node, delay);
       break;
@@ -47,6 +50,18 @@ const getProjectTimeline = (node, delay) => {
   timeline
     .from(node, 0.3, { display: 'none', autoAlpha: 0, delay })
     .from(projects, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } );
+
+  return timeline;
+}
+
+const getServicesTimeline = (node, delay) => {
+  const timeline = new Timeline({ paused: true });
+
+  const services = node.querySelectorAll('.service__item__title');
+
+  timeline
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay })
+    .from(services, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } );
 
   return timeline;
 }
