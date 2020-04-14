@@ -10,14 +10,14 @@
       display: grid;
       grid-template-columns: 400px auto;
   
-      &:hover {
-        cursor: pointer;
+      // &:hover {
+      //   cursor: pointer;
 
-        .project__item__image {
-          animation: fadeInAndSlideIn 1s ease-out 1s;
-          animation-fill-mode: forwards;
-        }
-      }
+      //   .project__item__image {
+      //     animation: fadeInAndSlideIn 1s ease-out 1s;
+      //     animation-fill-mode: forwards;
+      //   }
+      // }
     }
   
     .project__item__type {
@@ -30,7 +30,7 @@
       background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.jpg');
       width: 100%;
       height: 0%;
-      transition: all .75s ease-in-out 1s;
+      // transition: all .75s ease-in-out 1s;
     }
     
     .project__item__title {
@@ -42,7 +42,7 @@
         text-align: left;
         white-space: nowrap;
         font-size: 200px;
-        margin-left: 200px;
+        // margin-left: 200px;
         width: auto;
         direction: ltr;
   
@@ -50,13 +50,16 @@
           -webkit-text-stroke: 3px $next__coral;
           -webkit-text-fill-color: transparent;
           -webkit-background-clip: text;
-          transition: all .5s ease-in-out ;
+          // transition: all .5s ease-in-out ;
         }
       }
     }
   }
   
   .project__item__title {
+    overflow: hidden;
+    width: 100%;
+
     p {
       @extend .soft__coral__title;
       font-size: 200px;
@@ -64,7 +67,7 @@
         -webkit-text-stroke: 3px $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        transition: all 2s ease-in-out;
+        // transition: all 2s ease-in-out;
 
         // test
         background-color: #06038D;
@@ -72,22 +75,22 @@
         height: -100px;
         background-position: 25% 75%;
         
-        &:hover {
-          -webkit-text-fill-color: $next__coral;
-          animation: slideLeft .75s ease-out .5s;
-          animation-fill-mode: forwards;
-        }
+        // &:hover {
+        //   -webkit-text-fill-color: $next__coral;
+        //   animation: slideLeft .75s ease-out .5s;
+        //   animation-fill-mode: forwards;
+        // }
       }
   
-      &:hover {
-        &:after {
-          @extend %project__underline__filled;
-        }
-      }  
+      // &:hover {
+      //   &:after {
+      //     @extend %project__underline__filled;
+      //   }
+      // }  
       
-      &::after {
-        @extend %project__underline__none;
-      }
+      // &::after {
+      //   @extend %project__underline__none;
+      // }
     }
   }
 

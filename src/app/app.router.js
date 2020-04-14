@@ -37,7 +37,6 @@ const Routes = (props) => (
 )
 
 const AnimatedRoutes = (props) => {
-  console.log(props.location.pathname);
   return (
     <TransitionGroup component={null}>
       <Transition

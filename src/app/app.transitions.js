@@ -3,7 +3,6 @@ import { TimelineMax as Timeline, Power1 } from 'gsap';
 export const play = (pathname, node, appears) => {
   const delay = appears ? 0 : 0.5
   let timeline;
-  console.log(pathname);
 
   switch(pathname) {
     case '/':
@@ -11,6 +10,9 @@ export const play = (pathname, node, appears) => {
       break;
     case '/team':
       timeline = getTeamTimeline(node, delay);
+      break;
+    case '/projects':
+      timeline = getProjectTimeline(node, delay);
       break;
     default:
       timeline = getDefaultTimeline(node, delay);
@@ -29,6 +31,20 @@ const getHomeTimeline = (node, delay) => {
     .staggerFrom(texts, 0.375, { autoAlpha: 0, x: -25, ease: Power1.easeOut }, 0.125);
 
   return timeline
+}
+
+const getProjectTimeline = (node, delay) => {
+  const timeline = new Timeline({ paused: true });
+
+  const projects = node.querySelectorAll('.project__item__title > a > div');
+
+  console.log(node);
+
+  timeline
+    // .from(node, 0, { display: 'none', autoAlpha: 0, delay })
+    .from(projects, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } );
+
+  return timeline;
 }
 
 const getTeamTimeline = (node, delay) => {
