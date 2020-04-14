@@ -5,6 +5,9 @@ export const play = (pathname, node, appears) => {
   let timeline;
   console.log(pathname);
 
+  // const path = (pathname)
+  // path = path.
+
   switch(pathname) {
     case '/':
       timeline = getHomeTimeline(node, delay)
@@ -14,6 +17,9 @@ export const play = (pathname, node, appears) => {
       break;
     case '/contact':
       timeline = getContactTimeline(node, delay);
+      break;
+    case '/projects/piper':
+      timeline = getProjectDetailTimeline(node, delay);
       break;
     default:
       timeline = getDefaultTimeline(node, delay);
@@ -26,10 +32,12 @@ export const play = (pathname, node, appears) => {
 const getHomeTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
   const texts = node.querySelectorAll('h1 > div');
+  const line1 = node.querySelectorAll('.soft__blue__title')
 
-  // timeline
-    // .from(node, 0, { display: 'none', autoAlpha: 0, delay })
-    // .staggerFrom(texts, 0.375, { autoAlpha: 0, x: -25, ease: Power1.easeOut }, 0.125);
+  timeline
+    .from(node, 0, { display: 'none', autoAlpha: 0, delay })
+    .from(line1, 0.5, {delay: 0.7}, 1)
+    .staggerFrom(texts, 0.375, { autoAlpha: 0, x: -25, ease: Power1.easeOut }, 0.125);
 
   return timeline
 }
@@ -82,6 +90,20 @@ const getContactTimeline = (node, delay) => {
     .from(emailform, 0.5, {delay: 0.7, opacity: 0}, 1)
     .from(messageform, 0.5, {delay: 0.7, opacity: 0}, 1)
     .from(information, 0.5, {delay: 0.7, opacity: 0}, 1)
+
+  return timeline;
+}
+
+const getProjectDetailTimeline = (node, delay) => {
+  const timeline = new Timeline({ paused: true });
+  const title = node.querySelector('.project__detail__name > p');
+  const image = node.querySelector('.project__detail__pictureURL__piper');
+
+  timeline
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
+    .from(title, 0.5, { y: 300, ease: Power1.easeOut })
+    .from(image, 0.5, { y: 800, ease: Power1.easeInOut }, 1)
+    .from(image, 0.5, { delay: 0.25, scale: 1.2, ease: Power1.easeInOut }, 1)
 
   return timeline;
 }

@@ -146,58 +146,67 @@
     width: 50px;
   }
 
-  // .project__detail__pictureURL {
-  //   background-repeat: no-repeat;
-  //   display: grid;
-  //   z-index: 10;
-  //   // background-size: auto 101%;
-  //   grid-column: 1 / -1;
-  //   grid-row: 1 / 7;
-  // }
+  .project__detail__pictureURL__wrap {
 
-  .project__detail__pictureURL {
-    z-index: 3;
-    &__piper {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-    }
+    grid-column: 1 / -1;
+    grid-row: 1 / 7;
+    // border: 10px red solid;
+    overflow: hidden;
 
-    &__1950 {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
 
-    &__stamford {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    &__fordham {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-
-    }
-
-    &__google {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.jpg');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    .project__detail__pictureURL {
+      z-index: 3;
+      &__piper {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        height: 100%;
+        width: 100%;
+      }
+  
+      &__1950 {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+  
+      &__stamford {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
+  
+      &__fordham {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+  
+      }
+  
+      &__google {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.jpg');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
