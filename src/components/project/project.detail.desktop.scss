@@ -28,13 +28,14 @@
     line-height: 180px;
     background-color: $next__blue;
     grid-column: 1 / 4;
-    grid-row: 5 / 8;
+    grid-row: 5 / 9;
     height: auto;
     margin-left: 40px;
     // padding-bottom: 40px;
     padding-left: 20px;
     // margin-right: 20px;
     z-index: 2;
+    overflow: hidden;
   }
 
   .project__detail__infotable {
@@ -150,7 +151,6 @@
 
     grid-column: 1 / -1;
     grid-row: 1 / 7;
-    // border: 10px red solid;
     overflow: hidden;
 
 
