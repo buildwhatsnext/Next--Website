@@ -28,7 +28,7 @@
     line-height: 180px;
     background-color: $next__blue;
     grid-column: 1 / 4;
-    grid-row: 5 / 9;
+    grid-row: 5 / 7;
     height: auto;
     margin-left: 40px;
     // padding-bottom: 40px;
@@ -36,6 +36,10 @@
     // margin-right: 20px;
     z-index: 2;
     overflow: hidden;
+
+    &__piper {
+      grid-row: 5/7;
+    }
   }
 
   .project__detail__infotable {

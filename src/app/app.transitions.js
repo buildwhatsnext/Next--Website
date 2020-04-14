@@ -103,11 +103,11 @@ const getProjectDetailTimeline = (node, delay) => {
 
   timeline
     .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-    .from(info, 0.5, { delay: 0.75, opacity: 0, ease: Power1.easeOut }, 1)
+    // .from(info, 0.5, { delay: 0.75, opacity: 0, ease: Power1.easeOut }, 1)
     .from(title, 0.5, { y: 400, ease: Power1.easeOut }, 1)
-    .from(image, 0.5, { y: 800, ease: Power1.easeInOut }, 1)
-    .from(image, 0.5, { delay: 0.25, scale: 1.2, ease: Power1.easeInOut }, 1)
-    .from(challenges, 1, { y: 400, ease: Power1.easeOut }, 1)
+    // .from(image, 0.5, { y: 800, ease: Power1.easeInOut }, 1)
+    // .from(image, 0.5, { delay: 0.25, scale: 1.2, ease: Power1.easeInOut }, 1)
+    // .from(challenges, 1, { y: 400, ease: Power1.easeOut }, 1)
 
   return timeline;
 }

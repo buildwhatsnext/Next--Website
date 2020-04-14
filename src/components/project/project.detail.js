@@ -22,7 +22,7 @@ export function ProjectDetail(data) {
   return (
     <div className="project__detail">
 
-      <div className="project__detail__name">
+      <div className={`project__detail__name project__detail__name__${data.slug}`}>
         <p>{ data.title }</p>
       </div>
 
