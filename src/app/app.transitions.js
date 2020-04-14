@@ -38,8 +38,8 @@ const getTeamTimeline = (node, delay) => {
 
   timeline
     .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-    .from(blocks, .5, { x: -500, ease: Power1.easeOut })
-    .from(members, 1.5, { autoAlpha: 0 , ease: Power1.easeInOut });
+    .from(blocks, .5, { x: -500, stagger: .1, ease: Power1.easeOut }, 0)
+    .from(members, .5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 0);
 
   return timeline;
 }
