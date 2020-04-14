@@ -13,7 +13,10 @@ export function ProjectItem(props) {
   const route = `${path}/${projectName}`;
 
   return (
-    <div className={`project__item project__item__${props.slug}`} onMouseEnter={(event) => animate(event) }>
+    <div className={`project__item project__item__${props.slug}`} 
+      onMouseEnter = { (event) => slideLeft(event) }
+      onMouseLeave = { (event) => revert(event) }
+      >
       <div className={`project__item__image project__item__image__${props.slug}`}/> 
       <div className="project__item__title">
         <Link to={route}>
@@ -25,7 +28,7 @@ export function ProjectItem(props) {
   );
 }
 
-function animate(event){
+function slideLeft(event){
   event.preventDefault();
 
   const node = event.currentTarget;
@@ -35,6 +38,21 @@ function animate(event){
 
   timeline
     .to(title, .5, { x: 100, ease: Power1.easeOut } );
+
+  timeline.play();
+  
+}
+
+function revert(event){
+  event.preventDefault();
+
+  const node = event.currentTarget;
+  const title = node.querySelectorAll('.project__item__title');
+
+  const timeline = new Timeline({ paused: true});
+
+  timeline
+    .to(title, .5, { x: 0, ease: Power1.easeOut } );
 
   timeline.play();
   
