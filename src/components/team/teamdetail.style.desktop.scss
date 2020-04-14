@@ -101,6 +101,8 @@
     text-align: left;
     white-space: pre-line;
     font-weight: 400;
+    text-align:justify;  
+    text-justify:inter-character;
   }
 
   .team__detail__pictureURL {
@@ -182,11 +184,9 @@
 
   .cta {
     @extend .soft__white__title;
-    grid-row: 16/17;
+    grid-row: 15/16;
     grid-column: 15/17;
     font-size: 36px;
-    border-bottom: 10px #e03e52 solid;
-    margin-bottom: 5px;
     justify-self: end;
   }
 }

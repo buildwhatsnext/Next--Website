@@ -126,8 +126,9 @@ const getTeamDetailTimeline = (node, delay) => {
   const email = node.querySelector('.team__detail__email > p');
   const desc = node.querySelector('.team__detail__description > p');
   const line = node.querySelector('.borderbottom');
+  const profile = node.querySelector('.team__detail__pictureURL')
   const cta = node.querySelector('.cta');
-  const trapazoid =
+  const trapazoid = node.querySelector('.trapazoid');
 
 
 
@@ -141,6 +142,9 @@ const getTeamDetailTimeline = (node, delay) => {
     .from(desc, 1.1, { opacity: 0, ease: Power1.easeOut }, 1)
     .from(line, 1.1, { width: 0, ease: Power1.easeOut }, 1)
     .from(cta, 1.1, { opacity: 0, ease: Power1.easeOut }, 1)
+    .from(trapazoid, 1.1, { opacity: 0, x: -400, ease: Power1.easeOut }, 1)
+    .from(profile, 1.1, { delay: 0.15, opacity: 0, x: -400, ease: Power1.easeOut }, 1)
+
 
 
   return timeline;
