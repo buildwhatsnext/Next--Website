@@ -44,8 +44,6 @@ const getProjectTimeline = (node, delay) => {
 
   const projects = node.querySelectorAll('.project__item__title > a > div');
 
-  console.log(node);
-
   timeline
     .from(node, 0.3, { display: 'none', autoAlpha: 0, delay })
     .from(projects, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } );
