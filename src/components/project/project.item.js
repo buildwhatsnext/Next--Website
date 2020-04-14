@@ -32,12 +32,16 @@ function slideLeft(event){
   event.preventDefault();
 
   const node = event.currentTarget;
-  const title = node.querySelectorAll('.project__item__title');
+  const title = node.querySelector('.project__item__title');
+  // const titleAfter = node.querySelector()
 
   const timeline = new Timeline({ paused: true});
 
   timeline
-    .to(title, .5, { x: 100, ease: Power1.easeOut } );
+    .to(title, .5, { 
+      x: -100, 
+      ease: Power1.easeOut 
+    });
 
   timeline.play();
   
@@ -52,7 +56,7 @@ function revert(event){
   const timeline = new Timeline({ paused: true});
 
   timeline
-    .to(title, .5, { x: 0, ease: Power1.easeOut } );
+    .to(title, .5, { x: 0, ease: Power1.easeOut });
 
   timeline.play();
   
