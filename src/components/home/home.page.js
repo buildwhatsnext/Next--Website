@@ -38,7 +38,7 @@ export default class Home extends React.Component {
         </div>
         <div className="home__tagline">
           <div className="container">
-          <StatementMutable data={this.state.designTypes} statement={this.state.designStatement}/>
+            <StatementMutable data={this.state.designTypes} statement={this.state.designStatement}/>
           </div>
         </div>
         <div className="home__cta">

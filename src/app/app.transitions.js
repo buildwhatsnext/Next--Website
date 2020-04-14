@@ -24,11 +24,17 @@ export const play = (pathname, node, appears) => {
 
 const getHomeTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
-  const texts = node.querySelectorAll('h1 > div');
+  const headline = node.querySelector('.home__hlw > .container > p');
+  const hlw = node.querySelector('.home__hlw > .container > a');
+  const statement = node.querySelector('.statement__mutable');
+  const cta = node.querySelector('.home__cta');
 
   timeline
-    .from(node, 0, { display: 'none', autoAlpha: 0, delay })
-    .staggerFrom(texts, 0.375, { autoAlpha: 0, x: -25, ease: Power1.easeOut }, 0.125);
+    .from(node, 1, { display: 'none', autoAlpha: 0, delay }, 0)
+    .from(headline, 1, { autoAlpha: 0, y: 500, ease: Power1.easeOut }, 0)
+    .from(hlw, 0.9, { y: -500, ease: Power1.easeOut }, 0)
+    .from(statement, 1, { y: 300, ease: Power1.easeOut}, 0)
+    .from(cta, 1, { autoAlpha: 0, ease: Power1.easeInOut});
 
   return timeline
 }
