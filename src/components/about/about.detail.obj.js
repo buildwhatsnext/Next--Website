@@ -24,11 +24,11 @@ export default class AboutBranchPage extends React.Component {
   
     return (
       <div className="about">
-        <div className="about__icon"></div>
+        <div className={`about__icon about__icon__${data.shortName}`}/>
         <div className="about__title"><p>{data.name}</p></div>
-        <div className="about__description"></div>
-        <div className="about__seehow"></div>
-        <div className="about__back"></div>
+        <div className="about__description"><p>{data.description}</p></div>
+        <div className="about__seehow"><p>See How</p></div>
+        <div className="about__back"><p>Back</p></div>
       </div>
     )
   }

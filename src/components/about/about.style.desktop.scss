@@ -3,5 +3,69 @@
 
 
 @media(min-width: $sizeDesktop) {
-  
+  .app__content {
+    // border: 10px red solid;
+  }
+
+  .about {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-columns: auto 150px auto 1fr;
+
+    .about__icon {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      height: 800px;
+      width: 460px;
+      background-repeat: no-repeat;
+      justify-self: end;
+      margin-left: 156px;
+
+      &__elevate {
+        @extend .about__icon;
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/rocketicon_i9yyh0.svg');
+      }
+    }
+
+    .about__title {
+      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+      align-self: end;
+      padding-bottom: 235px;
+    }
+
+    .about__description {
+      @extend .soft__white__title;
+      font-size: 24px;
+      font-weight: 400;
+      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+      align-self: end;
+      padding-bottom: 183px;
+    }
+
+    .about__seehow {
+      @extend .soft__white__title;
+      font-size: 24px;
+      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+      align-self: end;
+      padding-bottom: 60px;
+      margin-left: 500px;
+      // border-bottom: 9px solid #F05168 ;
+    }
+
+    .about__back {
+      @extend .soft__white__title;
+      font-size: 24px;
+      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+      justify-self: end;
+      align-self: end;
+      padding-bottom: 60px;
+    }
+  }
+
 }
