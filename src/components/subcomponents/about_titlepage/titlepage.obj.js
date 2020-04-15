@@ -1,11 +1,13 @@
-import React from 'react';
-import { Fragment } from 'react';
+
+import React, { Fragment, useRef, useEffect } from 'react';
+import { TweenMax, Timeline, Power1 } from 'gsap';
 import { InternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
 
 
 export class AboutTitle extends React.Component {
   constructor(props) {
     super(props);
+
   }
 
 
@@ -27,7 +29,7 @@ We think of our clients as partners and encourage them to collaborate with us to
 
                 <div className="about__textbox"></div>
 
-                <div className="about__title">
+                <div className="about__title" >
                     <p> { title } </p>
                 </div>
 

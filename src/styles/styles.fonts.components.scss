@@ -117,6 +117,12 @@
   font-weight: 600;
 }
 
+%hard__white__subtitle {
+  @extend %hard__white;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 %soft__blue__subtitle {
   @extend %soft__blue;
   font-size: 36px;
