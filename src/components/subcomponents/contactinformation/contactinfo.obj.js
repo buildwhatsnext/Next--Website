@@ -8,10 +8,10 @@ import { Fragment } from 'react';
 export function ContactInfoList(props) {
   return (
     <div className="contact__info">
-      <Phone />
-      <Email />
-      <Insta />
-      <Location />
+      <div className="contact__info__phone"> <Phone /></div>
+      <div className="contact__info__email"> <Email /></div>
+      <div className="contact__info__insta"> <Insta /></div>
+      <div className="contact__info__location"> <Location /></div>
     </div>
   )
 }

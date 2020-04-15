@@ -40,16 +40,34 @@
     border-bottom: 3px white solid;
   }
 
-  .team__detail__name {
-    @extend .soft__white__title;
-    grid-column: 12/16;
-    grid-row: 2/6;
-    text-align: left;
-    font-size: 96px;
-    z-index: 5;
-    white-space: pre-wrap;
-    line-height: 90px;
-    // border: 10px red solid;
+  .team__detail__name__wrap {
+    grid-column: 12/18;
+    grid-row: 2/7;
+    overflow: hidden;
+
+    .team__detail__firstname {
+      @extend .soft__white__title;
+      grid-column: 12/18;
+      grid-row: 2/4;
+      text-align: left;
+      font-size: 96px;
+      z-index: 5;
+      white-space: pre-wrap;
+      line-height: 115px;
+      overflow: hidden;
+    }
+  
+    .team__detail__lastname {
+      @extend .soft__white__title;
+      grid-column: 12/18;
+      grid-row: 4/6;
+      text-align: left;
+      font-size: 96px;
+      z-index: 5;
+      white-space: pre-wrap;
+      line-height: 80px;
+      overflow: hidden;
+    }
   }
 
   .team__detail__position {
@@ -60,6 +78,7 @@
     text-align: left;
     font-weight: 400;
     align-self: end;
+    overflow: hidden;
   }
 
   .team__detail__email {
@@ -70,6 +89,7 @@
     text-align: left;
     font-weight: 400;
     align-self: start;
+    overflow: hidden;
   }
 
   .team__detail__description {
@@ -81,6 +101,8 @@
     text-align: left;
     white-space: pre-line;
     font-weight: 400;
+    text-align:justify;  
+    text-justify:inter-character;
   }
 
   .team__detail__pictureURL {
@@ -162,13 +184,9 @@
 
   .cta {
     @extend .soft__white__title;
-    grid-row: 16/17;
+    grid-row: 15/16;
     grid-column: 15/17;
     font-size: 36px;
-    // text-align: left;
-    border-bottom: 10px #e03e52 solid;
-    // margin-right: 12px;
-    margin-bottom: 5px;
     justify-self: end;
   }
 }
