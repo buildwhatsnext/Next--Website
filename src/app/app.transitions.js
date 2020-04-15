@@ -130,6 +130,7 @@ const getContactTimeline = (node, delay) => {
 }
 
 const getProjectDetailTimeline = (node, delay) => {
+  console.log(node);
   const timeline = new Timeline({ paused: true });
   const title = node.querySelector('.project__detail__name > p');
   const wrap = node.querySelector('.project__detail__pictureURL__wrap')

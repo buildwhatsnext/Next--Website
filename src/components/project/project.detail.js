@@ -10,7 +10,7 @@ export class ProjectDetailPage extends React.Component {
     const { projectId } = this.props.match.params;
     const info = data.projects[projectId];
     const errorQuote = "I'm afraid I can't do that Michael...";
-    console.log(info);
+    // console.log(info);
 
     return info === null || info === undefined
       ? <div className="error"><p>{errorQuote}</p></div>
@@ -84,7 +84,7 @@ function ProjectSummary(info) {
 function ProjectInfoTable(data) {
   const cleaned = cleanInfo(data);
   const info = convertObjectDataToArray(cleaned);
-  console.log(info);
+  // console.log(info);
   return (
     <InfoTable data={info} />
   )
