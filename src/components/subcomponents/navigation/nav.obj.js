@@ -6,7 +6,7 @@ import './nav.mobile.scss';
 const defaultState = {
   collapsed: true,
 }
-const logo = 'https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/logo_next_uxfhmb.svg';
+const logo = 'https://res.cloudinary.com/next-hlw/image/upload/c_scale,h_21/v1586981487/icon/next_logo_square_rlbbd4.svg';
 
 export default class NavbarPage extends React.Component {
   constructor(props) {
