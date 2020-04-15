@@ -50,14 +50,32 @@
     grid-row: 2 / 3;
     text-align: right;
     padding-bottom: 22px;
+    overflow: hidden;
   }
 
   .contact__quote {
     @extend .soft__white__title;
     grid-row: 2 / 4;
     grid-column: 5 / 9;
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+
+    .contact__quote__p01 {
+      overflow: hidden;
+    }
+
+    .contact__quote__p02 {
+      overflow: hidden;
+    }
+
+    .contact__quote__p03 {
+      overflow: hidden;
+    }
+
+    .contact__quote__p04 {
+      overflow: hidden;
+    }
   }
 
   .contact__form {
@@ -88,24 +106,37 @@
       display: none;
     }
 
+    .contact__nameform__wrap {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+
+    .contact__emailform__wrap {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
+    }
+
+    .contact__messageform__wrap {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;
+    }
+
+
     .contact__name {
       @extend .hard__white__subtitle;
       font-size: 24px;
       font-weight: 400;
-      grid-column: 1 / -1;
-      grid-row: 1 / 2;  
       text-align: left;
       align-self: center;
       padding-bottom: 16px;
       padding-top: 20px;
+      overflow: hidden;
     }
 
     .contact__email {
       @extend .hard__white__subtitle;
       font-size: 24px;
       font-weight: 400;
-      grid-column: 1 / -1;
-      grid-row: 3 / 4;  
       text-align: left;
       align-self: center;
       padding-bottom: 16px;
@@ -116,8 +147,6 @@
       @extend .hard__white__subtitle;
       font-size: 24px;
       font-weight: 400;
-      grid-column: 1 / -1;
-      grid-row: 5 / 6;  
       text-align: left;
       align-self: center;
       padding-bottom: 16px;
@@ -243,6 +272,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 30px);
     grid-row-gap: 40px;
+    margin-top: 25px;
 
     .contact__info__item {
       grid-row: 2 / 3;

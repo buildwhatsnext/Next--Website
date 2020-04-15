@@ -21,20 +21,48 @@
 
   .project__detail__name {
     @extend .soft__white__title;
-    // color: $next__white;
-    font-size: 144px;
+    font-size: 140px;
     font-weight: 600;
-    // border: 1px solid $next__white;
-    // line-height: 180px;
+    line-height: 180px;
     background-color: $next__blue;
     grid-column: 1 / 4;
-    grid-row: 6 / 8;
+    grid-row: 5 / 7;
     height: auto;
     margin-left: 40px;
-    // padding-bottom: 40px;
     padding-left: 20px;
-    // margin-right: 20px;
     z-index: 2;
+    overflow: hidden;
+
+    &__piper {
+      grid-row: 5/7;
+      grid-column: 1 / 4;
+    }
+
+    &__1950 {
+      grid-row: 5/8;
+      grid-column: 1 / 4;
+      line-height: 110%;
+    }
+
+    &__google {
+      grid-row: 5/9;
+      grid-column: 1 / 4;
+      line-height: 90%;
+      padding-top: 15px;
+    }
+
+    &__fordham {
+      grid-row: 5/8;
+      grid-column: 1 / 5;
+      line-height: 110%;
+    }
+
+    &__stamford {
+      grid-column: 1 / 5;
+      grid-row: 5/9;
+      line-height: 88%;
+      padding-top: 15px;
+    }
   }
 
   .project__detail__infotable {
@@ -146,58 +174,67 @@
     width: 50px;
   }
 
-  // .project__detail__pictureURL {
-  //   background-repeat: no-repeat;
-  //   display: grid;
-  //   z-index: 10;
-  //   // background-size: auto 101%;
-  //   grid-column: 1 / -1;
-  //   grid-row: 1 / 7;
-  // }
+  .project__detail__pictureURL__wrap {
 
-  .project__detail__pictureURL {
-    z-index: 3;
-    &__piper {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-    }
+    grid-column: 1 / -1;
+    grid-row: 1 / 7;
+    overflow: hidden;
 
-    &__1950 {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
 
-    &__stamford {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    &__fordham {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-
-    }
-
-    &__google {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.jpg');
-      grid-column: 1 / -1;
-      grid-row: 1 / 7;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    .project__detail__pictureURL {
+      z-index: 1;
+    
+      &__piper {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        height: 100%;
+        width: 100%;
+      }
+  
+      &__1950 {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+  
+      &__stamford {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
+  
+      &__fordham {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+  
+      }
+  
+      &__google {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.jpg');
+        grid-column: 1 / -1;
+        grid-row: 1 / 7;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }

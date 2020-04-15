@@ -27,7 +27,7 @@
   }
 
   .project__detail__name {
-    @extend .soft__white__title;
+    // @extend .soft__white__title;
     color: $next__white;
     font-size: 36px;
     background-color: $next__blue;
@@ -40,6 +40,43 @@
     padding: 10px;
     z-index: 9;
     line-height: 100%;
+
+    &__piper {
+
+      grid-column: 1 / 4;
+      grid-row: 5 / 6;
+      
+
+    }
+    
+    &__1950 {
+
+      grid-column: 1 / 4;
+      grid-row: 5 / 7;
+      
+    }
+
+    &__google {
+
+      grid-column: 1 / 4;
+      grid-row: 5 / 6;
+      
+    }
+
+    &__fordham {
+
+      grid-column: 1 / 4;
+      grid-row: 5 / 6;
+      
+    }
+
+    &__stamford {
+
+      grid-column: 1 / 4;
+      grid-row: 5 / 6;
+      
+    }
+
   }
 
   .project__detail__infotable {
@@ -83,56 +120,63 @@
     }
   }
 
-  .project__detail__pictureURL {
-    z-index: 1;
-    
-    &__piper {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 6;
-      background-size: cover;
-    }
+  .project__detail__pictureURL__wrap {
+    grid-column: 1 / -1;
+    grid-row: 1 / 6;
+    overflow: hidden;
 
-    &__turing {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.jpg');
-      grid-column: 1 / -1;
-      grid-row: 1 / 6;
-      background-size: auto 100%;
-      background-position: -98px;
-      background-repeat: no-repeat;
-    }
+    .project__detail__pictureURL {
+      z-index: 1;
+      
+      &__piper {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
+        grid-column: 1 / -1;
+        grid-row: 1 / 6;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
 
-    &__1950 {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
-      background-repeat: no-repeat;
-      grid-column: 1 / -1;
-      grid-row: 1 / 6;
-      background-size: cover;
-      background-position: center;
-    }
+      &__1950 {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
+        background-repeat: no-repeat;
+        grid-column: 1 / -1;
+        grid-row: 1 / 6;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
 
-    &__stamford {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
-      grid-column: 1 / -1;
-      grid-row: 1 / 6;
-      background-size: cover;
-      background-position: center;
-    }
+      &__stamford {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
+        grid-column: 1 / -1;
+        grid-row: 1 / 6;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
 
-    &__fordham {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
-      grid-column: 1 / -1;
-      grid-row: 1 / 6;
-      background-size: cover;
-      background-position: center;
-    }
+      &__fordham {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
+        grid-column: 1 / -1;
+        grid-row: 1 / 6;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
 
-    &__google {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.jpg');
-      grid-column: 1 / -1;
-      grid-row: 1 / 6;
-      background-size: cover;
-      background-position: center;
+      &__google {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.jpg');
+        grid-column: 1 / -1;
+        grid-row: 1 / 6;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
