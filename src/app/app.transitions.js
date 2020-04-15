@@ -17,11 +17,12 @@ export const play = (pathname, node, appears) => {
     case '/team/andrew' : case '/team/preston' : case '/team/ruyi' : case '/team/kp' : case '/team/bharti' : case '/team/chris' : case '/team/stephen' : case '/team/mina' : case '/team/jeff' : case '/team/adam' :
       timeline = getTeamDetailTimeline(node, delay);
       break;
-    case '/projects/1950': case '/projects/piper': case '/projects/stamford': case '/projects/google': case '/projects/fordham':
-      console.log("happened!");
-      timeline = getProjectDetailTimeline(node, delay);
     case '/projects':
       timeline = getProjectTimeline(node, delay);
+      break;
+    case '/projects/1950': case '/projects/piper': case '/projects/stamford': case '/projects/google': case '/projects/fordham':
+      console.log('Going into project detail')
+      timeline = getProjectDetailTimeline(node, delay);
       break;
     case '/services':
       timeline = getServicesTimeline(node, delay);
