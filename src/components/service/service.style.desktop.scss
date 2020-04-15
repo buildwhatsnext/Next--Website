@@ -9,8 +9,6 @@
     grid-column: 2 / 10;
     grid-row: 1 / -1;
     margin-top: 60px;
-    // border: 10px red solid;
-  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -21,12 +19,29 @@
     grid-column: 1 / 3;
     grid-row: 1 / 4;
     padding-left: 160px;
-    // border: 10px peachpuff solid;
+    
   }
 
   .page__services__items {
     grid-column: 1 / -1;
-    grid-row: 1 / 12;
-    // border: 10px green solid;
+    grid-row: 3 / 12;
+    
+  }
+
+  .service__item {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 20rem auto;
+
+    a {
+      grid-column-start: 2;
+    }
+  }
+
+  .service__item__title {
+    p { 
+      text-align: left;
+      white-space: pre;
+    }
   }
 }

@@ -56,7 +56,9 @@ export function TeamItem(props) {
         <div className="team__item__position"> <p> { props.position } </p></div>
         <div className="team__item__location"> <p> { props.location } </p></div>
         <div className={`team__item__image team__item__image__${props.shortName}`}/>
-        <div className="team__item__block"/>
+        <div className="team__item__block">
+          <div className="team__item__block__content"></div>
+        </div>
       </div>
     </Link>
   );
