@@ -173,8 +173,8 @@ const getTeamDetailTimeline = (node, delay) => {
     .from(desc, 1.1, { opacity: 0, ease: Power1.easeOut }, 1)
     .from(line, 1.1, { width: 0, ease: Power1.easeOut }, 1)
     .from(cta, 1.1, { opacity: 0, ease: Power1.easeOut }, 1)
-    .from(trapazoid, 1.1, { opacity: 0, x: -400, ease: Power1.easeOut }, 1)
-    .from(profile, 1.1, { delay: 0.15, opacity: 0, x: -400, ease: Power1.easeOut }, 1)
+    .from(trapazoid, 0.5, { x: -800, stagger: .1, ease: Power1.easeOut, }, 1)
+    .from(profile, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -70 , ease: Power1.easeInOut }, 1)
 
 
 
