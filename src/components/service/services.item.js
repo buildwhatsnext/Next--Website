@@ -33,10 +33,10 @@ export function ServiceItem(props) {
   const route = `${path}/${serviceName}`;
 
   return (
-    <Link to={route}>
-      <div className={`service__item service__item__${props.align}`}>
+    <div className={`service__item service__item__${props.align}`}>
+      <Link to={route}>
         <div className="service__item__title"> <p>{props.title}</p> </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }

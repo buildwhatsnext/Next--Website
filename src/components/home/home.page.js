@@ -30,14 +30,18 @@ export default class Home extends React.Component {
 
     return (
       <div className="home">
-        <div className="soft__blue__title includes__highlight home__hlw">
-          <p>{ tagCompany }</p>
-          <ExternalLinkHighlighted value={ company } destination={ hlwLink }/>
+        <div className="home__hlw">
+          <div className="container">
+            <p>{ tagCompany }</p>
+            <ExternalLinkHighlighted value={ company } destination={ hlwLink }/>
+          </div>
         </div>
-        <div className="soft__blue__title includes__highlight home__tagline">
-          <StatementMutable data={this.state.designTypes} statement={this.state.designStatement}/>
+        <div className="home__tagline">
+          <div className="container">
+            <StatementMutable data={this.state.designTypes} statement={this.state.designStatement}/>
+          </div>
         </div>
-        <div className="soft__blue__subtitle home__cta">
+        <div className="home__cta">
           <InternalLinkHighlighted value={cta} destination="/projects" />
         </div>
       </div>

@@ -3,10 +3,6 @@ import { TimelineMax as Timeline, Power1 } from 'gsap';
 export const play = (pathname, node, appears) => {
   const delay = appears ? 0 : 0.5
   let timeline;
-  // console.log(pathname);
-
-  // const path = (pathname)
-  // path = path.
 
   switch(pathname) {
     case '/':
@@ -24,50 +20,85 @@ export const play = (pathname, node, appears) => {
     case '/projects/1950': case '/projects/piper': case '/projects/stamford': case '/projects/google': case '/projects/fordham':
       console.log("happened!");
       timeline = getProjectDetailTimeline(node, delay);
+    case '/projects':
+      timeline = getProjectTimeline(node, delay);
+      break;
+    case '/services':
+      timeline = getServicesTimeline(node, delay);
       break;
     default:
       timeline = getDefaultTimeline(node, delay);
       break;
   }
 
-  timeline.play()
+  timeline.play();
 }
 
 const getHomeTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
-  const texts = node.querySelectorAll('h1 > div');
-  const line1 = node.querySelectorAll('.soft__blue__title')
+  const headline = node.querySelector('.home__hlw > .container > p');
+  const hlw = node.querySelector('.home__hlw > .container > a');
+  const statement = node.querySelector('.statement__mutable');
+  const cta = node.querySelector('.home__cta');
 
   timeline
-    .from(node, 0, { display: 'none', autoAlpha: 0, delay })
-    .from(line1, 0.5, {delay: 0.7}, 1)
-    .staggerFrom(texts, 0.375, { autoAlpha: 0, x: -25, ease: Power1.easeOut }, 0.125);
+    .from(node, 1, { display: 'none', autoAlpha: 0, delay }, 0)
+    .from(headline, 1, { autoAlpha: 0, y: 500, ease: Power1.easeOut }, 0)
+    .from(hlw, 0.9, { y: -500, ease: Power1.easeOut }, 0)
+    .from(statement, 1, { y: 500, ease: Power1.easeOut}, 0)
+    .from(cta, 1, { autoAlpha: 0, ease: Power1.easeInOut});
 
   return timeline
+}
+
+const getProjectTimeline = (node, delay) => {
+  const timeline = new Timeline({ paused: true });
+
+  const projects = node.querySelectorAll('.project__item__title > a > div');
+
+  timeline
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay })
+    .from(projects, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } );
+
+  return timeline;
+}
+
+const getServicesTimeline = (node, delay) => {
+  const timeline = new Timeline({ paused: true });
+
+  const services = node.querySelectorAll('.service__item__title');
+
+  timeline
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay })
+    .from(services, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } );
+
+  return timeline;
 }
 
 const getTeamTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
   const members = node.querySelectorAll('.team__item__image');
   const blocks = node.querySelectorAll('.team__item__block__content');
+  const name = node.querySelectorAll('.team__item__name');
+  const position = node.querySelectorAll('.team__item__position');
+  const location = node.querySelectorAll('.team__item__location');
 
   timeline
-    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-    .from(blocks, .5, { x: -500, ease: Power1.easeOut })
-    .from(members, 1.5, { autoAlpha: 0 , ease: Power1.easeInOut });
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn }, 0)
+    .from(blocks, 0.5, { x: -500, stagger: .1, ease: Power1.easeOut, }, 1)
+    .from(members, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 1)
+    .from(name, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
+    .from(position, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
+    .from(location, 0.5, { delay: 0.1, autoAlpha: 0, stagger: .1 , x: -10 , ease: Power1.easeInOut }, 2)
 
   return timeline;
 }
 
 const getDefaultTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
-  const members = node.querySelectorAll('.team__item__image');
-  const blocks = node.querySelectorAll('.team__item__block__content');
 
-  // timeline
-  //   .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-  //   .from(blocks, .5, { y: 500, ease: Power1.easeOut })
-  //   .from(members, 1.5, { autoAlpha: 0 , ease: Power1.easeInOut });
+  timeline
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
 
   return timeline;
 }

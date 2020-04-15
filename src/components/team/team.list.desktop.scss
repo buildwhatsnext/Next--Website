@@ -92,6 +92,7 @@
     }
 
     &__block {
+      overflow: hidden;
       grid-column: 1 / -1;
       grid-row: 2 / 6;
       z-index: 1;
