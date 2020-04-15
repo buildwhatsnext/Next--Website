@@ -1,39 +1,16 @@
-import React, { Fragment, useRef, useEffect } from 'react';
-import { TweenMax, Timeline, Power1 } from 'gsap';
-import './about.style.desktop.scss';
-import './about.style.mobile.scss';
-import { AboutTitle } from '../subcomponents/about_titlepage/titlepage.obj';
-import { AboutCategory } from '../subcomponents/about_category/category.obj';
+import React, { Fragment } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
+// import TeamOverviewPage from './team.overview';
+import AboutRoutePage from './about.detail.obj';
 
-export default class About extends React.Component {
-  constructor(props) {
-    super (props);
+export function AboutRouter(props) {
+  const { match } = props;
 
-  }
-
-
-  setName = (name) => {
-      this.setState({name});
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <div className="about">       
-          <div className="about__titlepage">  
-            <div className="about__coralcard">
-              <AboutTitle />
-            </div>
-            <div className="about__whitecard"></div>
-          </div>
-
-          <div className="about__category">
-            <AboutCategory />
-          </div>  
-        </div>
-        
-      </Fragment>
-    )
-  }
+  return (
+    <Switch>
+      <Route path={`${match.url}/:aboutBranch`} render={(props) => <AboutRoutePage {...props} />} />
+      {/* <Route exact path={match.url} render={(props) => (<TeamOverviewPage {...props} />)} /> */}
+    </Switch>
+  )
 }
