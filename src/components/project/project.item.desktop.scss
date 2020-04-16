@@ -32,9 +32,12 @@
       z-index: 2;
 
       a {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: left;
 
         .title__stroked {
-          // direction: rtl;
           overflow: hidden;
           grid-column: 2 / -1;
           grid-row: 1 / 2;
@@ -58,6 +61,7 @@
         
         .title__filled {
           direction: rtl;
+          display: none;
           overflow: hidden;
           grid-column: 2 / -1;
           grid-row: 1 / 2;
