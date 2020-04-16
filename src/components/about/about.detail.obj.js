@@ -3,6 +3,7 @@ import './about.style.desktop.scss';
 import './about.style.mobile.scss';
 import { AboutTitle } from '../subcomponents/about_titlepage/titlepage.obj';
 import { AboutCategory } from '../subcomponents/about_category/category.obj';
+import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 import data from '../../data/data.about.json';
 
 
@@ -20,7 +21,8 @@ export default class AboutBranchPage extends React.Component {
 
   export function AboutPage(data) {
   
-    const contactus = "Contact Us";
+    const next = "Next";
+    const seehow = "See How";
   
     return (
       <div className="about">
@@ -31,8 +33,12 @@ export default class AboutBranchPage extends React.Component {
         <div className="about__textgrid">
           <div className="about__title"><p>{data.name}</p></div>
           <div className="about__description"><p>{data.description}</p></div>
-          <div className="about__seehow"><p>See How</p></div>
-          <div className="about__back"><p>Back</p></div>
+          <div className="about__seehow">
+            <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
+          </div>
+          <div className="about__back">
+            <InternalLinkHighlighted value={next} destination="/about/second" />
+          </div>
         </div>
       </div>
     )
