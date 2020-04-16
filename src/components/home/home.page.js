@@ -10,7 +10,8 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      designStatement: `We're advancing the way technology is used in `,
+      designStatement: `We're advancing the way 
+                        technology is used in `,
       typeIndex: 0,
       designTypes: [
         "design",
@@ -24,7 +25,8 @@ export default class Home extends React.Component {
 
   render() {
     const company = "hlw";
-    const tagCompany = `Next is a design startup within `;
+    const tagCompany = `Next is a tech-focused 
+design startup within`;
     const cta = 'See What We Do';
     const hlwLink = "https://www.hlw.design/";
 
