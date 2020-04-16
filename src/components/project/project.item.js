@@ -23,7 +23,29 @@ export function ProjectItem(props) {
       >
       <div className={`project__item__image project__item__image__${props.slug}`}/>
 
-      <div className="project__item__mask">
+      {/* <div className="project__item">
+        <div className="project__item__whitefill">
+          <Link to={route}>
+            <div> { props.shortName } </div>
+          </Link>
+        </div>
+        <div className="project__item__coralstroke">
+            <p> { props.shortName } </p>
+        </div>
+      </div> */}
+
+      <div className="project__item__list">
+        <Link to={route}>
+          <div className="coral">
+            <div> { props.shortName } </div>
+          </div>
+          <div className="white">
+            <div> { props.shortName } </div>
+          </div>
+        </Link>
+      </div>
+
+      {/* <div className="project__item__mask">
         <div className="project__item__mask__wrap">
           <Link to={route}>
             <div> { props.shortName } </div>
@@ -35,7 +57,7 @@ export function ProjectItem(props) {
         <Link to={route}>
           <div> { props.shortName } </div>
         </Link>
-      </div>
+      </div> */}
 
       <div className="project__item__type"> { props.type } </div>
     </div>

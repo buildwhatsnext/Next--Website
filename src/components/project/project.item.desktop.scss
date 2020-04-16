@@ -34,176 +34,66 @@
       // transition: all .75s ease-in-out 1s;
     }
 
-    .project__item__mask {
+    .project__item__list {
       overflow: hidden;
       grid-column: 2 / -1;
       grid-row: 1 / 2;
       z-index: 2;
 
-      .project__item__mask__wrap {
-        // direction: rtl;
-        overflow: hidden;
-        grid-column: 2 / -1;
-        grid-row: 1 / 2;
-        z-index: 2;
-    
-        div {
-          @extend .soft__coral__title;
-          text-align: left;
-          white-space: nowrap;
-          font-size: 200px;
-          // margin-left: 200px;
-          width: auto;
-          direction: ltr;
-          display: hidden;
-    
-          @supports (-webkit-text-stroke: 3px black) {
-            -webkit-text-stroke: 3px $next__white;
-            -webkit-text-fill-color: $next__white;
-            -webkit-background-clip: text;
-            // transition: all .5s ease-in-out ;
+      a {
+
+        .white {
+          // direction: rtl;
+          overflow: hidden;
+          grid-column: 2 / -1;
+          grid-row: 1 / 2;
+          z-index: 2;
+      
+          div {
+            @extend .soft__coral__title;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 200px;
+            // margin-left: 200px;
+            width: auto;
+            direction: ltr;
+            opacity: 100;
+      
+            @supports (-webkit-text-stroke: 3px black) {
+              -webkit-text-stroke: 3px $next__coral;
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;
+              // transition: all .5s ease-in-out ;
+            }
+          }
+
+          .coral {
+            direction: rtl;
+            overflow: hidden;
+            grid-column: 2 / -1;
+            grid-row: 1 / 2;
+            z-index: 3;
+        
+            div {
+              @extend .soft__coral__title;
+              // border: 1px solid white;
+              text-align: left;
+              white-space: nowrap;
+              font-size: 200px;
+              // margin-left: 200px;
+              width: auto;
+              direction: ltr;
+        
+              @supports (-webkit-text-stroke: 3px black) {
+                -webkit-text-stroke: 3px $next__coral;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                // transition: all .5s ease-in-out ;
+              }
+            }
           }
         }
       }
     }
-    
-    .project__item__title {
-      direction: rtl;
-      overflow: hidden;
-      grid-column: 2 / -1;
-      grid-row: 1 / 2;
-      z-index: 3;
-  
-      div {
-        @extend .soft__coral__title;
-        // border: 1px solid white;
-        text-align: left;
-        white-space: nowrap;
-        font-size: 200px;
-        // margin-left: 200px;
-        width: auto;
-        direction: ltr;
-  
-        @supports (-webkit-text-stroke: 3px black) {
-          -webkit-text-stroke: 3px $next__coral;
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          // transition: all .5s ease-in-out ;
-        }
-      }
-
-      // div:hover {
-      //   -webkit-text-fill-color: $next__white;
-      //   -webkit-text-stroke: 3px $next__white;
-      // }
-    }
-
-    // .project__item__wrap {
-    //   direction: rtl;
-    //   grid-row: 1 / 2;
-    //   grid-column: 1 / -1;
-
-    //   div {
-    //     @extend .soft__coral__title;
-    //     // border: 1px solid white;
-    //     text-align: left;
-    //     white-space: nowrap;
-    //     font-size: 200px;
-    //     // margin-left: 200px;
-    //     width: auto;
-    //     direction: ltr;
-  
-    //     @supports (-webkit-text-stroke: 3px black) {
-    //       -webkit-text-stroke: 3px $next__coral;
-    //       -webkit-text-fill-color: transparent;
-    //       -webkit-background-clip: text;
-    //       // transition: all .5s ease-in-out ;
-    //     }
-    //   }
-    // }
-    
   }
-  
-  // .project__item__title {
-  //   overflow: hidden;
-  //   width: 100%;
-
-  //   p {
-  //     @extend .soft__coral__title;
-  //     font-size: 200px;
-  //     @supports (-webkit-text-stroke: 3px black) {
-  //       -webkit-text-stroke: 3px $next__coral;
-  //       -webkit-text-fill-color: transparent;
-  //       -webkit-background-clip: text;
-  //       // transition: all 2s ease-in-out;
-
-  //       // test
-  //       background-color: #06038D;
-  //       background-repeat: no-repeat;
-  //       height: -100px;
-  //       background-position: 25% 75%;
-        
-        // &:hover {
-        //   -webkit-text-fill-color: $next__coral;
-        //   animation: slideLeft .75s ease-out .5s;
-        //   animation-fill-mode: forwards;
-        // }
-      // }
-  
-      // &:hover {
-      //   &:after {
-      //     @extend %project__underline__filled;
-      //   }
-      // }  
-      
-      // &::after {
-      //   @extend %project__underline__none;
-      // }
-  //   }
-  // }
-
-  // @keyframes slideLeft {
-  //   0% { margin-left: 200px; }
-  //   100% { margin-left: 0px; }
-  // }
-
-  // @keyframes expandWidth {
-  //   0% { width: 0%; }
-  //   100% { width: 100%; }
-  // }
-
-  // @keyframes fadeInAndSlideIn {
-  //   0% {
-  //     width: 150%;
-  //     height: 150%;
-  //     opacity: 0;
-  //   }
-  //   100% {
-  //     width: 100%;
-  //     height: 100%;
-  //     transform: translateY(50px);
-  //     opacity: 100;
-  //   }
-  // }  
-  
-  // %project__underline__none {
-  //   content: ""; /* This is necessary for the pseudo element to work. */ 
-  //   direction: rtl;
-  //   display: block; /* This will put the pseudo element on its own line. */
-  //   // margin: 0 auto; /* This will center the border. */
-  //   width: 0%; /* Change this to whatever width you want. */
-  //   padding-top: 20px; /* This creates some space between the element and the border. */
-  //   border-bottom: 1px solid $next__white; /* This creates the border. Replace black with whatever color you want. */
-  //   transition: .5s;
-  // }
-
-  // %project__underline__filled {
-  //   content: ""; /* This is necessary for the pseudo element to work. */ 
-  //   display: block; /* This will put the pseudo element on its own line. */
-  //   // margin: 0 auto; /* This will center the border. */
-  //   // margin-left: -200px;
-  //   width: 100%; /* Change this to whatever width you want. */
-  //   padding-top: 20px; /* This creates some space between the element and the border. */
-  //   border-bottom: 1px solid $next__white; /* This creates the border. Replace black with whatever color you want. */
-  // }
 }
