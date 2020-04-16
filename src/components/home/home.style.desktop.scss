@@ -20,9 +20,9 @@
       @extend .soft__coral__title;
 
       .container {
-        display: grid;
-        grid-template-columns: auto auto 1fr;
-        grid-template-rows: auto 1fr;
+        display: block;
+        // grid-template-columns: auto auto 1fr;
+        // grid-template-rows: auto 1fr;
         white-space: pre-wrap;
         padding: 0;
       }

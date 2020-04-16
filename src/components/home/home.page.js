@@ -34,8 +34,7 @@ design startup within`;
       <div className="home">
         <div className="home__hlw">
           <div className="container">
-            <p>{ tagCompany }</p>
-            <ExternalLinkHighlighted value={ company } destination={ hlwLink }/>
+            <p>{ tagCompany }<span><ExternalLinkHighlighted value={ company } destination={ hlwLink }/></span></p>
           </div>
         </div>
         <div className="home__tagline">
