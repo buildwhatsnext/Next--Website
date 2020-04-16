@@ -17,15 +17,26 @@ export function ProjectItem(props) {
 
   return (
     <div className={`project__item project__item__${props.slug}`} 
+      // onMouseEnter = { (event) => slideLeft(event) }
       onMouseEnter = { (event) => slideLeft(event) }
       onMouseLeave = { (event) => revert(event) }
       >
-      <div className={`project__item__image project__item__image__${props.slug}`}/> 
+      <div className={`project__item__image project__item__image__${props.slug}`}/>
+
+      <div className="project__item__mask">
+        <div className="project__item__mask__wrap">
+          <Link to={route}>
+            <div> { props.shortName } </div>
+          </Link>
+        </div>
+      </div>
+
       <div className="project__item__title">
         <Link to={route}>
           <div> { props.shortName } </div>
         </Link>
       </div>
+
       <div className="project__item__type"> { props.type } </div>
     </div>
   );
@@ -36,23 +47,16 @@ function slideLeft(event){
 
   const node = event.currentTarget;
   const title = node.querySelector('.project__item__title');
-  // const titleAfter = CSSRulePlugin.getRule('.project__item__title:after');
-
-  // console.log(titleAfter);
-
+  const wrap = node.querySelector('.project__item__mask__wrap');
+  const line = node.querySelector('.project__item__borderbottom');
   const timeline = new Timeline({ paused: true});
 
-  // timeline
-  //   .to(title, .5, { borderBottom: '1px solid white', direction: 'rtl' }  )
-
   timeline
-    .to(title, .5, { 
-      x: -100, 
-      ease: Power1.easeOut 
-    });
+    .to(title, .2, { delay: 0.2, y: -4, x: -4, ease: Power1.easeOut }, 1)
+    .from(wrap, 0.2, { y: -250, ease: Power1.easeOut }, 1)
+    .to(line, 0.2, { width: 400, ease: Power1.easeOut }, 1);
 
   timeline.play();
-  
 }
 
 function revert(event){
@@ -60,11 +64,13 @@ function revert(event){
 
   const node = event.currentTarget;
   const title = node.querySelectorAll('.project__item__title');
+  const wrap = node.querySelector('.project__item__mask__wrap');
 
   const timeline = new Timeline({ paused: true});
 
   timeline
-    .to(title, .5, { x: 0, borderBottom: 'none', ease: Power1.easeOut });
+    .to(title, .2, { x: 0, y :0, borderBottom: 'none', ease: Power1.easeOut })
+    .from(wrap, 0.2, { y: 0, ease: Power1.easeOut }, 1);
 
   timeline.play();
   

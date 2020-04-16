@@ -52,14 +52,15 @@ const getHomeTimeline = (node, delay) => {
   return timeline
 }
 
+
 const getProjectTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
-
+  const wrap = node.querySelector('.project__item__wrap > p');
   const projects = node.querySelectorAll('.project__item__title > a > div');
 
   timeline
     .from(node, 0.3, { display: 'none', autoAlpha: 0, delay })
-    .from(projects, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } );
+    .from(projects, 0.5, { y: 500 , stagger: 0.25, ease: Power1.easeOut } )
 
   return timeline;
 }
@@ -129,6 +130,7 @@ const getContactTimeline = (node, delay) => {
 
   return timeline;
 }
+
 
 const getProjectDetailTimeline = (node, delay) => {
   console.log(node);
