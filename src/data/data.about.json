@@ -1,20 +1,21 @@
 {
   "type" : "about information",
-  "chapter" : {    
+  "chapter" : {
+
     "first" : {
+      "name": "Craft Inclusive Experiences",
+      "shortName": "experiences",
+      "description": "We craft immersive, narrative-driven, and collaborative experiences for project stakeholders."
+    },
+    "second" : {
       "name": "Elevate Capabilities",
       "shortName": "elevate",
       "description": "We help build structure, resources, knowledge to help project teams run smarter."
     },
-    "second" : {
+    "third" : {
       "name": "Create Insight",
       "shortName": "insight",
       "description": "We create a platform for intelligent decision-making in the design process."
-    },
-    "third" : {
-      "name": "Craft Inclusive Experiences",
-      "shortName": "experiences",
-      "description": "We craft immersive, narrative-driven, and collaborative experiences for project stakeholders."
     },
     "fourth" : {
       "name": "Invent",
@@ -24,7 +25,7 @@
     "fifth" : {
       "name": "Engage",
       "shortName": "engage",
-      "description": "Innovation often begins with two people having a conversation. We are always open to talk. Come chat with us."
+      "description": "Innovation often begins with two people having a conversation. We are always open to talk."
     }
   }
 }
