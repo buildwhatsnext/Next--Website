@@ -49,11 +49,13 @@ function animateTitle(event){
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
   const image = node.querySelector('.image');
+  const type = node.querySelector('.project__item__type');
 
   timeline
     .to(filled, .25, { display: 'inline', ease: Power1.easeOut}, 1)
-    .to(image, .25, { scale: 1.2, display: 'inline', ease: Power1.easeOut}, 1)
-    .to(line, .25, { display: 'inline', width:1200 , ease: Power1.easeOut}, 1);
+    .to(image, .25, { delay: 0.2, scale: 1.2, display: 'inline', ease: Power1.easeOut}, 1)
+    .to(line, .25, { display: 'inline', width:1200 , ease: Power1.easeOut}, 1)
+    .to(type, .25, { delay:0.25, display: 'inline', ease: Power1.easeOut}, 1);
 
     
 
@@ -68,13 +70,15 @@ function revert(event){
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
   const image = node.querySelector('.image');
+  const type = node.querySelector('.project__item__type');
 
   const timeline = new Timeline({ paused: true});
 
   timeline
     .to(filled, .25, { display:  'none', ease: Power1.easeOut}, 1)
     .to(line, .25, { display: 'none', width: 0, ease: Power1.easeOut}, 1)
-    .to(image, .25, { display: 'none', ease: Power1.easeOut}, 1);
+    .to(image, .25, { display: 'none', scale: 1, ease: Power1.easeOut}, 1)
+    .to(type, .25, { display: 'none', ease: Power1.easeOut}, 1);
 
   timeline.play();
   

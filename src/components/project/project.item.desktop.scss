@@ -17,6 +17,11 @@
     .project__item__type {
       @extend %hard__subinfo;
       color: $next__grey;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: end;
+      align-self: end;
+      margin-bottom: 10px;
       display: none;
     }
 
