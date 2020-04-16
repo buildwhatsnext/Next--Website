@@ -17,7 +17,7 @@ export function ProjectItem(props) {
 
   return (
     <div className={`project__item project__item__${props.slug}`} 
-      // onMouseEnter = { (event) => slideLeft(event) }
+      onMouseEnter = { (event) => animateTitle(event) }
       // onMouseLeave = { (event) => revert(event) }
       >
       <div className={`project__item__image project__item__image__${props.slug}`}/>
@@ -37,19 +37,19 @@ export function ProjectItem(props) {
   );
 }
 
-function slideLeft(event){
+function animateTitle(event){
   event.preventDefault();
 
   const node = event.currentTarget;
-  const title = node.querySelector('.project__item__title');
-  const wrap = node.querySelector('.project__item__mask__wrap');
-  const line = node.querySelector('.project__item__borderbottom');
   const timeline = new Timeline({ paused: true});
+  const stroke = node.querySelector('.title__stroked');
+  const filled = node.querySelector('.title__filled');
+  
 
   timeline
-    .to(title, .2, { delay: 0.2, y: -4, x: -4, ease: Power1.easeOut }, 1)
-    .from(wrap, 0.2, { y: -250, ease: Power1.easeOut }, 1)
-    .to(line, 0.2, { width: 400, ease: Power1.easeOut }, 1);
+    .to(filled, .5, { display: 'block' })
+
+    
 
   timeline.play();
 }
