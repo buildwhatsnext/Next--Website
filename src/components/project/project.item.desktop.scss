@@ -10,15 +10,6 @@
       display: grid;
       grid-template-columns: 20rem 1fr;
       grid-row: 1fr;
-  
-      // &:hover {
-      //   cursor: pointer;
-
-      //   .project__item__image {
-      //     animation: fadeInAndSlideIn 1s ease-out 1s;
-      //     animation-fill-mode: forwards;
-      //   }
-      // }
     }
   
     .project__item__type {
@@ -34,7 +25,7 @@
       // transition: all .75s ease-in-out 1s;
     }
 
-    .project__item__list {
+    .project__item__title {
       overflow: hidden;
       grid-column: 2 / -1;
       grid-row: 1 / 2;
@@ -42,7 +33,7 @@
 
       a {
 
-        .white {
+        .title__stroked {
           // direction: rtl;
           overflow: hidden;
           grid-column: 2 / -1;
@@ -54,43 +45,32 @@
             text-align: left;
             white-space: nowrap;
             font-size: 200px;
-            // margin-left: 200px;
             width: auto;
             direction: ltr;
-            opacity: 100;
       
             @supports (-webkit-text-stroke: 3px black) {
               -webkit-text-stroke: 3px $next__coral;
               -webkit-text-fill-color: transparent;
               -webkit-background-clip: text;
-              // transition: all .5s ease-in-out ;
             }
           }
-
-          .coral {
-            direction: rtl;
-            overflow: hidden;
-            grid-column: 2 / -1;
-            grid-row: 1 / 2;
-            z-index: 3;
+        }
         
-            div {
-              @extend .soft__coral__title;
-              // border: 1px solid white;
-              text-align: left;
-              white-space: nowrap;
-              font-size: 200px;
-              // margin-left: 200px;
-              width: auto;
-              direction: ltr;
-        
-              @supports (-webkit-text-stroke: 3px black) {
-                -webkit-text-stroke: 3px $next__coral;
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                // transition: all .5s ease-in-out ;
-              }
-            }
+        .title__filled {
+          direction: rtl;
+          overflow: hidden;
+          grid-column: 2 / -1;
+          grid-row: 1 / 2;
+          z-index: 3;
+      
+          div {
+            @extend .soft__coral__title;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 200px;
+            color: $next__white;
+            width: auto;
+            direction: ltr;
           }
         }
       }
