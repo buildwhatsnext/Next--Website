@@ -21,7 +21,8 @@ export function ProjectItem(props) {
       onMouseEnter = { (event) => animateTitle(event) }
       onMouseLeave = { (event) => revert(event) }
       >
-      <div className={`project__item__image project__item__image__${props.slug}`}/>
+
+      <div className={`image image__${props.slug}`}/>
 
       <div className="project__item__title">
         <Link to={route}>
@@ -47,10 +48,12 @@ function animateTitle(event){
   const stroke = node.querySelector('.title__stroked');
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
+  const image = node.querySelector('.image');
 
   timeline
-    .to(filled, 0.25, { display: 'inline', y: 0}, 1)
-    .to(line, 0.25, { display: 'inline', width:1200 , y: 0}, 1)
+    .to(filled, .25, { display: 'inline', ease: Power1.easeOut}, 1)
+    .to(image, .25, { scale: 1.2, display: 'inline', ease: Power1.easeOut}, 1)
+    .to(line, .25, { display: 'inline', width:1200 , ease: Power1.easeOut}, 1);
 
     
 
@@ -64,12 +67,14 @@ function revert(event){
   const stroke = node.querySelector('.title__stroked');
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
+  const image = node.querySelector('.image');
 
   const timeline = new Timeline({ paused: true});
 
   timeline
-    .to(filled, .25, { display:  'none'}, 1)
-    .to(line, .25, { display: 'none', width: 0, y: 0}, 1);
+    .to(filled, .25, { display:  'none', ease: Power1.easeOut}, 1)
+    .to(line, .25, { display: 'none', width: 0, ease: Power1.easeOut}, 1)
+    .to(image, .25, { display: 'none', ease: Power1.easeOut}, 1);
 
   timeline.play();
   

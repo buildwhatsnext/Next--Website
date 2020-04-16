@@ -4,12 +4,14 @@
 @media(min-width: $sizeDesktop) {
   
   .project__data__list {
+    overflow: hidden;
     margin-bottom: 200px;
 
     .project__item {
       display: grid;
       grid-template-columns: 20rem 1fr;
       grid-row: 1fr;
+      overflow: hidden;
     }
   
     .project__item__type {
@@ -17,15 +19,44 @@
       color: $next__grey;
       display: none;
     }
-  
-    .project__item__image {
 
-      &__
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.jpg');
+    .image {
+
+      grid-column: 2/3;
+      grid-row: 1/2;
       background-repeat: no-repeat;
-      background-size: auto 100%;
-      width: 100%;
-      height: 100%;
+      background-size: 100% auto;
+      display: none;
+      width: 600px;
+      height: 300px;
+      align-self: end;
+      justify-self: start;
+      
+
+      &__piper {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.webp');
+        background-size: 100% auto;
+      }
+
+      &__1950 {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.webp');
+        background-size: 100% auto;
+      }
+
+      &__stamford {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.webp');
+        background-size: 100% auto;
+      }
+
+      &__fordham {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.webp');
+        background-size: 100% auto;
+      }
+
+      &__google {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.webp');
+        background-size: 100% auto;
+      }
     }
 
     .project__item__title {
