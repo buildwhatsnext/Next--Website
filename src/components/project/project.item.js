@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { TimelineMax as Timeline, Power1, gsap } from 'gsap';
-import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
+import { TimelineMax as Timeline, Power1, CSS, gsap } from 'gsap';
+import { CSSRulePlugin } from 'gsap/src/CSSRulePlugin';
 
 import './project.item.desktop.scss';
 import './project.item.mobile.scss';
@@ -56,7 +56,7 @@ function animateTitle(event){
   timeline
     .from(filled, .25, { y:20, opacity: 0, ease: Power1.easeOut}, 1)
     .to(filled, .25, { opacity: 1, ease: Power1.easeOut}, 1)
-    .to(stroke, .25, { delay: 0.3, x:-3, y:-3, ease: Power1.easeOut}, 1)
+    .to(stroke, .25, { delay: 0.2, x:-3, y:-3, ease: Power1.easeOut}, 1)
     .to(line, .25, { display: 'inline', width: 1200, ease: Power1.easeOut}, 1)
     .to(image, 1, { delay: 0.15, opacity: 1, scale: 1.05, ease: Power1.easeOut}, 1)
     .to(type, .25, { delay:0.15, display: 'inline', ease: Power1.easeOut}, 1);
