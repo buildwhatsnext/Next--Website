@@ -2,47 +2,84 @@
 @import '../../styles/styles.general.scss';
 
 @media(max-width: $sizeMobile) {
-  
-  .project__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  .project__data__list {
+    overflow: hidden;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    // border: 10px red solid;
 
-  .project__item__line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2 / 3;
-  }
+    .project__item {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+    }
 
-  .project__item__type {
-    @extend %hard__subinfo;
-    color: $next__grey;
-    display: none;
-    text-align: left; 
-  }
-  
-  .project__item__title {
-    text-align: left;
+    .project__item__type {
+      display: none;
+    }
 
-    .title__stroked {
-      text-align: left;
-  
-      p {
-        // @extend .soft__coral__title;
-        font-size: 72px;
-        text-align: left;
-        @supports (-webkit-text-stroke: 3px black) {
-          -webkit-text-stroke: 2px $next__coral;
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          transition: all 2s ease-in-out;
+    .project__item__title {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+
+      .title__stroked {
+        // border: 10px red solid;
+        p {
+          // @extend .soft__coral__title;
+          font-size: 72px;
+          text-align: left;
+          @supports (-webkit-text-stroke: 3px black) {
+            -webkit-text-stroke: 2px $next__coral;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            transition: all 2s ease-in-out;
+          }
         }
+      }
+
+      .title__filled {
+        display: none;
       }
     }
 
-    .title__filled {
-      // border: 10px red solid;
-      display: none;
-    }
   }
 }
+  
+//   .project__list {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+
+//   .project__item__line {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-column: 2 / 3;
+//   }
+
+//   .project__item__type {
+//     @extend %hard__subinfo;
+//     color: $next__grey;
+//     display: none;
+//     text-align: left; 
+//   }
+  
+//   .project__item__title {
+//     text-align: left;
+
+//     .title__stroked {
+//       text-align: left;
+  
+//       }
+//     }
+
+//     .title__filled {
+//       // border: 10px red solid;
+//       display: none;
+//     }
+//   }
+// }
