@@ -26,14 +26,12 @@
         white-space: pre-wrap;
         grid-row: 1/2;
         grid-column: 1/2;
-
         
       }
 
 
       p {
-        margin-right: 1rem;
-        margin-left: 15px;
+        margin-right: -2rem;
         text-align:justify;  
         text-justify:inter-word;
         white-space: pre-wrap;
@@ -80,7 +78,7 @@
       text-align: left;
       margin-top: 5rem;
       white-space: pre-wrap;
-      margin-right: 50px;
+      // margin-right: 50px;
     }
 
     .home__cta {

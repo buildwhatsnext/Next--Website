@@ -10,8 +10,6 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      designStatement:`We're advancing the way 
-                        technology is used in `,
       typeIndex: 0,
       designTypes: [
         "design",
@@ -27,6 +25,7 @@ export default class Home extends React.Component {
     const company = "hlw";
     const tagCompany = `Next is a tech-focused 
 design startup within`;
+    const statement = `We're advancing the way technology is used in `;
     const cta = 'See What We Do';
     const hlwLink = "https://www.hlw.design/";
 
@@ -40,7 +39,7 @@ design startup within`;
         </div>
         <div className="home__tagline">
           <div className="container">
-            <StatementMutable data={this.state.designTypes} statement={this.state.designStatement}/>
+            <StatementMutable data={this.state.designTypes} statement={statement}/>
           </div>
         </div>
         <div className="home__cta">
