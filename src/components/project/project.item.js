@@ -54,11 +54,11 @@ function animateTitle(event){
   const type = node.querySelector('.project__item__type');
 
   timeline
-    .from(filled, .25, { y:250, ease: Power1.easeOut}, 1)
+    .from(filled, .25, { y:250, display: 'block', ease: Power1.easeOut}, 1)
     .to(filled, .25, { display: 'inline', ease: Power1.easeOut}, 1)
     .to(stroke, .25, { delay: 0.25, x:-3, y:-3, ease: Power1.easeOut}, 1)
     .to(line, .25, { display: 'inline', width: 1200, ease: Power1.easeOut}, 1)
-    .to(image, 1, { delay: 0.15,  scale: 1.1, display: 'inline', ease: Power1.easeOut}, 1)
+    .to(image, 1, { delay: 0.15,  scale: 1.05, display: 'inline', ease: Power1.easeOut}, 1)
     .to(type, .25, { delay:0.15, display: 'inline', ease: Power1.easeOut}, 1);
 
     
