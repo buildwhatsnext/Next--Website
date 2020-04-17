@@ -10,7 +10,7 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      designStatement: `We're advancing the way 
+      designStatement:`We're advancing the way 
                         technology is used in `,
       typeIndex: 0,
       designTypes: [
@@ -34,8 +34,9 @@ design startup within`;
       <div className="home">
         <div className="home__hlw">
           <div className="container">
-            <p>{ tagCompany }<span><ExternalLinkHighlighted value={ company } destination={ hlwLink }/></span></p>
+            <p>{ tagCompany }</p><span><ExternalLinkHighlighted value={ company } destination={ hlwLink }/></span>
           </div>
+
         </div>
         <div className="home__tagline">
           <div className="container">
