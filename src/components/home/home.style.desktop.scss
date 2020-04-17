@@ -86,35 +86,8 @@
       justify-self: right;
       font-size: 18px;
       grid-row: 3 / 4;
-      margin-top: 5rem;
-
-      &:hover {
-        .link__highlighted {
-          .link__highlighted__background {
-            // padding: 25px;
-            // height: 100%
-            background-color: $next__white;
-          }
-
-          .link__highlighted__text{
-            @extend .soft__coral__title;
-            font-size: 36px;
-            margin-bottom: 20px;
-          }
-        }
-      }
-
-      .link__highlighted {
-        .link__highlighted__background {
-          // margin-left: -10px;
-          margin-right: -10px;
-          margin-bottom: 10px;
-          
-        }
-        .link__highlighted__text { 
-          font-size: 36px;
-        }
-      }
+      margin-top: 6rem;
+    
     }
   }
 }
