@@ -21,17 +21,18 @@ export function ProjectItem(props) {
       onMouseEnter = { (event) => animateTitle(event) }
       onMouseLeave = { (event) => revert(event) }
       >
-
-      <div className={`image image__${props.slug}`}/>
+      <div className="image__wrap">  
+        <div className={`image image__${props.slug}`}/>
+      </div>
 
       <div className="project__item__title">
         <Link to={route}>
           <div className="title__underline"></div>
           <div className="title__stroked">
-            <div> { props.shortName } </div>
+            <p> { props.shortName } </p>
           </div>
           <div className="title__filled">
-            <div> { props.shortName } </div>
+            <p> { props.shortName } </p>
           </div>
         </Link>
       </div>
@@ -42,21 +43,23 @@ export function ProjectItem(props) {
 
 function animateTitle(event){
   event.preventDefault();
+  
 
   const node = event.currentTarget;
   const timeline = new Timeline({ paused: true});
   const stroke = node.querySelector('.title__stroked');
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
-  const image = node.querySelector('.image');
+  const image = node.querySelector('.image__wrap');
   const type = node.querySelector('.project__item__type');
 
   timeline
+    .from(filled, .25, { y:250, ease: Power1.easeOut}, 1)
     .to(filled, .25, { display: 'inline', ease: Power1.easeOut}, 1)
-    .to(stroke, .25, { css:{color:"#ffffff"}, ease: Power1.easeOut}, 1)
-    .to(image, 3, { delay: 0.2, scale: 1.2, display: 'inline', ease: Power1.easeOut}, 2)
-    .to(line, .25, { display: 'inline', width:1200 , ease: Power1.easeOut}, 1)
-    .to(type, .25, { delay:0.25, display: 'inline', ease: Power1.easeOut}, 1);
+    .to(stroke, .25, { delay: 0.25, x:-3, y:-3, ease: Power1.easeOut}, 1)
+    .to(line, .25, { display: 'inline', width: 1200, ease: Power1.easeOut}, 1)
+    .to(image, 1, { delay: 0.15,  scale: 1.1, display: 'inline', ease: Power1.easeOut}, 1)
+    .to(type, .25, { delay:0.15, display: 'inline', ease: Power1.easeOut}, 1);
 
     
 
@@ -70,16 +73,16 @@ function revert(event){
   const stroke = node.querySelector('.title__stroked');
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
-  const image = node.querySelector('.image');
+  const image = node.querySelector('.image__wrap');
   const type = node.querySelector('.project__item__type');
 
   const timeline = new Timeline({ paused: true});
 
   timeline
-    .to(filled, .25, { display:  'none', ease: Power1.easeOut}, 1)
-    .to(stroke, .25, { x: 0, y: 0, color:"white", ease: Power1.easeOut}, 1)
-    .to(line, .25, { display: 'none', width: 0, ease: Power1.easeOut}, 1)
-    .to(image, .25, { display: 'none', scale: 1, ease: Power1.easeOut}, 1)
+    .to(filled, .25, { y: 250, display: 'none', ease: Power1.easeOut}, 1)
+    .to(stroke, .25, { x: 0, y: 0, ease: Power1.easeOut}, 1)
+    .to(line, .25, { width: 0, ease: Power1.easeOut}, 1)
+    .to(image, .25, { display: 'none', scale: 1, opacity: 0, ease: Power1.easeOut}, 1)
     .to(type, .25, { display: 'none', ease: Power1.easeOut}, 1);
 
   timeline.play();
