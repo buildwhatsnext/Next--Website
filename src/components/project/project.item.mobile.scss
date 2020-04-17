@@ -13,6 +13,12 @@
     grid-template-columns: 1fr 1fr;
     grid-column: 2 / 3;
   }
+
+  .project__item__type {
+    @extend %hard__subinfo;
+    color: $next__grey;
+    display: none;
+  }
   
   .project__item {
   
@@ -24,7 +30,6 @@
   .project__item__right {
     margin-bottom: 100px;
     float: right;
-    text-align: right;
     border-right: 3px solid $next__coral;
     padding-right: 20px;
     grid-column: 1;  
@@ -55,6 +60,20 @@
   }
   
   .project__item__title {
+    a{ 
+      // border: 10px red solid;
+
+      .title__stroked {
+        // border: 10px red solid;
+        text-align: left;
+      }
+
+      .title__filled {
+        // border: 10px red solid;
+        display: none;
+      }
+    }
+
     p {
       // @extend .soft__coral__title;
       font-size: 72px;
@@ -79,12 +98,5 @@
         -webkit-text-fill-color: $next__coral;
       }
     }
-  }
-  
-  .project__item__type {
-    @extend %hard__subinfo;
-    color: $next__grey;
-    // border: 1px solid green;
-    display: none;
   }
 }
