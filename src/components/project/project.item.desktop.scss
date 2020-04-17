@@ -30,11 +30,10 @@
       overflow: hidden;
       grid-column: 2/3;
       grid-row: 1/2;
-      display: none;
       padding-left: 30px;
+      opacity: 0;
 
       .image {
-        display: block;
         overflow: hidden;
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -105,11 +104,11 @@
         
         .title__filled {
           direction: rtl;
-          display: none;
           overflow: hidden;
           grid-column: 2 / -1;
           grid-row: 1 / 2;
           z-index: 3;
+          opacity: 0;
       
           p {
             @extend .soft__coral__title;
