@@ -35,7 +35,7 @@ export default class NavbarPage extends React.Component {
             <Nav.Link href="/about">about</Nav.Link>
             <Nav.Link href="/services">services</Nav.Link>
             <Nav.Link href="/team">team</Nav.Link>
-            <Nav.Link href="/projects">projects</Nav.Link>
+            <Nav.Link href="/projects">case studies</Nav.Link>
             <Nav.Link href="/contact">contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
