@@ -18,10 +18,7 @@ export default class Contact extends React.Component {
 
   render() {
 
-    const quoteline01 = `We think of our clients as partners and encourage `;
-    const quoteline02 = `collaboration to invent new ways of approaching projects.`;
-    const quoteline03 = `We're a friendly bunch and love to talk, so please drop us a`;
-    const quoteline04 = `line and say hello. `;
+    const quoteline = `We think of our clients as partners and encourage collaboration to invent new ways of approaching projects. We're a friendly bunch and love to talk, so please drop us a line and say hello.`;
 
     return (
       <div className="contact">
@@ -30,15 +27,12 @@ export default class Contact extends React.Component {
         </div>
 
         <div className="contact__quote">
-          <div className="contact__quote__p01"><p>{quoteline01}</p></div>
-          <div className="contact__quote__p02"><p>{quoteline02}</p></div>
-          <div className="contact__quote__p03"><p>{quoteline03}</p></div>
-          <div className="contact__quote__p04"><p>{quoteline04}</p></div>
+          <div className="contact__quote"><p>{quoteline}</p></div>
         </div>
 
-        <div className="contact__form">
+        {/* <div className="contact__form">
           <ContactForm />
-        </div>
+        </div> */}
 
         <ContactInfoList />        
       </div>
