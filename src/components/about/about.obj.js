@@ -10,7 +10,6 @@ export function AboutRouter(props) {
   return (
     <Switch>
       <Route path={`${match.url}/:aboutBranch`} render={(props) => <AboutRoutePage {...props} />} />
-      {/* <Route exact path={match.url} render={(props) => (<TeamOverviewPage {...props} />)} /> */}
     </Switch>
   )
 }
