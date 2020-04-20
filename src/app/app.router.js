@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Navbar from '../components/subcomponents/navigation/nav.obj';
 import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
-import { AboutRouter } from '../components/about/about.obj';
+import About from '../components/about/about.obj';
 import { ServiceRouter } from '../components/service/services.obj';
 import { TeamRouter } from '../components/team/team.obj';
 import { ProjectRouter } from '../components/project/project.obj';
@@ -54,7 +54,7 @@ const AnimatedRoutes = (props) => {
 
 const RouteCollection = (props) => (
   <Switch>
-    <Route path='/about' render={(props) => (<AboutRouter {...props}/> )} />
+    <Route path='/about' render={(props) => (<About {...props}/> )} />
     <Route path='/contact' render={(props) => (<Contact {...props}/> )} />
     <Route path="/team" render={(props) => (<TeamRouter {...props} />)} />
     <Route path="/services" render={(props) => (<ServiceRouter {...props} />)} />
