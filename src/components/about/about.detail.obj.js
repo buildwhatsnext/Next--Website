@@ -7,21 +7,6 @@ import { InternalLinkHighlighted } from '../subcomponents/special_link/links.obj
 import data from '../../data/data.about.json';
 
 export default class AboutBranchPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      aboutPage: this.props.data
-    };
-    this.nextPage = this.nextPage.bind(this);
-  }
-
-  nextPage() {
-    const aboutCarousel = this.state.aboutPage + 1;
-    this.setState({
-      aboutPage: aboutCarousel
-    });
-  }
-  
 
   render() {
 
