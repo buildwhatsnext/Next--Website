@@ -1,31 +1,34 @@
 {
   "type" : "about information",
-  "chapter" : {
-
-    "first" : {
+  "aboutData" : [ 
+    {
       "name": "Craft Inclusive Experiences",
       "shortName": "experiences",
       "description": "We craft immersive, narrative-driven, and collaborative experiences for project stakeholders."
     },
-    "second" : {
+
+    {
       "name": "Elevate Capabilities",
       "shortName": "elevate",
       "description": "We help build structure, resources, knowledge to help project teams run smarter."
     },
-    "third" : {
+
+    {
       "name": "Create Insight",
       "shortName": "insight",
       "description": "We create a platform for intelligent decision-making in the design process."
     },
-    "fourth" : {
+    
+    {
       "name": "Invent",
       "shortName": "invent",
       "description": "If a solution to design problem exists we find it, if it doesn’t, we invent it"
     },
-    "fifth" : {
+    
+    {
       "name": "Engage",
       "shortName": "engage",
       "description": "Innovation often begins with two people having a conversation. We are always open to talk."
     }
-  }
+  ]
 }
