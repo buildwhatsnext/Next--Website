@@ -59,7 +59,7 @@ export default class About extends React.Component {
           <div className="about__title"><p>{cur.name}</p></div>
           <div className="about__description"><p>{cur.description}</p></div>
           <div className="about__seehow">
-            <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
+            <InternalLinkHighlighted value={seehow} destination={cur.link} />
           </div>
           <div className="about__previous" onClick={ this.reverse }>
             <p>Previous</p>

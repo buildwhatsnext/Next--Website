@@ -4,31 +4,36 @@
     {
       "name": "Craft Inclusive Experiences",
       "shortName": "experiences",
-      "description": "We craft immersive, narrative-driven, and collaborative experiences for project stakeholders."
+      "description": "We craft immersive, narrative-driven, and collaborative experiences for project stakeholders.",
+      "link":"/projects/piper"
     },
 
     {
       "name": "Elevate Capabilities",
       "shortName": "elevate",
-      "description": "We help build structure, resources, knowledge to help project teams run smarter."
+      "description": "We help build structure, resources, knowledge to help project teams run smarter.",
+      "link":"/projects/piper"
     },
 
     {
       "name": "Create Insight",
       "shortName": "insight",
-      "description": "We create a platform for intelligent decision-making in the design process."
+      "description": "We create a platform for intelligent decision-making in the design process.",
+      "link":"/projects/piper"
     },
     
     {
       "name": "Invent",
       "shortName": "invent",
-      "description": "If a solution to design problem exists we find it, if it doesn’t, we invent it"
+      "description": "If a solution to design problem exists we find it, if it doesn’t, we invent it",
+      "link":"/projects/piper"
     },
     
     {
       "name": "Engage",
       "shortName": "engage",
-      "description": "Innovation often begins with two people having a conversation. We are always open to talk."
+      "description": "Innovation often begins with two people having a conversation. We are always open to talk.",
+      "link":"/projects/piper"
     }
   ]
 }
