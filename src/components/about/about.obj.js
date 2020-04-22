@@ -44,7 +44,8 @@ export default class About extends React.Component {
             <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
           </div>
           <div className="about__next" onClick={ this.increment }>
-            <InternalLinkHighlighted value={next} destination="/about/second" />
+            Next
+            {/* <InternalLinkHighlighted value={next} destination="/about/second" /> */}
           </div>
         </div>
       </div>
