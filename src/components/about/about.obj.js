@@ -1,16 +1,21 @@
-import React, { Fragment } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React from 'react';
 import './about.style.desktop.scss';
 import './about.style.mobile.scss';
 import data from '../../data/data.about.json';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
-import AboutRoutePage from './about.detail.obj';
-
 
 export default class About extends React.Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      current: 0,
+      end: 4
+    }
+  }
   
   render() {
+    const info = data.aboutData;
+    const cur = info[this.state.current];
 
     const next = "Next";
     const seehow = "See How";
@@ -18,12 +23,12 @@ export default class About extends React.Component {
     return (
       <div className="about">
 
-        <div className={`about__background about__background__${data.shortName}`}/>
-        <div className={`about__icon about__icon__${data.shortName}`}/>
+        <div className={`about__background about__background__${cur.shortName}`}/>
+        <div className={`about__icon about__icon__${cur.shortName}`}/>
 
         <div className="about__textgrid">
-          <div className="about__title"><p>{data.name}</p></div>
-          <div className="about__description"><p>{data.description}</p></div>
+          <div className="about__title"><p>{cur.name}</p></div>
+          <div className="about__description"><p>{cur.description}</p></div>
           <div className="about__seehow">
             <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
           </div>
