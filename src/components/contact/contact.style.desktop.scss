@@ -183,6 +183,12 @@
       grid-row: 4 / 5;
       grid-column-gap: 100px;
       margin-top: 10px;
+      border: 0px;
+
+      a {
+        // border: 10px red solid;;
+
+      }
 
       .info__text {
         @extend .soft__white__title;

@@ -1,16 +1,21 @@
 import React from 'react';
 import { Fragment } from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import { ExternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
 
 export function ContactInfoList(props) {
 
-  const mapLink = "https://www.google.com/maps/place/HLW+International+LLP/@40.7519245,-73.9962564,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a25391ccf5:0x8438bed5d382c900!8m2!3d40.7519205!4d-73.9940677";
+  const mapLink = "http://soundcloud.com/discover"
+
   return (
     <div className="contact__info">
       <div className="contact__info__phone"> <Phone /></div>
       <div className="contact__info__email"> <Email /></div>
       <div className="contact__info__insta"> <Insta /></div>
-      <div className="contact__info__location" onClick={mapLink}> <Location /></div>
+      <div className="contact__info__location">
+        <Location />
+        <a href={props.destination} target="_blank" destination={ mapLink }/>
+      </div>
     </div>
   )
 }
