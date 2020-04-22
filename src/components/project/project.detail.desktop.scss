@@ -105,7 +105,8 @@
 
     .summary {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-gap: 0px;
 
       &__challenge {
@@ -114,6 +115,7 @@
         &__title {
           display: grid;
           grid-template-columns: auto 1fr;
+          text-align: center;
           // border: 1px solid white;
 
           .title__text {
@@ -148,21 +150,22 @@
           .title__text {
             @extend .soft__white__title;
             text-align: left;
-            padding-left: 40px;
+            padding-left: 52px;
           }
 
           .title__icon {
+            height: 100;
             align-self: center;
-            margin-bottom: 10px;
-            width: 40px;
+            margin-left: 48px;
+            width: 38px;
           }
         }
 
         &__summary {
           @extend .soft__white__body;
           color: $next__white;
-          padding-top: 48px;
-          // padding: 48px;
+          padding: 48px;
+          padding-bottom: 100px;
         }
       }
     }
