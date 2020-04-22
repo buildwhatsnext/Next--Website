@@ -15,11 +15,11 @@ export default class About extends React.Component {
   }
 
   increment() {
-    console.log('Should increment!');
-    // when user clicks next
-
-    
     // + 1 on this.state.current
+    const count = this.state.current + 1;
+    this.setState({
+      current: count
+    });
 
     // so new icon & info is shown on page
     // when i > 4, i should equal 0
