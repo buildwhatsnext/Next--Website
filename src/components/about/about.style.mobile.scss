@@ -133,7 +133,7 @@
       }
 
       .about__description {
-        // @extend .soft__white__title;
+        color: $next__white;
         font-size: 12px;
         font-weight: 400;
         grid-row: 2/3;
