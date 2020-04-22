@@ -49,22 +49,23 @@ export default class About extends React.Component {
     const seehow = "See How";
 
     return (
-      <div className="about">
+      <div className={`about about__${cur.shortName}`}>
 
-        <div className={`about__background about__background__${cur.shortName}`}/>
-        <div className={`about__icon about__icon__${cur.shortName}`}/>
+        <div className="about__lefthalfgrid">
+          <div className={`about__icon about__icon__${cur.shortName}`}/>
+        </div>
 
-        <div className="about__textgrid">
+        <div className="about__righthalfgrid">
           <div className="about__title"><p>{cur.name}</p></div>
           <div className="about__description"><p>{cur.description}</p></div>
           <div className="about__seehow">
             <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
           </div>
           <div className="about__previous" onClick={ this.reverse }>
-            Previous
+            <p>Previous</p>
           </div>
           <div className="about__next" onClick={ this.cycle }>
-            Next
+            <p>Next</p>
             {/* <InternalLinkHighlighted value={next} destination="/about/second" /> */}
           </div>
         </div>
