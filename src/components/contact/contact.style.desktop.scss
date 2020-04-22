@@ -66,11 +66,11 @@
 
   .contact__info {
     grid-row: 3 / -1;
-    grid-column: 6 / -1;
+    grid-column: 5 / -1;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: 100px 100px 100px auto;
-    grid-row-gap: 40px;
+    grid-row-gap: 10px;
     margin-top: 25px;
 
     .contact__info__item {
@@ -94,17 +94,24 @@
         align-self: center;
         -webkit-text-stroke: 1px $next__white;
         -webkit-text-fill-color: transparent;
+
+        &:hover {
+          transition:  0.3s ease-in-out;
+          -webkit-text-fill-color: $next__white;
+        }
+
       }
 
       .info__icon {
         height: 93px;
-        width: 60px;
+        width: 70px;
         background-repeat: no-repeat;
         grid-column: 1 / 2;
         grid-row: 1 / -1;
         align-self: center;
-        justify-self: center;      }
-    
+        justify-self: center;      
+      }
+
     }
     
     .contact__info__email {
@@ -118,16 +125,23 @@
         font-size: 72px;
         margin-bottom: 40px;
         -webkit-text-stroke: 1px $next__white;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+          transition:  0.3s ease-in-out;
+          -webkit-text-fill-color: $next__white;
+        }
+
       }
 
       .info__icon {
         height: 93px;
-        width: 60px;
+        width: 70px;
         background-repeat: no-repeat;
         grid-column: 1 / 2;
         grid-row: 1 / -1;
         align-self: center;
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
     
@@ -144,17 +158,23 @@
         -webkit-text-stroke: 1px $next__white;
         -webkit-text-fill-color: transparent;
         margin-bottom: 20px;
+
+        &:hover {
+          transition:  0.3s ease-in-out;
+          -webkit-text-fill-color: $next__white;
+        }
+
       }
 
       .info__icon {
         height: 93px;
-        width: 60px;
+        width: 70px;
         background-repeat: no-repeat;
         grid-column: 1 / 2;
         grid-row: 1 / -1;
         align-self: center;
         justify-self: center;
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
     
@@ -174,11 +194,17 @@
         padding-top: 20px;
         -webkit-text-stroke: 1px $next__white;
         -webkit-text-fill-color: transparent;
+
+        &:hover {
+          transition:  0.3s ease-in-out;
+          -webkit-text-fill-color: $next__white;
+        }
+
       }
 
       .info__icon {
         height: 93px;
-        width: 60px;
+        width: 70px;
         background-repeat: no-repeat;
         grid-column: 1 / 2;
         grid-row: 1 / -1;
