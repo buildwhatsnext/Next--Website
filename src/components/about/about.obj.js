@@ -16,13 +16,30 @@ export default class About extends React.Component {
 
   increment() {
     // + 1 on this.state.current
-    const count = this.state.current + 1;
+    let count = this.state.current + 1;
+    
+    // when i > 4, i should equal 0
+    if(count > 4) {
+      count = 0;
+    }
+    
     this.setState({
       current: count
     });
 
-    // so new icon & info is shown on page
+
+    /* 
+    for( piece1; piece2; piece3 ) {
+      piece1: setting up the variables
+      piece2: conditions for continuing loop
+      piece3: function to run at end of each iteration
+    }
+    */
+
     // when i > 4, i should equal 0
+    // for(var i = 0; i < 4; i++) {
+
+    // }
   }
   
   render() {
