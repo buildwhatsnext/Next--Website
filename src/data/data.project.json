@@ -16,33 +16,33 @@
       },
       "pictureURL":[""]
     },
-    "1950" : {
-      "title": "1950 Grand",
-      "shortName": "1950 Grand",
-      "client": "Artisan Reality",
+    "turing" : {
+      "title": "Turing",
+      "shortName": "Turing",
+      "client": "HLW International",
       "location": "New York",
       "status": "On-Going",
-      "type": "EDUCATION",
-      "team": "COMMERCIAL",
-      "slug": "1950",
+      "type": "COMMERCIAL",
+      "team": "INNOVATION",
+      "slug": "turing",
       "description": {
-        "challenge" : "A brand new ground up project was envisioned using real time rendering to help our clients understand how we redesigned the park and open spaces to create a new tight knit campus for the tenants at 1950 and 1960 Grand.",
-        "outcome" : "A brand new ground up project was envisioned using real time rendering to help our clients understand how we redesigned the park and open spaces to create a new tight knit campus for the tenants at 1950 and 1960 Grand."
+        "challenge" : "Today's workplaces and learning hubs are at the center of massive shifts. The rise of automation will displace close to 40 million workers over the next decade. Technology advancements and health advancements will continue to create heightened mobility and distribution in offices and on campuses. New technologies evolving across nearly all verticals have created the need for continual upskilling. How do we establish more reliable connections between design and productivity in increasingly automated and distributed workplaces and learning spaces?  How do we anticipate changes in workplace culture, arising from these shifts? How do we foster the turns towards the commingling of work and education through design?",
+        "outcome" : "We are building Turing: a deep learning platform that will provide intelligence for the workplace and learning space, and optimization for their organization in early design approaches. Turing will feature spatial factors, cultural indicators, productivity measures, real estate market trends, and sustainability data in making predictions on how these spaces will change and how to optimize them. "
       },
       "pictureURL":[""]
     },
-    "stamford" : {
-      "title": "First Stamford Place",
-      "shortName": "Stamford",
-      "client": "Empire Development Group",
-      "location": "Connecticut",
+    "hofstra" : {
+      "title": "Hofstra University",
+      "shortName": "Hofstra",
+      "client": "Hofstra University",
+      "location": "New York",
       "status": "On-Going",
-      "type": "COMMERCIAL",
+      "type": "EDUCATION",
       "team": "SIMULATION",
-      "slug": "stamford",
+      "slug": "hofstra",
       "description": {
-        "challenge" : "A reinvisioned landscape to tie the outside and inside together, using interactive 360 panoramas were used to help the clients understand the important sustainability features HLW designed to be the first in Connecticut to achieve SITES certification",
-        "outcome" : "A reinvisioned landscape to tie the outside and inside together, using interactive 360 panoramas were used to help the clients understand the important sustainability features HLW designed to be the first in Connecticut to achieve SITES certification"
+        "challenge" : "Hofstra University's new Student innovation center became its designers' response to the question, 'how will we make a building for the next generation of nurses and engineers?'. Crafted in conjunction with NEXT, the center's proposal involved synthesizing nursing and engineering classes and spaces together in a spatially integrated vertical campus. Getting the right balance of spaces, however, would be a more significant challenge. To tackle this challenge, Hofstra's engineering and nursing faculty would have to discuss the sizes and placement of 90+ spatial types with its project team working across three sites. ",
+        "outcome" : "NEXT built an interactive VR tool for collaboration to gather the Hofstra faculty and project team together in the same space virtually. The tool, created using the Unreal Engine, enabled users to place, modify, and save the spatial arrangements designed within each session. Utilizing this approach, Hofstra's faculty and project teams can overcome the weeks-long back and forth customarily required and collaborate to find new possibilities in real-time."
       },
       "pictureURL":[""]
     },

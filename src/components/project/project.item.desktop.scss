@@ -4,138 +4,138 @@
 @media(min-width: $sizeDesktop) {
   
   .project__data__list {
+    overflow: hidden;
     margin-bottom: 200px;
 
     .project__item {
       display: grid;
-      grid-template-columns: 20rem auto;
-  
-      // &:hover {
-      //   cursor: pointer;
-
-      //   .project__item__image {
-      //     animation: fadeInAndSlideIn 1s ease-out 1s;
-      //     animation-fill-mode: forwards;
-      //   }
-      // }
+      grid-template-columns: 20rem 1fr;
+      grid-template-rows: 260px;
+      // overflow: hidden;
     }
   
     .project__item__type {
       @extend %hard__subinfo;
       color: $next__grey;
+      font-size: 12px;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: end;
+      align-self: end;
+      margin-bottom: 10px;
       display: none;
     }
-  
-    .project__item__image {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.jpg');
-      width: 100%;
-      height: 0%;
-      // transition: all .75s ease-in-out 1s;
-    }
-    
-    .project__item__title {
-      direction: rtl;
-  
-      div {
-        @extend .soft__coral__title;
-        // border: 1px solid white;
-        text-align: left;
-        white-space: nowrap;
-        font-size: 200px;
-        // margin-left: 200px;
-        width: auto;
-        direction: ltr;
-  
-        @supports (-webkit-text-stroke: 3px black) {
-          -webkit-text-stroke: 3px $next__coral;
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          // transition: all .5s ease-in-out ;
+
+    .image__wrap {
+
+      overflow: hidden;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      padding-left: 30px;
+      opacity: 0;
+
+      .image {
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 600px;
+        height: 300px;
+        
+
+        &__piper {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.webp');
+          background-size: 100% auto;
+        }
+
+        &__turing {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.webp');
+          background-size: 100% auto;
+        }
+
+        &__hofstra {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587582169/project/image10_ffht0c.webp');
+          background-size: 100% auto;
+          background-position: center;
+        }
+
+        &__fordham {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.webp');
+          background-size: 100% auto;
+        }
+
+        &__google {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.webp');
+          background-size: 100% auto;
         }
       }
     }
-  }
-  
-  .project__item__title {
-    overflow: hidden;
-    width: 100%;
 
-    p {
-      @extend .soft__coral__title;
-      font-size: 200px;
-      @supports (-webkit-text-stroke: 3px black) {
-        -webkit-text-stroke: 3px $next__coral;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        // transition: all 2s ease-in-out;
+    .project__item__title {
+      overflow: hidden;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      z-index: 2;
 
-        // test
-        background-color: #06038D;
-        background-repeat: no-repeat;
-        height: -100px;
-        background-position: 25% 75%;
-        
-        // &:hover {
-        //   -webkit-text-fill-color: $next__coral;
-        //   animation: slideLeft .75s ease-out .5s;
-        //   animation-fill-mode: forwards;
-        // }
-      }
-  
-      // &:hover {
-      //   &:after {
-      //     @extend %project__underline__filled;
-      //   }
-      // }  
+      a {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: left;
+
+        .title__stroked {
+          overflow: hidden;
+          grid-column: 2 / -1;
+          grid-row: 1 / 2;
+          z-index: 2;
       
-      // &::after {
-      //   @extend %project__underline__none;
-      // }
+          p {
+            @extend .soft__coral__title;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 200px;
+            width: auto;
+            direction: ltr;
+      
+            @supports (-webkit-text-stroke: 3px black) {
+              -webkit-text-stroke: 3px $next__coral;
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;
+            }
+          }
+        }
+        
+        .title__filled {
+          direction: rtl;
+          overflow: hidden;
+          grid-column: 2 / -1;
+          grid-row: 1 / 2;
+          z-index: 3;
+          opacity: 0;
+      
+          p {
+            @extend .soft__coral__title;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 200px;
+            color: $next__white;
+            width: auto;
+            direction: ltr;
+            // border: 10px red solid;
+            // margin-top: 150px;
+          }
+        }
+
+        .title__underline {
+          direction: rtl;
+          grid-column: 1 / 3;
+          grid-row: 1 / 2;
+          display: none;
+          // justify-self: end;
+          float: right;
+          border-bottom: 8px $next__coral solid;
+          margin-bottom: 35px;
+        }
+      }
     }
-  }
-
-  @keyframes slideLeft {
-    0% { margin-left: 200px; }
-    100% { margin-left: 0px; }
-  }
-
-  @keyframes expandWidth {
-    0% { width: 0%; }
-    100% { width: 100%; }
-  }
-
-  @keyframes fadeInAndSlideIn {
-    0% {
-      width: 150%;
-      height: 150%;
-      opacity: 0;
-    }
-    100% {
-      width: 100%;
-      height: 100%;
-      transform: translateY(50px);
-      opacity: 100;
-    }
-  }  
-  
-  %project__underline__none {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    direction: rtl;
-    display: block; /* This will put the pseudo element on its own line. */
-    // margin: 0 auto; /* This will center the border. */
-    width: 0%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 1px solid $next__white; /* This creates the border. Replace black with whatever color you want. */
-    transition: .5s;
-  }
-
-  %project__underline__filled {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    // margin: 0 auto; /* This will center the border. */
-    // margin-left: -200px;
-    width: 100%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 1px solid $next__white; /* This creates the border. Replace black with whatever color you want. */
   }
 }
