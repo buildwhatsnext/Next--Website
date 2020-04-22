@@ -6,7 +6,6 @@ import data from '../../data/data.about.json';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 import AboutRoutePage from './about.detail.obj';
 
-const dataSet = ["red", "yellow", "green", "blue", "purple"];
 
 export default class About extends React.Component {
 
