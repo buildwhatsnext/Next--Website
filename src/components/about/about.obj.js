@@ -11,12 +11,23 @@ export default class About extends React.Component {
       current: 0,
       end: 4
     }
+    this.increment = this.increment.bind(this);
+  }
+
+  increment() {
+    console.log('Should increment!');
+    // when user clicks next
+
+    
+    // + 1 on this.state.current
+
+    // so new icon & info is shown on page
+    // when i > 4, i should equal 0
   }
   
   render() {
     const info = data.aboutData;
     const cur = info[this.state.current];
-
     const next = "Next";
     const seehow = "See How";
 
@@ -32,7 +43,7 @@ export default class About extends React.Component {
           <div className="about__seehow">
             <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
           </div>
-          <div className="about__next">
+          <div className="about__next" onClick={ this.increment }>
             <InternalLinkHighlighted value={next} destination="/about/second" />
           </div>
         </div>
