@@ -9,37 +9,37 @@ export default class About extends React.Component {
     super(props);
     this.state = {
       current: 0,
-      end: 4
+      start: 0,
+      end: data.aboutData.length
     }
-    this.increment = this.increment.bind(this);
+    this.cycle = this.cycle.bind(this);
+    this.reverse = this.reverse.bind(this);
   }
 
-  increment() {
-    // + 1 on this.state.current
-    let count = this.state.current + 1;
-    
-    // when i > 4, i should equal 0
-    if(count > 4) {
-      count = 0;
+  cycle() {
+    const { start, end, current } = this.state;
+    let count = current + 1;
+
+    if(count > end) {
+      count = start;
     }
     
     this.setState({
       current: count
     });
+  }
 
+  reverse() {
+    const { start, end, current } = this.state;
+    let count = current - 1;
 
-    /* 
-    for( piece1; piece2; piece3 ) {
-      piece1: setting up the variables
-      piece2: conditions for continuing loop
-      piece3: function to run at end of each iteration
+    if(count < start) {
+      count = end;
     }
-    */
-
-    // when i > 4, i should equal 0
-    // for(var i = 0; i < 4; i++) {
-
-    // }
+    
+    this.setState({
+      current: count
+    });
   }
   
   render() {
@@ -60,7 +60,10 @@ export default class About extends React.Component {
           <div className="about__seehow">
             <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
           </div>
-          <div className="about__next" onClick={ this.increment }>
+          <div className="about__previous" onClick={ this.reverse }>
+            Previous
+          </div>
+          <div className="about__next" onClick={ this.cycle }>
             Next
             {/* <InternalLinkHighlighted value={next} destination="/about/second" /> */}
           </div>
