@@ -33,7 +33,16 @@ export function ServiceDetail(data) {
         <div className={`service__left__icon service__left__icon__${data.slug}`}></div>
       </div>
       <div className="service__right">
-        <div className="service__right__switch"></div>
+        <div className="service__right__switch">
+          <div className={`service__right__switch service__right__switch__${data.slug}`}>
+            <div className='service__right__switch__name1'>{data.servicename1}</div>
+            <div className='service__right__switch__name1text'>{data.servicename1text}</div>
+            <div className='service__right__switch__name2'>{data.servicename2}</div>
+            <div className='service__right__switch__name2text'>{data.servicename2text}</div>
+            <div className='service__right__switch__name3'>{data.servicename3}</div>
+            <div className='service__right__switch__name3text'>{data.servicename3text}</div>
+          </div>
+        </div>
         <div className={`service__right__descriptiontitle service__right__descriptiontitle__${data.slug}`}>{data.descriptiontitle}</div>
         <div className={`service__right__descriptiontext service__right__descriptiontext__${data.slug}`}>{data.description}</div>
       </div>
