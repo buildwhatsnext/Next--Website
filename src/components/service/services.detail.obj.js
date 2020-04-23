@@ -21,8 +21,7 @@ export class ServiceDetailPage extends React.Component {
 
 export function ServiceDetail(data) {
 
-  const contactus = "Contact Us";
-  const seehow = "See How";
+  const back = "Back";
 
   return (
     <div className="service">
@@ -45,6 +44,9 @@ export function ServiceDetail(data) {
         </div>
         <div className={`service__right__descriptiontitle service__right__descriptiontitle__${data.slug}`}>{data.descriptiontitle}</div>
         <div className={`service__right__descriptiontext service__right__descriptiontext__${data.slug}`}>{data.description}</div>
+        <div className='service__right__back'>
+          <InternalLinkHighlighted value={back} destination="/services" />
+        </div>
       </div>
     </div>
   )
