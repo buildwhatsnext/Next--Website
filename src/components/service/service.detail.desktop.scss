@@ -1,212 +1,93 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-.soft__blue__subtitle {
-  @extend %soft__blue__subtitle;
-}
-
-.soft__white__subtitle {
-  @extend %soft__white__subtitle;
-}
 
 @media(min-width: $sizeDesktop) {
-  .service__detail {
+
+  .service {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    
-    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-row: 1 / -1;
-    // border: 10px red solid;
-  }
+    grid-column: 1 / -1;
 
-  .service__detail__mainbox {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    
-    grid-column: 1 / 6;
-    grid-row: 1 / 11;
-  }
+    .service__left {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      grid-row: 1 / -1;
+      grid-column: 1 / 2;
 
-  .service__detail__box__coral {
-    position: relative;
-    grid-column:  4 / 10;
-    grid-row: 2 / 10;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    background-color: #E03E52;
-    // background-color: black;
-    margin: 10px;
-    z-index: 3;
-  }
+      &__title {
+        @extend .soft__white__title;
+        font-size: 96px;
+        padding-left: 55px;
+        grid-column: 1/3;
+      }
 
-  .service__detail__box__white {
-    position: relative;
-    grid-column:  4 / 10;
-    grid-row: 2 / 10;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    border: 2px solid #E03E52;
-  }
+      &__icon {
 
-  .service__detail__title {
-    @extend .soft__white__title;
+        background-position: left center;
+        margin-left: 55px;
+        margin-bottom: 10px;
 
-    font-size: 72px;
-    grid-column: 1 / 10;
-    grid-row: 1 / 2;
-    z-index: 3;
-    white-space: pre-line;
-    text-align: right;
-    padding-top: 32px;
-    padding-bottom: 58px;
-  }
+        &__computation {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587671497/icon/bimbot_rbl4kq.svg');
+          background-repeat: no-repeat;
+          background-size: auto 55%;
+          grid-column: 1 / -1;
+          grid-row: 2 / 3;
+        }
 
-  .service__detail__description {
-    @extend .soft__blue__subtitle;
-    font-size: 20px;
-    font-weight: 400;
-    grid-column: 3/10;
-    grid-row: 2/10;
-    z-index: 3;
-    text-align: right;
-    padding-bottom: 44px;
-    align-self: center;
-    justify-self: center;
-  }
+        &__experience {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587671497/icon/simbot_jklbfs.svg');
+          background-repeat: no-repeat;
+          background-size: auto 65%;
+          grid-column: 1 / -1;
+          grid-row: 2 / 3;
+        }
 
-  .cta_contactus {
-    @extend .soft__white__subtitle;
-    font-size: 24px;
-    grid-column: 7 / 10;
-    grid-row: 10 / 11;
-    z-index: 3;
-    text-align: right;
-    justify-self: end;
-    align-self: end;
-    // height: 30px;
-    padding-bottom: 12px;
+        &__innovation {
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587671497/icon/innbot_fhb2vt.svg');
+          background-repeat: no-repeat;
+          background-size: auto 65%;
+          grid-column: 1 / -1;
+          grid-row: 2 / 3;
+        }
+      }
+    }
 
-    .link__highlighted__background {
-      background-color: $next__blue;
+    .service__right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      grid-row: 1 / -1;
+      grid-column: 2 / 3;
 
+      &__descriptiontitle {
+        @extend .soft__white__title;
+        font-size: 64px;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        align-self: end;
+        text-align: right;
+        padding-bottom: 380px;
+        padding-right: 50px;
+      }
+      
+      &__descriptiontext {
+        @extend .soft__white__title;
+        font-size: 24px;
+        font-weight: 400;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        align-self: end;
+        text-align: right;
+        padding-bottom: 250px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
     }
   }
-
-  .service__detail__outerbox {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    
-    grid-column: 6 / 10;
-    grid-row: 1 / 11;
-    margin-top: 30px;
-  }
-
-  .service__detail__subtitle1 {
-    @extend .soft__white__title;
-
-    font-size: 48px;
-    grid-column: 1/8;
-    grid-row: 4/5;
-    align-self: end;
-    padding-bottom: 20px;
-  }
-
-  .service__detail__subtitle1description {
-    @extend .soft__white__subtitle;
-
-    font-size: 16px;
-    grid-column: 2/10;
-    grid-row: 5/6;
-    font-weight: 400;
-    padding-bottom: 29px;
-    // padding-top: 20px;
-  }
-
-  .cta1 {
-    @extend .soft__white__subtitle;
-
-    font-size: 24px;
-    grid-column: 2/10;
-    grid-row: 5/6;
-    align-self: end;
-    justify-self: end;
-    height: 32px;
-    border-bottom: 10px #E03E52 solid;
-  }
-
-  .service__detail__subtitle2 {
-    @extend .soft__white__title;
-
-    font-size: 48px;
-    grid-column: 1/6;
-    grid-row: 6/7;
-    
-  }
-
-  .service__detail__subtitle2description {
-    @extend .soft__white__subtitle;
-    font-size: 16px;
-    grid-column: 2/10;
-    grid-row: 7/8;
-    font-weight: 400;
-    padding-bottom: 29px;
-  }
-
-  .cta2 {
-    @extend .soft__white__subtitle;
-
-    font-size: 24px;
-    grid-column: 2/10;
-    grid-row: 7/8;
-    align-self: end;
-    justify-self: end;
-    height: 32px;
-    border-bottom: 10px #E03E52 solid;
-    // border: 10px red solid;
-  }
-
-  .service__detail__subtitle3 {
-    @extend .soft__white__title;
-    
-    font-size: 48px;
-    grid-column: 1/6;
-    grid-row: 8/9;
-  }
-
-  .service__detail__subtitle3description {
-    @extend .soft__white__subtitle;
-    font-size: 16px;
-    grid-column: 2/10;
-    grid-row: 9/10;
-    font-weight: 400;
-    padding-bottom: 30px;
-  }
-
-  .cta3 {
-    @extend .soft__white__subtitle;
-
-    font-size: 24px;
-    grid-column: 2/10;
-    grid-row: 9/10;
-    align-self: end;
-    justify-self: end;
-    height: 32px;
-    border-bottom: 10px #E03E52 solid;
-    // border: 10px red solid;
-  }
-
-
-  // .service__detail__box__white {
-  //   // grid-column: 2 / 6;
-  //   // grid-row: 2 / 8;
-  //   width: 700px;
-  //   height: 800px;
-  //   background-color: white;
-  //   // border: 10px green solid;
-  // }
+  
 }
