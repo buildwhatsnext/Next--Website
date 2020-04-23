@@ -23,6 +23,9 @@ export function ContactInfoList(props) {
 export const ContactInfoItem = (props) => (
 
   <div className={`contact__info__item contact__info__${props.infoType}`}>
+    <a href={props.link} target="_blank">
+      Link
+    </a>
     <div className="info__text">{ props.value }</div>
     <div className="info__icon" style={
       {
