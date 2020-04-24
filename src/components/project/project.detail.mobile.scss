@@ -137,8 +137,8 @@
         width: 100%;
       }
 
-      &__1950 {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
+      &__turing {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.webp');
         background-repeat: no-repeat;
         grid-column: 1 / -1;
         grid-row: 1 / 6;
@@ -148,8 +148,8 @@
         width: 100%;
       }
 
-      &__stamford {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
+      &__hofstra {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587582169/project/image10_ffht0c.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 6;
         background-size: cover;
@@ -159,7 +159,7 @@
       }
 
       &__fordham {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 6;
         background-size: cover;
@@ -169,7 +169,7 @@
       }
 
       &__google {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587655870/project/google_image_q5gcl4.webp');
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587656600/project/google_4_gy06mm.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 6;
         background-size: cover;
@@ -273,6 +273,14 @@
         }
       }
     }
+  }
+
+  .project__detail__back {
+    grid-row: 3/4;
+    padding-bottom: 10px;
+    border-bottom: 10px #E03E52 solid;
+    justify-self: end;
+    height: 25px;
   }
 
   .title__icon {
