@@ -13,14 +13,58 @@
 
   .home {
     @extend .full_width_height;
+    grid-template-rows: auto auto 150px;
     display: grid;
     grid-column: 1 / -1;
 
 
     .home__hlw {
-      padding-top: 20%;
+      padding-top: 15%;
       font-size: 24px;
       text-align: left;
+      grid-template-rows: auto auto;
+      grid-template-columns: 400px auto;
+      display: grid;
+      grid-column: 1 / -1;
+      grid-column: 1 / 2;
+
+      .container {
+
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        display: grid;
+        grid-column: 1 / -1;
+        grid-column: 1 / -1;
+
+        p {
+          text-justify: inter-word;
+          margin-right: 5rem;
+          white-space: pre-wrap;
+
+          display: grid;
+          grid-column: 1 / -1;
+          grid-row: 1 / -1;
+        }
+
+        span {
+
+          display: grid;
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+          justify-self: end;
+          align-self: end;
+          margin-left: 225px;
+          
+          a {
+
+            .link__highlighted {
+              display: inline-block;
+              padding-right: -20rem;
+              // border: 1px green solid;
+            }
+          }
+        }
+      }
 
       .link__highlighted__text {
         @extend .soft__white__title;
@@ -36,24 +80,42 @@
       padding-top: 10%;
       font-size: 24px;
       text-align: left;
-      white-space: initial;
-      height: 250px;
+      white-space: pre-wrap;
 
+      .container {
+
+        .statement__mutable {
+
+          .statement__description {
+
+            p {
+
+            }
+          }
+        
+
+          .statement__changing {
+              line-height: 20px;
+            }
+        }
+      }
     }
 
     .home__cta {
 
-      float: right;
+      grid-column: 1/2;
       font-size: 12px;
       justify-self: right;
-
       z-index: 2;
+      padding-top: 70px;
+      padding-right: 40px;
+      margin-right: 230px;
 
       .link__highlighted__text {
         align-self: start;
         justify-self: start; 
         font-size: 24px;
-        line-height: 40%;
+        line-height: 0%;
         border-bottom: 10px #E03E52 solid;
       }
     }

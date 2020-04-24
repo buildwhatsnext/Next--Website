@@ -22,7 +22,7 @@
   .link__highlighted__text {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    display: inline-block;
+    display: block;
     width: auto;
     transition: all .5s ease-out;
     transition-delay: .1s;

@@ -4,35 +4,37 @@
     "computation" : {
       "title": "BIM & Computation",
       "slug": "computation",
-      "description": "BIM or Building Information Modeling is a digital,  model-based process providing architects, engineers and constructors a tool to create and manage data across a building project’s lifecycle. Through a wide array of design and computation software, we find efficient solutions for the pinch points in the AECO  (Architecture, Engineering, Construction, and Owner) industries. Utilizing integrated databases, we also develop data strategies by slicing and visualizing information to create insights into any aspect of a project realization pipeline",
-      "subtitle1": "Strategy",
-      "subtitle1description": "NEXT builds BIM strategies to get your organization up and running no matter the level of experience. · We specialize in designing and deploying custom BIM architectures that enable data flows and arm you with the knowhow to maximize your potential.",
-      "subtitle2": "Consultation",
-      "subtitle2description": "NEXT produces well thought-out project execution plans for your project teams with clarity in scope of work, milestones, timelines, and well-defined collaborative processes. · We advise your teams on data management, resourcing, and project health to guide them in meeting project goals.",
-      "subtitle3": "Upskilling Strategy",
-      "subtitle3description": "Transferring knowhow about the ecosystem of digital tools"
+      "descriptiontitle": "Turning friction into momentum",
+      "description": "The BIM + Computation team enables better outcomes for projects by giving stakeholders the insight and tools to more efficiently plan, design, construct, and manage buildings and infrastructure.",
+      "servicename2":"Strategy",
+      "servicename2text": "NEXT creates BIM strategies to get your organization up and running no matter the level of experience. We specialize in designing and deploying custom BIM architectures that enable data flows and arm you with the knowhow to maximize your potential.",
+      "servicename3":"Consultation",
+      "servicename3text":"NEXT produces well thought-out project execution plans for your project teams with clarity in scope of work, milestones, timelines, and well-defined collaborative processes. We advise your teams on data management, resourcing, and project health to guide them in meeting project goals."
     },
     "experience" : {
       "title": "Experience",
       "slug": "experience",
-      "description": "Within architecture, simulation encompasses visualization and fabrication technologies providing rapid and cost-effective ways for designers to communicate their ideas and problem solve. Through visualization and extended reality (XR - an umbrella term for immersive technologies) we can walk a client through an unbuilt space and the client can take an active role in refining the design. Fabrication via 3D printing helps designers and clients understand their project new and insightful ways.",
-      "subtitle1": "Immersive Storytelling",
-      "subtitle1description": "NEXT crafts in the most powerful content formats in storytelling, empowering you to transport viewers to the center of your narrative. · We help you build highly immersive experiences of your design scenarios or real-world events",
-      "subtitle2": "XR Design",
-      "subtitle2description": "NEXT creates entire worlds out of nothing in virtual reality. By fusing them with real world scenarios we empower your users to re-imagine the present. · NEXT engineers physics into virtual experiences enabling your users to interact with them, transforming them from passive viewers into active participants in your experience.",
-      "subtitle3": "Rapid Prototyping",
-      "subtitle3description": "NEXT loves getting physical and we do it by working with you and blending our technology magic with our 3D Printers to produce physical, beautiful and highly detailed models to life for your project. We want you to visualize exactly what your project will look like to allow for informed and engaging decision making."
+      "descriptiontitle": "New ways of seeing + working",
+      "description": "At the intersection of design and experience, the Simulation team help to identify, implement and manage the technologies that enable more effective coordination, communication and collaboration.",
+      "servicename1":"Immersive Storytelling",
+      "servicename1text": "NEXT crafts in the most powerful content formats in storytelling, empowering you to transport viewers to the center of your narrative. We help you build highly immersive experiences of your design scenarios or real-world events.",
+      "servicename2":"XR Design",
+      "servicename2text":"NEXT creates entire worlds out of nothing in virtual reality. By fusing them with real world scenarios we empower your users to re-imagine the present. NEXT engineers physics into virtual experiences enabling your users to interact with them, transforming them from passive viewers into active participants in your experience.",
+      "servicename3":"Rapid Prototyping",
+      "servicename3text":"NEXT loves getting physical and we do it by working with you and blending our technology magic with our 3D Printers to produce physical, beautiful and highly detailed models to life for your project. We want you to visualize exactly what your project will look like to allow for informed and engaging decision making."
+
     },
     "innovation" : {
       "title": "Innovation",
       "slug": "innovation",
-      "description": "The Innovation team build technology and data to help people do what they’re trained to do, better. We partner with clients on how to use software to streamline their design workflows, build beautiful mobile and web interfaces and integrate data in creative and new ways.",
-      "subtitle1": "Web Application",
-      "subtitle1description": "NEXT provides strong product leadership and strategic guidance when evaluating the challenges and goals of your application. We strive to deliver the highest quality products and solutions for your project.",
-      "subtitle2": "User Experience Design",
-      "subtitle2description": "NEXT creates elegant, engaging, and innovative designs that elevate your brand and reinforce your vision.",
-      "subtitle3": "Data Analytics",
-      "subtitle3description":"We harness data, analytics, and design to give your organization a clear path to improve performance and make impactful decisions."
+      "descriptiontitle": "Shaping the future",
+      "description": "The Innovation team aim to radically improve the way we design by rethinking how we integrate technology and data into our process.",
+      "servicename1":"Product Strategy",
+      "servicename1text": "NEXT provides strong product leadership and strategic guidance when evaluating the challenges and goals of your application. We strive to deliver the highest quality products and solutions for your project.",
+      "servicename2":"Design & Development",
+      "servicename2text":"We create elegant, engaging, and innovative designs that elevate your brand and reinforce your vision. Design is more than just making a pretty things. We make impactful, intuitive experiences that will give your audience exactly what you’re looking for.",
+      "servicename3":"Business Intelligence",
+      "servicename3text":"We harness data, analytics, and design to give your organization a clear path to improve performance and make impactful decisions."
     }
   }
 }

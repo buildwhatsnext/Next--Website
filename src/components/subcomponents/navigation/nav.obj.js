@@ -6,7 +6,7 @@ import './nav.mobile.scss';
 const defaultState = {
   collapsed: true,
 }
-const logo = 'https://res.cloudinary.com/next-hlw/image/upload/v1586185058/icon/logo_next_uxfhmb.svg';
+const logo = 'https://res.cloudinary.com/next-hlw/image/upload/c_scale,h_21/v1586981487/icon/next_logo_square_rlbbd4.svg';
 
 export default class NavbarPage extends React.Component {
   constructor(props) {
@@ -35,7 +35,7 @@ export default class NavbarPage extends React.Component {
             <Nav.Link href="/about">about</Nav.Link>
             <Nav.Link href="/services">services</Nav.Link>
             <Nav.Link href="/team">team</Nav.Link>
-            <Nav.Link href="/projects">projects</Nav.Link>
+            <Nav.Link href="/projects">case studies</Nav.Link>
             <Nav.Link href="/contact">contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
