@@ -8,6 +8,7 @@
       "location": "New York",
       "status": "Ongoing",
       "type": "Application",
+      "work": "INN : Application Development",
       "team": "INNOVATION",
       "slug": "piper",
       "description": {
@@ -22,7 +23,8 @@
       "client": "HLW International",
       "location": "New York",
       "status": "On-Going",
-      "type": "COMMERCIAL",
+      "type": "Commercial",
+      "work": "INN : Application Development",
       "team": "INNOVATION",
       "slug": "turing",
       "description": {
@@ -37,7 +39,8 @@
       "client": "Hofstra University",
       "location": "New York",
       "status": "On-Going",
-      "type": "EDUCATION",
+      "type": "Education",
+      "work": "SIM : Real Time Virtual Reality",
       "team": "SIMULATION",
       "slug": "hofstra",
       "description": {
@@ -52,8 +55,9 @@
       "client": "Fordham University",
       "location": "New York",
       "status": "Completed",
-      "type": "EDUCATION",
-      "team": "SIMULATION",
+      "type": "Education",
+      "work": "SIM : Real Time Virtual Reality",
+      "team": "Simulation",
       "slug": "fordham",
       "description": {
         "challenge" : "Fordham's new campus center was envisioned as the heart of their Rose Hill campus - a space for dining, recreation and fitness, and a beacon to welcome visitors and tell the unique story of the Jesuit university in the city. Building buy-in for the vision and its funding among students, faculty, alumni, and donors in the 10,000-strong historical campus would not be an easy feat for its leadership. How could we craft an experience to knit the Fordham community together around its leadership's visionary proposal?",
@@ -68,11 +72,12 @@
       "location": "New York",
       "status": "Completed",
       "type": "Workspace",
-      "team": "COMPUTATION",
+      "team": "Computation",
+      "work": "BIM : Architectural Analysis",
       "slug": "google",
       "description": {
-        "challenge" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the",
-        "outcome" : "A new arcade was designed with BIM and animated in real time to show a deep understanding for the clients and perspective donors HLW’s vision of what will become the new gateway that connects the existing building to the new classrooms, amenities and office space for the"
+        "challenge" : "Help Google project team and its multidisciplinary group of stakeholders manage, integrate and coordinate the design development of a central atrium knitting together multiple floors, integrating shared amenities and serving as a the new heart of Google NYC.",
+        "outcome" : "A BIM process that utilized digital models as virtual repositories for data enabling the management, coordination and integration of: post occupancy analyses, custom sustainability practices, wellness design, healthy materials consulting, LEED consulting master planning, interior design and landscape architecture"
       },
       "pictureURL":[""]
     }
