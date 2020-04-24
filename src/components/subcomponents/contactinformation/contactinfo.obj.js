@@ -1,21 +1,22 @@
 import React from 'react';
 import { Fragment } from 'react';
 import {Link} from 'react-router-dom';
-import { ExternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
+import { GoogleMapLinkHighlighted, ExternalLinkHighlighted } from '../../subcomponents/special_link/links.object';
 
 export function ContactInfoList(props) {
 
+
+  const location = `5 Penn Plaza
+  New York, NY
+  10001`;
   const mapLink = "http://soundcloud.com/discover"
 
   return (
     <div className="contact__info">
       <div className="contact__info__phone"> <Phone /></div>
       <div className="contact__info__email"> <Email /></div>
-      <div className="contact__info__insta"> <Insta /></div>
-      <div className="contact__info__location">
-        <Location />
-        <a href={props.destination} target="_blank" destination={ mapLink }/>
-      </div>
+      <div className="contact__info__insta"><a href="https://www.instagram.com/buildwhatsnext/" target="_blank"><Insta /></a></div>
+      <div className="contact__info__location"><a href="https://goo.gl/maps/mmTSCaahkfkdJkQk9" target="_blank"><Location /></a></div>
     </div>
   )
 }
@@ -23,7 +24,9 @@ export function ContactInfoList(props) {
 export const ContactInfoItem = (props) => (
 
   <div className={`contact__info__item contact__info__${props.infoType}`}>
-    <div className="info__text">{ props.value }</div>
+    <div className="info__text">
+        { props.value }
+    </div>
     <div className="info__icon" style={
       {
         backgroundImage: `url(${props.iconUrl})`
@@ -73,3 +76,6 @@ export const Location = () => {
     />
   )
 }
+
+
+{/* <a href={props.destination} target="_blank" destination={ mapLink }/> */}

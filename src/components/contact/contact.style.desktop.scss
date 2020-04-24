@@ -33,7 +33,7 @@
 @media(min-width: $sizeDesktop) {
   p {
     margin-bottom: 0rem;
-  }
+  
 
   .contact {
     grid-column: 1 / -1;
@@ -177,7 +177,7 @@
         margin-top: 10px;
       }
     }
-    
+
     .contact__info__location {
       grid-column: 2 / 3;
       grid-row: 4 / 5;
