@@ -21,80 +21,33 @@ export class ServiceDetailPage extends React.Component {
 
 export function ServiceDetail(data) {
 
-  const contactus = "Contact Us";
-  const seehow = "See How";
+  const back = "Back";
 
   return (
-    <div className= "service__detail">
-      <div className="service__detail__mainbox">
-        <div className="service__detail__box__coral">
-          <div className="service__detail__title">{ data.title }</div>
-          <div className="service__detail__description">{ data.description }</div>
-          <div className="cta_contactus">
-            <InternalLinkHighlighted value={contactus} destination="/contact" />
+    <div className="service">
+      <div className="service__left">
+        <div className="service__left__title">
+          {data.title}
+        </div>
+        <div className={`service__left__icon service__left__icon__${data.slug}`}></div>
+      </div>
+      <div className="service__right">
+        <div className="service__right__switch">
+          <div className={`service__right__switch__item service__right__switch__item__${data.slug}`}>
+            <div className='service__right__switch__item__name service__right__switch__item__name__1'>{data.servicename1}</div>
+            <div className='service__right__switch__item__text service__right__switch__item__text__1'>{data.servicename1text}</div>
+            <div className='service__right__switch__item__name service__right__switch__item__name__2'>{data.servicename2}</div>
+            <div className='service__right__switch__item__text service__right__switch__item__text__2'>{data.servicename2text}</div>
+            <div className='service__right__switch__item__name service__right__switch__item__name__3'>{data.servicename3}</div>
+            <div className='service__right__switch__item__text service__right__switch__item__text__3'>{data.servicename3text}</div>
           </div>
         </div>
-        <div className="service__detail__box__white"></div>
-      </div>
-      <div className="service__detail__outerbox">
-        <div className="service__detail__subtitle1">{ data.subtitle1 }</div>
-        <div className="service__detail__subtitle1description">{ data.subtitle1description }</div>
-        <div className="cta1">
-          <InternalLinkHighlighted value={seehow} destination="/projects/piper" />
-        </div>
-        <div className="service__detail__subtitle2">{ data.subtitle2 }</div>
-        <div className="service__detail__subtitle2description">{ data.subtitle2description }</div>
-        <div className="cta2">
-          <InternalLinkHighlighted value={seehow} destination="/projects/turing" />
-        </div>
-        <div className="service__detail__subtitle3">{ data.subtitle3 }</div>
-        <div className="service__detail__subtitle3description">{ data.subtitle3description }</div>
-        <div className="cta3">
-          <InternalLinkHighlighted value={seehow} destination="/projects/google" />
+        <div className={`service__right__descriptiontitle service__right__descriptiontitle__${data.slug}`}>{data.descriptiontitle}</div>
+        <div className={`service__right__descriptiontext service__right__descriptiontext__${data.slug}`}>{data.description}</div>
+        <div className='service__right__back'>
+          <InternalLinkHighlighted value={back} destination="/services" />
         </div>
       </div>
     </div>
   )
 }
-//     <div className="service__detail">
-//       <div className="service__detail__box">
-//         <div className="service__detail__box__coral">
-//         <div className="service__detail__image__main"></div>
-//         <div className="service__detail__name">
-//           {/* { data.title } */}
-//           {/* Fordham University */}
-//         </div>
-//         <div className="service__detail__infotable">
-//           <ServiceInfoTable {...data} />
-//         </div>
-//         <div className="service__detail__image__extras"></div>
-//         <div className="service__detail__summary"></div>
-//           </div>
-//         </div>
-//     </div>
-//   )
-// }
-
-// function ServiceInfoTable(data) {
-
-//   const info = convertObjectDataToArray(data);
-//   console.log(info);
-//   return (
-//     <InfoTable data={info} />
-//   )
-// }
-
-// function convertObjectDataToArray(data) {
-//   const names = Object.getOwnPropertyNames(data);
-
-//   var array = names.map(n => {
-//     var value = data[n];
-//     return {
-//       title: n,
-//       value
-//     }
-//   });
-
-//   return array;
-// }
-

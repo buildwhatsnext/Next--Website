@@ -38,16 +38,17 @@
       grid-column: 1 / 4;
     }
 
-    &__1950 {
+    &__turing {
       grid-row: 5/8;
       grid-column: 1 / 4;
       line-height: 110%;
     }
 
     &__google {
+      font-size: 130px;
       grid-row: 5/9;
       grid-column: 1 / 4;
-      line-height: 90%;
+      line-height: 85%;
       padding-top: 15px;
     }
 
@@ -57,7 +58,7 @@
       line-height: 110%;
     }
 
-    &__stamford {
+    &__hofstra {
       grid-column: 1 / 5;
       grid-row: 5/9;
       line-height: 88%;
@@ -105,7 +106,8 @@
 
     .summary {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-gap: 0px;
 
       &__challenge {
@@ -114,6 +116,7 @@
         &__title {
           display: grid;
           grid-template-columns: auto 1fr;
+          text-align: center;
           // border: 1px solid white;
 
           .title__text {
@@ -148,21 +151,22 @@
           .title__text {
             @extend .soft__white__title;
             text-align: left;
-            padding-left: 40px;
+            padding-left: 52px;
           }
 
           .title__icon {
+            height: 100;
             align-self: center;
-            margin-bottom: 10px;
-            width: 40px;
+            margin-left: 48px;
+            width: 38px;
           }
         }
 
         &__summary {
           @extend .soft__white__body;
           color: $next__white;
-          padding-top: 48px;
-          // padding: 48px;
+          padding: 48px;
+          padding-bottom: 100px;
         }
       }
     }
@@ -185,15 +189,15 @@
       z-index: 1;
     
       &__piper {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 7;
         height: 100%;
         width: 100%;
       }
   
-      &__1950 {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184975/project/1950grand_f1hxwd.png');
+      &__turing {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.webp');
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
@@ -202,8 +206,8 @@
         overflow: hidden;
       }
   
-      &__stamford {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185005/project/firststamford_mq9s3n.png');
+      &__hofstra {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587582169/project/image10_ffht0c.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 7;
         background-repeat: no-repeat;
@@ -214,7 +218,7 @@
       }
   
       &__fordham {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.jpg');
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 7;
         background-repeat: no-repeat;
@@ -226,12 +230,12 @@
       }
   
       &__google {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.jpg');
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587656600/project/google_4_gy06mm.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 7;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        // background-position: center;
         height: 100%;
         width: 100%;
       }

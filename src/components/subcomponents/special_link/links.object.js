@@ -10,7 +10,7 @@ export const LinkHighlighted = (props) => (
 );
 
 export const ExternalLinkHighlighted = (props) => (
-  <a href={props.destination}>
+  <a href={props.destination} target="_blank">
     <LinkHighlighted {...props}/>
   </a>
 );

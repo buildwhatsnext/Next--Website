@@ -24,17 +24,18 @@
 
   .page__services__items {
     grid-column: 1 / -1;
-    grid-row: 3 / 12;
+    grid-row: 1 / 12;
     
   }
 
   .service__item {
-    overflow: hidden;
+    // overflow: hidden;
     display: grid;
     grid-template-columns: 20rem auto;
+    grid-template-rows: 15rem;
 
     a {
-      grid-column-start: 2;
+      grid-column-start: 1;
     }
   }
 
