@@ -12,6 +12,7 @@
       grid-template-columns: 20rem 1fr;
       grid-template-rows: 260px;
       // overflow: hidden;
+      // border: 10px red solid;
     }
   
     .project__item__type {
@@ -75,6 +76,8 @@
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       z-index: 2;
+      // border: 10px red solid;
+
 
       a {
         display: grid;
@@ -87,6 +90,8 @@
           grid-column: 2 / -1;
           grid-row: 1 / 2;
           z-index: 2;
+          border: 1px red solid;
+
       
           p {
             @extend .soft__coral__title;
