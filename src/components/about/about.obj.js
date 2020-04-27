@@ -20,8 +20,8 @@ export default class About extends React.Component {
     const { start, end, current } = this.state;
     let count = current + 1;
 
-    if(count > end) {
-      count = start;
+    if(count > 4) {
+      count = 0;
     }
     
     this.setState({
@@ -33,8 +33,8 @@ export default class About extends React.Component {
     const { start, end, current } = this.state;
     let count = current - 1;
 
-    if(count < start) {
-      count = end;
+    if(count < 0) {
+      count = 4;
     }
     
     this.setState({
@@ -44,22 +44,23 @@ export default class About extends React.Component {
   
   render() {
     const info = data.aboutData;
-    const cur = info[this.state.current];
+    const current = info[this.state.current];
     const next = "Next";
     const seehow = "See How";
+    console.log(this.state.current);
 
     return (
-      <div className={`about about__${cur.shortName}`}>
+      <div className={`about about__${current.shortName}`}>
 
         <div className="about__lefthalfgrid">
-          <div className={`about__icon about__icon__${cur.shortName}`}/>
+          <div className={`about__icon about__icon__${current.shortName}`}/>
         </div>
 
         <div className="about__righthalfgrid">
-          <div className="about__title"><p>{cur.name}</p></div>
-          <div className="about__description"><p>{cur.description}</p></div>
+          <div className="about__title"><p>{current.name}</p></div>
+          <div className="about__description"><p>{current.description}</p></div>
           <div className="about__seehow">
-            <InternalLinkHighlighted value={seehow} destination={cur.link} />
+            <InternalLinkHighlighted value={seehow} destination={current.link} />
           </div>
           <div className="about__previous" onClick={ this.reverse }>
             <p>Previous</p>
