@@ -31,7 +31,7 @@ export default class About extends React.Component {
 
   reverse() {
     const { start, end, current } = this.state;
-    let count = current;
+    let count = current - 1;
 
     if(count < 0) {
       count = 4;
