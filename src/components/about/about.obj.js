@@ -66,7 +66,6 @@ export default class About extends React.Component {
           </div>
           <div className="about__next" onClick={ this.cycle }>
             <p>Next</p>
-            {/* <InternalLinkHighlighted value={next} destination="/about/second" /> */}
           </div>
         </div>
       </div>

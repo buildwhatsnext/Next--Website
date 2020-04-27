@@ -189,4 +189,12 @@
     font-size: 36px;
     justify-self: end;
   }
+
+  .back {
+    @extend .soft__white__title;
+    font-size: 36px;
+    justify-self: start;
+    grid-row: 15/16;
+    grid-column: 12/18;
+  }
 }
