@@ -18,7 +18,7 @@ export function ProjectItem(props) {
 
   return (
     <div className={`project__item project__item__${props.slug}`} 
-      onMouseEnter = { (event) => animateTitle(event) }
+      onMouseOver = { (event) => animateTitle(event) }
       onMouseLeave = { (event) => revert(event) }
       >
       <div className="image__wrap">  
