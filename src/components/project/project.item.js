@@ -45,9 +45,9 @@ function animateTitle(event){
   event.preventDefault();
   console.log(event.currentTarget);
   
-
   const node = event.currentTarget;
-  // const siblings = node.sib
+  // const bro = node.siblings;
+  // const mom = node.parents;
   const timeline = new Timeline({ paused: true});
   const stroke = node.querySelector('.title__stroked');
   const filled = node.querySelector('.title__filled');
