@@ -31,13 +31,13 @@
         -webkit-text-stroke: 3px $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        transition: 2s ease-in-out;
+        transition: 4s ease-in-out;
       }
 
         &:hover {
           transform: translateX(-2500px);
-          color: $next__coral;
-          -webkit-text-fill-color: $next__coral;
+          // color: $next__coral;
+          // -webkit-text-fill-color: $next__coral;
         }
 
       // &:hover {
