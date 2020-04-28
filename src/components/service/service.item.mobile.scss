@@ -57,14 +57,14 @@
   .service__item__title {
     p {
       // @extend .soft__coral__title;
-      font-size: 72px;
+      font-size: 58px;
       @supports (-webkit-text-stroke: 3px black) {
         -webkit-text-stroke: 1px $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         // transition: all 1s ease-in-out;
         text-align: left;
-        white-space: nowrap;
+        white-space: pre-wrap;
 
         // test
         background-color: $next__blue;
@@ -72,11 +72,6 @@
         height: -100px;
         background-position: 25% 75%;
         
-      }
-
-      &:hover {
-        color: $next__coral;
-        -webkit-text-fill-color: $next__coral;
       }
     }
   }

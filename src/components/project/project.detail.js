@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import data from '../../data/data.project.json';
 import './project.detail.desktop.scss';
 import './project.detail.mobile.scss';
-
+import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 
 export class ProjectDetailPage extends React.Component {
@@ -18,7 +18,10 @@ export class ProjectDetailPage extends React.Component {
 }
 
 export function ProjectDetail(data) {
+
+
   return (
+
     <div className="project__detail">
 
       <div className={`project__detail__name project__detail__name__${data.slug}`}>
@@ -36,7 +39,6 @@ export function ProjectDetail(data) {
       <div className="project__detail__pictureURL__wrap">
         <div className={`project__detail__pictureURL project__detail__pictureURL__${data.slug}`} />
       </div>
-
     </div>
   )
 }
@@ -56,8 +58,14 @@ function ProjectSummary(info) {
     icon: 'https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/56.whitebulb_y75fno.svg'
   }
 
+  
+  const back = `Back`;
+
   return (
     <div className="summary">
+      <div className="project__detail__back">
+        <InternalLinkHighlighted value={back} destination="/projects" />
+      </div>
       <div className="summary__challenge">
         <div className="summary__challenge__title">
           <div className="title__icon"> <img src={ sumC.icon} alt=""/> </div>
