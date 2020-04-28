@@ -13,7 +13,7 @@ export function ContactInfoList(props) {
 
   return (
     <div className="contact__info">
-      <div className="contact__info__phone"><Phone /></div>
+      <div className="contact__info__phone"><a href="tel:1-212-353-4600"><Phone /></a></div>
       <div className="contact__info__email"><a href="mailto:next@hlw.com"><Email /></a></div>
       <div className="contact__info__insta"><a href="https://www.instagram.com/buildwhatsnext/" target="_blank"><Insta /></a></div>
       <div className="contact__info__location"><a href="https://goo.gl/maps/mmTSCaahkfkdJkQk9" target="_blank"><Location /></a></div>
