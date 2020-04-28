@@ -28,10 +28,10 @@
       font-size: 280px;
       // border: 10px red solid;
       @supports (-webkit-text-stroke: 3px black) {
-        -webkit-text-stroke: 3px $next__coral;
+        -webkit-text-stroke: 5px $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        transition: 4s ease-in-out;
+        transition: 3s ease-in-out;
       }
 
         &:hover {
