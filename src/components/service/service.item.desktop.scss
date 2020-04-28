@@ -25,19 +25,24 @@
   .service__item__title {
     p {
       @extend .soft__coral__title;
-      font-size: 190px;
+      font-size: 280px;
       // border: 10px red solid;
       @supports (-webkit-text-stroke: 3px black) {
         -webkit-text-stroke: 3px $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        transition: all 1s ease-in-out;
+        transition: 2s ease-in-out;
       }
 
-      &:hover {
-        color: $next__coral;
-        -webkit-text-fill-color: $next__coral;
-      }
+        &:hover {
+          transform: translateX(-2500px);
+          color: $next__coral;
+          -webkit-text-fill-color: $next__coral;
+        }
+
+      // &:hover {
+      //   color: $next__coral;
+      //   -webkit-text-fill-color: $next__coral;
     }
   }
   
