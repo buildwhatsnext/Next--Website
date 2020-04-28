@@ -137,7 +137,11 @@
         &__summary {
           @extend .soft__white__body;
           color: $next__coral;
-          padding: 48px;
+          padding-left: 200px;
+          padding-right: 200px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          line-height: 2;
         }
       }
 
@@ -165,8 +169,11 @@
         &__summary {
           @extend .soft__white__body;
           color: $next__white;
-          padding: 48px;
-          padding-bottom: 100px;
+          padding-left: 200px;
+          padding-right: 200px;
+          padding-top: 40px;
+          padding-bottom: 50px;
+          line-height: 2;
         }
       }
     }
