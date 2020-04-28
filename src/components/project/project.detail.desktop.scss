@@ -198,11 +198,14 @@
       z-index: 1;
     
       &__piper {
-        background: url('https://res.cloudinary.com/next-hlw/video/upload/v1588089567/project/video/Piper_Vid_compressed_gyiut4.mp4');
+        background: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
         grid-column: 1 / -1;
         grid-row: 1 / 7;
         height: 100%;
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
       }
   
       &__turing {
