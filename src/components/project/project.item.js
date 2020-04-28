@@ -17,15 +17,15 @@ export function ProjectItem(props) {
   const route = `${path}/${projectName}`;
 
   return (
-    <div className={`project__item project__item__${props.slug}`} 
-      onMouseOver = { (event) => animateTitle(event) }
-      onMouseLeave = { (event) => revert(event) }
-      >
+    <div className={`project__item project__item__${props.slug}`} >
       <div className="image__wrap">  
         <div className={`image image__${props.slug}`}/>
       </div>
 
-      <div className="project__item__title">
+      <div className="project__item__title"
+        onMouseEnter = { (event) => animateTitle(event) }
+        onMouseLeave = { (event) => revert(event) }
+      >
         <Link to={route}>
           <div className="title__underline"></div>
           <div className="title__stroked">
@@ -36,7 +36,7 @@ export function ProjectItem(props) {
           </div>
         </Link>
       </div>
-      <div className="project__item__type"> { props.work } </div>
+      <div className="project__item__type"> { props.type } </div>
     </div>
   );
 }
