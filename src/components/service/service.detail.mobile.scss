@@ -13,8 +13,8 @@
 
     .service__left {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
       grid-row: 1 / -1;
       grid-column: 1 / -1;
 
@@ -24,31 +24,33 @@
 
       &__icon {
 
-        background-size: cover;
-        background-position: left;
+        background-position: top;
+        z-index: 1;
+        opacity: 1;
 
         &__computation {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587671497/icon/bimbot_rbl4kq.svg');
           background-repeat: no-repeat;
-          background-size: auto 100%;
+          background-size: contain;
           grid-column: 1 / -1;
-          grid-row: 2 / 3;
+          grid-row: 1 / 2;
         }
 
         &__experience {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587671497/icon/simbot_jklbfs.svg');
           background-repeat: no-repeat;
-          background-size: auto 100%;
+          background-size: contain;
           grid-column: 1 / -1;
-          grid-row: 2 / 3;
+          grid-row: 1 / 2;
+          
         }
 
         &__innovation {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587671497/icon/innbot_fhb2vt.svg');
           background-repeat: no-repeat;
-          background-size: auto 95%;
+          background-size: contain;
           grid-column: 1 / -1;
-          grid-row: 2 / 3;
+          grid-row: 1 / 2;
         }
       }
     }
@@ -59,6 +61,8 @@
       grid-template-rows: auto 1fr;
       grid-row: 1 / -1;
       grid-column: 1 / -1;
+      z-index: 2;
+      margin-top: 0px;
 
       &__switch {
         grid-row: 2/3;
@@ -66,33 +70,36 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
+        z-index: 3;
 
         &__item {
 
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: auto 1fr;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto auto auto 1fr;
+          z-index: 2;
 
           &__name {
-            // @extend .soft__white__title;
+            padding-top: 10px;
             font-size: 24px;
             align-self: start;
-            grid-row: 1/-1;
-            grid-column: 1/2;
             white-space: pre;
             font-size: 18px;
-            // font-weight: 400;
+            grid-column: 1/2;
 
            &__1 {
-             padding-top: 60px;
+             grid-column: 1/2;
+             grid-row: 1/2;
            }
 
            &__2 {
-            padding-top: 120px;
+            grid-column: 1/2;
+            grid-row: 2/3;
           }
 
           &__3 {
-            padding-top: 180px;
+            grid-column: 1/2;
+            grid-row: 3/4;
           }
 
             &:hover {
@@ -102,20 +109,28 @@
           }
 
           &__text {
-            // @extend .soft__white__title;
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 400;
             justify-self: center;
             grid-row: 2/3;
-            padding: 50px;
-            opacity: 0.1;
-            color: $next__grey;
-            display: none;
+            padding: 20px;
+            padding-top: 50px;
+            opacity: 1;
+            z-index: 2;
 
-            &:hover {
-              opacity: 1;
-              color: $next__white;
-              transition: 0.35s ease-in-out;
+            &__1 {
+              grid-column: 1/2;
+              grid-row: 1/2;
+            }
+ 
+            &__2 {
+             grid-column: 1/2;
+             grid-row: 2/3;
+           }
+ 
+           &__3 {
+             grid-column: 1/2;
+             grid-row: 3/4;
             }
           }
         }
@@ -127,13 +142,15 @@
         grid-row: 1/2;
         grid-column: 1/-1;
         padding-right: 30px;
+        padding-bottom: 20px;
         align-self: start;
         text-align: left;
+        z-index: 2;
       }
       
       &__descriptiontext {
         // @extend .soft__white__title;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 400;
         grid-row: 1/2;
         grid-column: 1/3;
@@ -141,18 +158,21 @@
         text-align: left;
         padding-top: 120px;
         white-space: pre-wrap;
+        padding-bottom: 20px;
         padding-right: 20px;
-        padding-left: 20px
+        padding-left: 20px;
+        z-index: 2;
       }
 
       &__back {
         // @extend .soft__white__title;
         font-size: 24px;
-        grid-row: 2/3;
+        grid-row: 4/5;
         grid-column: 1/3;
-        padding-top: 280px;
         align-self: top;
         justify-self: start;
+        height: 32px;
+        border-bottom: 10px #E03E52 solid;
       }
     }
   }

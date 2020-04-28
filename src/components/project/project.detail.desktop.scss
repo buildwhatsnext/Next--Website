@@ -241,4 +241,15 @@
       }
     }
   }
+
+  .project__detail__back {
+    @extend .soft__white__subtitle;
+    font-size: 24px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: end;
+    padding-bottom: 50px;
+    padding-right: 130px;
+
+  }
 }

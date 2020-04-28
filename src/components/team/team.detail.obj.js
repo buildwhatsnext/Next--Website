@@ -24,6 +24,7 @@ export default class TeamMemberDetailPage extends React.Component {
 export function TeamMemberDetail(data) {
   
   const contactus = "Contact Us";
+  const back = "Back";
 
   return (
     <div className="team__detail">
@@ -42,6 +43,9 @@ export function TeamMemberDetail(data) {
       <div className="borderbottom"></div>
       <div className="cta">
         <InternalLinkHighlighted value={contactus} destination="/contact" />
+      </div>
+      <div className="back">
+        <InternalLinkHighlighted value={back} destination="/team" />
       </div>
       {/* <Image cloudName="next-hlw" publicId="anime.webp" width="300" dpr="2.0" crop="scale" /> */}
     </div>
