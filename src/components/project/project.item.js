@@ -61,9 +61,10 @@ function animateTitle(event){
   console.log(typesib);
 
   timeline
-    .from(filled, .25, { y:20, opacity: 0, ease: Power1.easeOut}, 0)
-    .to(filled, .25, { opacity: 1, ease: Power1.easeOut}, 0)
-    .to(stroke, .25, { delay: 0.2, x:-3, y:-3, ease: Power1.easeOut}, 0)
+    .from(filled, .25, { y: 20, opacity: 0, ease: Power1.easeOut}, 0)
+    .to(filled, .25, { y: 0, opacity: 1, ease: Power1.easeOut}, 0)
+    // .to(stroke, .1, { color: 'red' }, 0)
+    // .to(stroke, .25, { delay: 0.5, x:-5, y:-5, ease: Power1.easeOut}, 0)
     .to(line, .25, { display: 'inline', width: 1200, ease: Power1.easeOut}, 0)
     .to(image, .1, { delay: 0.15, opacity: 1, scale: 1.05, ease: Power1.easeOut}, 0)
     .to(type, .25, { delay:0.10, display: 'inline', ease: Power1.easeOut}, 0);
@@ -92,7 +93,7 @@ function revert(event){
     .to(filled, .25, { y: 0, opacity: 0, ease: Power1.easeOut}, 0)
     .to(stroke, .25, { x: 0, y: 0, ease: Power1.easeOut}, 0)
     .to(line, .25, { width: 0, ease: Power1.easeOut}, 0)
-    .to(image, .0001, { opacity: 0, scale: 1, opacity: 0, ease: Power1.easeOut}, 0)
+    .to(image, .05, { opacity: 0, scale: 1, ease: Power1.easeOut}, 0)
     .to(type, .15, { display: 'none', ease: Power1.easeOut}, 0);
 
   timeline.play();

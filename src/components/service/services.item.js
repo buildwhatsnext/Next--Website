@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { TimelineMax as Timeline, Power1, CSS, gsap } from 'gsap';
+import { CSSRulePlugin } from 'gsap/src/CSSRulePlugin';
 
 import './service.item.desktop.scss';
 import './service.item.mobile.scss';
@@ -33,10 +35,38 @@ export function ServiceItem(props) {
   const route = `${path}/${serviceName}`;
 
   return (
-    <div className={`service__item service__item__${props.align}`}>
+    <div className={`service__item service__item__${props.slug}`}>
       <Link to={route}>
-        <div className={`service__item__title service__item__title__${props.slug}`}> <p>{props.title}</p> </div>
+        <div className="service__item__title"> 
+          <p 
+            onMouseEnter={ (e) => animate(e) }
+            onMouseLeave={ (e) => revert(e) }
+          > {props.title}</p> 
+        </div>
       </Link>
     </div>
   );
 }
+
+function animate(e) {
+  // e.preventDefault();
+
+  // const timeline = new Timeline({ paused: true });
+  // const node = e.currentTarget;
+
+  // timeline.to(node, .2, { color: 'red', stroke: '#FFFFFF' });
+  // // timeline
+  // //   .to(node, .2, { 
+  // //     x: '+=500', 
+  // //     repeat: -1, 
+  // //     modifiers: { x: gsap.utils.unitize(x => parseFloat(x) % 50)} 
+  // //     }
+  // //   );
+
+  // timeline.play();
+}
+
+function revert(e) {
+
+}
+

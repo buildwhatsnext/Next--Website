@@ -24,25 +24,19 @@
 
   .page__services__items {
     grid-column: 1 / -1;
-    grid-row: 1 / 12;
     
   }
 
-  .service__item {
-    // overflow: hidden;
-    display: grid;
-    grid-template-columns: 20rem auto;
-    grid-template-rows: 15rem;
-
-    a {
-      grid-column-start: 1;
-    }
+  .service__data__list {
+    margin: 10rem;
+    margin-right: 0px;
+    overflow: hidden;
   }
 
   .service__item__title {
-    p { 
+    p {
       text-align: left;
-      white-space: pre;
     }
   }
+
 }

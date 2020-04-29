@@ -14,9 +14,6 @@
   }
   
   .service__item {
-
-    // border: 10px red solid;
-  
     &:hover {
       cursor: pointer;
     }
@@ -28,8 +25,13 @@
       font-size: 200px;
       
       // border: 10px red solid;
+      // font-size: 20rem;
+      // white-space: nowrap;
+      // margin-bottom: 2rem;
+      // transition: all .1s;
+      
       @supports (-webkit-text-stroke: 3px black) {
-        -webkit-text-stroke: 5px $next__coral;
+        -webkit-text-stroke: .25rem $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         transition: 3s ease-in-out;
@@ -42,14 +44,14 @@
         }
 
       // &:hover {
-      //   color: $next__coral;
-      //   -webkit-text-fill-color: $next__coral;
+      //   color: white;
+      //   -webkit-text-fill-color: white;
+      // }
     }
   }
   
   .service__item__type {
     @extend %hard__subinfo;
     color: $next__grey;
-    // border: 1px solid green;
   }
 }
