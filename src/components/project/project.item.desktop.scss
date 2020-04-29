@@ -12,7 +12,6 @@
       grid-template-columns: 20rem 1fr;
       grid-template-rows: 260px;
       // overflow: hidden;
-      // border: 10px red solid;
     }
   
     .project__item__type {
@@ -65,7 +64,7 @@
         }
 
         &__google {
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587656600/project/google_4_gy06mm.webp');
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185021/project/google_sljxcz.webp');
           background-size: 100% auto;
         }
       }
@@ -76,22 +75,19 @@
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       z-index: 2;
-      // border: 10px red solid;
-
 
       a {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         text-align: left;
+        
 
         .title__stroked {
           overflow: hidden;
           grid-column: 2 / -1;
           grid-row: 1 / 2;
           z-index: 2;
-          // border: 1px red solid;
-
       
           p {
             @extend .soft__coral__title;
@@ -100,6 +96,7 @@
             font-size: 200px;
             width: auto;
             direction: ltr;
+            
       
             @supports (-webkit-text-stroke: 3px black) {
               -webkit-text-stroke: 3px $next__coral;

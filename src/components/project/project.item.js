@@ -17,9 +17,7 @@ export function ProjectItem(props) {
   const route = `${path}/${projectName}`;
 
   return (
-    <div className={`project__item project__item__${props.slug}`} 
-      onMouseEnter = { (event) => animateTitle(event) }
-      onMouseLeave = { (event) => revert(event) }>
+    <div className={`project__item project__item__${props.slug}`} >
       <div className="image__wrap">  
         <div className={`image image__${props.slug}`}/>
       </div>
@@ -45,17 +43,22 @@ export function ProjectItem(props) {
 
 function animateTitle(event){
   event.preventDefault();
-  console.log(event.currentTarget);
   
+
   const node = event.currentTarget;
-  // const bro = node.siblings;
-  // const mom = node.parents;
+  const imagesib =  node.previousSibling;
+  const typesib = node.nextSibling;
+
   const timeline = new Timeline({ paused: true});
   const stroke = node.querySelector('.title__stroked');
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
-  const image = node.querySelector('.image__wrap');
-  const type = node.querySelector('.project__item__type');
+  const image = imagesib;
+  const type = typesib;
+
+  console.log(node);
+  console.log(imagesib);
+  console.log(typesib);
 
   timeline
     .from(filled, .25, { y:20, opacity: 0, ease: Power1.easeOut}, 0)
@@ -74,11 +77,14 @@ function revert(event){
   event.preventDefault();
 
   const node = event.currentTarget;
+  const imagesib =  node.previousSibling;
+  const typesib = node.nextSibling;
+
   const stroke = node.querySelector('.title__stroked');
   const filled = node.querySelector('.title__filled');
   const line = node.querySelector('.title__underline');
-  const image = node.querySelector('.image__wrap');
-  const type = node.querySelector('.project__item__type');
+  const image = imagesib;
+  const type = typesib;
 
   const timeline = new Timeline({ paused: true});
 
@@ -86,7 +92,7 @@ function revert(event){
     .to(filled, .25, { y: 0, opacity: 0, ease: Power1.easeOut}, 0)
     .to(stroke, .25, { x: 0, y: 0, ease: Power1.easeOut}, 0)
     .to(line, .25, { width: 0, ease: Power1.easeOut}, 0)
-    .to(image, .05, { opacity: 0, scale: 1, opacity: 0, ease: Power1.easeOut}, 0)
+    .to(image, .0001, { opacity: 0, scale: 1, opacity: 0, ease: Power1.easeOut}, 0)
     .to(type, .15, { display: 'none', ease: Power1.easeOut}, 0);
 
   timeline.play();
