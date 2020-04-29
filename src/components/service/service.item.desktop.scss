@@ -25,7 +25,7 @@
   .service__item__title {
     p {
       @extend .soft__coral__title;
-      font-size: 280px;
+      font-size: 200px;
       // border: 10px red solid;
       @supports (-webkit-text-stroke: 3px black) {
         -webkit-text-stroke: 5px $next__coral;
@@ -35,7 +35,7 @@
       }
 
         &:hover {
-          transform: translateX(-2500px);
+          transform: translateX(-800px);
           // color: $next__coral;
           // -webkit-text-fill-color: $next__coral;
         }
