@@ -9,7 +9,6 @@ export function ContactInfoList(props) {
   const location = `5 Penn Plaza
   New York, NY
   10001`;
-  const mapLink = "http://soundcloud.com/discover"
 
   return (
     <div className="contact__info">

@@ -43,7 +43,7 @@
   .team__detail__name__wrap {
     grid-column: 12/18;
     grid-row: 2/7;
-    overflow: hidden;
+    // overflow: hidden;
 
     .team__detail__firstname {
       @extend .soft__white__title;
@@ -65,7 +65,7 @@
       font-size: 96px;
       z-index: 5;
       white-space: pre-wrap;
-      line-height: 80px;
+      line-height: 105px;
       overflow: hidden;
     }
   }
