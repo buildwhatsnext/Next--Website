@@ -117,8 +117,8 @@
         grid-row: 3/4;
         grid-column: 1/2;
         width: 95px;
-        justify-self: end;
-        margin-right: 226px;
+        justify-self: start;
+        margin-left: 200px;
 
       }
 
@@ -128,8 +128,7 @@
         font-size: 24px;
         grid-row: 3/4;
         grid-column: 1/2;
-        justify-self: end;
-        margin-right: 400px;
+        justify-self: start;
         border-bottom: 15px solid #E03E52;
         height: 135px;
 
@@ -146,8 +145,8 @@
         font-size: 24px;
         grid-row: 3/4;
         grid-column: 1/2;
-        justify-self: end;
-        margin-right: 100px;
+        justify-self: start;
+        margin-left: 400px;
         border-bottom: 15px solid #E03E52;
         height: 135px;
 
