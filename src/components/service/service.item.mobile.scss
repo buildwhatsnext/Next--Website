@@ -55,6 +55,20 @@
   }
   
   .service__item__title {
+
+    &__computation {
+      p {
+        line-height: 1.2;
+        padding-bottom: 20px;
+      }
+    }
+
+    &__experience {
+      p {
+        padding-bottom: 20px;
+      }
+    }
+
     p {
       // @extend .soft__coral__title;
       font-size: 58px;
@@ -65,6 +79,7 @@
         // transition: all 1s ease-in-out;
         text-align: left;
         white-space: pre-wrap;
+        // line-height: 1.6;
 
         // test
         background-color: $next__blue;

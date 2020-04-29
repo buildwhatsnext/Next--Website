@@ -26,6 +26,7 @@
     p {
       @extend .soft__coral__title;
       font-size: 200px;
+      
       // border: 10px red solid;
       @supports (-webkit-text-stroke: 3px black) {
         -webkit-text-stroke: 5px $next__coral;

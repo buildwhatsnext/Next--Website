@@ -35,7 +35,7 @@ export function ServiceItem(props) {
   return (
     <div className={`service__item service__item__${props.align}`}>
       <Link to={route}>
-        <div className="service__item__title"> <p>{props.title}</p> </div>
+        <div className={`service__item__title service__item__title__${props.slug}`}> <p>{props.title}</p> </div>
       </Link>
     </div>
   );
