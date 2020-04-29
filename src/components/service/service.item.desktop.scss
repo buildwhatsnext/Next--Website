@@ -25,6 +25,7 @@
       font-size: 20rem;
       white-space: nowrap;
       margin-bottom: 2rem;
+      transition: all .1s;
       
       @supports (-webkit-text-stroke: 3px black) {
         -webkit-text-stroke: .25rem $next__coral;
@@ -32,6 +33,11 @@
         -webkit-background-clip: text;
         transition: 3s ease-in-out;
       }
+
+      // &:hover {
+      //   color: white;
+      //   -webkit-text-fill-color: white;
+      // }
     }
   }
   
