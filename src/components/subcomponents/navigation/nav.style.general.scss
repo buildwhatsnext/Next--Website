@@ -14,29 +14,16 @@
     }
   }
 
-  // .show {
-  //   position: absolute;
-  // }
-
   #next__navbar__nav__outer {
-    // position: absolute;
     justify-content: flex-end;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
 
     #next__navbar__nav__inner {
       margin-right: 0px !important ;
-      // float: left;
-      // grid-column: 2 / 3;
-      // display: block;
-      // padding-left: 20px;
-      // padding-bottom: 20px;
-      // border: 1px solid $next__black;
-      // padding-top: 50px;
     }
 
     .nav-link {
       @extend %hard__white;
+      font-size: 1.6rem;
       font-weight: 700;
       padding-bottom: 0;
       align-self: end;

@@ -43,7 +43,7 @@ export function ServiceDetail(data) {
           </div>
         </div>
         <div className={`service__right__descriptiontitle service__right__descriptiontitle__${data.slug}`}>{data.descriptiontitle}</div>
-        <div className={`service__right__descriptiontext service__right__descriptiontext__${data.slug}`}>{data.description}</div>
+        <div className={`service__right__descriptiontext service__right__descriptiontext__${data.slug}`}><p><mark>{data.description}</mark></p></div>
         <div className='service__right__back'>
           <InternalLinkHighlighted value={back} destination="/services" />
         </div>
