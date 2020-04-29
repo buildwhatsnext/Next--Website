@@ -34,7 +34,11 @@ export function TeamMemberDetail(data) {
         <div className="team__detail__lastname"><p>{ data.lastname }</p></div>
       </div>
 
-      <div className="team__detail__email"><p>{ data.email }</p></div>
+      <div className="team__detail__email">
+        <a href={`mailto:${data.email}`}>
+          <p>{ data.email }</p>
+        </a>
+      </div>
       <div className="team__detail__position"><p>{ data.fullpositiontitle }</p></div>
       <div className="team__detail__description"><p>{ data.description }</p></div>
       <div className={`team__detail__pictureURL team__detail__pictureURL__${data.shortName}`}/>

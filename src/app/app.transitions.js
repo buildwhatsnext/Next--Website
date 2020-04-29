@@ -38,14 +38,16 @@ export const play = (pathname, node, appears) => {
 const getHomeTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
   const headline = node.querySelector('.home__hlw > .container > p');
-  const hlw = node.querySelector('.home__hlw > .container > a');
+  const hlw = node.querySelector('.home__hlw > .container > p').nextSibling.firstChild.firstChild;
   const statement = node.querySelector('.statement__mutable');
   const cta = node.querySelector('.home__cta');
+
+  console.log(hlw);
 
   timeline
     .from(node, 1, { display: 'none', autoAlpha: 0, delay }, 0)
     .from(headline, 1, { autoAlpha: 0, y: 500, ease: Power1.easeOut }, 0)
-    .from(hlw, 0.9, { y: -500, ease: Power1.easeOut }, 0)
+    .from(hlw, 1.5, { autoAlpha: 0, ease: Power1.easeOut }, 1)
     .from(statement, 1, { y: 500, ease: Power1.easeOut}, 0)
     .from(cta, 1, { autoAlpha: 0, ease: Power1.easeInOut});
 

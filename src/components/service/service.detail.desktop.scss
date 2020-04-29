@@ -132,6 +132,13 @@
         padding-bottom: 250px;
         padding-right: 50px;
         padding-left: 50px;
+
+        p {
+          mark {
+            background-color: transparent;
+            color: $next__white;
+          }
+        }
       }
 
       &__back {
