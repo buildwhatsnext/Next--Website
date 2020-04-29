@@ -14,9 +14,6 @@
   }
   
   .service__item {
-
-    // border: 10px red solid;
-  
     &:hover {
       cursor: pointer;
     }
@@ -25,30 +22,21 @@
   .service__item__title {
     p {
       @extend .soft__coral__title;
-      font-size: 280px;
-      // border: 10px red solid;
+      font-size: 10rem;
+      white-space: nowrap;
+      margin-bottom: 2rem;
+      
       @supports (-webkit-text-stroke: 3px black) {
         -webkit-text-stroke: 5px $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         transition: 3s ease-in-out;
       }
-
-        &:hover {
-          transform: translateX(-2500px);
-          // color: $next__coral;
-          // -webkit-text-fill-color: $next__coral;
-        }
-
-      // &:hover {
-      //   color: $next__coral;
-      //   -webkit-text-fill-color: $next__coral;
     }
   }
   
   .service__item__type {
     @extend %hard__subinfo;
     color: $next__grey;
-    // border: 1px solid green;
   }
 }
