@@ -9,7 +9,7 @@ html, body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   font-size: 10px;
-  // background-color: red;
+  scroll-snap-type: y mandatory;
 }
 
 * {
@@ -17,8 +17,10 @@ html, body {
 }
 
 .section {
+  width: 100vw;
   height: 100vh;
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 @media (max-width: $bp__mobile) {
