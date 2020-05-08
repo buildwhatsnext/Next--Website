@@ -10,6 +10,7 @@ html, body {
     sans-serif;
   font-size: 10px;
   scroll-snap-type: y mandatory;
+  // overflow-x: hidden;
 }
 
 * {
@@ -17,10 +18,11 @@ html, body {
 }
 
 .section {
-  width: 100vw;
+  // width: 100vw;
   height: 100vh;
   min-height: 100vh;
   scroll-snap-align: start;
+  padding: 5rem 0px;
 }
 
 @media (max-width: $bp__mobile) {
