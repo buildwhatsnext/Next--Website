@@ -13,11 +13,18 @@ export default function Home() {
       </Head>
 
       <main>
-        <section>
-          <div className="title">
+        <section className="section">
+          <div className="title" id="1">
             <h1>{ line1 }</h1>
             <h1>{ line2 }</h1>
             <h1>{ line3 }</h1>
+          </div>
+        </section>
+        <section className="section">
+          <div className="title" id="2">
+            <h1>Second stuff</h1>
+            <h1>Second stuff  dfasfsdf </h1>
+            <h1>More to come!</h1>
           </div>
         </section>
       </main>
