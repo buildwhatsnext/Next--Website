@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prestart": "yarn build"
   },
   "dependencies": {
+    "gsap": "^3.2.6",
     "next": "9.3.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
