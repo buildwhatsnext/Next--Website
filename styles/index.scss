@@ -10,19 +10,20 @@ html, body {
     sans-serif;
   font-size: 10px;
   scroll-snap-type: y mandatory;
-  // overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
 }
+html, body {
+  scrollbar-width: none;
+  scrollbar-color: blue green;
+}
 
 .section {
-  // width: 100vw;
   height: 100vh;
   min-height: 100vh;
   scroll-snap-align: start;
-  padding: 5rem 0px;
 }
 
 .grid {
@@ -45,7 +46,9 @@ html, body {
 .trap {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  clip-path: polygon(50% 20%, 90% 80%, 10% 80%);
+  clip-path: polygon(
+    29% 0, 50% 0, 100% 29%, 100% 71%, 71% 100%, 29% 100%, 0 71%, 0 29%
+  );
   background-color: blue;
 }
 
