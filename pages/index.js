@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 
+import First from '../objects/first.object';
+
 export default function Home() {
 
   return (
@@ -9,26 +11,17 @@ export default function Home() {
       <div className="section" />
       <div id="trigger" />
       <Controller>
+
         <Scene
           triggerElement="#trigger"
-          duration={300}
+          duration={ 300 }
         >
           {(progress) => (
-            <Tween            
-              to={{
-                left: '0px',
-                rotation: -360,
-                width: '200px',
-                height: '200px',
-              }}       
-              ease="Strong.easeOut"
-              totalProgress={progress}
-              paused
-            >
-              <div className="tween">Pin Test</div>
-            </Tween>    
+            <First tweenProgress={progress} />
           )}
         </Scene>
+        
+
         <Scene
           triggerElement="#trigger"
           duration={600}
