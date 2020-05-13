@@ -1,0 +1,87 @@
+@import "../styles/colors.scss";
+
+.nav {
+  z-index: 10;
+  position: sticky;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.navbar {
+  .navbar-nav-left {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $tomato;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $grey_light_extra;
+  }
+
+  .nav-link {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .nav-link-right {
+    font-weight: 700;
+    text-align: left;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    width: 60rem;
+    margin: 0 auto;
+    border-bottom: 1px solid $grey_light_extra;
+    padding-top: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0.125em;
+  }
+
+  .navbar-nav {
+    padding-left: 3rem;
+    padding-top: 1rem;
+  }
+
+  .navbar-nav-right {
+    text-align: left;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  .navbar-brand {
+    padding-bottom: 0;
+  }
+
+  .nav-link {
+    margin-right: 3rem;
+  }
+
+  .nav-link-right {
+    font-weight: 700;
+    text-align: right;
+    margin-right: 0;
+  }
+
+  .brand-head {
+    margin-bottom: 0;
+  }
+}

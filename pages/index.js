@@ -1,8 +1,6 @@
 import Head from 'next/head'
+import Navbar from '../objects/navbar.object';
 import { gsap } from 'gsap';
-// import ScrollToPlugin from 'gsap/ScrollToPlugin';
-
-// gsap.registerPlugin(ScrollToPlugin);
 
 export default function Home() {
   const line1 = 'Next is a startup';
@@ -25,8 +23,10 @@ export default function Home() {
         <title>Next/ Design Tech Startup? </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <main>
+        {/* <Navbar />   */}
+        <div className="nav"><h1>NEXT</h1></div>
         <section className="section section_first grid">
           <div className="background trap"/>
           <div className="first" id="1">
@@ -41,6 +41,22 @@ export default function Home() {
             <h1>Second stuff</h1>
             <h1>Second stuff  dfasfsdf </h1>
             <h1>More to come!</h1>
+          </div>
+        </section>
+
+        <section className="section section_third">
+          <div className="third" id="3">
+            <h1>Third stuff</h1>
+            <h1>Third stuff dsal;jjshflkshf </h1>
+            <h1>Not much left</h1>
+          </div>
+        </section>
+
+        <section className="section section_fourth">
+          <div className="fourth" id="4">
+            <h1>Fourth stuff</h1>
+            <h1>Fourth portion!</h1>
+            <h1>This is the end</h1>
           </div>
         </section>
       </main>
