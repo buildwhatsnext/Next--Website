@@ -10,11 +10,15 @@ export default function Home() {
     <div>
       <div className="section" />
       <div id="trigger" />
-      <Controller>
+      <Controller
+      >
 
         <Scene
           triggerElement="#trigger"
           duration={ 300 }
+          indicators={
+            true
+          }
         >
           {(progress) => (
             <First tweenProgress={progress} />
