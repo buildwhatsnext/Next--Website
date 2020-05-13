@@ -1,85 +1,20 @@
-$bp__mobile: 600px;
-$bp__tablet: 768px;
-$bp__desktop: 1024px;
-
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
-  font-size: 10px;
-  scroll-snap-type: y mandatory;
-}
-
-* {
-  box-sizing: border-box;
-}
-html, body {
-  scrollbar-width: none;
-  scrollbar-color: blue green;
-}
-
 .section {
   height: 100vh;
-  min-height: 100vh;
-  scroll-snap-align: start;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+.tween {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 !important;
+  position: relative;
+  left: calc(50% - 50px);
 }
 
-.background {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.first {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-
-.trap {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  clip-path: polygon(
-    9% 0, 50% 0, 100% 29%, 100% 150%
-  );
-  background-color: blue;
-}
-
-@media (max-width: $bp__mobile) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: $bp__tablet) {
-  .section h1 {
-    font-size: 7.2rem;
-  }
-}
-
-@media (min-width: $bp__desktop) {
-  .section h1 {
-    font-size: 8.4rem;
-  }
-}
-
-.nav {
-  z-index: 10;
-  width: 100%;
-  height: 200px;
-  position: fixed;
-  border: 3px solid green;
-
-  h1 {
-    font-size: 10rem;
-    color: purple;
-  }
+.stagger {
+  width: 50px;
+  height: 50px;
+  left: 700px;
+  background-color: green;
+  position: relative;
 }
