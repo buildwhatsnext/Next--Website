@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 
-import First from '../objects/first.object';
+import { First, Second, Third } from '../objects/tweens.object';
 
 export default function Home() {
 
@@ -28,56 +28,36 @@ export default function Home() {
           pin={false}
         >
           {(progress) => (
-            <Tween
-              from={{
-                css: {
-                  left: '0px',
-                  rotation: -360,
-                  width: '200px',
-                  height: '200px',
-                },
-                ease: 'Strong.easeOut',
-              }}
-              to={{
-                css: {
-                  left: '100px',
-                  rotation: -180,
-                  width: '50px',
-                  height: '50px',
-                },
-                ease: 'Strong.easeOut',
-              }}
-              totalProgress={progress}
-              paused
-            >
-              <div className="tween">Pin Test</div>
-            </Tween>
+            <Second prog={progress} />
           )}        
         </Scene>
         <Scene
           duration={500}
         >
           {(progress) => (
-            <div>
-              <Tween        
-                from={{
-                  left: 700,
-                }}
-                to={{
-                  left: 0,
-                  ease: 'Back.easeOut',
-                }}
-                stagger={0.15}
-                totalProgress={progress}
-                paused
-              >
-                <div className="stagger" />
-                <div className="stagger" />
-                <div className="stagger" />
-                <div className="stagger" />
-                <div className="stagger" />
-              </Tween>
-            </div>
+
+            <Third prog={progress} />
+
+            // <div>
+            //   <Tween        
+            //     from={{
+            //       left: 700,
+            //     }}
+            //     to={{
+            //       left: 0,
+            //       ease: 'Back.easeOut',
+            //     }}
+            //     stagger={0.15}
+            //     totalProgress={progress}
+            //     paused
+            //   >
+            //     <div className="stagger" />
+            //     <div className="stagger" />
+            //     <div className="stagger" />
+            //     <div className="stagger" />
+            //     <div className="stagger" />
+            //   </Tween>
+            // </div>
           )}
         </Scene>
       </Controller>
