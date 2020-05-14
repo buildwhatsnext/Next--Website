@@ -1,5 +1,21 @@
-.section {
+html, body {
+  scrollbar-width: none;
+}
+
+section {
   height: 100vh;
+  text-align: center;
+
+  h1 {
+    width: 100%;
+    // border: 1px solid red;
+  }
+}
+
+.home {
+  overflow: hidden;
+  background-color: green;
+  width: 100%;
 }
 
 .tween {
