@@ -7,7 +7,7 @@ import { Third } from '../objects/tweens.object';
 export default function Home() {
   return (
     <section 
-      onMouseDown={(e) => setInitialState(e)}
+      onLoad={(e) => setInitialState(e)}
     >
       <div className="home">
         <h1>This Is A Test</h1>
@@ -17,6 +17,8 @@ export default function Home() {
 }
 
 function setInitialState(event) {
+  console.log(event);
+
   event.preventDefault();
   console.log('Mouse clicked');
 
