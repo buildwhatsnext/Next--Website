@@ -1,0 +1,180 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+.soft__blue__title {
+  @extend %soft__blue__title;
+}
+
+.soft__white__title {
+  @extend %soft__white__title;
+}
+
+.soft__black__title {
+  @extend %soft__black__title;
+}
+
+.soft__blue__subtitle {
+  @extend %soft__blue__subtitle;
+}
+
+.soft__black__subtitle {
+  @extend %soft__black__subtitle;
+}
+
+.soft__white__subtitle {
+  @extend %soft__white__subtitle;
+}
+
+@media(max-width: $sizeMobile) {
+  .app__content {
+    // border: 10px red solid;
+  }
+
+  .callback {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: 250px 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); 
+
+    &__experiences {
+      background-color: $next__blue;
+    }
+
+    &__elevate {
+      background-color: $next__blue;
+    }
+
+    &__insight {
+      background-color: $next__blue;
+    }
+
+    &__invent {
+      background-color: $next__blue;
+    }
+
+    &__engage {
+      background-color: $next__blue;
+    }
+
+    .callback__lefthalfgrid {
+      grid-row: 1 / 2;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: auto;
+
+      .callback__icon {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        justify-self: center;
+        align-self: center;
+
+        &__experiences {
+          @extend .callback__icon;
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/monitoricon_q0fggh.svg');
+          background-size: auto 90%;
+          background-position: center;
+          // margin-top: 100px;
+        }
+
+        &__elevate {
+          @extend .callback__icon;
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/rocketicon_i9yyh0.svg');
+          background-size: auto 100%;
+          background-position: center;
+          // margin-top: 100px;
+        }
+
+        &__insight {
+          @extend .callback__icon;
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587575016/icon/coralgoggle_zthntw.svg');
+          background-size: auto 85%;
+          background-position: center;
+          // margin-top: 100px;
+        }
+
+        &__invent {
+          @extend .callback__icon;
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586987870/icon/flaskicon_z3xxkm.svg');
+          background-size: auto 100%;
+          background-position: center;
+          // margin-top: 100px;
+        }
+
+        &__engage {
+          @extend .callback__icon;
+          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586987870/icon/bubbleicon_eygwwe.svg');
+          background-size: auto 100%;
+          background-position: center;
+          // margin-top: 100px;
+        }
+      }
+    }
+
+    .callback__righthalfgrid {
+
+      grid-row: 2 / 5;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+
+      .callback__title {
+        @extend .soft__white__title;
+        font-size: 30px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        padding-top: 32px;
+        align-self: end;
+      }
+
+      .callback__description {
+        color: $next__white;
+        font-size: 12px;
+        font-weight: 400;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        text-align: left;
+        padding-top: 18px;
+      }
+
+      .callback__seehow {
+        // @extend .soft__white__title;
+        font-size: 12px;
+        padding-top: 100px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 47px;
+        margin-left: 146px;
+        border-bottom: 7px solid #E03E52;
+        height: 120px;
+      }
+
+      .callback__previous {
+        // @extend .soft__white__title;
+        padding-top: 100px;
+        font-size: 12px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: start;
+        border-bottom: 7px solid #E03E52;
+        height: 120px;
+      }
+
+      .callback__next {
+        // @extend .soft__white__title;
+        padding-top: 100px;
+        font-size: 12px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: end;
+        border-bottom: 7px solid #E03E52;
+        height: 120px;
+      }
+    }
+  }
+}
