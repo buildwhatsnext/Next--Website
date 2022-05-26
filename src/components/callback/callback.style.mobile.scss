@@ -124,7 +124,7 @@
       grid-template-columns: 1fr;
 
       .callback__title {
-        @extend .soft__white__title;
+        @include soft__white__title;
         font-size: 30px;
         grid-row: 1/2;
         grid-column: 1/2;

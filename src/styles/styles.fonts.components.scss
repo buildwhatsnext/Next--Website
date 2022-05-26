@@ -225,6 +225,9 @@
   text-align: right;
 }
 
+@mixin soft__coral__title {
+}
+
 .soft__coral__title {
   @extend %soft__coral__title;
 }
@@ -237,6 +240,9 @@
   @extend %soft__black__title;
 }
 
+@mixin soft__white__title {
+}
+
 .soft__white__title {
   @extend %soft__white__title;
 }
@@ -247,6 +253,9 @@
 
 .soft__blue__subtitle {
   @extend %soft__blue__subtitle;
+}
+
+@mixin soft__white__subtitle {
 }
 
 .soft__white__subtitle {
@@ -263,7 +272,24 @@
   color: $next__coral;
 }
 
+@mixin soft__white__body {
+}
+
 .soft__white__body {
   @extend %soft__body;
   // color: $next__white;
+}
+
+@mixin hard__subinfo {
+}
+
+.hard__subinfo {
+  @extend %hard__subinfo;
+}
+
+@mixin hard__coral__subtitle {
+}
+
+.hard__coral__subtitle {
+  @extend %hard__coral__subtitle;
 }

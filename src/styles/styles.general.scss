@@ -31,8 +31,11 @@ a {
   box-sizing: border-box;
 }
 
-.full_width_height {
-  @extend %full_width_height;
+// .full_width_height {
+//   @extend %full_width_height;
+// }
+
+@mixin full_width_height {
 }
 
 .full_width_height {

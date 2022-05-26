@@ -77,7 +77,7 @@
   }
   
   .service__item__type {
-    @extend %hard__subinfo;
+    @include hard__subinfo;
     color: $next__grey;
     // border: 1px solid green;
   }

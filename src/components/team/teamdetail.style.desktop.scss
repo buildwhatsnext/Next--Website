@@ -1,14 +1,6 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-.soft__white__title {
-  @extend %soft__white__title;
-}
-
-.hard__coral__subtitle {
-  @extend %hard__coral__subtitle;
-}
-
 @media(min-width: $sizeDesktop) {
 
   .app__content {
@@ -46,7 +38,7 @@
     // overflow: hidden;
 
     .team__detail__firstname {
-      @extend .soft__white__title;
+      @include soft__white__title;
       grid-column: 12/18;
       grid-row: 2/4;
       text-align: left;
@@ -58,7 +50,7 @@
     }
   
     .team__detail__lastname {
-      @extend .soft__white__title;
+      @include soft__white__title;
       grid-column: 12/18;
       grid-row: 4/6;
       text-align: left;
@@ -71,7 +63,7 @@
   }
 
   .team__detail__position {
-    @extend .soft__white__title;
+    @include soft__white__title;
     grid-column: 12/19;
     grid-row: 6/7;
     font-size: 24px;
@@ -82,7 +74,7 @@
   }
 
   .team__detail__email {
-    @extend .hard__coral__subtitle;
+    @include hard__coral__subtitle;
     grid-column: 12/17;
     grid-row: 7/8;
     font-size: 24px;
@@ -93,7 +85,7 @@
   }
 
   .team__detail__description {
-    @extend .soft__white__title;
+    @include soft__white__title;
     // border: 10px black solid;
     grid-column: 12/17;
     grid-row: 9/15;
@@ -183,7 +175,7 @@
   
 
   .cta {
-    @extend .soft__white__title;
+    @include soft__white__title;
     grid-row: 15/16;
     grid-column: 15/17;
     font-size: 36px;
@@ -191,7 +183,7 @@
   }
 
   .back {
-    @extend .soft__white__title;
+    @include soft__white__title;
     font-size: 36px;
     justify-self: start;
     grid-row: 15/16;

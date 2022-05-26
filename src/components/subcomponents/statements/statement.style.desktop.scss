@@ -27,7 +27,7 @@
   }
 
   .statement__changing {
-    @extend .soft__white__title;
+    @include soft__white__title;
     font-size: 72px;
     grid-row-start: 2;
     grid-row-end: 3;

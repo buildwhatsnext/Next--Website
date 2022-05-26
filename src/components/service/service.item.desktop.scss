@@ -21,7 +21,7 @@
   
   .service__item__title {
     p {
-      @extend .soft__coral__title;
+      @include soft__coral__title;
       font-size: 20rem;
       white-space: nowrap;
       margin-bottom: 2rem;
@@ -42,7 +42,7 @@
   }
   
   .service__item__type {
-    @extend %hard__subinfo;
+    @include hard__subinfo;
     color: $next__grey;
   }
 }

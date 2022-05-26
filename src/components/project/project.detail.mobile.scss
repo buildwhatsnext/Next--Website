@@ -225,7 +225,7 @@
         }
 
         &__summary {
-          @extend .soft__white__body;
+          @include soft__white__body;
           color: $next__coral;
           font-size: 12px;
           // padding: 48px;
@@ -243,7 +243,7 @@
           grid-template-columns: auto 1fr;
 
           .title__text {
-            @extend .soft__white__title;
+            @include soft__white__title;
             text-align: left;
             font-size: 24px;
             align-self: center;
@@ -263,7 +263,7 @@
         }
 
         &__summary {
-          @extend .soft__white__body;
+          @include soft__white__body;
           display: grid;
           width: 330px;
           color: $next__white;
