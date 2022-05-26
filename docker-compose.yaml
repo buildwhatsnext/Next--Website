@@ -1,6 +1,7 @@
 version: "3.8"
 services:
   app:
+<<<<<<< HEAD
     build:
       context: .
     volumes:
@@ -10,3 +11,15 @@ services:
     image: next_web_app:react
     container_name: next_website_container
     command: npm start
+=======
+    build: ./Next--Website
+    volumes:
+      - .:/Next--Website
+    ports:
+      - '3000:3000'
+    image: next_web_app:react
+    container_name: next_website_container
+    # command: npm start
+    stdin_open: true
+    tty: true
+>>>>>>> 4f17c242a35182f817f0defd3196101d3288b8e2
