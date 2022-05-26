@@ -20,7 +20,7 @@
   // }
 
   .project__detail__name {
-    @extend .soft__white__title;
+    @include soft__white__title;
     font-size: 140px;
     font-weight: 600;
     line-height: 180px;
@@ -122,7 +122,7 @@
           // border: 1px solid white;
 
           .title__text {
-            @extend .soft__coral__title;
+            @include soft__coral__title;
             text-align: left;
             // align-self: center;
             padding-left: 40px;
@@ -137,7 +137,7 @@
         }
 
         &__summary {
-          @extend .soft__white__body;
+          @include soft__white__body;
           color: $next__coral;
           padding-left: 200px;
           padding-right: 200px;
@@ -155,7 +155,7 @@
           grid-template-columns: auto 1fr;
 
           .title__text {
-            @extend .soft__white__title;
+            @include soft__white__title;
             text-align: left;
             padding-left: 52px;
           }
@@ -169,7 +169,7 @@
         }
 
         &__summary {
-          @extend .soft__white__body;
+          @include soft__white__body;
           color: $next__white;
           padding-left: 200px;
           padding-right: 200px;
@@ -255,7 +255,7 @@
   }
 
   .project__detail__back {
-    @extend .soft__white__subtitle;
+    @include soft__white__subtitle;
     font-size: 24px;
     grid-row: 3/4;
     grid-column: 1/2;

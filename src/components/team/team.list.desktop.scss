@@ -51,7 +51,7 @@
     }
 
     &__name {
-      @extend .soft__white__title;
+      @include soft__white__title;
       font-size: 24px;
       white-space: nowrap;
       align-self: end;
@@ -67,7 +67,7 @@
     }
 
     &__position {
-      @extend .soft__white__title;
+      @include soft__white__title;
       font-size: 18px;
       white-space: nowrap;
       margin-top: 1px;
@@ -79,7 +79,7 @@
     }
 
     &__location {
-      @extend .soft__white__title;
+      @include soft__white__title;
       font-size: 18px;
       white-space: nowrap;
       align-self: end;

@@ -16,7 +16,7 @@
     }
   
     .project__item__type {
-      @extend %hard__subinfo;
+      @include hard__subinfo;
       color: $next__grey;
       font-size: 12px;
       grid-column: 2/3;
@@ -94,7 +94,7 @@
 
       
           p {
-            @extend .soft__coral__title;
+            @include soft__coral__title;
             text-align: left;
             white-space: nowrap;
             font-size: 200px;
@@ -118,7 +118,7 @@
           opacity: 0;
       
           p {
-            @extend .soft__coral__title;
+            @include soft__coral__title;
             text-align: left;
             white-space: nowrap;
             font-size: 200px;

@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/Next--Website
+    ports:
+      - 3000:3000
+    image: next_web_app:react
+    container_name: next_website_container
+    command: npm start

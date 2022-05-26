@@ -8,7 +8,7 @@
 @media(min-width: $sizeDesktop) {
 
   .home {
-    @extend .full_width_height;
+    @include full_width_height;
     display: grid;
     grid-template-rows: auto auto 150px;
     grid-column: 3 / 9;
@@ -17,7 +17,7 @@
     
 
     .home__hlw {
-      @extend .soft__coral__title;
+      @include soft__coral__title;
 
       .container {
         display: grid;
@@ -69,7 +69,7 @@
     }
 
     .home__tagline {
-      @extend .soft__coral__title;
+      @include soft__coral__title;
       overflow: hidden;
       height: auto;
       display: grid;
@@ -82,7 +82,7 @@
     }
 
     .home__cta {
-      @extend .soft__white__title;
+      @include soft__white__title;
       justify-self: right;
       font-size: 18px;
       grid-row: 3 / 4;
@@ -96,7 +96,7 @@
           }
 
           .link__highlighted__text{
-            @extend .soft__coral__title;
+            @include soft__coral__title;
             font-size: 36px;
             margin-bottom: 20px;
           }
