@@ -250,7 +250,8 @@
   @extend %soft__white__title;
 }
 
-@mixin soft__coral__title {
+@mixin soft__coral__subtitle {
+  @extend %soft__coral__subtitle;
 }
 
 .soft__coral__subtitle {
