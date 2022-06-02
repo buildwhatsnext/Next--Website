@@ -232,6 +232,9 @@
   @extend %soft__coral__title;
 }
 
+@mixin soft__blue__title {
+}
+
 .soft__blue__title {
   @extend %soft__blue__title;
 }
@@ -245,6 +248,9 @@
 
 .soft__white__title {
   @extend %soft__white__title;
+}
+
+@mixin soft__coral__title {
 }
 
 .soft__coral__subtitle {
@@ -265,6 +271,9 @@
 .soft__blue__info {
   @extend %soft__info;
   color: $next__blue;
+}
+
+@mixin hard__coral__info {
 }
 
 .hard__coral__info {
