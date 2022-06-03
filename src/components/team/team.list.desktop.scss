@@ -158,11 +158,6 @@
       @extend .team__item__image;
       background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1654214754/Team%20Headshot%202022/SM-PNG_brgotp.webp');
     }
-
-    &__preston {
-      @extend .team__item__image;
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586184911/team/funny/preston_funny_tg7pnf.webp');
-    }
   }
   
   // .spacer__position__1 {
