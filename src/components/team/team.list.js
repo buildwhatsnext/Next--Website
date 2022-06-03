@@ -29,7 +29,7 @@ export function TeamList(props) {
         />
       : <Spacer key={i} position={i} />
 
-    teamList.push(data);
+     teamList.push(data);
   }
 
   teamList.reverse();
