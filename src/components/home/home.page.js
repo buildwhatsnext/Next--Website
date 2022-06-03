@@ -43,9 +43,9 @@ design startup within`;
             <StatementMutable data={this.state.designTypes} statement={statement}/>
           </div>
         </div>
-        <div className="home__cta">
+        {/* <div className="home__cta">
           <InternalLinkHighlighted value={cta} destination="/projects" />
-        </div>
+        </div> */}
       </div>
     )
   }
