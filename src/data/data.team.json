@@ -1,7 +1,7 @@
 {
   "type" : "team information",
   "members" : {    
-    "lee" : {
+    "devore" : {
       "name": "Lee Devore",
       "shortName": "Lee",
       "email": "ldevore@hlw.com",
@@ -12,7 +12,7 @@
       "firstname" : "Lee",
       "lastname": "Devore",
       "fullpositiontitle": "Principal & Senior Project Architect",
-      "picture": null
+      "pictureURL": null
     },
     "xiaoxuan" : {
       "name": "Xiaoxuan Peng",
@@ -40,7 +40,7 @@
       "fullpositiontitle": "Associate & BIM Specialist",
       "pictureURL": null
     },
-    "chris" : {
+    "tanjhid" : {
       "name": "Tanjhid Choudhury",
       "shortName": "Tanjhid",
       "email": "tchoudhury@hlw.com",
@@ -105,7 +105,7 @@
       "fullpositiontitle": "Design Technology Specialist",
       "pictureURL": null
     },
-    "Abhishek" : {
+    "abhishek" : {
       "name": "Abhishek Bhairavkar",
       "shortName": "abhishek",
       "email": "abhairavkar@hlw.com",
@@ -117,20 +117,6 @@
       "lastname": "Bhairavkar",
       "fullpositiontitle": "BIM Specialist",
       "pictureURL": null
-    },
-    "mina" : {
-      "name": "Mina Nassif",
-      "shortName": "mina",
-      "email": "mnassif@hlw.com",
-      "position": "BIM Specialist",
-      "location": "New York",
-      "description": "Mina has always been fascinated by how technology can shape the Architecture world. He started studying Architecture at NJIT, where he graduated with a Bachelor's degree. He worked as a designer in MMA, did renders, animations, and construction documents. Officially started his BIM Career in Toll Brother, where he helped in transforming the company from the 2D world (Autocad) to 3D world and create a single source of truth models. He also published the first version of the BIM world. In NEXT, he's interesting in computation graphs and creating an excellent experience for clients using VR/AR,  realtime animations and renders.",
-      "team": "BIM / Computation",
-      "firstname" : "Mina",
-      "lastname": "Nassif",
-      "fullpositiontitle": "BIM Specialist",
-      "pictureURL": null
-      
     }
   }
 }
