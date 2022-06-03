@@ -1,16 +1,16 @@
 {
   "type" : "team information",
   "members" : {    
-    "devore" : {
+    "lee" : {
       "name": "Lee Devore",
-      "shortName": "Lee",
+      "shortName": "lee",
       "email": "ldevore@hlw.com",
       "position": "Principal & Senior Project Architect",
       "location": "NY",
       "description": "Lee is Principal in charge of our technology team but cant use Revit (or any other significant technology) and isn't on Instagram. He is NEXTs Steve Jobs.",
       "team": "All",
-      "firstname" : "Lee",
-      "lastname": "Devore",
+      "firstname" : "lee",
+      "lastname": "devore",
       "fullpositiontitle": "Principal & Senior Project Architect",
       "pictureURL": null
     },
@@ -42,12 +42,12 @@
     },
     "tanjhid" : {
       "name": "Tanjhid Choudhury",
-      "shortName": "Tanjhid",
+      "shortName": "tanjhid",
       "email": "tchoudhury@hlw.com",
       "position": "BIM Manager",
       "location": "LA",
-      "description": "Tanjhid is your guy for creating a counter-argument to something you thought was self-evident or, as his wife calls it, annoying. He is a licensed architect in LA who graduated with a BArch from the University of Miami in 2009 and an MArch from the Glasgow School of Art in 2010. He started the NY office, transferred to LA and currently works on the YouTube Headquarters.",
-      "team": "BIM/Computation",
+      "description": "tanjhid is a designer based in NY with a B. Arch from Pratt Institute. With nearly three years of experience in robotics, Bharti’s true interest lies in exploring new technologies. At Next/ she's working on real time rendering projects, animations, front end development and 3d print fabrication . She is quite quirky, and that peeks through in her work.",
+      "team": "Experience",
       "firstname" : "Tanjhid",
       "lastname": "Choudhury",
       "fullpositiontitle": "BIM Manager",
