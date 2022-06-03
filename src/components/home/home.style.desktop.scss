@@ -42,6 +42,7 @@
         grid-row: 1/2;
         grid-column: 1/2;
         margin-top: 110px;
+        
 
         .link__highlighted__background {
           margin-left: -10px;
@@ -56,12 +57,12 @@
             margin-left: -10px;
             margin-right: -10px;
             margin-bottom: 0px;
-            background-color: $next__white;
+            background-color: $next__blue;
             z-index: 1;
           }
     
           .link__highlighted__text {
-            color: $next__blue;
+            color: $next__white;
             z-index: 2;
           }
         }
@@ -82,7 +83,7 @@
     }
 
     .home__cta {
-      @include soft__white__title;
+      @include soft__blue__title;
       justify-self: right;
       font-size: 18px;
       grid-row: 3 / 4;
@@ -92,11 +93,11 @@
         .link__highlighted {
           .link__highlighted__background {
             // padding: 25px;
-            background-color: $next__white;
+            background-color: $next__blue;
           }
 
           .link__highlighted__text{
-            @include soft__coral__title;
+            @include soft__white__title;
             font-size: 36px;
             margin-bottom: 20px;
           }
@@ -106,7 +107,7 @@
       .link__highlighted {
         .link__highlighted__background {
           // margin-left: -10px;
-          margin-right: -10px;
+          // margin-right: -10px;
           margin-bottom: 10px;
           
         }

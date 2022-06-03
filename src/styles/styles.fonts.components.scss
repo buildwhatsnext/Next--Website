@@ -225,6 +225,19 @@
   text-align: right;
 }
 
+@mixin soft__blue__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__blue;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.soft__blue__title {
+  @extend %soft__blue__title;
+}
+
 @mixin soft__coral__title {
   font-family: 'neue-haas-grotesk-display', sans-serif;
   font-style: normal;
@@ -238,14 +251,13 @@
   @extend %soft__coral__title;
 }
 
-@mixin soft__blue__title {
-}
-
-.soft__blue__title {
-  @extend %soft__blue__title;
-}
-
 @mixin soft__black__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__black;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
 }
 
 .soft__black__title {
@@ -253,6 +265,12 @@
 }
 
 @mixin soft__white__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__white;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
 }
 
 .soft__white__title {
