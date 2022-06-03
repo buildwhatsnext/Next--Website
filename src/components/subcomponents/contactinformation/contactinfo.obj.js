@@ -15,7 +15,7 @@ export function ContactInfoList(props) {
       <div className="contact__info__ticket"><a href="https://hlw.atlassian.net/servicedesk/customer/portal/2"><Ticket /></a></div>
       <div className="contact__info__email"><a href="mailto:next@hlw.com"><Email /></a></div>
       <div className="contact__info__web"><a href="https://www.hlwnext.com/" target="_blank"><Web /></a></div>
-      <div className="contact__info__location"><a href="https://goo.gl/maps/mmTSCaahkfkdJkQk9" target="_blank"><Location /></a></div>
+      {/* <div className="contact__info__location"><a href="https://goo.gl/maps/mmTSCaahkfkdJkQk9" target="_blank"><Location /></a></div> */}
     </div>
   )
 }
@@ -58,23 +58,23 @@ export const Web = () => (
   />
 )
 
-export const Location = () => {
+// export const Location = () => {
 
-  const locationData = `5 Penn Plaza
+//   const locationData = `5 Penn Plaza
 
-  New York, NY
+//   New York, NY
   
-  10001
-  `;
+//   10001
+//   `;
 
-  return (
-    <ContactInfoItem 
-      infoType="location"
-      value={locationData}
-      iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/34location_q4lzpx.svg'
-    />
-  )
-}
+//   return (
+//     <ContactInfoItem 
+//       infoType="location"
+//       value={locationData}
+//       iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/34location_q4lzpx.svg'
+//     />
+//   )
+// }
 
 
 {/* <a href={props.destination} target="_blank" destination={ mapLink }/> */}
