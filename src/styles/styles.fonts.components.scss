@@ -226,6 +226,12 @@
 }
 
 @mixin soft__coral__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__coral;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
 }
 
 .soft__coral__title {
@@ -237,6 +243,9 @@
 
 .soft__blue__title {
   @extend %soft__blue__title;
+}
+
+@mixin soft__black__title {
 }
 
 .soft__black__title {
@@ -251,7 +260,6 @@
 }
 
 @mixin soft__coral__subtitle {
-  @extend %soft__coral__subtitle;
 }
 
 .soft__coral__subtitle {
