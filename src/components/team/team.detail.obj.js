@@ -21,7 +21,8 @@ export default class TeamMemberDetailPage extends React.Component {
 }
 
 
-export function TeamMemberDetail(data) {
+export function 
+TeamMemberDetail(data) {
   
   const contactus = "Contact Us";
   const back = "Back";
