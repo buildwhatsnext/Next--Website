@@ -25,19 +25,20 @@
       font-size: 20rem;
       white-space: nowrap;
       margin-bottom: 2rem;
-      transition: all .1s;
+      transition: all .2s;
       
       @supports (-webkit-text-stroke: 3px black) {
         -webkit-text-stroke: .25rem $next__coral;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        transition: 3s ease-in-out;
+        transition: 0.2s ease-in-out;
       }
 
-      // &:hover {
-      //   color: white;
-      //   -webkit-text-fill-color: white;
-      // }
+      &:hover {
+        color: $next__coral;
+        -webkit-text-fill-color: $next__coral;
+        transition:  0.2s ease-in;
+      }
     }
   }
   
