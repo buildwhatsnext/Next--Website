@@ -96,7 +96,7 @@
       grid-template-columns: auto;
 
       .about__title {
-        @include soft__blue__title;
+        @include soft__black__title;
         font-size: 7.2rem;
         font-weight: 600;
         text-align: left;
@@ -105,7 +105,7 @@
       }
 
       .about__description {
-        @include soft__blue__title;
+        @include soft__black__title;
         font-size: 24px;
         font-weight: 400;
         grid-row: 3/4;
@@ -134,12 +134,14 @@
         grid-column: 1/2;
         justify-self: end;
         margin-right: 226px;
-        border-bottom: 15px solid #E03E52;
+        border-bottom: 10px solid #E03E52;
         height: 135px;
 
         &:hover {
+          @include soft__white__title;
+          font-size: 24px;
           cursor: pointer;
-          border-bottom: 34px solid #E03E52;
+          border-bottom: 34px solid #06038D;;
           transition: all .1s ease-in-out;
         }
       }
@@ -152,13 +154,16 @@
         grid-column: 1/2;
         justify-self: end;
         margin-right: 100px;
-        border-bottom: 15px solid #E03E52;
+        border-bottom: 10px solid #E03E52;
         height: 135px;
 
         &:hover {
+          @include soft__white__title;
+          font-size: 24px;
           cursor: pointer;
-          border-bottom: 34px solid #E03E52;
+          border-bottom: 34px solid #06038D;
           transition: all .1s ease-in-out;
+
         }
       }
     }
