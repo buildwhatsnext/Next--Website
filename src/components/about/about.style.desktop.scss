@@ -96,12 +96,16 @@
       grid-template-columns: auto;
 
       .about__title {
+        @include soft__blue__title;
+        font-size: 7.2rem;
+        font-weight: 600;
+        text-align: left;
         grid-row: 2/3;
         grid-column: 1/2;
       }
 
       .about__description {
-        @include soft__coral__title;
+        @include soft__blue__title;
         font-size: 24px;
         font-weight: 400;
         grid-row: 3/4;
@@ -111,7 +115,7 @@
       }
 
       .about__seehow {
-        @include soft__white__title;
+        @include soft__blue__title;
         font-size: 24px;
         padding-top: 100px;
         grid-row: 3/4;
@@ -123,7 +127,7 @@
       }
 
       .about__previous {
-        @include soft__white__title;
+        @include soft__blue__title;
         padding-top: 100px;
         font-size: 24px;
         grid-row: 3/4;
@@ -141,7 +145,7 @@
       }
 
       .about__next {
-        @include soft__white__title;
+        @include soft__blue__title;
         padding-top: 100px;
         font-size: 24px;
         grid-row: 3/4;

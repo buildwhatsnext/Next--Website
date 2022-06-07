@@ -59,9 +59,9 @@ export default class About extends React.Component {
         <div className="about__righthalfgrid">
           <div className="about__title"><p>{current.name}</p></div>
           <div className="about__description"><p>{current.description}</p></div>
-          <div className="about__seehow">
+          {/* <div className="about__seehow">
             <InternalLinkHighlighted value={seehow} destination={current.link} />
-          </div>
+          </div> */}
           <div className="about__previous" onClick={ this.reverse }>
             <p>Previous</p>
           </div>
