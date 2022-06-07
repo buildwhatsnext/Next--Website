@@ -114,17 +114,17 @@
         justify-self: start;
       }
 
-      .about__seehow {
-        @include soft__blue__title;
-        font-size: 24px;
-        padding-top: 100px;
-        grid-row: 3/4;
-        grid-column: 1/2;
-        width: 95px;
-        justify-self: end;
-        margin-right: 226px;
+      // .about__seehow {
+      //   @include soft__blue__title;
+      //   font-size: 24px;
+      //   padding-top: 100px;
+      //   grid-row: 3/4;
+      //   grid-column: 1/2;
+      //   width: 95px;
+      //   justify-self: end;
+      //   margin-right: 226px;
 
-      }
+      // }
 
       .about__previous {
         @include soft__blue__title;
@@ -133,7 +133,7 @@
         grid-row: 3/4;
         grid-column: 1/2;
         justify-self: end;
-        margin-right: 400px;
+        margin-right: 226px;
         border-bottom: 15px solid #E03E52;
         height: 135px;
 
