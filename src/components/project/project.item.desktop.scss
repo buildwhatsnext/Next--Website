@@ -43,12 +43,12 @@
         height: 300px;
         
 
-        &__piper {
+        &__member {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.webp');
           background-size: 100% auto;
         }
 
-        &__turing {
+        &__software {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.webp');
           background-size: 100% auto;
         }
@@ -76,8 +76,6 @@
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       z-index: 2;
-      // border: 10px red solid;
-
 
       a {
         display: grid;
