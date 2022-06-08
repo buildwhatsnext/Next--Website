@@ -48,25 +48,15 @@
           background-size: 100% auto;
         }
 
-        &__software {
+        &__Revit {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.webp');
           background-size: 100% auto;
         }
 
-        &__hofstra {
+        &__addin {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587582169/project/image10_ffht0c.webp');
           background-size: 100% auto;
           background-position: center;
-        }
-
-        &__fordham {
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185013/project/fordham_i1nt4m.webp');
-          background-size: 100% auto;
-        }
-
-        &__google {
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587656600/project/google_4_gy06mm.webp');
-          background-size: 100% auto;
         }
       }
     }
@@ -120,7 +110,7 @@
             text-align: left;
             white-space: nowrap;
             font-size: 200px;
-            color: $next__white;
+            color: $next__coral;
             width: auto;
             direction: ltr;
             // border: 10px red solid;
@@ -135,7 +125,7 @@
           display: none;
           // justify-self: end;
           float: right;
-          border-bottom: 8px $next__coral solid;
+          border-bottom: 10px $next__coral solid;
           margin-bottom: 33px;
         }
       }

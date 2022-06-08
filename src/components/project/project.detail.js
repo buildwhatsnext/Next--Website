@@ -52,11 +52,11 @@ function ProjectSummary(info) {
     icon: 'https://res.cloudinary.com/next-hlw/image/upload/v1586185305/icon/14chip_xnacgj.svg'
   }
 
-  const sumO = {
-    title: "The Outcome",
-    summary: outcome,
-    icon: 'https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/56.whitebulb_y75fno.svg'
-  }
+  // const sumO = {
+  //   title: "The Outcome",
+  //   summary: outcome,
+  //   icon: 'https://res.cloudinary.com/next-hlw/image/upload/v1586185086/icon/56.whitebulb_y75fno.svg'
+  // }
 
   
   const back = `Back`;
@@ -75,7 +75,7 @@ function ProjectSummary(info) {
           { sumC.summary }
         </div>
       </div>
-      <div className="summary__outcome">
+      {/* <div className="summary__outcome">
         <div className="summary__outcome__title">
           <div className="title__icon"> <img src={ sumO.icon } alt=""/> </div>
           <div className="title__text">{ sumO.title }</div>
@@ -83,7 +83,7 @@ function ProjectSummary(info) {
         <div className="summary__outcome__summary">
           { sumO.summary }
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

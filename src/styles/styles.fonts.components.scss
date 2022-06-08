@@ -350,6 +350,15 @@
   color: $next__coral;
 }
 
+@mixin soft__black__body {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
 @mixin soft__white__body {
 }
 

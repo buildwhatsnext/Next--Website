@@ -2,7 +2,7 @@
   "type" : "project information",
   "projects" : {    
     "member" : {
-      "title": "New Member!",
+      "title": "member",
       "shortName": "New Member!",
       "client": "HLW Sustainability",
       "location": "New York",
@@ -17,8 +17,8 @@
       },
       "pictureURL":[""]
     },
-    "turing" : {
-      "title": "Revit",
+    "revit" : {
+      "title": "revit",
       "shortName": "Revit 2023",
       "client": "HLW International",
       "location": "New York",
@@ -26,15 +26,15 @@
       "type": "Software Update",
       "work": "INN : Application Development",
       "team": "INNOVATION",
-      "slug": "Revit",
+      "slug": "revit",
       "description": {
         "challenge" : "Today's workplaces and learning hubs are at the center of massive shifts. The rise of automation will displace close to 40 million workers over the next decade. Technology advancements and health advancements will continue to create heightened mobility and distribution in offices and on campuses. New technologies evolving across nearly all verticals have created the need for continual upskilling. How do we establish more reliable connections between design and productivity in increasingly automated and distributed workplaces and learning spaces?  How do we anticipate changes in workplace culture, arising from these shifts? How do we foster the turns towards the commingling of work and education through design?",
         "outcome" : "We are building Turing: a deep learning platform that will provide intelligence for the workplace and learning space, and optimization for their organization in early design approaches. Turing will feature spatial factors, cultural indicators, productivity measures, real estate market trends, and sustainability data in making predictions on how these spaces will change and how to optimize them. "
       },
       "pictureURL":[""]
     },
-    "hofstra" : {
-      "title": "HLW Add In",
+    "addin" : {
+      "title": "addin",
       "shortName": "HLW Add In",
       "client": "Hofstra University",
       "location": "New York",
@@ -42,7 +42,7 @@
       "type": "Product Development",
       "work": "SIM : Real Time Virtual Reality",
       "team": "SIMULATION",
-      "slug": "HLW Add In",
+      "slug": "addin",
       "description": {
         "challenge" : "Hofstra University's new Student innovation center became its designers' response to the question, 'how will we make a building for the next generation of nurses and engineers?'. Crafted in conjunction with NEXT, the center's proposal involved synthesizing nursing and engineering classes and spaces together in a spatially integrated vertical campus. Getting the right balance of spaces, however, would be a more significant challenge. To tackle this challenge, Hofstra's engineering and nursing faculty would have to discuss the sizes and placement of 90+ spatial types with its project team working across three sites. ",
         "outcome" : "NEXT built an interactive VR tool for collaboration to gather the Hofstra faculty and project team together in the same space virtually. The tool, created using the Unreal Engine, enabled users to place, modify, and save the spatial arrangements designed within each session. Utilizing this approach, Hofstra's faculty and project teams can overcome the weeks-long back and forth customarily required and collaborate to find new possibilities in real-time."
