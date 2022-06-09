@@ -101,17 +101,11 @@
   .team__detail__pictureURL {
     background-repeat: no-repeat;
     z-index: 4;
-    height: 100%;
-    width: 100%;
-    grid-row: 2/17;
+    grid-row: 2/16;
     grid-column: 2/9;
-    background-size: auto auto;
-  }
+    background-size: 100% auto;
+    background-position: bottom;
 
-  .team__detail__pictureURL {
-
-    // border: 10px red solid;
-    background-position: center;
 
     &__lee {
       @extend .team__detail__pictureURL;
