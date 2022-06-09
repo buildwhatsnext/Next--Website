@@ -24,12 +24,19 @@
         margin-top: 100px;
         grid-row: 1/3;
 
+        @keyframes blink-effect {
+          50% {
+            opacity: 0
+          }
+        }
+
         &__computation {
           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587671497/icon/bimbot_rbl4kq.svg');
           background-repeat: no-repeat;
           background-size: 50% auto;
           grid-column: 1 / -1;
           grid-row: 1 / 4;
+          animation: blink-effect 1s step-end infinite;
         }
 
         &__experience {
