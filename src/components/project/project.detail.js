@@ -47,7 +47,7 @@ function ProjectSummary(info) {
   const { challenge, outcome } = info;
 
   const sumC = {
-    title: "The Challenges",
+    title: "What's up?",
     summary: challenge,
     icon: 'https://res.cloudinary.com/next-hlw/image/upload/v1586185305/icon/14chip_xnacgj.svg'
   }
@@ -98,11 +98,11 @@ function ProjectInfoTable(data) {
 
 function cleanInfo(projectInfo) {
   const dataNeeds = [
-    'client',
-    'location',
-    'status',
-    'type',
-    'team'
+    'A',
+    'B',
+    'C',
+    'D',
+    'E'
   ];
 
   let info = {};

@@ -4,28 +4,27 @@
     "member" : {
       "title": "member",
       "shortName": "New Member!",
-      "client": "HLW Sustainability",
-      "location": "New York",
-      "status": "Ongoing",
-      "type": "Employment",
+      "A": "Aashna Bajaj",
+      "B": "New York",
+      "C": "intern",
+      "D": "abajaj",
       "work": "INN : Application Development",
-      "team": "INNOVATION",
+      "E": "INNOVATION",
       "slug": "member",
       "description": {
-        "challenge" : "Companies will face one of the defining challenges of our time when they look to build, battling climate change through 'sustainability' and 'wellness.'  Unfortunately, these organizations must now wade through the acronyms and initials of sustainability and wellness rankings and their respective rating schemes to obtain a firmer grasp of where they stand and look to go with their sustainability and wellness efforts. Mostly, they are left perplexed.",
-        "outcome" : "Piper is a smart assistant built to help companies discover, learn about, and compare sustainability and wellness frameworks across their building projects. NEXT, in conjunction with sustainability experts at HLW, created Piper to replicate an early engagement with a subject matter expert and guide companies down the right path as they strategize building, or to course-correct in late-stage planning. With Piper, we have invented a means to scale organizations' abilities to tackle climate change."
+        "challenge" : "Say Hi to Aashna! She is currently a student at Pratt Institute majoring in Bachelor's of Architecture. She joined NEXT with an interest in technology advancement in AEC field."
       },
       "pictureURL":[""]
     },
     "revit" : {
       "title": "revit",
       "shortName": "Revit 2023",
-      "client": "HLW International",
-      "location": "New York",
-      "status": "On-Going",
-      "type": "Software Update",
+      "A": "Software Update",
+      "B": "All Offices",
+      "C": "From Q4",
+      "D": "Revit 2023",
       "work": "INN : Application Development",
-      "team": "INNOVATION",
+      "E": "INNOVATION",
       "slug": "revit",
       "description": {
         "challenge" : "Today's workplaces and learning hubs are at the center of massive shifts. The rise of automation will displace close to 40 million workers over the next decade. Technology advancements and health advancements will continue to create heightened mobility and distribution in offices and on campuses. New technologies evolving across nearly all verticals have created the need for continual upskilling. How do we establish more reliable connections between design and productivity in increasingly automated and distributed workplaces and learning spaces?  How do we anticipate changes in workplace culture, arising from these shifts? How do we foster the turns towards the commingling of work and education through design?",
@@ -34,14 +33,14 @@
       "pictureURL":[""]
     },
     "addin" : {
-      "title": "addin",
+      "title": "Add-Ins",
       "shortName": "HLW Add In",
-      "client": "Hofstra University",
-      "location": "New York",
-      "status": "On-Going",
-      "type": "Product Development",
+      "A": "HLW Revit Add-Ins",
+      "B": "All Offices",
+      "C": "From Q3",
+      "D": "Product Dev",
       "work": "SIM : Real Time Virtual Reality",
-      "team": "SIMULATION",
+      "E": "INNOVATION",
       "slug": "addin",
       "description": {
         "challenge" : "Hofstra University's new Student innovation center became its designers' response to the question, 'how will we make a building for the next generation of nurses and engineers?'. Crafted in conjunction with NEXT, the center's proposal involved synthesizing nursing and engineering classes and spaces together in a spatially integrated vertical campus. Getting the right balance of spaces, however, would be a more significant challenge. To tackle this challenge, Hofstra's engineering and nursing faculty would have to discuss the sizes and placement of 90+ spatial types with its project team working across three sites. ",

@@ -44,7 +44,7 @@
       grid-row: 2 / 3;
       grid-column: 1 / 4;
       line-height: 110%;
-      padding-top: 20px;
+      padding-top: 6rem;
     }
 
     &__addin {
@@ -52,7 +52,7 @@
       grid-row: 2 / 3;
       grid-column: 1 / 4;
       line-height: 100%;
-      padding-top: 10px;
+      padding-top: 6rem;
     }
   }
 
@@ -60,7 +60,6 @@
     grid-column: 8/11;
     grid-row: 2/3;
     align-self: end;
-    
     z-index: 2;
 
     .info__table {
@@ -70,15 +69,15 @@
       .info__item {
         // border: 1px solid orange;
 
-        &__client {
+        &__A {
           grid-column: span 4;
         }
 
-        &__location {
+        &__B {
           grid-column: span 2;
         }
 
-        &__status, &__type, &__team {
+        &__D, &__C, &__E {
           grid-column: span 2;
         }
       }
@@ -125,7 +124,7 @@
 
         &__summary {
           @include soft__black__body;
-          color: $next__coral;
+          color: $next__black;
           padding-left: 200px;
           padding-right: 200px;
           padding-top: 40px;
@@ -185,7 +184,7 @@
       z-index: 1;
     
       &__member {
-        background: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185027/project/piper_ocu6tm.png');
+        background: url('https://res.cloudinary.com/next-hlw/image/upload/v1654728125/team/hellow_xqmpha.webp');
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         height: 100%;
@@ -197,12 +196,12 @@
       }
   
       &__revit {
-        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185036/project/turingplaceholder_o7jwvb.webp');
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1654733593/Website%20Assets/revit_2023_u5sxkc.webp');
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
         overflow: hidden;
       }
   
