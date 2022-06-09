@@ -31,11 +31,9 @@
   .team__list {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
-    // border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-row-gap: 1rem;
-    // row-gap: 10px;
   }
 
   .team__item {
@@ -88,14 +86,51 @@
       opacity: 0.5;
     }
 
-    &__block {
+    
+    @keyframes TrapazoidFadeInOut {
+      0% {
+      opacity:1;
+      }
+      45% {
+      opacity:1;
+      }
+      55% {
+      opacity:0;
+      }
+      100% {
+      opacity:0;
+      }
+    }
+
+
+    &__block__coral {
+      overflow: hidden;
+      grid-column: 1 / -1;
+      grid-row: 2 / 5;
+      z-index: 2;
+      animation-name: TrapazoidFadeInOut;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-direction: alternate;
+
+      &__content {
+        background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__block__blue {
       overflow: hidden;
       grid-column: 1 / -1;
       grid-row: 2 / 5;
       z-index: 1;
 
       &__content {
-        background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1586185079/icon/53trapazoid_qeebow.webp");
+        background-image: url("https://res.cloudinary.com/next-hlw/image/upload/v1654784200/icon/BLUE_TRAPAZOID_co5zbn.webp");
         background-repeat: no-repeat;
         background-size: contain;
         height: 100%;
@@ -113,6 +148,7 @@
     grid-column: 1 / 3;
     background-size: cover;
     z-index: 6;
+    
 
     &__lee {
       @extend .team__item__image;
