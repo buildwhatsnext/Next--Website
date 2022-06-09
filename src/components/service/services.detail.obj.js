@@ -28,6 +28,9 @@ export function ServiceDetail(data) {
       
       <div className="service__right">
         <div className={`service__right__icon service__right__icon__${data.slug}`}></div>
+        <div className='service__right__flickerOne'></div>
+        <div className='service__right__flickerTwo'></div>
+        <div className='service__right__flickerThree'></div>
         <div className='service__right__back'>
           <InternalLinkHighlighted value={back} destination="/services" />
         </div>
