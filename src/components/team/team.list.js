@@ -11,13 +11,13 @@ export function TeamList(props) {
 
   const tNames = Object.getOwnPropertyNames(members).sort();
 
-  let i = tNames.length * 2;
+  let i = tNames.length;
   let teamList = [];
   for(i; i >= 0; i--) {
-    let useSpace = i % 2 === 0;
+    let useSpace = i % 1 === 0;
 
     const info = useSpace
-      ? members[tNames[i/2]]
+      ? members[tNames[i/1]]
       : null;
 
     let data = info
