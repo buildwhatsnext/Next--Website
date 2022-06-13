@@ -58,13 +58,11 @@ export default class Callback extends React.Component {
 
         <div className="callback__righthalfgrid">
           <div className="callback__title">
-            <p>Welcome!</p>
+            <p>Oops!</p>
           </div>
           <div className="callback__description">
-            <p>Enter hlw Credentials to grant access to your data!</p>
-          </div>
-          <div className="callback__login">
-            <p>Log In</p>
+            <p>Looks like either your license has been expired or you have no permission to access this data.</p>
+            <p>Please reach out to NEXT by submitting a ticket!</p>
           </div>
           <div className="callback__ticket">
             <p>Ticket</p>

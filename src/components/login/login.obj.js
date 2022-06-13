@@ -50,23 +50,23 @@ export default class Login extends React.Component {
     console.log(this.state.current);
 
     return (
-      <div className={`login login__${current.shortName}`}>
+      <div className={`callback callback__${current.shortName}`}>
 
-        <div className="login__lefthalfgrid">
-          <div className={`login__icon login__icon__${current.shortName}`}/>
+        <div className="callback__lefthalfgrid">
+          <div className={`callback__icon callback__icon__${current.shortName}`}/>
         </div>
 
-        <div className="login__righthalfgrid">
-          <div className="login__title">
+        <div className="callback__righthalfgrid">
+          <div className="callback__title">
             <p>Welcome!</p>
           </div>
-          <div className="login__description">
+          <div className="callback__description">
             <p>Enter hlw Credentials to grant access to your data!</p>
           </div>
-          <div className="login__login">
+          <div className="callback__login">
             <p>Log In</p>
           </div>
-          <div className="login__ticket">
+          <div className="callback__ticket">
             <p>Ticket</p>
           </div>
         </div>

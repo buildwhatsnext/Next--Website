@@ -115,7 +115,7 @@
       }
     }
 
-    .callback__righthalfgrid {
+    .login__righthalfgrid {
 
       grid-row: 2 / 5;
       grid-column: 1 / -1;
@@ -123,7 +123,7 @@
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr;
 
-      .callback__title {
+      .login__title {
         @include soft__white__title;
         font-size: 30px;
         grid-row: 1/2;
@@ -132,7 +132,7 @@
         align-self: end;
       }
 
-      .callback__description {
+      .login__description {
         color: $next__white;
         font-size: 12px;
         font-weight: 400;
@@ -142,7 +142,7 @@
         padding-top: 18px;
       }
 
-      .callback__seehow {
+      .login__seehow {
         // @extend .soft__white__title;
         font-size: 12px;
         padding-top: 100px;
@@ -154,7 +154,7 @@
         height: 120px;
       }
 
-      .callback__previous {
+      .login__previous {
         // @extend .soft__white__title;
         padding-top: 100px;
         font-size: 12px;
@@ -165,7 +165,7 @@
         height: 120px;
       }
 
-      .callback__next {
+      .login__next {
         // @extend .soft__white__title;
         padding-top: 100px;
         font-size: 12px;
