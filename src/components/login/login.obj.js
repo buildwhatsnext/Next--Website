@@ -2,7 +2,7 @@ import React from 'react';
 import './login.style.desktop.scss';
 import './login.style.mobile.scss';
 import data from '../../data/data.callback.json';
-import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
+import { ExternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 export default class Login extends React.Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export default class Login extends React.Component {
   }
 
   cycle() {
-    const { start, end, current } = this.state;
+    const { current } = this.state;
     let count = current + 1;
 
     if(count > 4) {
@@ -30,7 +30,7 @@ export default class Login extends React.Component {
   }
 
   reverse() {
-    const { start, end, current } = this.state;
+    const { current } = this.state;
     let count = current - 1;
 
     if(count < 0) {
@@ -59,9 +59,7 @@ export default class Login extends React.Component {
             <p>Welcome!</p>
           </div>
           <div className="login__description">
-            <p>Enter 
-              <InternalLinkHighlighted className="about__seehow" value={"hlw"} destination={current.link} />
-              credentials to grant access to your data!</p>
+            <p>Enter <ExternalLinkHighlighted className="about__seehow" value={"hlw"} destination={"https://www.hlw.design/"} /> credentials to grant access to your data!</p>
           </div>
           <div className="login__login">
             <p>Log In</p>
