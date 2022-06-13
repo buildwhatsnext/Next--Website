@@ -1,10 +1,10 @@
 import React from 'react';
-import './callback.style.desktop.scss';
-import './callback.style.mobile.scss';
+import './login.style.desktop.scss';
+import './login.style.mobile.scss';
 import data from '../../data/data.callback.json';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
-export default class Callback extends React.Component {
+export default class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -50,23 +50,23 @@ export default class Callback extends React.Component {
     console.log(this.state.current);
 
     return (
-      <div className={`callback callback__${current.shortName}`}>
+      <div className={`login login__${current.shortName}`}>
 
-        <div className="callback__lefthalfgrid">
-          <div className={`callback__icon callback__icon__${current.shortName}`}/>
+        <div className="login__lefthalfgrid">
+          <div className={`login__icon login__icon__${current.shortName}`}/>
         </div>
 
-        <div className="callback__righthalfgrid">
-          <div className="callback__title">
+        <div className="login__righthalfgrid">
+          <div className="login__title">
             <p>Welcome!</p>
           </div>
-          <div className="callback__description">
+          <div className="login__description">
             <p>Enter hlw Credentials to grant access to your data!</p>
           </div>
-          <div className="callback__login">
+          <div className="login__login">
             <p>Log In</p>
           </div>
-          <div className="callback__ticket">
+          <div className="login__ticket">
             <p>Ticket</p>
           </div>
         </div>

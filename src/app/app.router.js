@@ -7,6 +7,7 @@ import HomePage from '../components/home/home.page';
 import Contact from '../components/contact/contact.obj';
 import About from '../components/about/about.obj';
 import Callback from '../components/callback/callback.obj';
+import Login from '../components/login/login.obj';
 import { ServiceRouter } from '../components/service/services.obj';
 import { TeamRouter } from '../components/team/team.obj';
 import { ProjectRouter } from '../components/project/project.obj';
@@ -29,7 +30,7 @@ export default function AppRouter() {
 const Routes = (props) => (
   <Fragment>
     <div className="app__navigation">
-      {(!props.location.pathname.includes('/oauth/callback')) && <Navbar />}
+      {(!props.location.pathname.includes('/oauth')) && <Navbar />}
     </div>
     
     <div className="app__content">
@@ -56,6 +57,7 @@ const AnimatedRoutes = (props) => {
 
 const RouteCollection = (props) => (
   <Switch>
+    <Route path='/oauth/login' render={(props) => (<Login {...props}/> )} />
     <Route path='/oauth/callback' render={(props) => (<Callback {...props}/> )} />
     <Route path='/about' render={(props) => (<About {...props}/> )} />
     <Route path='/contact' render={(props) => (<Contact {...props}/> )} />
