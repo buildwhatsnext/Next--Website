@@ -45,8 +45,6 @@ export default class Login extends React.Component {
   render() {
     const info = data.callbackData;
     const current = info[this.state.current];
-    const next = "Next";
-    const seehow = "See How";
     console.log(this.state.current);
 
     return (
@@ -56,17 +54,19 @@ export default class Login extends React.Component {
           <div className={`callback__icon callback__icon__${current.shortName}`}/>
         </div>
 
-        <div className="callback__righthalfgrid">
-          <div className="callback__title">
+        <div className="login__righthalfgrid">
+          <div className="login__title">
             <p>Welcome!</p>
           </div>
-          <div className="callback__description">
-            <p>Enter hlw Credentials to grant access to your data!</p>
+          <div className="login__description">
+            <p>Enter 
+              <InternalLinkHighlighted className="about__seehow" value={"hlw"} destination={current.link} />
+              credentials to grant access to your data!</p>
           </div>
-          <div className="callback__login">
+          <div className="login__login">
             <p>Log In</p>
           </div>
-          <div className="callback__ticket">
+          <div className="login__ticket">
             <p>Ticket</p>
           </div>
         </div>
