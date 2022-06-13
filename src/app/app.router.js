@@ -29,7 +29,7 @@ export default function AppRouter() {
 const Routes = (props) => (
   <Fragment>
     <div className="app__navigation">
-      {props.location.pathname !== '/oauth/callback' && <Navbar />}
+      {(!props.location.pathname.includes('/oauth/callback')) && <Navbar />}
     </div>
     
     <div className="app__content">
