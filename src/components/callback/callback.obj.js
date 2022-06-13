@@ -3,6 +3,23 @@ import './callback.style.desktop.scss';
 import './callback.style.mobile.scss';
 import data from '../../data/data.callback.json';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
+import {
+  BrowserRouter as Router,
+  Link,
+  useLocation
+} from "react-router-dom";
+
+// A custom hook that builds on useLocation to parse the query string.
+function useQuery() {
+  const { search } = useLocation();
+
+  return React.useMemo(() => new URLSearchParams(search), [search]);
+}
+
+function QueryParamsDemo() {
+  let query = useQuery();
+  const code = query.get("code")
+}
 
 export default class Callback extends React.Component {
   constructor(props) {
@@ -41,8 +58,11 @@ export default class Callback extends React.Component {
       current: count
     });
   }
+
+  
   
   render() {
+
     const info = data.callbackData;
     const current = info[this.state.current];
     const next = "Next";
