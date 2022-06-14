@@ -1,32 +1,32 @@
-// @import '../../styles/styles.fonts.components.scss';
-// @import '../../styles/styles.general.scss';
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
 
-
-html, body, #root {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  font-size: 10px;
-  margin: 0px;
-  background-color: #06036d;
-}
-
-.callback {
-  width: 100%;
-  height: 100%;
-  border: 10px red solid;
-  background-color: #06036d;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto);
-
-  .callback__left {
-    border: 10px pink solid;
+@media(min-width: $sizeDesktop) {
+  .app__content {
+    width: 100%;
+    height: 100%;
   }
 
-  
-  .callback__right {
+  .callback {
+    width: 100%;
+    height: 100%;
+    border: 10px red solid;
+    background-color: #06036d;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
 
-    border: 10px green solid;
+    .callback__left {
+      border: 10px pink solid;
+      grid-column: 1/2;
+      grid-row: 1/-1;
+    }
+
+    
+    .callback__right {
+      border: 10px green solid;
+      grid-column: 2/3;
+      grid-row: 1/-1;
+    }
   }
 }
 
