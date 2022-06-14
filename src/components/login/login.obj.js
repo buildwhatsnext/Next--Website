@@ -1,6 +1,6 @@
 import React from 'react';
 import './login.style.desktop.scss';
-import './login.style.mobile.scss';
+// import './login.style.mobile.scss';
 import data from '../../data/data.callback.json';
 import { ExternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
@@ -48,7 +48,15 @@ export default class Login extends React.Component {
     // console.log(this.state.current);
 
     return (
-      <div>hello</div>
+      <div className={'callback callback'}>
+        <div className='callback__left'>
+          left
+        </div>
+
+        <div className='callback__right'>
+          right
+        </div>
+      </div>
       // <div className={`callback callback__${current.shortName}`}>
 
       //   <div className="callback__lefthalfgrid">

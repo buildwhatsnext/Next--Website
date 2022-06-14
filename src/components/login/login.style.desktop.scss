@@ -1,172 +1,201 @@
-@import '../../styles/styles.fonts.components.scss';
-@import '../../styles/styles.general.scss';
+// @import '../../styles/styles.fonts.components.scss';
+// @import '../../styles/styles.general.scss';
 
 
-@media(min-width: $sizeDesktop) {
-  .app__content {
-    // border: 10px red solid;
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0px;
+  background-color: #06036d;
+}
+
+.callback {
+  width: 100%;
+  height: 100%;
+  border: 10px red solid;
+  background-color: #06036d;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+
+  .callback__left {
+    border: 10px pink solid;
   }
 
-  .callback {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(4, 1fr); 
-    background-color: #06038D;
+  
+  .callback__right {
 
-    &__experiences {
-      background-color: $next__white;
-    }
-
-    &__elevate {
-      background-color: $next__white;
-    }
-
-    &__insight {
-      background-color: $next__white;
-    }
-
-    &__invent {
-      background-color: $next__white;
-    }
-
-    &__engage {
-      background-color: $next__white;
-    }
-
-    .callback__lefthalfgrid {
-      grid-row: 1 / -1;
-      grid-column: 1 / 3;
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: auto;
-
-      .callback__icon {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        justify-self: center;
-        align-self: center;
-
-        &__experiences {
-          @extend .callback__icon;
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/monitoricon_q0fggh.svg');
-          background-size: auto 60%;
-          background-position: center;
-        }
-
-        &__elevate {
-          @extend .callback__icon;
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/rocketicon_i9yyh0.svg');
-          background-size: auto 90%;
-          background-position: center;
-        }
-
-        &__insight {
-          @extend .callback__icon;
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587575016/icon/coralgoggle_zthntw.svg');
-          background-size: auto 50%;
-          background-position: center;
-        }
-
-        &__invent {
-          @extend .callback__icon;
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586987870/icon/flaskicon_z3xxkm.svg');
-          background-size: auto 65%;
-          background-position: center;
-        }
-
-        &__engage {
-          @extend .callback__icon;
-          background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586987870/icon/bubbleicon_eygwwe.svg');
-          background-size: auto 65%;
-          background-position: center;
-        }
-      }
-    }
-
-    .login__righthalfgrid {
-
-      grid-row: 1 / -1;
-      grid-column: 3 / 5;
-      display: grid;
-      grid-template-rows: 500px 100px 250px;
-      grid-template-columns: auto;
-
-      .login__title {
-        @include soft__black__title;
-        font-size: 7.2rem;
-        font-weight: 600;
-        text-align: left;
-        grid-row: 2/3;
-        grid-column: 1/2;
-      }
-
-      .login__description {
-        @include soft__black__title;
-        font-size: 24px;
-        font-weight: 400;
-        grid-row: 3/4;
-        grid-column: 1/2;
-        align-self: start;
-        justify-self: start;
-      }
-
-      // .callback__seehow {
-      //   @include soft__blue__title;
-      //   font-size: 24px;
-      //   padding-top: 100px;
-      //   grid-row: 3/4;
-      //   grid-column: 1/2;
-      //   width: 95px;
-      //   justify-self: end;
-      //   margin-right: 226px;
-
-      // }
-
-      .login__login {
-        @include soft__blue__title;
-        padding-top: 100px;
-        font-size: 24px;
-        grid-row: 3/4;
-        grid-column: 1/2;
-        justify-self: end;
-        margin-right: 226px;
-        border-bottom: 10px solid #E03E52;
-        height: 135px;
-
-        &:hover {
-          @include soft__white__title;
-          font-size: 24px;
-          cursor: pointer;
-          border-bottom: 34px solid #06038D;;
-          transition: all .1s ease-in-out;
-        }
-      }
-
-      .login__ticket {
-        @include soft__blue__title;
-        padding-top: 100px;
-        font-size: 24px;
-        grid-row: 3/4;
-        grid-column: 1/2;
-        justify-self: end;
-        margin-right: 100px;
-        border-bottom: 10px solid #E03E52;
-        height: 135px;
-
-        &:hover {
-          @include soft__white__title;
-          font-size: 24px;
-          cursor: pointer;
-          border-bottom: 34px solid #06038D;
-          transition: all .1s ease-in-out;
-
-        }
-      }
-    }
+    border: 10px green solid;
   }
 }
+
+
+// @media(min-width: $sizeDesktop) {
+//   .app__content {
+//     // border: 10px red solid;
+//   }
+
+//   .callback {
+//     grid-row: 1 / -1;
+//     grid-column: 1 / -1;
+//     display: grid;
+//     grid-template-rows: repeat(4, 1fr);
+//     grid-template-columns: repeat(4, 1fr); 
+//     background-color: #06038D;
+
+//     &__experiences {
+//       background-color: $next__white;
+//     }
+
+//     &__elevate {
+//       background-color: $next__white;
+//     }
+
+//     &__insight {
+//       background-color: $next__white;
+//     }
+
+//     &__invent {
+//       background-color: $next__white;
+//     }
+
+//     &__engage {
+//       background-color: $next__white;
+//     }
+
+//     .callback__lefthalfgrid {
+//       grid-row: 1 / -1;
+//       grid-column: 1 / 3;
+//       display: grid;
+//       grid-template-rows: auto;
+//       grid-template-columns: auto;
+
+//       .callback__icon {
+//         grid-column: 1 / 2;
+//         grid-row: 1 / 2;
+//         height: 100%;
+//         width: 100%;
+//         background-repeat: no-repeat;
+//         justify-self: center;
+//         align-self: center;
+
+//         &__experiences {
+//           @extend .callback__icon;
+//           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/monitoricon_q0fggh.svg');
+//           background-size: auto 60%;
+//           background-position: center;
+//         }
+
+//         &__elevate {
+//           @extend .callback__icon;
+//           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/rocketicon_i9yyh0.svg');
+//           background-size: auto 90%;
+//           background-position: center;
+//         }
+
+//         &__insight {
+//           @extend .callback__icon;
+//           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1587575016/icon/coralgoggle_zthntw.svg');
+//           background-size: auto 50%;
+//           background-position: center;
+//         }
+
+//         &__invent {
+//           @extend .callback__icon;
+//           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586987870/icon/flaskicon_z3xxkm.svg');
+//           background-size: auto 65%;
+//           background-position: center;
+//         }
+
+//         &__engage {
+//           @extend .callback__icon;
+//           background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586987870/icon/bubbleicon_eygwwe.svg');
+//           background-size: auto 65%;
+//           background-position: center;
+//         }
+//       }
+//     }
+
+//     .login__righthalfgrid {
+
+//       grid-row: 1 / -1;
+//       grid-column: 3 / 5;
+//       display: grid;
+//       grid-template-rows: 500px 100px 250px;
+//       grid-template-columns: auto;
+
+//       .login__title {
+//         @include soft__black__title;
+//         font-size: 7.2rem;
+//         font-weight: 600;
+//         text-align: left;
+//         grid-row: 2/3;
+//         grid-column: 1/2;
+//       }
+
+//       .login__description {
+//         @include soft__black__title;
+//         font-size: 24px;
+//         font-weight: 400;
+//         grid-row: 3/4;
+//         grid-column: 1/2;
+//         align-self: start;
+//         justify-self: start;
+//       }
+
+//       // .callback__seehow {
+//       //   @include soft__blue__title;
+//       //   font-size: 24px;
+//       //   padding-top: 100px;
+//       //   grid-row: 3/4;
+//       //   grid-column: 1/2;
+//       //   width: 95px;
+//       //   justify-self: end;
+//       //   margin-right: 226px;
+
+//       // }
+
+//       .login__login {
+//         @include soft__blue__title;
+//         padding-top: 100px;
+//         font-size: 24px;
+//         grid-row: 3/4;
+//         grid-column: 1/2;
+//         justify-self: end;
+//         margin-right: 226px;
+//         border-bottom: 10px solid #E03E52;
+//         height: 135px;
+
+//         &:hover {
+//           @include soft__white__title;
+//           font-size: 24px;
+//           cursor: pointer;
+//           border-bottom: 34px solid #06038D;;
+//           transition: all .1s ease-in-out;
+//         }
+//       }
+
+//       .login__ticket {
+//         @include soft__blue__title;
+//         padding-top: 100px;
+//         font-size: 24px;
+//         grid-row: 3/4;
+//         grid-column: 1/2;
+//         justify-self: end;
+//         margin-right: 100px;
+//         border-bottom: 10px solid #E03E52;
+//         height: 135px;
+
+//         &:hover {
+//           @include soft__white__title;
+//           font-size: 24px;
+//           cursor: pointer;
+//           border-bottom: 34px solid #06038D;
+//           transition: all .1s ease-in-out;
+
+//         }
+//       }
+//     }
+//   }
+// }
