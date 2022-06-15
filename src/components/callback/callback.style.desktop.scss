@@ -10,12 +10,21 @@
   .callback {
     width: 100%;
     height: 100%;
-    background-color: #06036d;
+    // background-color: #06036d;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column: 1/-1;
     grid-row: 1/-1;
+
+    &__Failure {
+      background-color: #06036d;
+    }
+
+    &__Success {
+      background-color: #e03e52;
+      border: #e03e52 solid 10px;
+    }
 
     .callback__left {
       grid-column: 1/2;

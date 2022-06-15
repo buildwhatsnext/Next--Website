@@ -10,7 +10,7 @@ export default class Callback extends React.Component {
     }
     this.updateStatus = this.updateStatus.bind(this);
 
-    this.status = "Success!";
+    this.name = "Success!";
     this.description = "You now have full access to HLW add-ins!";
     this.contact = "Submit a ticket if you have any question!";
   }
@@ -21,7 +21,7 @@ export default class Callback extends React.Component {
     console.log(term);
 
     if (term == null || term == ""){
-      this.status = "Oops!";
+      this.name = "Oops!";
       this.description = 
       "Looks like either your license has been expired or you have no permission to access this data.";
       this.contact = "Please reach out to NEXT by submitting a ticket!";
@@ -36,9 +36,9 @@ export default class Callback extends React.Component {
     this.updateStatus();
 
     return (
-      <div className={`callback callback__${current.updateStatus}`}>
+      <div className={`callback callback__${current.status}`}>
         <div className='callback__left'>
-          <div className='callback__title'>{this.status}</div>
+          <div className='callback__title'>{this.name}</div>
           <div className='callback__subtitle'>{this.description}</div>
           <div className='callback__contact'>{this.contact}</div>
         </div>
