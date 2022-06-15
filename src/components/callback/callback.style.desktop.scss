@@ -23,7 +23,6 @@
 
     &__Success {
       background-color: #e03e52;
-      border: #e03e52 solid 10px;
     }
 
     .callback__left {
@@ -77,42 +76,108 @@
     }
 
     .callback__emoticon {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1655257728/icon/white_innbot_kkvtja.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      height: 100%;
-      width: 100%;
-      grid-column: 1/3;
-      grid-row: 1/3;
-      margin-top: 3rem;
+      &__Failure {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1655257728/icon/white_innbot_kkvtja.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        margin-top: 3rem;
+        animation: shake 2s cubic-bezier(.36,.07,.19,.97) infinite;
+      }
+
+      &__Success {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1655320802/icon/chip_rotate_ml4u9i.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        margin-top: 3rem;
+        animation: spin 8s linear infinite;
+      }
+
+      @keyframes spin { 
+        100% { 
+            -webkit-transform: rotate(360deg); 
+            transform:rotate(360deg); 
+        } 
+      }
+
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
     }
 
     .callback__ticketButtonImg {
-      background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/06envelope_jwyoim.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      height: 100%;
-      width: 100%;
-      scale: 0.2;
-      grid-row: 3/4;
-      grid-column: 2/3;
+
+      &__Failure {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/06envelope_jwyoim.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        scale: 0.2;
+        grid-row: 3/4;
+        grid-column: 2/3;
+      }
+
+      &__Success {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1655320599/icon/06038D_fwmucb.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        scale: 0.2;
+        grid-row: 3/4;
+        grid-column: 2/3;
+      }
     }
 
     .callback__ticketButtonText {
-      @include soft__coral__title;
-      font-size: 36px;
-      justify-self: start;
-      grid-row: 3/4;
-      grid-column: 2/3;
-      justify-self: center;
-      align-self: end;
-      margin-bottom: 7rem;
-    }
 
-    .google {
-      border: 10px red solid;
+      &__Failure {
+        @include soft__coral__title;
+        font-size: 36px;
+        justify-self: start;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: 7rem;
+      }
+
+      &__Success {
+        @include soft__blue__title;
+        font-size: 36px;
+        justify-self: start;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: 7rem;
+      }
     }
   }
 }

@@ -45,9 +45,9 @@ export default class Callback extends React.Component {
         </div>
 
         <div className='callback__right'>
-          <div className='callback__emoticon'></div>
-          <div className='callback__ticketButtonText'>Ticket</div>
-          <a className='callback__ticketButtonImg' href='https://hlw.atlassian.net/servicedesk/customer/portal/2'></a>
+          <div className={`callback__emoticon__${current.status}`}></div>
+          <div className={`callback__ticketButtonText__${current.status}`}>Ticket</div>
+          <a className={`callback__ticketButtonImg__${current.status}`} href='https://hlw.atlassian.net/servicedesk/customer/portal/2'></a>
         </div>
       </div>
       // <div className={`callback callback__${current.shortName}`}>
