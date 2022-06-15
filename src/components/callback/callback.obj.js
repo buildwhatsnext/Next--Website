@@ -19,7 +19,8 @@ function useQuery() {
 
 function QueryParamsDemo() {
   let query = useQuery();
-  const code = query.get("code")
+  const code = query.get("code");
+  console.log(code);
 }
 
 export default class Callback extends React.Component {
@@ -30,9 +31,13 @@ export default class Callback extends React.Component {
       start: 0,
       end: data.callbackData.length
     }
-    this.cycle = this.cycle.bind(this);
-    this.reverse = this.reverse.bind(this);
+    this.updateStatus = this.updateStatus.bind(this);
+
+    this.status = "Success!";
+    this.description = "You now have full access to HLW add-ins!";
+    this.contact = "If you have any question, Please reach out to NEXT by submitting a ticket!";
   }
+  
 
   cycle() {
     const { start, end, current } = this.state;
@@ -60,7 +65,17 @@ export default class Callback extends React.Component {
     });
   }
 
-  
+  updateStatus(){
+    const queryParams = new URLSearchParams(window.location.search);
+    const term = queryParams.get("code");
+    console.log(term);
+
+    if (term == null){
+      this.status = "Oops!";
+      this.description = "Looks like either your license has been expired or you have no permission to access this data.";
+      this.contact = "Please reach out to NEXT by submitting a ticket!";
+    }
+  }
   
   render() {
 
@@ -69,15 +84,7 @@ export default class Callback extends React.Component {
     const next = "Next";
     const seehow = "See How";
     
-    const status = "Success!";
-    const description = "You now have full access to HLW add-ins!";
-    const contact = "If you have any question, Please reach out to NEXT by submitting a ticket!";
-
-    function updateStatus(){
-      status = "Oops!";
-      description = "Looks like either your license has been expired or you have no permission to access this data.";
-      contact = "Please reach out to NEXT by submitting a ticket!";
-    }
+    this.updateStatus();
 
     return (
       <div className={`callback callback__${current.shortName}`}>
@@ -88,11 +95,11 @@ export default class Callback extends React.Component {
 
         <div className="callback__righthalfgrid">
           <div className="callback__title">
-            <p>{status}</p>
+            <p>{this.status}</p>
           </div>
           <div className="callback__description">
-            <p>{description}</p>
-            <p>{contact}</p>
+            <p>{this.description}</p>
+            <p>{this.contact}</p>
           </div>
           <div className="callback__ticket">
             <p>Ticket</p>
