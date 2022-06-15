@@ -21,7 +21,7 @@ export default class Callback extends React.Component {
     const term = queryParams.get("code");
     console.log(term);
 
-    if (term == null){
+    if (term == null || term == ""){
       this.status = "Oops!";
       this.description = "Looks like either your license has been expired or you have no permission to access this data.";
       this.contact = "Please reach out to NEXT by submitting a ticket!";
