@@ -36,7 +36,7 @@ export default class Callback extends React.Component {
     this.updateStatus();
 
     return (
-      <div className={'callback callback'}>
+      <div className={`callback callback__${current.updateStatus}`}>
         <div className='callback__left'>
           <div className='callback__title'>{this.status}</div>
           <div className='callback__subtitle'>{this.description}</div>
