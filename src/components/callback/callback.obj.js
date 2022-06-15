@@ -1,50 +1,38 @@
 import React from 'react';
 import './callback.style.desktop.scss';
 import data from '../../data/data.callback.json';
-import { ExternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 export default class Callback extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   current: 0,
-    //   start: 0,
-    //   end: data.callbackData.length
-    // }
-    // this.cycle = this.cycle.bind(this);
-    // this.reverse = this.reverse.bind(this);
+    this.state = {
+      current: 0,
+    }
+    this.updateStatus = this.updateStatus.bind(this);
+
+    this.status = "Success!";
+    this.description = "You now have full access to HLW add-ins!";
+    this.contact = "If you have any question, Please reach out to NEXT by submitting a ticket!";
   }
+  
+  updateStatus(){
+    const queryParams = new URLSearchParams(window.location.search);
+    const term = queryParams.get("code");
+    console.log(term);
 
-  // cycle() {
-  //   const { current } = this.state;
-  //   let count = current + 1;
-
-  //   if(count > 4) {
-  //     count = 0;
-  //   }
-    
-  //   this.setState({
-  //     current: count
-  //   });
-  // }
-
-  // reverse() {
-  //   const { current } = this.state;
-  //   let count = current - 1;
-
-  //   if(count < 0) {
-  //     count = 4;
-  //   }
-    
-  //   this.setState({
-  //     current: count
-  //   });
-  // }
+    if (term == null || term == ""){
+      this.status = "Oops!";
+      this.description = "Looks like either your license has been expired or you have no permission to access this data.";
+      this.contact = "Please reach out to NEXT by submitting a ticket!";
+    }
+  }
   
   render() {
-    // const info = data.callbackData;
-    // const current = info[this.state.current];
-    // console.log(this.state.current);
+
+    const info = data.callbackData;
+    const current = info[this.state.current];
+    
+    this.updateStatus();
 
     return (
       <div className={'callback callback'}>
