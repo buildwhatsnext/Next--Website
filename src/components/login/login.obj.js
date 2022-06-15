@@ -21,7 +21,7 @@ export default class Login extends React.Component {
             Click the icon below to log in  <br />
             from Autodesk portal.
           </div>
-          <div className='lock'></div>
+          <a className='lock' href='https://developer.api.autodesk.com/authentication/v1/authorize?response_type=code&client_id=ngj4FHiBHuAXGrwvdrAickBDDWvv0Iah&redirect_uri=http://www.hlwnext.com/oauth/callback&scope=data:read'></a>
         </div>
       </div>
     )
