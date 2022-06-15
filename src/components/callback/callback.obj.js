@@ -12,7 +12,7 @@ export default class Callback extends React.Component {
 
     this.status = "Success!";
     this.description = "You now have full access to HLW add-ins!";
-    this.contact = "If you have any question, Please reach out to NEXT by submitting a ticket!";
+    this.contact = "Submit a ticket if you have any question!";
   }
   
   updateStatus(){
@@ -22,7 +22,8 @@ export default class Callback extends React.Component {
 
     if (term == null || term == ""){
       this.status = "Oops!";
-      this.description = "Looks like either your license has been expired or you have no permission to access this data.";
+      this.description = 
+      "Looks like either your license has been expired or you have no permission to access this data.";
       this.contact = "Please reach out to NEXT by submitting a ticket!";
     }
   }
@@ -37,13 +38,9 @@ export default class Callback extends React.Component {
     return (
       <div className={'callback callback'}>
         <div className='callback__left'>
-          <div className='callback__title'>Oops!</div>
-          <div className='callback__subtitle'>
-            Looks like either your license has been expired<br />
-            or you have no permission to access this data.<br />
-            <br />
-            Please reach out to NEXT by submitting a ticket !
-          </div>
+          <div className='callback__title'>{this.status}</div>
+          <div className='callback__subtitle'>{this.description}</div>
+          <div className='callback__contact'>{this.contact}</div>
         </div>
 
         <div className='callback__right'>
