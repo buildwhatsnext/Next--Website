@@ -1,6 +1,5 @@
 import React from 'react';
 import './callback.style.desktop.scss';
-// import './login.style.mobile.scss';
 import data from '../../data/data.callback.json';
 import { ExternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
