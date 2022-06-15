@@ -50,11 +50,19 @@ export default class Login extends React.Component {
     return (
       <div className={'callback callback'}>
         <div className='callback__left'>
-          left
+          <div className='callback__title'>Oops!</div>
+          <div className='callback__subtitle'>
+            Looks like either your license has been expired<br />
+            or you have no permission to access this data.<br />
+            <br />
+            Please reach out to NEXT by submitting a ticket !
+          </div>
         </div>
 
         <div className='callback__right'>
-          right
+          <div className='callback__emoticon'></div>
+          <div className='callback__ticketButtonText'>Ticket</div>
+          <div className='callback__ticketButtonImg'></div>
         </div>
       </div>
       // <div className={`callback callback__${current.shortName}`}>
