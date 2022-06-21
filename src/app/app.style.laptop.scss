@@ -15,11 +15,7 @@
   .app__content {
     background-color: $next__white;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
   }
 }
