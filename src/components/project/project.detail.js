@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import data from '../../data/data.project.json';
 import './project.detail.desktop.scss';
-import './project.detail.mobile.scss';
+import './project.detail.laptop.scss';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
 

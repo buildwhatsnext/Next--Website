@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import './team.list.desktop.scss';
-import './team.list.mobile.scss';
+import './team.list.laptop.scss';
 
 import TeamData from '../../data/data.team.json';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../data/data.services.json';
 import './service.detail.desktop.scss';
-import './service.detail.mobile.scss';
+import './service.detail.laptop.scss';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
 import { InfoTable } from '../subcomponents/infotable/infotable.object';
