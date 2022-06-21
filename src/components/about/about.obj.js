@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.style.desktop.scss';
-import './about.style.mobile.scss';
+import './about.style.laptop.scss';
 import data from '../../data/data.about.json';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 

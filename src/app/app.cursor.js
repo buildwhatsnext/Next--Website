@@ -1,6 +1,6 @@
 import React from 'react';
 import './app.cursor.style.desktop.scss';
-import './app.cursor.style.mobile.scss';
+import './app.cursor.style.laptop.scss';
 
 export default function AppCursor(props) {
   const { positionX, positionY } = props;

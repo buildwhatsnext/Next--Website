@@ -2,7 +2,7 @@ import React from 'react';
 import AppRouter from './app.router';
 import AppCursor from './app.cursor';
 import './app.style.desktop.scss';
-import './app.style.mobile.scss';
+import './app.style.laptop.scss';
 import './app.style.general.scss';
 
 export default class App extends React.Component {

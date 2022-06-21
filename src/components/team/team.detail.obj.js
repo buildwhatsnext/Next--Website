@@ -3,7 +3,7 @@ import { TweenMax, Timeline, Power1 } from 'gsap';
 
 import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
-import './teamdetail.style.mobile.scss';
+import './teamdetail.style.laptop.scss';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 //import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 

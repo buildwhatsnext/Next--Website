@@ -1,11 +1,10 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-@media(min-width: $sizeDesktop) {
+@media(max-width: $sizeLaptop) {
   .app__content {
     width: 100%;
     height: 100%;
-    border: 10px pink solid;
   }
 
   .login {

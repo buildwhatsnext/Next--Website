@@ -5,7 +5,7 @@ import { ServiceDetailPage } from './services.detail.obj';
 import ServiceOverviewPage from './services.overview';
 
 import './service.style.desktop.scss';
-import './service.style.mobile.scss';
+import './service.style.laptop.scss';
 
 export function ServiceRouter(props) {
   const { match } = props;

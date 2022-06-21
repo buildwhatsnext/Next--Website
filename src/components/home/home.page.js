@@ -4,7 +4,7 @@ import { ExternalLinkHighlighted, InternalLinkHighlighted } from '../subcomponen
 
 import './home.style.general.scss';
 import './home.style.desktop.scss';
-import './home.style.mobile.scss';
+import './home.style.laptop.scss';
 
 export default class Home extends React.Component {
   constructor(props) {
