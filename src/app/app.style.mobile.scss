@@ -2,7 +2,7 @@
 @import '../styles/styles.general.scss';
 @import '../styles/styles.colors.scss';
 
-@media(max-width: $sizeMobile) {
+@media(max-width: $sizeLaptop) {
 
   .app {
     background-color: $next__white;
