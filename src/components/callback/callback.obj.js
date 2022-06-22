@@ -1,6 +1,7 @@
 import React from 'react';
 import './callback.style.desktop.scss';
 import './callback.style.laptop.scss';
+import './callback.style.popup.scss';
 import data from '../../data/data.callback.json';
 
 export default class Callback extends React.Component {

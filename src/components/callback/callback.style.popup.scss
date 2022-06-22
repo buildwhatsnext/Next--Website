@@ -1,11 +1,12 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-@media(max-width: $sizePopup) {
+@media only screen
+and (max-width: 500px) {
   .app__content {
     width: 100%;
     height: 100%;
-    border: 10px red solid;
+    // border: 10px red solid;
   }
 
   .callback {
@@ -37,12 +38,12 @@
     .callback__title {
       @include soft__white__title;
       grid-column: 1/2;
-      grid-row: 2/3;
-      font-size: 12rem;
+      grid-row: 3/4;
+      font-size: 4rem;
       justify-self: start;
-      align-self: end;
-      line-height: 1rem;
-      margin-left: 6rem;
+      align-self: start;
+    //   line-height: 1rem;
+      margin-left: 3rem;
     }
 
     .callback__subtitle {
@@ -50,22 +51,23 @@
       grid-column: 1/3;
       grid-row: 3/4;
       margin-top: 3rem;
-      font-size: 2.4rem;
+      font-size: 1.4rem;
       justify-self: start;
       align-self: end;
       text-align: left;
-      margin-left: 6rem;
+      margin-left: 3rem;
     }
 
     .callback__contact {
       @include soft__white__title;
       grid-column: 1/3;
       grid-row: 4/5;
-      font-size: 2.4rem;
+      font-size: 1.4rem;
       justify-self: start;
       align-self: start;
       text-align: left;
-      margin-left: 6rem;
+      margin-top: 1rem;
+      margin-left: 3rem;
     }
     
     .callback__right {
@@ -82,11 +84,11 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 100%;
         grid-column: 1/3;
         grid-row: 1/3;
-        align-self: end;
+        scale: 0.8;
         animation: shake 2s cubic-bezier(.36,.07,.19,.97) infinite;
       }
 
@@ -138,7 +140,7 @@
         background-size: contain;
         height: 100%;
         width: 100%;
-        scale: 0.2;
+        scale: 0.35;
         grid-row: 3/4;
         grid-column: 2/3;
       }
@@ -150,7 +152,7 @@
         background-size: contain;
         height: 100%;
         width: 100%;
-        scale: 0.2;
+        scale: 0.435;
         grid-row: 3/4;
         grid-column: 2/3;
       }
@@ -160,24 +162,24 @@
 
       &__Failure {
         @include soft__coral__title;
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         justify-self: start;
         grid-row: 3/4;
         grid-column: 2/3;
         justify-self: center;
         align-self: end;
-        margin-bottom: 6rem;
+        margin-bottom: 5.5rem;
       }
 
       &__Success {
         @include soft__blue__title;
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         justify-self: start;
         grid-row: 3/4;
         grid-column: 2/3;
         justify-self: center;
         align-self: end;
-        margin-bottom: 6rem;
+        margin-bottom: 5.5rem;
       }
     }
   }
