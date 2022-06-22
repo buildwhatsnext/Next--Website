@@ -27,23 +27,13 @@ and (max-width: $sizeLaptop) {
       background-color: #e03e52;
     }
 
-    .callback__left {
-      grid-column: 1/2;
-      grid-row: 1/-1;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-    }
-
     .callback__title {
       @include soft__white__title;
-      grid-column: 1/2;
+      grid-column: 1/3;
       grid-row: 2/3;
-      font-size: 12rem;
-      justify-self: start;
+      font-size: 8rem;
+      justify-self: center;
       align-self: end;
-      line-height: 1rem;
-      margin-left: 6rem;
     }
 
     .callback__subtitle {
@@ -52,29 +42,17 @@ and (max-width: $sizeLaptop) {
       grid-row: 3/4;
       margin-top: 3rem;
       font-size: 2.4rem;
-      justify-self: start;
-      align-self: end;
-      text-align: left;
-      margin-left: 6rem;
+      justify-self: center;
+      align-self: start;
     }
 
     .callback__contact {
       @include soft__white__title;
       grid-column: 1/3;
-      grid-row: 4/5;
+      grid-row: 3/4;
       font-size: 2.4rem;
-      justify-self: start;
+      justify-self: center;
       align-self: start;
-      text-align: left;
-      margin-left: 6rem;
-    }
-    
-    .callback__right {
-      grid-column: 2/3;
-      grid-row: 1/-1;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
     }
 
     .callback__emoticon {
@@ -83,12 +61,12 @@ and (max-width: $sizeLaptop) {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 80%;
-        width: 80%;
-        grid-column: 1/3;
+        height: 100%;
+        width: 100%;
+        scale: 0.5;
         grid-row: 1/3;
-        align-self: end;
-        animation: shake 2s cubic-bezier(.36,.07,.19,.97) infinite;
+        grid-column: 1/3;
+        animation: shake 2s cubic-bezier(.1,2,.1,2) infinite;
       }
 
       &__Success {
@@ -96,11 +74,11 @@ and (max-width: $sizeLaptop) {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 80%;
-        width: 80%;
-        grid-column: 1/3;
+        height: 100%;
+        width: 100%;
+        scale: 0.5;
         grid-row: 1/3;
-        align-self: end;
+        grid-column: 1/3;
         animation: spin 8s linear infinite;
       }
 
@@ -141,7 +119,7 @@ and (max-width: $sizeLaptop) {
         width: 100%;
         scale: 0.2;
         grid-row: 3/4;
-        grid-column: 2/3;
+        grid-column: 1/3;
       }
 
       &__Success {
@@ -153,7 +131,7 @@ and (max-width: $sizeLaptop) {
         width: 100%;
         scale: 0.2;
         grid-row: 3/4;
-        grid-column: 2/3;
+        grid-column: 1/3;
       }
     }
 
@@ -164,7 +142,7 @@ and (max-width: $sizeLaptop) {
         font-size: 2.4rem;
         justify-self: start;
         grid-row: 3/4;
-        grid-column: 2/3;
+        grid-column: 1/3;
         justify-self: center;
         align-self: end;
         margin-bottom: 6rem;
@@ -175,7 +153,7 @@ and (max-width: $sizeLaptop) {
         font-size: 2.4rem;
         justify-self: start;
         grid-row: 3/4;
-        grid-column: 2/3;
+        grid-column: 1/3;
         justify-self: center;
         align-self: end;
         margin-bottom: 6rem;
