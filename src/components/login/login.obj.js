@@ -1,6 +1,7 @@
 import React from 'react';
 import './login.style.desktop.scss';
 import './login.style.laptop.scss';
+import './login.style.popup.scss';
 import data from '../../data/data.callback.json';
 import { ExternalLinkHighlighted } from '../subcomponents/special_link/links.object';
 
