@@ -4,7 +4,7 @@
     {
       "status": "Failure",
       "Title": "Oops!",
-      "description": "Looks like either your license has been expired or you have no permission to access this data. ",
+      "description": "Your license has been expired or you have no permission to access this data. ",
       "contact": "Please reach out to NEXT by submitting a ticket !"
     },
 
