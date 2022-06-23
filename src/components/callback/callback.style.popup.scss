@@ -59,11 +59,13 @@ and (max-width: 500px) {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 100%;
-        width: 100%;
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 4rem;
         grid-column: 1/3;
         grid-row: 1/3;
-        scale: 0.8;
         animation: shake 2s cubic-bezier(.36,.07,.19,.97) infinite;
       }
 
@@ -72,12 +74,14 @@ and (max-width: 500px) {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 100%;
-        width: 100%;
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 4rem;
         grid-column: 1/3;
         grid-row: 1/3;
         align-self: end;
-        scale: 0.8;
         animation: spin 8s linear infinite;
       }
 
@@ -114,12 +118,13 @@ and (max-width: 500px) {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 100%;
-        width: 100%;
-        scale: 0.1;
+        height: 30px;
+        width: 30px;
+        justify-self: center;
+        align-self: center;
         grid-row: 3/4;
         grid-column: 1/3;
-        margin-top: 3rem;
+        margin-top: 6rem;
       }
 
       &__Success {
@@ -127,12 +132,13 @@ and (max-width: 500px) {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 100%;
-        width: 100%;
-        scale: 0.1;
+        height: 30px;
+        width: 30px;
+        justify-self: center;
+        align-self: center;
         grid-row: 3/4;
         grid-column: 1/3;
-        margin-top: 3rem;
+        margin-top: 6rem;
       }
     }
 
