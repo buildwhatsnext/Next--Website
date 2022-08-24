@@ -35,6 +35,19 @@
       "servicename2text":"We create elegant, engaging, and innovative designs that elevate your brand and reinforce your vision. Design is more than just making a pretty things. We make impactful, intuitive experiences that will give your audience exactly what you’re looking for.",
       "servicename3":"Business Intelligence",
       "servicename3text":"We harness data, analytics, and design to give your organization a clear path to improve performance and make impactful decisions."
+    },
+
+    "muiTable" : {
+      "title": "MuiTable",
+      "slug": "muiTable",
+      "descriptiontitle": "Shaping the future",
+      "description": "The Innovation team aim to radically improve the way we design by rethinking how we integrate technology and data into our process.",
+      "servicename1":"Product Strategy",
+      "servicename1text": "NEXT provides strong product leadership and strategic guidance when evaluating the challenges and goals of your application. We strive to deliver the highest quality products and solutions for your project.",
+      "servicename2":"Design & Development",
+      "servicename2text":"We create elegant, engaging, and innovative designs that elevate your brand and reinforce your vision. Design is more than just making a pretty things. We make impactful, intuitive experiences that will give your audience exactly what you’re looking for.",
+      "servicename3":"Business Intelligence",
+      "servicename3text":"We harness data, analytics, and design to give your organization a clear path to improve performance and make impactful decisions."
     }
   }
 }
