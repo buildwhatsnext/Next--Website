@@ -1,27 +1,21 @@
-@import '../styles/styles.fonts.desktop.scss';
+@import '../styles/styles.fonts.mobile.scss';
 @import '../styles/styles.general.scss';
 @import '../styles/styles.colors.scss';
 
-@media(min-width: $sizeDesktop) {
+@media(max-width: $sizeLaptop) {
 
   .app {
     background-color: $next__white;
-  }  
+  }
 
   .app__navigation {
     grid-column: 1 / -1;
   }
 
   .app__content {
-    @include full_width_height;
+    background-color: $next__white;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    grid-gap: 20px;
-  }
-
-  .page {
-    width: 100%;
-    height: 100%;
   }
 }

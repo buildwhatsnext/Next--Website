@@ -1,0 +1,167 @@
+@import '../../styles/styles.fonts.components.scss';
+@import '../../styles/styles.general.scss';
+
+@media only screen
+and (min-width: 501px) 
+and (max-width: $sizeDesktop) {
+  .app__content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .callback {
+    width: 100%;
+    height: 100%;
+    background-color: #06036d;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+
+    &__Failure {
+      background-color: #06036d;
+    }
+
+    &__Success {
+      background-color: #e03e52;
+    }
+
+    .callback__title {
+      @include soft__white__title;
+      grid-column: 1/3;
+      grid-row: 2/3;
+      font-size: 8rem;
+      justify-self: center;
+      align-self: end;
+    }
+
+    .callback__subtitle {
+      @include soft__white__title;
+      grid-column: 1/3;
+      grid-row: 3/4;
+      margin-top: 3rem;
+      font-size: 2.4rem;
+      justify-self: center;
+      align-self: start;
+    }
+
+    .callback__contact {
+      @include soft__white__title;
+      grid-column: 1/3;
+      grid-row: 3/4;
+      font-size: 2.4rem;
+      justify-self: center;
+      align-self: start;
+    }
+
+    .callback__emoticon {
+      &__Failure {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1655257728/icon/white_innbot_kkvtja.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+        align-self: center;
+        grid-row: 1/3;
+        grid-column: 1/3;
+        animation: shake 2s cubic-bezier(.1,2,.1,2) infinite;
+      }
+
+      &__Success {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1655320802/icon/chip_rotate_ml4u9i.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+        align-self: center;
+        grid-row: 1/3;
+        grid-column: 1/3;
+        animation: spin 8s linear infinite;
+      }
+
+      @keyframes spin { 
+        100% { 
+            -webkit-transform: rotate(360deg); 
+            transform:rotate(360deg); 
+        } 
+      }
+
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+    }
+
+    .callback__ticketButtonImg {
+
+      &__Failure {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/06envelope_jwyoim.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 60px;
+        width: 60px;
+        justify-self: center;
+        align-self: center;
+        grid-row: 3/4;
+        grid-column: 1/3;
+      }
+
+      &__Success {
+        background-image: url('https://res.cloudinary.com/next-hlw/image/upload/v1655320599/icon/06038D_fwmucb.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 60px;
+        width: 60px;
+        justify-self: center;
+        align-self: center;
+        grid-row: 3/4;
+        grid-column: 1/3;
+      }
+    }
+
+    .callback__ticketButtonText {
+
+      &__Failure {
+        @include soft__coral__title;
+        font-size: 2.4rem;
+        justify-self: start;
+        grid-row: 3/4;
+        grid-column: 1/3;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: 6rem;
+      }
+
+      &__Success {
+        @include soft__blue__title;
+        font-size: 2.4rem;
+        justify-self: start;
+        grid-row: 3/4;
+        grid-column: 1/3;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: 6rem;
+      }
+    }
+  }
+}

@@ -3,9 +3,9 @@ import { TweenMax, Timeline, Power1 } from 'gsap';
 
 import data from '../../data/data.team.json';
 import './teamdetail.style.desktop.scss';
-import './teamdetail.style.mobile.scss';
+import './teamdetail.style.laptop.scss';
 import { InternalLinkHighlighted } from '../subcomponents/special_link/links.object';
-import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+//import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 
 
 export default class TeamMemberDetailPage extends React.Component {
@@ -21,7 +21,8 @@ export default class TeamMemberDetailPage extends React.Component {
 }
 
 
-export function TeamMemberDetail(data) {
+export function 
+TeamMemberDetail(data) {
   
   const contactus = "Contact Us";
   const back = "Back";

@@ -4,7 +4,7 @@ import { ExternalLinkHighlighted, InternalLinkHighlighted } from '../subcomponen
 
 import './home.style.general.scss';
 import './home.style.desktop.scss';
-import './home.style.mobile.scss';
+import './home.style.laptop.scss';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -33,7 +33,8 @@ design startup within`;
       <div className="home">
         <div className="home__hlw">
           <div className="container">
-            <p>{ tagCompany }</p><span><ExternalLinkHighlighted value={ company } destination={ hlwLink }/></span>
+            <p>{ tagCompany }</p>
+            <span><ExternalLinkHighlighted value={ company } destination={ hlwLink }/></span>
           </div>
 
         </div>
@@ -42,9 +43,9 @@ design startup within`;
             <StatementMutable data={this.state.designTypes} statement={statement}/>
           </div>
         </div>
-        <div className="home__cta">
+        {/* <div className="home__cta">
           <InternalLinkHighlighted value={cta} destination="/projects" />
-        </div>
+        </div> */}
       </div>
     )
   }

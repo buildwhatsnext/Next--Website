@@ -9,10 +9,10 @@
   @extend %soft__white__title;
 }
 
-@media(max-width: $sizeMobile) {
+@media(max-width: $sizeLaptop) {
 
   .home {
-    @extend .full_width_height;
+    @include full_width_height;
     grid-template-rows: auto auto 150px;
     display: grid;
     grid-column: 1 / -1;
@@ -67,7 +67,7 @@
       }
 
       .link__highlighted__text {
-        @extend .soft__white__title;
+        @include soft__white__title;
         font-size: 24px;
         border-bottom: 10px #E03E52 solid;
         margin-right: 300px;

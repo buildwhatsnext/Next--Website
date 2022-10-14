@@ -5,7 +5,7 @@ import { TimelineMax as Timeline, Power1, CSS, gsap } from 'gsap';
 import { CSSRulePlugin } from 'gsap/src/CSSRulePlugin';
 
 import './project.item.desktop.scss';
-import './project.item.mobile.scss';
+import './project.item.laptop.scss';
 import Data from '../../data/data.team.json';
 
 gsap.registerPlugin(CSSRulePlugin);

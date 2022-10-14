@@ -12,10 +12,10 @@ export function ContactInfoList(props) {
 
   return (
     <div className="contact__info">
-      <div className="contact__info__phone"><a href="tel:1-212-353-4600"><Phone /></a></div>
+      <div className="contact__info__ticket"><a href="https://hlw.atlassian.net/servicedesk/customer/portal/2"><Ticket /></a></div>
       <div className="contact__info__email"><a href="mailto:next@hlw.com"><Email /></a></div>
-      <div className="contact__info__insta"><a href="https://www.instagram.com/buildwhatsnext/" target="_blank"><Insta /></a></div>
-      <div className="contact__info__location"><a href="https://goo.gl/maps/mmTSCaahkfkdJkQk9" target="_blank"><Location /></a></div>
+      <div className="contact__info__web"><a href="https://www.hlwnext.com/" target="_blank"><Web /></a></div>
+      {/* <div className="contact__info__location"><a href="https://goo.gl/maps/mmTSCaahkfkdJkQk9" target="_blank"><Location /></a></div> */}
     </div>
   )
 }
@@ -34,11 +34,11 @@ export const ContactInfoItem = (props) => (
   </div>
 )
 
-export const Phone = () => (
+export const Ticket = () => (
   <ContactInfoItem 
-    infoType="phone"
-    value="212-353-4600"
-    iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/01phone_rkbsq8.svg'
+    infoType="ticket"
+    value="submit a ticket!"
+    iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586987870/icon/flaskicon_z3xxkm.svg'
   />
 );
 
@@ -50,31 +50,31 @@ export const Email = () => (
   />
 )
 
-export const Insta = () => (
+export const Web = () => (
   <ContactInfoItem 
-    infoType="insta"
-    value="@buildwhatsnext"
-    iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/13camera_thjurf.svg'
+    infoType="web"
+    value="www.hlwnext.com"
+    iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586986666/icon/monitoricon_q0fggh.svg'
   />
 )
 
-export const Location = () => {
+// export const Location = () => {
 
-  const locationData = `5 Penn Plaza
+//   const locationData = `5 Penn Plaza
 
-  New York, NY
+//   New York, NY
   
-  10001
-  `;
+//   10001
+//   `;
 
-  return (
-    <ContactInfoItem 
-      infoType="location"
-      value={locationData}
-      iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/34location_q4lzpx.svg'
-    />
-  )
-}
+//   return (
+//     <ContactInfoItem 
+//       infoType="location"
+//       value={locationData}
+//       iconUrl='https://res.cloudinary.com/next-hlw/image/upload/v1586185248/icon/34location_q4lzpx.svg'
+//     />
+//   )
+// }
 
 
 {/* <a href={props.destination} target="_blank" destination={ mapLink }/> */}

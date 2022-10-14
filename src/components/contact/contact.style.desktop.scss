@@ -44,7 +44,7 @@
   }
 
   .contact__title {
-    @extend .soft__coral__title;
+    @include soft__coral__title;
     // font-size: 32px;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
@@ -54,7 +54,7 @@
   }
 
   .contact__quote {
-    @extend .soft__white__title;
+    @include soft__black__title;
     grid-row: 3 / 8;
     grid-column: 2 / 4;
     font-size: 30px;
@@ -81,23 +81,23 @@
       grid-template-rows: 1fr 
     }
 
-    .contact__info__phone {
+    .contact__info__ticket {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       height: 30px;
       grid-column-gap: 100px;
 
       .info__text {
-        @extend .soft__white__title;
+        @include soft__blue__title;
         text-align: left;
         font-size: 72px;
         align-self: center;
-        -webkit-text-stroke: 1px $next__white;
+        -webkit-text-stroke: 1px $next__blue;
         -webkit-text-fill-color: transparent;
 
         &:hover {
           transition:  0.3s ease-in-out;
-          -webkit-text-fill-color: $next__white;
+          -webkit-text-fill-color: $next__blue;
         }
 
       }
@@ -120,16 +120,16 @@
       grid-column-gap: 100px;
 
       .info__text {
-        @extend .soft__white__title;
+        @include soft__blue__title;
         text-align: left;
         font-size: 72px;
         margin-bottom: 40px;
-        -webkit-text-stroke: 1px $next__white;
+        -webkit-text-stroke: 1px $next__blue;
         -webkit-text-fill-color: transparent;
 
         &:hover {
           transition:  0.3s ease-in-out;
-          -webkit-text-fill-color: $next__white;
+          -webkit-text-fill-color: $next__blue;
         }
 
       }
@@ -145,23 +145,23 @@
       }
     }
     
-    .contact__info__insta {
+    .contact__info__web {
       grid-column: 2 / 3;
       grid-row: 3 / 4;  
       grid-column-gap: 100px;
 
       .info__text {
-        @extend .soft__white__title;
+        @include soft__blue__title;
         text-align: left;
         font-size: 72px;
         align-self: center;
-        -webkit-text-stroke: 1px $next__white;
+        -webkit-text-stroke: 1px $next__blue;
         -webkit-text-fill-color: transparent;
         margin-bottom: 20px;
 
         &:hover {
           transition:  0.3s ease-in-out;
-          -webkit-text-fill-color: $next__white;
+          -webkit-text-fill-color: $next__blue;
         }
 
       }
@@ -178,45 +178,45 @@
       }
     }
 
-    .contact__info__location {
-      grid-column: 2 / 3;
-      grid-row: 4 / 5;
-      grid-column-gap: 100px;
-      margin-top: 10px;
-      border: 0px;
+    // .contact__info__location {
+    //   grid-column: 2 / 3;
+    //   grid-row: 4 / 5;
+    //   grid-column-gap: 100px;
+    //   margin-top: 10px;
+    //   border: 0px;
 
-      a {
-        // border: 10px red solid;;
+    //   a {
+    //     // border: 10px red solid;;
 
-      }
+    //   }
 
-      .info__text {
-        @extend .soft__white__title;
-        text-align: left;
-        font-size: 72px;
-        align-self: center;
-        white-space: pre-line;
-        line-height: 60%;
-        padding-top: 20px;
-        -webkit-text-stroke: 1px $next__white;
-        -webkit-text-fill-color: transparent;
+    //   .info__text {
+    //     @include soft__blue__title;
+    //     text-align: left;
+    //     font-size: 72px;
+    //     align-self: center;
+    //     white-space: pre-line;
+    //     line-height: 60%;
+    //     padding-top: 20px;
+    //     -webkit-text-stroke: 1px $next__blue;
+    //     -webkit-text-fill-color: transparent;
 
-        &:hover {
-          transition:  0.3s ease-in-out;
-          -webkit-text-fill-color: $next__white;
-        }
+    //     &:hover {
+    //       transition:  0.3s ease-in-out;
+    //       -webkit-text-fill-color: $next__blue;
+    //     }
 
-      }
+    //   }
 
-      .info__icon {
-        height: 93px;
-        width: 70px;
-        background-repeat: no-repeat;
-        grid-column: 1 / 2;
-        grid-row: 1 / -1;
-        // align-self: center;
-        justify-self: center;
-      }
-    }
+    //   .info__icon {
+    //     height: 93px;
+    //     width: 70px;
+    //     background-repeat: no-repeat;
+    //     grid-column: 1 / 2;
+    //     grid-row: 1 / -1;
+    //     // align-self: center;
+    //     justify-self: center;
+    //   }
+    // }
   }
 }

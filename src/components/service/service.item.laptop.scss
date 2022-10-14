@@ -1,7 +1,7 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-@media(max-width: $sizeMobile) {
+@media(max-width: $sizeLaptop) {
   
   .service__list {
     display: grid;
@@ -77,7 +77,7 @@
   }
   
   .service__item__type {
-    @extend %hard__subinfo;
+    @include hard__subinfo;
     color: $next__grey;
     // border: 1px solid green;
   }

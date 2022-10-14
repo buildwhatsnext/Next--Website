@@ -1,6 +1,6 @@
 @import '../styles/styles.general.scss';
 
-@media(max-width: $sizeMobile) {
+@media(max-width: $sizeLaptop) {
   #follower {
     display: none;
   }

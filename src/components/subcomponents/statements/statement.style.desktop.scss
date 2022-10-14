@@ -27,12 +27,13 @@
   }
 
   .statement__changing {
-    @extend .soft__white__title;
+    @include soft__blue__title;
     font-size: 72px;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: -1;
+    text-align: left;
     // border: 10px pink solid;
   }
 }

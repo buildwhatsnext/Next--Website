@@ -4,7 +4,7 @@ import { TimelineMax as Timeline, Power1, CSS, gsap } from 'gsap';
 import { CSSRulePlugin } from 'gsap/src/CSSRulePlugin';
 
 import './service.item.desktop.scss';
-import './service.item.mobile.scss';
+import './service.item.laptop.scss';
 
 import ServiceData from '../../data/data.services.json';
 

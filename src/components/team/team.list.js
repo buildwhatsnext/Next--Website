@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import './team.list.desktop.scss';
-import './team.list.mobile.scss';
+import './team.list.laptop.scss';
 
 import TeamData from '../../data/data.team.json';
 
@@ -11,13 +11,13 @@ export function TeamList(props) {
 
   const tNames = Object.getOwnPropertyNames(members).sort();
 
-  let i = tNames.length * 2;
+  let i = tNames.length;
   let teamList = [];
   for(i; i >= 0; i--) {
-    let useSpace = i % 2 === 0;
+    let useSpace = i % 1 === 0;
 
     const info = useSpace
-      ? members[tNames[i/2]]
+      ? members[tNames[i/1]]
       : null;
 
     let data = info
@@ -29,7 +29,7 @@ export function TeamList(props) {
         />
       : <Spacer key={i} position={i} />
 
-    teamList.push(data);
+     teamList.push(data);
   }
 
   teamList.reverse();
@@ -56,8 +56,11 @@ export function TeamItem(props) {
         <div className="team__item__position"> <p> { props.position } </p></div>
         <div className="team__item__location"> <p> { props.location } </p></div>
         <div className={`team__item__image team__item__image__${props.shortName}`}/>
-        <div className="team__item__block">
-          <div className="team__item__block__content"></div>
+        <div className="team__item__block__coral">
+          <div className="team__item__block__coral__content"></div>
+        </div>
+        <div className="team__item__block__blue">
+          <div className="team__item__block__blue__content"></div>
         </div>
       </div>
     </Link>

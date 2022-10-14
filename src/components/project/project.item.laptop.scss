@@ -1,7 +1,7 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-@media(max-width: $sizeMobile) {
+@media(max-width: $sizeLaptop) {
   .project__data__list {
     overflow: hidden;
     margin-bottom: 200px;

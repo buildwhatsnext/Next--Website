@@ -225,32 +225,116 @@
   text-align: right;
 }
 
-.soft__coral__title {
-  @extend %soft__coral__title;
+@mixin soft__blue__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__blue;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
 }
 
 .soft__blue__title {
   @extend %soft__blue__title;
 }
 
+@mixin soft__coral__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__coral;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.soft__coral__title {
+  @extend %soft__coral__title;
+}
+
+@mixin soft__black__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__black;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
+}
+
 .soft__black__title {
   @extend %soft__black__title;
+}
+
+@mixin soft__white__title {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__white;
+  font-size: 7.2rem;
+  font-weight: 600;
+  text-align: right;
 }
 
 .soft__white__title {
   @extend %soft__white__title;
 }
 
+@mixin soft__coral__subtitle {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__coral;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
 .soft__coral__subtitle {
   @extend %soft__coral__subtitle;
+}
+
+@mixin soft__blue__subtitle {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__blue;
+  font-size: 3.6rem;
+  font-weight: 600;
 }
 
 .soft__blue__subtitle {
   @extend %soft__blue__subtitle;
 }
 
+@mixin soft__white__subtitle {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__white;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
 .soft__white__subtitle {
   @extend %soft__white__subtitle;
+}
+
+@mixin soft__black__subtitle {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: $next__black;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.soft__black__subtitle {
+  @extend %soft__black__subtitle;
+}
+
+@mixin soft__grey__subtitle {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: #bebebe;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.soft__grey__subtitle {
+  @extend %soft__black__subtitle;
 }
 
 .soft__blue__info {
@@ -258,12 +342,41 @@
   color: $next__blue;
 }
 
+@mixin hard__coral__info {
+}
+
 .hard__coral__info {
   @extend %hard__info;
   color: $next__coral;
 }
 
+@mixin soft__black__body {
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-style: normal;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+@mixin soft__white__body {
+}
+
 .soft__white__body {
   @extend %soft__body;
   // color: $next__white;
+}
+
+@mixin hard__subinfo {
+}
+
+.hard__subinfo {
+  @extend %hard__subinfo;
+}
+
+@mixin hard__coral__subtitle {
+}
+
+.hard__coral__subtitle {
+  @extend %hard__coral__subtitle;
 }

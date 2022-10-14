@@ -14,8 +14,17 @@
     &:hover {
       .link__highlighted__background {
         height: 100%;
+        margin-top: -30px;
+        margin-left: -10px;
+        margin-right: -10px;
         margin-bottom: 0px;
-        margin-top: 0px;
+        background-color: $next__blue;
+        z-index: 1;
+      }
+
+      .link__highlighted__text {
+        color: $next__white;
+        z-index: 2;
       }
     }
   }
@@ -27,7 +36,7 @@
     width: auto;
     transition: all .5s ease-out;
     transition-delay: .1s;
-    color: $next__white;
+    color: $next__blue;
     z-index: 2;
   }
 

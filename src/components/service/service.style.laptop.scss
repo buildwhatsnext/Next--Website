@@ -1,7 +1,7 @@
 @import '../../styles/styles.fonts.components.scss';
 @import '../../styles/styles.general.scss';
 
-@media(max-width: $sizeMobile) {
+@media(max-width: $sizeLaptop) {
 
   .page__services {
     width: 100%;
@@ -17,7 +17,7 @@
   }
 
   .page__services__title {
-    @extend .soft__coral__title;
+    @include soft__coral__title;
     grid-column: 1 / 3;
     grid-row: 1 / 4;
     padding-left: 160px;
